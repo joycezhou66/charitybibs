@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Archivo:wght@400;500;600;700&display=swap">
 <script defer data-domain="charitybibs.com" src="https://plausible.io/js/script.outbound-links.js"></script>
 <style>
-:root{--paper:#F7F4EE;--ink:#141210;--ink2:#3B3733;--mute:#6E6862;--rule:#D9D3C9;--hair:#141210;--print:#F0501E;--bib:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--text:"Archivo",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+:root{--paper:#F7F4EE;--ink:#141210;--ink2:#3B3733;--mute:#7A736B;--rule:#DCD6CC;--hair:#141210;--print:#F0501E;--bib:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--text:"Archivo",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#141210;--ink:#F3EFE7;--ink2:#D6D0C6;--mute:#9B948A;--rule:#332F2A;--hair:#F3EFE7;--print:#FF6A35}}
 :root[data-theme="dark"]{--paper:#141210;--ink:#F3EFE7;--ink2:#D6D0C6;--mute:#9B948A;--rule:#332F2A;--hair:#F3EFE7;--print:#FF6A35}
 *{box-sizing:border-box}
@@ -23,9 +23,10 @@ a:hover{color:var(--print)}
 :focus-visible{outline:2px solid var(--print);outline-offset:2px}
 .wrap{max-width:1280px;margin:0 auto}
 .col{max-width:680px;margin:0 auto}
-header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;padding:20px 0 14px;border-bottom:1.5px solid var(--hair)}
+header{display:flex;gap:8px 24px;align-items:baseline;justify-content:space-between;padding:22px 0 16px;border-bottom:1.5px solid var(--hair)}
+.brand{white-space:nowrap}
 .brand{font-family:var(--bib);font-weight:800;font-size:22px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none}
-.brand small{font-family:var(--bib);font-weight:600;font-size:13px;letter-spacing:.09em;color:var(--mute);margin-left:12px}
+.brand small{font-family:var(--text);font-weight:400;font-size:13.5px;color:var(--mute);margin-left:12px}
 header nav a{font-size:14px;color:var(--mute);text-decoration:none}
 header nav a:hover{color:var(--print)}
 h1{font-family:var(--bib);font-weight:800;font-size:clamp(44px,7vw,72px);text-transform:uppercase;letter-spacing:.01em;line-height:.92;margin:52px 0 28px}
@@ -37,12 +38,12 @@ ol{margin:0 0 14px;padding-left:22px;color:var(--ink2)}
 ol li{margin-bottom:6px}
 ol li::marker{font-family:var(--bib);font-weight:800;color:var(--print)}
 dl{margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 24px;color:var(--ink2)}
-dt{font-family:var(--bib);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding-top:2px}
+dt{font-weight:600;color:var(--ink)}
 dd{margin:0}
 footer{margin-top:64px;padding-top:16px;border-top:1.5px solid var(--hair);display:flex;flex-wrap:wrap;gap:8px 24px;font-size:12.5px;color:var(--mute)}
 footer a{text-decoration:none}
 footer .sp{margin-left:auto}
-@media (max-width:640px){body{padding-inline:16px}h1{margin-top:36px}dl{grid-template-columns:1fr;gap:2px 0}dd{margin-bottom:10px}footer .sp{margin-left:0}}
+@media (max-width:640px){body{padding-inline:16px}.brand small{display:none}h1{margin-top:36px}dl{grid-template-columns:1fr;gap:2px 0}dd{margin-bottom:10px}footer .sp{margin-left:0}}
 </style>
 </head>
 <body>
@@ -82,7 +83,6 @@ footer .sp{margin-left:auto}
   <dt>The data</dt><dd>Free to use under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. <a href="https://github.com/joycezhou66/charitybibs/blob/main/data/races/nyc-2026.json" target="_blank" rel="noopener">Download it</a> or read <a href="https://github.com/joycezhou66/charitybibs" target="_blank" rel="noopener">how it's collected</a>.</dd>
   <dt>Who</dt><dd>Built by <a href="https://joycezhou.me">Joyce Zhou</a>, who wanted to run for a charity and couldn't find a way to compare them. The story is <a href="https://joycezhou.me/charitybibs">here</a>.</dd>
 </dl>
-<p style="margin-top:24px;font-size:14px;color:var(--mute)">Not legal advice. Not affiliated with New York Road Runners or any charity listed.</p>
 </div>
 
 <footer>
