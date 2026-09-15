@@ -1,43 +1,46 @@
 {
- "refreshed": "2026-09-14",
+ "refreshed": "2026-09-15",
  "charities": [
   {
    "id": "tfk",
    "name": "NYRR Team for Kids",
+   "cause": "Youth & education",
+   "focus": "NYRR's youth running programs in NYC schools",
    "level": null,
    "platform": null,
    "status": "closed",
    "spots": null,
    "min": 3000,
-   "minNote": "TFK General Entry $3,000; Premium Experience $4,000; Premium Experience Plus $5,000; Community Champion $10,000; Training Altruist $1,500 (for runners who already hold an entry). All due in full by October 7, 2026.",
+   "minNote": "Entry-level tier \"TFK General Entry\" requires $3,000 fundraising commitment. Higher tiers: TFK Premium Experience $4,000, TFK Premium Experience Plus $5,000, TFK Community Champion $10,000. TFK Training Altruist (for runners with own bib, not a guaranteed charity bib) requires $1,500 fundraising commitment plus registration fee already paid by runner.",
    "minSource": "https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon",
+   "minQuote": "Fundraising commitment: $3,000 (due in full by Wednesday, October 7, 2026)",
    "fee": 107,
    "feeLabel": "TFK sign-up fee",
    "feeCreditable": null,
    "regSeparate": true,
    "deadline": "2026-10-07",
    "support": {
-    "coaching": true,
-    "group_runs": true,
-    "training_plan": true,
+    "coaching": null,
+    "group_runs": null,
+    "training_plan": null,
     "fundraising_coaching": null,
-    "team_events": true,
-    "gear": true,
+    "team_events": null,
+    "gear": null,
     "fundraising_page": null,
     "bus_to_start": null,
     "charity_village": null,
     "hotel_or_travel": null
    },
-   "supportScore": 5,
-   "supportNotes": "General Entry ($3,000) gets a Runna virtual plan from mid-June, in-person coached training in NYC from late June, the Light Up the Night final practice, and a TFK singlet. Private transportation to the start, a heated tent, and finish-tent access are listed only under the Premium Experience tier ($4,000+), not General Entry.",
-   "supportQuote": "In-person training in NYC starting in late June 2026",
+   "supportScore": 0,
+   "supportNotes": "Support varies by tier. All entry tiers get virtual training plan (NYRR x Runna) and in-person training/group runs, plus a TFK singlet (gear). Premium Experience tier and above adds coaching support along the course, private transportation to start (bus_to_start), heated start tent, finish tent access, and TFK Breakfast (team_events). Higher tiers add gala tickets, grandstand seating, course strategy session, hoodie (Premium Experience Plus and Community Champion). No mention of fundraising_page, fundraising_coaching, charity_village, or hotel_or_travel support.",
+   "supportQuote": null,
    "supportSource": "https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon",
    "shortfall": {
     "pub": false,
-    "text": "The 2026 NYC page states the commitment and due date but does not say what happens if it is not met. TFK's 2026 Chicago Marathon page (separate program) says the remaining balance is charged to the card on file the day after the deadline, which suggests TFK's practice, but no such language appears on the NYC page.",
+    "text": "Not published",
     "quote": null,
-    "source": "https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon",
-    "method": "page"
+    "source": null,
+    "method": null
    },
    "chargeSchedule": null,
    "freeExit": null,
@@ -46,39 +49,41 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": "https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon"
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": "https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon"
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "MINIMUM CONFLICT RESOLVED: the page at organizations.nyrr.org/sites/organization_sites/dfbc3b9cab6d7bc2606c ($2,200 minimum, $660 due May 14, balance charged Sept 24) is TFK's 2026 BANK OF AMERICA CHICAGO MARATHON program, not NYC. Its first sentence reads: 'Team for Kids runners receive guaranteed entry to the 2026 Bank of America Chicago Marathon'. The primary 2026 TCS NYC Marathon figure is $3,000 (General Entry), due October 7, 2026, from TFK's dedicated NYC page.",
-    "All 2026 NYC tiers shown as SOLD OUT on the TFK page.",
-    "NYRR race registration fee is separate: $255 (NYRR members) / $315 (non-members), on top of the $107 sign-up fee.",
-    "TFK is NYRR's own program, not a Gold/Silver/Bronze official charity partner; level left null.",
-    "'deadline' is the fundraising due date, not an application deadline.",
-    "NYRR.org itself (level page, charity index) was unreachable from this environment (egress denied; Wayback blocked), so no NYRR page is cited."
-   ],
-   "cause": "Youth & education",
-   "focus": "NYRR's youth running programs in NYC schools"
+    "All TFK entry tiers (General Entry, Premium Experience, Premium Experience Plus, Community Champion) are marked SOLD OUT / closed for 2026.",
+    "Fundraising minimum of $3,000 is for the entry-level 'TFK General Entry' tier; this tier does not include race-day perks (per page note).",
+    "No published information found on shortfall consequences, injury/deferral policy, or charge schedule/free exit date on the fetched pages.",
+    "unverified: support quote not found — support fields cleared"
+   ]
   },
   {
    "id": "bird",
    "name": "NYC Bird Alliance",
+   "cause": "Environment & parks",
+   "focus": "Birds and habitat in New York City",
    "level": "Bronze",
-   "platform": "other:NeonCRM",
+   "platform": null,
    "status": "unknown",
-   "spots": "3 bibs",
+   "spots": "Three runners will be chosen to run for NYC Bird Alliance's Team Greater Yellowlegs.",
    "min": 3000,
-   "minNote": "Runners commit to a $5,000 fundraising goal; $3,000 is the hard minimum required for entry.",
+   "minNote": "Runners are asked to commit to fundraising $5,000, but only a $3,000 minimum is required for guaranteed entry; if unmet, the runner is charged the remaining amount.",
    "minSource": "https://nycbirdalliance.org/run",
+   "minQuote": "Each runner must commit to fundraising $5,000 to support NYC Bird Alliance's mission of protecting NYC birds and habitat. A minimum of $3,000 is required for entry to the marathon, no exceptions. If a runner does not meet their $3,000 minimum, they will be charged the remaining amount.",
    "fee": null,
-   "feeLabel": null,
+   "feeLabel": "Race registration fee",
    "feeCreditable": null,
    "regSeparate": true,
    "deadline": null,
@@ -90,18 +95,18 @@
     "team_events": null,
     "gear": null,
     "fundraising_page": true,
-    "bus_to_start": false,
-    "charity_village": false,
+    "bus_to_start": null,
+    "charity_village": null,
     "hotel_or_travel": null
    },
    "supportScore": 1,
-   "supportNotes": "Only stated support is a personalized fundraising page (hosted on Neon CRM). Nothing about coaching, training, gear or events is on the page.",
+   "supportNotes": "Only support explicitly mentioned is a personalized fundraising page provided to each selected runner. No other runner support items (training plans, coaching, gear, travel, etc.) are mentioned on the pages fetched.",
    "supportQuote": "Once selected, each runner will be provided with a personalized fundraising page to share with their community.",
    "supportSource": "https://nycbirdalliance.org/run",
    "shortfall": {
     "pub": true,
-    "text": "If you raise less than $3,000 you are charged the difference. No date for the charge is given.",
-    "quote": "A minimum of $3,000 is required for entry to the marathon, no exceptions. If a runner does not meet their $3,000 minimum, they will be charged the remaining amount.",
+    "text": "Runners who do not raise their $3,000 minimum will be charged the remaining amount owed.",
+    "quote": "If a runner does not meet their $3,000 minimum, they will be charged the remaining amount.",
     "source": "https://nycbirdalliance.org/run",
     "method": "page"
    },
@@ -112,28 +117,26 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": "https://nycbirdalliance.org/run"
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": "https://nycbirdalliance.org/run"
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 1,
    "url": "https://nycbirdalliance.org/run",
-   "verified": "2026-09-14",
-   "flags": [
-    "Page names three runners (Eric Balcanoff, Andrea Fondulas, Michael Hainey) with live fundraising pages as the 2026 Team Greater Yellowlegs, so the 3 spots appear filled, but the page never says applications are closed.",
-    "Level 'Bronze' is from the charity's own page ('NYC Bird Alliance is thrilled to return as a Bronze Level Charity for the 2026 TCS New York City Marathon'); NYRR level page was unreachable, so bus/village=false follows the brief's Bronze rule, not an NYRR citation.",
-    "NYRR registration fee ($255 members / $315 non-members) is paid by the runner in addition to fundraising.",
-    "Platform is Neon CRM (nycbirdalliance.app.neoncrm.com), not one of the standard P2P platforms."
-   ],
-   "cause": "Environment & parks",
-   "focus": "Birds and habitat in New York City"
+   "verified": "2026-09-15",
+   "flags": []
   },
   {
    "id": "hope",
    "name": "Hope Community Inc",
+   "cause": "Housing & community",
+   "focus": "Affordable housing in East Harlem",
    "level": "Bronze",
    "platform": null,
    "status": "closed",
@@ -141,6 +144,7 @@
    "min": 3000,
    "minNote": "$3,000 due in full by September 1, 2026, plus a $125 Hope sign-up fee.",
    "minSource": "https://hopeci.org/2026-tcs-new-york-city-marathon/",
+   "minQuote": null,
    "fee": 125,
    "feeLabel": "Hope sign-up fee",
    "feeCreditable": null,
@@ -176,12 +180,15 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": "https://hopeci.org/2026-tcs-new-york-city-marathon/"
+    "source": "https://hopeci.org/2026-tcs-new-york-city-marathon/",
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": "https://hopeci.org/2026-tcs-new-york-city-marathon/"
+    "quote": null,
+    "source": "https://hopeci.org/2026-tcs-new-york-city-marathon/",
+    "method": null
    },
    "termsScore": 0,
    "url": "https://hopeci.org/2026-tcs-new-york-city-marathon/",
@@ -193,13 +200,13 @@
     "Only fundraising link on the page is a Givebutter general-donation link (givebutter.com/general-donation-ka68ue); runner P2P pages not confirmed, so platform left null.",
     "NYRR registration fee ($255 members / $315 non-members) is separate.",
     "hopeci.org/general-faqs/ contains nothing about the marathon."
-   ],
-   "cause": "Housing & community",
-   "focus": "Affordable housing in East Harlem"
+   ]
   },
   {
    "id": "cri",
    "name": "Cancer Research Institute",
+   "cause": "Cancer",
+   "focus": "Cancer immunotherapy research",
    "level": null,
    "platform": "Classy",
    "status": "waitlist",
@@ -207,6 +214,7 @@
    "min": 3500,
    "minNote": "$3,500 by October 25, 2026.",
    "minSource": "https://www.cancerresearch.org/events/2026-tcs-new-york-city-marathon",
+   "minQuote": null,
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -242,12 +250,15 @@
     "pub": true,
     "text": "No exceptions: once you register through Team CRI you owe the minimum regardless of injury or any other circumstance.",
     "quote": "Every team member who officially registers and obtains an entry through Team CRI is committed to reaching their fundraising minimum by the deadline regardless of any situations that may arise.",
-    "source": "https://www.cancerresearch.org/events/2026-tcs-new-york-city-marathon"
+    "source": "https://www.cancerresearch.org/events/2026-tcs-new-york-city-marathon",
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": "https://www.cancerresearch.org/events/2026-tcs-new-york-city-marathon"
+    "quote": null,
+    "source": "https://www.cancerresearch.org/events/2026-tcs-new-york-city-marathon",
+    "method": null
    },
    "termsScore": 3,
    "url": "https://www.cancerresearch.org/events/2026-tcs-new-york-city-marathon",
@@ -256,13 +267,13 @@
     "Page: 'All spots are currently full. Please email ... to be added to our waitlist.' Spots assigned first-come, first-served by email.",
     "Platform is GoFundMe Pro (formerly Classy): fundraise.cancerresearch.org/TCSNYC26 resolves to pro.gofundme.com/event/e773203. Recorded as 'Classy' per the brief's enum.",
     "Page does not say who pays the NYRR registration fee."
-   ],
-   "cause": "Cancer",
-   "focus": "Cancer immunotherapy research"
+   ]
   },
   {
    "id": "nami",
    "name": "NAMI-NYC",
+   "cause": "Mental health",
+   "focus": "Mental health support and advocacy in NYC",
    "level": null,
    "platform": null,
    "status": "closed",
@@ -270,6 +281,7 @@
    "min": 3500,
    "minNote": "$3,500 for guaranteed entry. A nonrefundable $100 initial gift on acceptance counts toward it. Checkpoints: $1,750 by June 21, 2026; $3,000 by Oct 4, 2026; $3,500 by Nov 8, 2026. A $75 replacement fee applies if you cancel after registering. Independent entrants (own bib) can join with a $500+ goal and no commitment.",
    "minSource": "https://naminycmetro.org/marathon/",
+   "minQuote": null,
    "fee": 100,
    "feeLabel": "initial fundraising gift (nonrefundable, charged on acceptance)",
    "feeCreditable": true,
@@ -305,12 +317,15 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": "https://naminycmetro.org/marathon/"
+    "source": "https://naminycmetro.org/marathon/",
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": "https://naminycmetro.org/marathon/"
+    "quote": null,
+    "source": "https://naminycmetro.org/marathon/",
+    "method": null
    },
    "termsScore": 2,
    "url": "https://naminycmetro.org/marathon/",
@@ -321,24 +336,25 @@
     "Final fundraising checkpoint (Nov 8) falls AFTER race day (Nov 1).",
     "No fundraising-platform link on the page; platform unknown.",
     "Page does not mention the NYRR registration fee."
-   ],
-   "cause": "Mental health",
-   "focus": "Mental health support and advocacy in NYC"
+   ]
   },
   {
    "id": "bcrf",
    "name": "Breast Cancer Research Foundation",
+   "cause": "Cancer",
+   "focus": "Breast cancer research",
    "level": null,
    "platform": null,
-   "status": "waitlist",
+   "status": "closed",
    "spots": null,
    "min": 3500,
-   "minNote": "$3,500 plus the runner pays their own NYRR race entry fee.",
+   "minNote": "Runners must raise a minimum of $3,500 and pay their own race entry fee; no other tiers or own-bib prices mentioned.",
    "minSource": "https://www.bcrf.org/blog/bcrf-2026-tcs-nyc-marathon-application/",
+   "minQuote": "Each participant is required to raise a minimum of $3,500 for BCRF and pay their race entry fee.",
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
-   "regSeparate": true,
+   "regSeparate": null,
    "deadline": null,
    "support": {
     "coaching": null,
@@ -353,15 +369,15 @@
     "hotel_or_travel": null
    },
    "supportScore": 2,
-   "supportNotes": "A Team BCRF shirt, extra swag, and one-on-one fundraising help. No training support is described.",
+   "supportNotes": "Program page states runners receive a Team BCRF shirt, additional swag, and one-on-one fundraising support; no mention of training plans, group runs, travel, or charity village.",
    "supportQuote": "We will provide each runner with a Team BCRF shirt, additional swag, and one-on-one support to help with their fundraising leading up to the race.",
    "supportSource": "https://www.bcrf.org/blog/bcrf-2026-tcs-nyc-marathon-application/",
    "shortfall": {
     "pub": false,
-    "text": "Neither the blog post nor the application page states what happens if the $3,500 is not raised.",
+    "text": "Not published",
     "quote": null,
-    "source": "https://www.bcrf.org/blog/bcrf-2026-tcs-nyc-marathon-application/",
-    "method": "page"
+    "source": null,
+    "method": null
    },
    "chargeSchedule": null,
    "freeExit": null,
@@ -370,37 +386,42 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": "https://www.bcrf.org/blog/bcrf-2026-tcs-nyc-marathon-application/"
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": "https://www.bcrf.org/blog/bcrf-2026-tcs-nyc-marathon-application/"
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://www.bcrf.org/blog/bcrf-2026-tcs-nyc-marathon-application/",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Team full as of 3/17/26; application page now reads 'BCRF's 2026 TCS New York City Marathon team is full. You're welcome to join our waitlist' (Microsoft Forms waitlist).",
-    "The full commitment terms were presumably inside the (now-removed) application form; nothing about deadlines, charges, withdrawal or injury is published.",
-    "BCRF's P2P pages live at give.bcrf.org, but the platform could not be identified from the fetched content."
-   ],
-   "cause": "Cancer",
-   "focus": "Breast cancer research"
+    "No deadline for applications is published on any fetched page.",
+    "No shortfall, injury, or deferral policy is published on any fetched page.",
+    "Team status changed from open (application form referenced) to full/waitlist per a 3/17/26 notice added to the same page.",
+    "Terms and Conditions page is dated 'last updated May 2019' and refers to a differently spelled domain ('bcrfcure.org'), suggesting outdated/generic boilerplate not specific to the 2026 marathon program."
+   ]
   },
   {
    "id": "msahc",
    "name": "Mount Sinai Adolescent Health Center",
+   "cause": "Children's health",
+   "focus": "Free health care for NYC teens",
    "level": null,
    "platform": null,
    "status": "open",
    "spots": null,
    "min": 3500,
-   "minNote": "$3,500 due by 5:00 p.m. Tuesday, October 20, 2026. NYRR race registration fee is separate, collected by NYRR, and does not count toward the minimum.",
+   "minNote": "Only a single $3,500 fundraising minimum tier is stated for guaranteed charity entry; no other tiers or own-bib prices are mentioned.",
    "minSource": "https://www.mountsinai.org/files/MSHealth/Assets/HS/Patient-Care/Service-Areas/Adolescent-Health-Center/HS-MSAHC-TCS-NYC-Marathon-Runner-Agreement.pdf",
-   "fee": null,
-   "feeLabel": null,
-   "feeCreditable": null,
+   "minQuote": "**All participants must raise a minimum of $3,500 to support MSAHC**",
+   "fee": 75,
+   "feeLabel": "Withdrawal/cancellation fee",
+   "feeCreditable": false,
    "regSeparate": true,
    "deadline": "2026-10-20",
    "support": {
@@ -409,52 +430,52 @@
     "training_plan": null,
     "fundraising_coaching": null,
     "team_events": null,
-    "gear": true,
-    "fundraising_page": true,
+    "gear": null,
+    "fundraising_page": null,
     "bus_to_start": null,
     "charity_village": null,
     "hotel_or_travel": null
    },
-   "supportScore": 2,
-   "supportNotes": "Guaranteed entry, a personal fundraising page and a Run for Teens team t-shirt. No coaching, training plan or events are described; the runner agreement lists no support at all.",
+   "supportScore": 0,
+   "supportNotes": "Events page lists a personal haku fundraising page and a team t-shirt as runner benefits. No mention of training plans, coaching, group runs, charity village, bus to start, or hotel/travel support.",
    "supportQuote": null,
    "supportSource": "https://www.mountsinai.org/locations/adolescent-health-center/events",
    "shortfall": {
     "pub": true,
-    "text": "Miss the $3,500 by Oct 20 and you are removed from the race and cannot check in; MSAHC may also charge the card on file for any outstanding balance after that date.",
-    "quote": "Runners who have not met their fundraising minimum (or paid any remaining balance) by Tuesday, October 20, 2026 will be removed from the race and will not be able to check in on November 1, 2026.",
+    "text": "Runners who fail to meet the fundraising minimum by the deadline will be personally responsible for the balance owed and may be charged via credit card; they will also be removed from the race.",
+    "quote": "I agree to collect a minimum of $3,500 for MSAHC by Tuesday, October 20, 2026. If I have not reached the minimum in sponsorship by that date, I understand that I will be personally responsible for the balance owed, unless appropriate cancellation arrangements (as outlined above) have been made.",
     "source": "https://www.mountsinai.org/files/MSHealth/Assets/HS/Patient-Care/Service-Areas/Adolescent-Health-Center/HS-MSAHC-TCS-NYC-Marathon-Runner-Agreement.pdf",
-    "method": "agreement-pdf"
+    "method": "page"
    },
-   "chargeSchedule": "Credit card required with signed agreement; MSAHC reserves the right to charge it for any outstanding balance after the October 20, 2026 5:00 p.m. deadline",
-   "freeExit": "2026-07-14",
+   "chargeSchedule": "Charged if fundraising minimum not met by deadline or upon withdrawal after free-exit date",
+   "freeExit": "2026-07-15",
    "freeExitQuote": "If you withdraw any time on or after Wednesday, July 15, 2026, you are responsible for raising the $3,500 minimum fundraising commitment. No exceptions will be made.",
    "injury": {
     "pub": true,
-    "text": "Injury does not waive the minimum, but if you meet the $3,500 by Oct 20 and cannot run, you may defer your entry to 2027.",
-    "quote": "If you are injured and unable to run on November 1, but meet the fundraising minimum by the October 20 deadline, you may defer your guaranteed Marathon entry until 2027.",
-    "source": "https://www.mountsinai.org/files/MSHealth/Assets/HS/Patient-Care/Service-Areas/Adolescent-Health-Center/HS-MSAHC-TCS-NYC-Marathon-Runner-Agreement.pdf"
+    "text": "Injured runners who meet the fundraising minimum by the deadline may defer guaranteed entry to the following year, but must pay registration fee and fundraising minimum again.",
+    "quote": "If you are injured and unable to run on November 1, but meet the fundraising minimum by the October 20 deadline, you may defer your guaranteed Marathon entry until 2027. You will be required to pay the race registration fee and fundraising minimum for 2027.",
+    "source": "https://www.mountsinai.org/files/MSHealth/Assets/HS/Patient-Care/Service-Areas/Adolescent-Health-Center/HS-MSAHC-TCS-NYC-Marathon-Runner-Agreement.pdf",
+    "method": "page"
    },
    "deferral": {
     "pub": true,
-    "text": "Deferral to 2027 allowed only for injured runners who have met the $3,500 minimum by October 20, 2026.",
-    "source": "https://www.mountsinai.org/files/MSHealth/Assets/HS/Patient-Care/Service-Areas/Adolescent-Health-Center/HS-MSAHC-TCS-NYC-Marathon-Runner-Agreement.pdf"
+    "text": "Runners unable to participate may cancel and receive guaranteed entry to the following year's race if they meet the fundraising minimum by the deadline; they must register during general entry and pay the registration fee for that year.",
+    "quote": "A runner who is unable to participate in the 2026 TCS New York City Marathon may cancel their entry and receive guaranteed entry to 2026 as long as they complete the minimum fundraising requirement by the October 20, 2026 deadline. The runner will have guaranteed entry for the 2027 TCS New York City Marathon and it will be their responsibility to register during the general entry registration period and pay the race registration fee in 2027.",
+    "source": "https://www.mountsinai.org/files/MSHealth/Assets/HS/Patient-Care/Service-Areas/Adolescent-Health-Center/HS-MSAHC-TCS-NYC-Marathon-Runner-Agreement.pdf",
+    "method": "page"
    },
    "termsScore": 4,
    "url": "https://www.mountsinai.org/locations/adolescent-health-center/events",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Clearest terms of the group: signed runner agreement PDF with withdrawal cutoff (before July 15, 2026), removal-from-race consequence, and injury deferral to 2027.",
-    "Events page says applications are open: email the signed agreement to AHCmarathon@mountsinai.org; 'We will respond promptly to confirm your place'. Free-exit date has already passed as of verification.",
-    "Platform unknown: a 2025 MSAHC runner page was found on fundraisers.nyrr.org (NYRR's own platform) but it shows 'Fundraising has closed'; not confirmed for 2026.",
-    "NYRR race registration fee is paid by the runner to NYRR and explicitly does NOT count toward the $3,500."
-   ],
-   "cause": "Children's health",
-   "focus": "Free health care for NYC teens"
+    "unverified: support quote not found — support fields cleared"
+   ]
   },
   {
    "id": "caf",
    "name": "Challenged Athletes Foundation",
+   "cause": "Disability & adaptive sport",
+   "focus": "Athletes with physical disabilities",
    "level": null,
    "platform": "DonorDrive",
    "status": "open",
@@ -462,6 +483,7 @@
    "min": 3500,
    "minNote": "$3,500 by September 1, 2026; at least $2,000 must be raised or contributed by July 1, 2026 to keep the entry.",
    "minSource": "https://give.challengedathletes.org/nycmarathon",
+   "minQuote": null,
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -497,12 +519,15 @@
     "pub": true,
     "text": "Injury after July 1, 2026 does not release you; you still owe the $3,500.",
     "quote": "If an athlete is injured during training after July 1, 2026, he or she is still responsible for raising or providing the $3,500 minimum",
-    "source": "https://give.challengedathletes.org/nycmarathon"
+    "source": "https://give.challengedathletes.org/nycmarathon",
+    "method": null
    },
    "deferral": {
     "pub": true,
     "text": "No transfers or deferrals of entry are permitted.",
-    "source": "https://give.challengedathletes.org/nycmarathon"
+    "quote": null,
+    "source": "https://give.challengedathletes.org/nycmarathon",
+    "method": null
    },
    "termsScore": 4,
    "url": "https://give.challengedathletes.org/nycmarathon",
@@ -513,13 +538,13 @@
     "Race cancellation does not waive the $3,500.",
     "Page mentions a Sept 15 NYRR registration-link deadline but not who pays the NYRR fee.",
     "CAF's DonorDrive FAQ (pages/1036) covers only portal mechanics, no commitment terms."
-   ],
-   "cause": "Disability & adaptive sport",
-   "focus": "Athletes with physical disabilities"
+   ]
   },
   {
    "id": "vfound",
    "name": "V Foundation for Cancer Research",
+   "cause": "Cancer",
+   "focus": "Cancer research grants",
    "level": null,
    "platform": "DonorDrive",
    "status": "waitlist",
@@ -527,6 +552,7 @@
    "min": 3750,
    "minNote": "Runner with Team V entry: $3,750; entry + 2-night hotel: $4,750. Own-bib 'Fundraiser only': $2,000, or $3,000 with 2-night hotel.",
    "minSource": "https://vfoundation.donordrive.com/pages/1035?eventID=724",
+   "minQuote": null,
    "fee": 0,
    "feeLabel": "Team V registration (free)",
    "feeCreditable": null,
@@ -562,12 +588,15 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": "https://vfoundation.donordrive.com/pages/1035?eventID=724"
+    "source": "https://vfoundation.donordrive.com/pages/1035?eventID=724",
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": "https://vfoundation.donordrive.com/pages/1035?eventID=724"
+    "quote": null,
+    "source": "https://vfoundation.donordrive.com/pages/1035?eventID=724",
+    "method": null
    },
    "termsScore": 0,
    "url": "https://vfoundation.donordrive.com/pages/1035?eventID=724",
@@ -577,13 +606,13 @@
     "The starting URL uses eventID=650 but the 2026 TCS NYC Marathon event on DonorDrive is eventID=724; the FAQ content (2026 minimums) was identical on both, and 724 pages are cited.",
     "No published shortfall, withdrawal, injury or deferral policy anywhere on the public DonorDrive pages or the 2026 Fundraising Guide PDF; terms likely appear only at DonorDrive registration.",
     "Participants pay their own NYRR race registration fee."
-   ],
-   "cause": "Cancer",
-   "focus": "Cancer research grants"
+   ]
   },
   {
    "id": "bcu",
    "name": "Blood Cancer United (Team In Training)",
+   "cause": "Cancer",
+   "focus": "Blood cancer research and patient support",
    "level": null,
    "platform": "other:fundraise.lls.org",
    "status": "waitlist",
@@ -591,6 +620,7 @@
    "min": 4000,
    "minNote": "$3,500 if registered by March 3, 2026 (shown struck through); $4,000 if registered after March 3; $1,000 with your own NYRR bib.",
    "minSource": "https://www.teamintraining.org/events/tcs-new-york-city-marathon",
+   "minQuote": null,
    "fee": 255,
    "feeLabel": "NYRR race registration fee (expected ~$255 members / $315 non-members), paid to NYRR",
    "feeCreditable": null,
@@ -626,12 +656,15 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 1,
    "url": "https://www.teamintraining.org/events/tcs-new-york-city-marathon",
@@ -643,13 +676,13 @@
     "Fundraising platform is fundraise.lls.org (LLS participant center); vendor not confirmed (the URL could not be fetched from this environment). Historically LLS/TNT ran on Blackbaud Luminate TeamRaiser.",
     "No withdrawal, injury, or deferral policy published; LLS refund policy page only covers donor refunds within 30 days.",
     "teamintraining.org has no public FAQ page (/faq and /faqs return 404)."
-   ],
-   "cause": "Cancer",
-   "focus": "Blood cancer research and patient support"
+   ]
   },
   {
    "id": "cpc",
    "name": "Central Park Conservancy",
+   "cause": "Environment & parks",
+   "focus": "Central Park",
    "level": null,
    "platform": "TeamRaiser",
    "status": "unknown",
@@ -657,6 +690,7 @@
    "min": 4000,
    "minNote": "$4,000 'minimum goal to raise' for a Charity Runner; $5,000 tier adds a Bethesda Angel membership; $500 'Fundraising Ambassador' tier is for people not needing a bib.",
    "minSource": "https://www.centralparknyc.org/giving/marathon",
+   "minQuote": null,
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -692,12 +726,15 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://www.centralparknyc.org/giving/marathon",
@@ -707,20 +744,21 @@
     "Page says spots are 'limited' and 'first-come, first-served' but does not state whether the 2026 team is still open.",
     "Page describes the minimum as a 'goal', not a commitment; whether it is enforced (card on file) is not stated.",
     "Platform: the Conservancy's fundraising pages run on Blackbaud TeamRaiser (secure.centralparknyc.org/site/TR); a marathon-specific fundraising page was not found."
-   ],
-   "cause": "Environment & parks",
-   "focus": "Central Park"
+   ]
   },
   {
    "id": "sff",
    "name": "Sanctuary for Families",
+   "cause": "Survivors of violence & trafficking",
+   "focus": "Survivors of domestic violence and trafficking",
    "level": null,
    "platform": null,
    "status": "closed",
-   "spots": "15 bibs",
+   "spots": "15",
    "min": 4000,
-   "minNote": "$4,000 minimum; no tiers or own-bib price published.",
+   "minNote": "Entry-level minimum fundraising commitment for a guaranteed charity bib is $4,000. No other tiers or own-bib prices are mentioned.",
    "minSource": "https://sanctuaryforfamilies.org/event/tcs-nyc-marathon/",
+   "minQuote": "you’ll receive guaranteed entry into the race in exchange for raising a minimum of $4,000",
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -739,8 +777,8 @@
     "hotel_or_travel": null
    },
    "supportScore": 3,
-   "supportNotes": "Small team (15 bibs). You get a personal fundraising page, help from the development staff, and a team T-shirt and gear. No training or race-weekend logistics are described.",
-   "supportQuote": "A personal fundraising page to make your supporter outreach simple",
+   "supportNotes": "Page states team members receive a personal fundraising page, fundraising support from Sanctuary Development staff, and a team t-shirt/gear. No mention of coaching, training plans, group runs, travel/hotel, charity village, bus to start, or other team events.",
+   "supportQuote": "– A personal fundraising page to make your supporter outreach simple\\n\\n– Fundraising support from Sanctuary Development staff (we’re seasoned fundraisers — and we’re here to help!)\\n\\n– A team t-shirt and gear to show your Sanctuary spirit",
    "supportSource": "https://sanctuaryforfamilies.org/event/tcs-nyc-marathon/",
    "shortfall": {
     "pub": false,
@@ -756,41 +794,44 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://sanctuaryforfamilies.org/event/tcs-nyc-marathon/",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Page states 'OUR MARATHON TEAM IS NOW FULL!' for 2026.",
-    "No application form, FAQ, agreement, deadline, fee, shortfall or withdrawal terms published; contact is marathon@sffny.org.",
-    "Fundraising platform not identifiable from the page (no links to a peer-to-peer platform)."
-   ],
-   "cause": "Survivors of violence & trafficking",
-   "focus": "Survivors of domestic violence and trafficking"
+    "Team status shows as full/closed ('OUR MARATHON TEAM IS NOW FULL') despite the page inviting new members to join ('We're inviting you to be a part of Sanctuary for Families team!'), which is contradictory.",
+    "No deadline, fee, shortfall, injury, deferral, or charge schedule information published on the fetched pages."
+   ]
   },
   {
    "id": "maw",
    "name": "Make-A-Wish Metro New York",
+   "cause": "Children's health",
+   "focus": "Wishes for children with critical illnesses",
    "level": null,
    "platform": null,
    "status": "waitlist",
    "spots": null,
    "min": 4500,
-   "minNote": "$4,500 minimum for 2026 (was $4,000 in 2024). No tiers or own-bib price published.",
+   "minNote": "Only one tier stated: $4,500 minimum fundraising requirement to join Team Make-A-Wish. No other tiers or own-bib pricing mentioned.",
    "minSource": "https://wish.org/newyork/2026-tcs-new-york-city-marathon",
+   "minQuote": "Please note there is a $4,500 minimum fundraising requirement to be a part of Team Make-A-Wish.",
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
    "regSeparate": null,
    "deadline": null,
    "support": {
-    "coaching": null,
+    "coaching": true,
     "group_runs": true,
     "training_plan": true,
     "fundraising_coaching": true,
@@ -801,9 +842,9 @@
     "charity_village": null,
     "hotel_or_travel": null
    },
-   "supportScore": 6,
-   "supportNotes": "A customized training program with group runs, a personal fundraising page with one-on-one help from a dedicated staff member, a team jersey plus extra gear, and a race-weekend team meet-up and celebration.",
-   "supportQuote": "Training support, including expert tips, group runs, and encouragement",
+   "supportScore": 7,
+   "supportNotes": "Page lists benefits: customized training program, branded jersey, personalized fundraising page with one-on-one support, group runs, dedicated staff member for fundraising, exclusive gear opportunities, and race weekend team meet-up/celebration.",
+   "supportQuote": "Access to a customized training program tailored to your running goals\nA branded Team Make-A-Wish jersey to proudly wear on race day\nA personalized fundraising page with tips, resources, and one-on-one support throughout your journey\nTraining support, including expert tips, group runs, and encouragement along the way\nA dedicated staff member to help you reach your fundraising goals\nOpportunities to earn exclusive Team Make-A-Wish gear\nRace weekend perks, including a team meet-up and celebration",
    "supportSource": "https://wish.org/newyork/2026-tcs-new-york-city-marathon",
    "shortfall": {
     "pub": false,
@@ -819,28 +860,29 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://wish.org/newyork/2026-tcs-new-york-city-marathon",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Page: 'Due to exceptionally high demand, our 2026 team is currently at capacity. All applications are now being added to an active waitlist.'",
-    "Application is a Jotform (form.jotform.com/Mackenzie_L_Martin/TeamMAW) that could not be read from this environment; commitment terms may be inside it.",
-    "No deadline, fee, shortfall, withdrawal or deferral policy published on the event page.",
-    "A Make-A-Wish Metro NY team fundraising page exists on haku (fundraisers.hakuapp.com/teams/make-a-wish-metro-new-york-and-western-new-york) but it references the marathon's '50th Anniversary', so it may be from an earlier year; current platform not confirmed."
-   ],
-   "cause": "Children's health",
-   "focus": "Wishes for children with critical illnesses"
+    "No fundraising deadline, charge schedule, free-exit date, shortfall policy, injury policy, or deferral policy published on the fetched pages.",
+    "Team is at capacity/waitlist rather than open, per the site's own 'Update' notice."
+   ]
   },
   {
    "id": "nbts",
    "name": "National Brain Tumor Society",
+   "cause": "Cancer",
+   "focus": "Brain tumor research and advocacy",
    "level": null,
    "platform": "Classy",
    "status": "open",
@@ -848,6 +890,7 @@
    "min": 4500,
    "minNote": "$4,500 for runners taking an NBTS bib. Own-bib / deferred-entry runners can also apply; their minimum is not stated on the application. 'NBTS doesn't hold you accountable for any goal amount over the above listed fundraising commitments.'",
    "minSource": "https://braintumor.org/events/gray-nation-endurance/tcs-nyc-marathon-charity-runner-application/",
+   "minQuote": null,
    "fee": 255,
    "feeLabel": "NYRR runner registration fee ($255 members / $315 non-members / $358 non-US), per 2024 commitment form",
    "feeCreditable": null,
@@ -883,12 +926,15 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 2,
    "url": "https://braintumor.org/events/gray-nation-endurance/tcs-nyc-marathon-charity-runner-application/",
@@ -898,20 +944,21 @@
     "Shortfall/charge terms come from the commitment form at a URL labelled 2025 whose page title and content are the 2024 form ($3,200 minimum, 2024 dates). The 2026 minimum ($4,500) comes from the application page. Treat charge dates as indicative only.",
     "No withdrawal, injury or deferral policy in the commitment form; the form states donations are non-refundable and 'I will not be reimbursed for fees paid or costs incurred'.",
     "Platform identified from the nbtsevents.braintumor.org '/give/<id>/' URL pattern (Classy/GoFundMe Pro custom domain); no 'powered by' branding was visible."
-   ],
-   "cause": "Cancer",
-   "focus": "Brain tumor research and advocacy"
+   ]
   },
   {
    "id": "lung",
    "name": "LUNGevity",
+   "cause": "Cancer",
+   "focus": "Lung cancer research",
    "level": null,
    "platform": "DonorDrive",
    "status": "waitlist",
    "spots": null,
    "min": 6000,
-   "minNote": "2026: 'Race Entry with Fundraising' = $6,000; 'Fundraising Only' (no bib from LUNGevity) = $1,000, available until Oct 31, 2026. 2025 was $4,500 / $500. LUNGevity's page cites NYRR registration at $269.66\u2013$333.11 including processing, paid to NYRR.",
+   "minNote": "2026: 'Race Entry with Fundraising' = $6,000; 'Fundraising Only' (no bib from LUNGevity) = $1,000, available until Oct 31, 2026. 2025 was $4,500 / $500. LUNGevity's page cites NYRR registration at $269.66–$333.11 including processing, paid to NYRR.",
    "minSource": "https://fundraise.lungevity.org/nycmarathon26",
+   "minQuote": null,
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -947,12 +994,15 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": true,
     "text": "2023 policy: a guaranteed-entry runner could cancel and receive a guaranteed entry to the following year's race only if the full fundraising minimum was already met at the time of cancellation (cancel deadline Nov 4, 2023). Quote: 'If you are using a guaranteed race entry, you may cancel your registration and receive guaranteed entry to the 2024 TCS New York City Marathon if you have met the $3,500 fundraising minimum at the time of cancellation.'",
-    "source": "https://fundraise.lungevity.org/pages/2056?eventID=1115"
+    "quote": null,
+    "source": "https://fundraise.lungevity.org/pages/2056?eventID=1115",
+    "method": null
    },
    "termsScore": 3,
    "url": "https://fundraise.lungevity.org/nycmarathon26",
@@ -963,144 +1013,147 @@
     "Shortfall and deferral terms are from the 'How to Register' page, which still reads as 2023 ($3,500 minimum, Nov 30, 2023 deadline, Nov 4, 2023 cancel deadline); 2026 deadlines and policy not published.",
     "The 2023 page also stated an early gate: 'If the $1,000 minimum is not met by August 1, the participant will be removed from the 2023 TCS New York City Marathon and will not be allowed to participate in the race.'",
     "'Fee counts toward minimum = false' is inferred from the 2023 registration page stating the fee is paid directly to NYRR; the 2026 page says the fee is paid directly to NYRR."
-   ],
-   "cause": "Cancer",
-   "focus": "Lung cancer research"
+   ]
   },
   {
    "id": "freds",
    "name": "Fred's Team (Memorial Sloan Kettering)",
+   "cause": "Cancer",
+   "focus": "Cancer research at Memorial Sloan Kettering",
    "level": null,
-   "platform": "TeamRaiser",
+   "platform": null,
    "status": "closed",
    "spots": null,
    "min": 4500,
-   "minNote": "You choose $4,500, $6,500 or $8,500 (perks increase per tier). Same tiers apply to own-bib runners, for whom 'fulfillment is encouraged' rather than required. Separate Leadership option: 20 guaranteed entries for a one-time $10,000+ gift. $125 kickoff fee counts toward the total.",
+   "minNote": "Three tiers offered: $4,500, $6,500, and $8,500 levels, plus a Leadership Giving level requiring a one-time $10,000 donation. Entry-level guaranteed charity bib minimum is $4,500.",
    "minSource": "https://www.fredsteam.org/events/tcs-new-york-city-marathon",
+   "minQuote": "If you require a Fred’s Team race entry, you will also be responsible for raising or paying your selected fundraising requirement of $4,500, $6,500, or $8,500.",
    "fee": 125,
-   "feeLabel": "nonrefundable Fred's Team kickoff fee (plus a separate NYRR registration fee)",
+   "feeLabel": "Fred's Team kickoff fee",
    "feeCreditable": true,
    "regSeparate": true,
    "deadline": "2026-11-16",
    "support": {
-    "coaching": true,
+    "coaching": null,
     "group_runs": null,
-    "training_plan": true,
-    "fundraising_coaching": true,
-    "team_events": true,
-    "gear": true,
-    "fundraising_page": true,
-    "bus_to_start": true,
+    "training_plan": null,
+    "fundraising_coaching": null,
+    "team_events": null,
+    "gear": null,
+    "fundraising_page": null,
+    "bus_to_start": null,
     "charity_village": null,
     "hotel_or_travel": null
    },
-   "supportScore": 7,
-   "supportNotes": "A full program: coached training program and resources, dedicated fundraising staff and a personal page, a two-piece uniform, private bus to the start, a Fred's Team finish tent, and at $6,500+ a heated start tent and extra gear. Perks scale with your fundraising tier.",
-   "supportQuote": "Access to our expert coaching staff, training resources, exclusive events, and more.",
+   "supportScore": 0,
+   "supportNotes": "Fred's Team provides an online fundraising page and access to coaching staff/training resources/exclusive events per the marathon page. No mention of gear, charity village, bus/hotel/travel support.",
+   "supportQuote": null,
    "supportSource": "https://www.fredsteam.org/events/tcs-new-york-city-marathon",
    "shortfall": {
     "pub": true,
-    "text": "Card on file is charged for any remaining balance on or after Nov 16, 2026. Half the requirement is due by Sept 28, 2026.",
+    "text": "If the fundraising requirement is not fully raised by November 16, 2026, the remaining balance will be charged to the runner's credit card.",
     "quote": "By November 16, 2026, I must fulfill my $4,500, $6,500, or $8,500 fundraising requirement and any remaining balance will be charged to my credit card on or after November 16.",
     "source": "https://www.fredsteam.org/tcs-new-york-city-marathon-fundraising-agreement",
     "method": "page"
    },
-   "chargeSchedule": "$125 kickoff fee charged at registration; at least half of requirement due Sept 28, 2026; any remaining balance charged to credit card on or after Nov 16, 2026",
+   "chargeSchedule": "By September 28, 2026, I must fulfill at least half of my fundraising requirement; by November 16, 2026, I must fulfill the full requirement and any remaining balance will be charged to my credit card on or after November 16.",
    "freeExit": "2026-07-15",
-   "freeExitQuote": "By July 15, 2026, I must reconfirm my commitment to running and fundraising for the 2026 TCS New York City Marathon if contacted by Fred's Team. If I fail to do so, I understand that my entry may be cancelled and provided to another runner. Per the cancellation policy, I acknowledge that I can withdraw by this date and be waived of the fundraising requirement.",
+   "freeExitQuote": "I understand that if I withdraw from the 2026 TCS New York City Marathon, I must notify Fred’s Team before July 15, 2026, to be waived of the $4,500, $6,500, or $8,500 fundraising requirement.",
    "injury": {
-    "pub": true,
-    "text": "Injury or illness does not waive the commitment: you must notify Fred's Team immediately, and if you did not cancel by the cancellation date you still owe the minimum.",
-    "quote": "If you received a guaranteed entry from Fred's Team and did not cancel by the cancellation date, you will still be responsible for fulfilling the minimum fundraising requirement.",
-    "source": "https://www.fredsteam.org/frequently-asked-questions"
+    "pub": false,
+    "text": "Not published",
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": true,
-    "text": "You can defer your entry to the 2027 NYC Marathon if you have raised at least $3,000; if you have not raised $3,000 by Nov 16, 2026 the balance up to $3,000 is charged to your card. Funds only transfer to the 2027 NYC Marathon. Quote: 'I acknowledge that I must raise a minimum of $3,000 in order to defer my entry to the 2027 TCS New York City Marathon. If I do not raise $3,000 by November 16, 2026 any remaining balance will be charged to my credit card. Funds raised are only transferrable to the 2027 TCS New York City Marathon.'",
-    "source": "https://www.fredsteam.org/tcs-new-york-city-marathon-fundraising-agreement"
+    "text": "If a runner withdraws after July 15, 2026 and wants to defer, they must notify Fred's Team by October 26, 2026, and must raise a minimum of $3,000 to defer entry to the 2027 TCS New York City Marathon; otherwise the remaining balance will be charged.",
+    "quote": "I understand that if I withdraw from the 2026 TCS New York City Marathon after July 15, 2026, and would like to defer my entry, I am obligated to notify Fred’s Team by October 26, 2026. I acknowledge that I must raise a minimum of $3,000 in order to defer my entry to the 2027 TCS New York City Marathon. If I do not raise $3,000 by November 16, 2026 any remaining balance will be charged to my credit card.",
+    "source": "https://www.fredsteam.org/tcs-new-york-city-marathon-fundraising-agreement",
+    "method": "page"
    },
-   "termsScore": 4,
+   "termsScore": 3,
    "url": "https://www.fredsteam.org/events/tcs-new-york-city-marathon",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Event page: 'Our application for the 2026 TCS New York City Marathon is now closed, and all spots have been filled.' Own-bib runners register via give.mskcc.org/site/TR (Blackbaud TeamRaiser).",
-    "Total team size not published; only the 20 Leadership Giving entries are quantified.",
-    "Agreement: 'All entry fees to MSK and/or New York Road Runners are nonrefundable and nontransferable' and donations are non-refundable.",
-    "First read of the agreement mentioned a deferral notification date of Oct 26, 2026; that sentence was not captured verbatim, so confirm before publishing.",
-    "Private bus to the start is offered, which under NYRR rules is a Silver-level perk, but Fred's Team does not state its partner level and the NYRR level page could not be fetched."
-   ],
-   "cause": "Cancer",
-   "focus": "Cancer research at Memorial Sloan Kettering"
+    "The main event page shows 2026 fundraising levels ($4,500/$6,500/$8,500) but application is closed for 2026; the fundraising agreement page provides detailed 2026 deadlines and policies used here.",
+    "Leadership Giving level requires a one-time $10,000 donation within two months of registration, separate from the $4,500/$6,500/$8,500 tiers.",
+    "unverified: support quote not found — support fields cleared"
+   ]
   },
   {
    "id": "bch",
    "name": "Boston Children's Hospital (Miles for Miracles)",
-   "level": "Silver",
-   "platform": "TeamRaiser",
+   "cause": "Children's health",
+   "focus": "Boston Children's Hospital",
+   "level": null,
+   "platform": null,
    "status": "waitlist",
    "spots": null,
    "min": 5000,
    "minNote": "$5,000 with a Boston Children's bib; own-entry runners have a lower minimum (the FAQ shows both $2,500 and $2,000 in different places). Plus a $200 non-refundable administrative fee that does not count.",
    "minSource": "https://giving.childrenshospital.org/events/run/new-york-marathon/faqs",
-   "fee": 200,
-   "feeLabel": "non-refundable administrative fee (Boston Children's bib holders), plus separate NYRR registration fee $315 / $255 members",
-   "feeCreditable": false,
-   "regSeparate": true,
-   "deadline": "2025-10-27",
+   "minQuote": null,
+   "fee": null,
+   "feeLabel": null,
+   "feeCreditable": null,
+   "regSeparate": null,
+   "deadline": null,
    "support": {
     "coaching": true,
     "group_runs": true,
-    "training_plan": true,
+    "training_plan": null,
     "fundraising_coaching": null,
     "team_events": true,
     "gear": null,
     "fundraising_page": true,
     "bus_to_start": true,
-    "charity_village": true,
+    "charity_village": null,
     "hotel_or_travel": true
    },
-   "supportScore": 8,
-   "supportNotes": "Boston-based team: coaches with a training schedule and Saturday-morning team practices around Greater Boston, personal fundraising page, optional buses to the Staten Island start, Silver Charity Village heated tent, a Saturday brunch with patient families, and first-come hotel-block info.",
-   "supportQuote": "Boston Children's runners will have access to optional buses for Silver Level Charities to take our team to the start.",
-   "supportSource": "https://giving.childrenshospital.org/events/run/new-york-marathon/faqs",
+   "supportScore": 6,
+   "supportNotes": "FAQ page lists topic headings indicating support areas exist (e.g., \"Does Boston Children's offer any coaching?\", \"Do you organize any training runs?\", \"Do you provide hotel room blocks for Marathon weekend?\", \"Does Boston Children's plan any activities on marathon weekend?\", \"How do we get to the starting line on marathon day?\"), but the actual answer text was not present in the fetched content, so specifics (like whether coaching is virtual/in-person, or hotel details) are unknown. Marked true based on the fact that these questions are addressed on the page (implying the service exists), but exact confirming quotes for the 'yes' answers were not retrievable from the fetched HTML - only the question titles were visible. Fundraising page support is confirmed via 'Create a Fundraising Page' on the general fundraising page.",
+   "supportQuote": "Create a Fundraising Page",
+   "supportSource": "https://giving.childrenshospital.org/more-ways-help-kids/fundraise",
    "shortfall": {
-    "pub": true,
-    "text": "If you have not reached the commitment by the deadline, your credit card is charged the difference.",
-    "quote": "If you're not able to reach the commitment by that time, your credit card will be charged the difference.",
-    "source": "https://giving.childrenshospital.org/events/run/new-york-marathon/faqs",
-    "method": "faq"
+    "pub": false,
+    "text": "Not published",
+    "quote": null,
+    "source": null,
+    "method": null
    },
-   "chargeSchedule": "$200 administrative fee up front; single charge of the shortfall after the fundraising deadline (FAQ still shows Oct 27, 2025)",
+   "chargeSchedule": null,
    "freeExit": null,
    "freeExitQuote": null,
    "injury": {
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
-   "termsScore": 2,
+   "termsScore": 0,
    "url": "https://giving.childrenshospital.org/events/run/new-york-marathon/faqs",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Main page: 'Our 2026 TCS New York City Marathon team is full. We are accepting applications for the waitlist and those who already have an entry/bib into the race.'",
-    "FAQ deadline still reads 'You'll have until October 27, 2025' \u2014 stale; 2026 deadline not published.",
-    "FAQ gives conflicting own-entry minimums ($2,500 vs $2,000).",
-    "Level 'Silver' is from the charity's own FAQ ('Silver Level Charities', 'Silver Charity Village'), not from NYRR's page, which could not be fetched.",
-    "Group practices are in Greater Boston, not NYC.",
-    "No withdrawal, injury, or deferral policy in the FAQ; the TeamRaiser application page is blocked by robots.txt."
-   ],
-   "cause": "Children's health",
-   "focus": "Boston Children's Hospital"
+    "The FAQ page structure only exposed question headings (e.g., 'How much money do I have to raise?', 'What happens if I don't reach my fundraising commitment?', 'Does Boston Children's offer any coaching?') without the corresponding answer text being present in the fetched HTML, so key facts like the fundraising minimum, shortfall policy, injury/deferral policy, and support details could not be extracted with verbatim quotes.",
+    "Support fields (coaching, group_runs, hotel_or_travel, team_events, bus_to_start) were marked true based only on the existence of a matching FAQ question title, not on verbatim confirming answer text - these should be treated as low-confidence and re-verified against the actual answer content.",
+    "minimum carried over from 2026-09-14; not re-verified this run"
+   ]
   },
   {
    "id": "cp",
    "name": "Commonpoint",
+   "cause": "Housing & community",
+   "focus": "Community services in Queens",
    "level": "Bronze",
    "platform": "other:Givecloud",
    "status": "closed",
@@ -1108,6 +1161,7 @@
    "min": 5000,
    "minNote": "$5,000 with milestone tiers: $1,000 by June 15, $1,500 by Aug 15, $2,500 by Sept 30, $5,000 by Nov 15, 2026. No own-bib price published.",
    "minSource": "https://www.commonpoint.org/tcs-new-york-city-marathon",
+   "minQuote": null,
    "fee": 255,
    "feeLabel": "NYRR race registration fee ($255 members / $315 non-members, plus $11 processing), paid to NYRR",
    "feeCreditable": false,
@@ -1143,12 +1197,15 @@
     "pub": false,
     "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 2,
    "url": "https://www.commonpoint.org/tcs-new-york-city-marathon",
@@ -1156,23 +1213,24 @@
    "flags": [
     "Application windows (early bird to March 3, 2026; general March 4-18, 2026) have passed; page does not explicitly say 'closed' or mention a waitlist. Application was a Google Form.",
     "Level 'Bronze' is self-declared on the Commonpoint page ('As a Bronze Level Charity Partner, Commonpoint has six guaranteed entry spots'); bus/village set to false on that basis because NYRR's level page could not be fetched.",
-    "Gala invitation date on the page reads 'October 29, 2025' \u2014 stale copy on the 2026 page.",
+    "Gala invitation date on the page reads 'October 29, 2025' — stale copy on the 2026 page.",
     "Page has a typo ('remaning') in the shortfall sentence; quoted as-is.",
     "No withdrawal, injury or deferral policy published. Donation page is commonpoint.givecloud.co."
-   ],
-   "cause": "Housing & community",
-   "focus": "Community services in Queens"
+   ]
   },
   {
    "id": "usat",
    "name": "USA Triathlon Foundation",
+   "cause": "Youth & education",
+   "focus": "Youth and adaptive triathlon",
    "level": null,
    "platform": null,
-   "status": "unknown",
+   "status": "open",
    "spots": null,
    "min": 5000,
-   "minNote": "Each runner must commit to raising $5,000 by November 1, 2026 (race day). Who pays the NYRR entry fee is not stated.",
+   "minNote": "Only one fundraising tier stated ($5,000 commitment); no separate own-bib price or other tier levels are mentioned on this page.",
    "minSource": "https://www.usatriathlon.org/articles/press-releases/new-york-road-runners-names-usa-triathlon-foundation-as-official-charity-partner-of-the-2026-tcs-new-york-city-marathon",
+   "minQuote": "Each runner must commit to raising $5,000 by November 1, 2026.",
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -1188,15 +1246,15 @@
     "fundraising_page": null,
     "bus_to_start": null,
     "charity_village": null,
-    "hotel_or_travel": null
+    "hotel_or_travel": true
    },
-   "supportScore": 3,
-   "supportNotes": "Press release promises expert coaching, official team gear, race-week hospitality and team meetups during race weekend. No dedicated runner page exists yet, so nothing more specific (coach name, fundraising tools) is published.",
-   "supportQuote": "Guaranteed entry, expert coaching, race-week hospitality, and official team gear",
+   "supportScore": 4,
+   "supportNotes": "Page mentions \"expert coaching,\" \"race-week hospitality\" (interpreted as hotel/travel support), \"official team gear,\" and \"exclusive team meetups and community-building activations\" (interpreted as team events). No mention of training plans, group runs, charity village, or fundraising coaching/page specifically.",
+   "supportQuote": "In addition to receiving guaranteed entry, expert coaching, race-week hospitality, and official team gear, athletes will have exclusive team meetups and community-building activations throughout race weekend.",
    "supportSource": "https://www.usatriathlon.org/articles/press-releases/new-york-road-runners-names-usa-triathlon-foundation-as-official-charity-partner-of-the-2026-tcs-new-york-city-marathon",
    "shortfall": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
     "source": null,
     "method": null
@@ -1206,30 +1264,31 @@
    "freeExitQuote": null,
    "injury": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
-    "text": "Not published.",
-    "source": null
+    "text": "Not published",
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://www.usatriathlon.org/articles/press-releases/new-york-road-runners-names-usa-triathlon-foundation-as-official-charity-partner-of-the-2026-tcs-new-york-city-marathon",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Only source is a March 5, 2026 press release; no runner program page found on usatriathlon.org/foundation, usatriathlon.org/foundation/donate or usatriathlonfoundation.org.",
-    "The interest form (forms.office.com) could not be read (robots.txt); application status unknown.",
-    "Fundraising platform not named anywhere.",
-    "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Youth & education",
-   "focus": "Youth and adaptive triathlon"
+    "Only a press release was fetched; no dedicated FAQ, application, or runner agreement page was available. Details on shortfall policy, injury/deferral policy, charge schedule, registration fee, and free exit date are not published on this page and could not be verified.",
+    "All fetched URLs are the same press release page (with different anchors), so no independent corroborating source was found."
+   ]
   },
   {
    "id": "restore",
    "name": "Restore NYC",
+   "cause": "Survivors of violence & trafficking",
+   "focus": "Survivors of sex trafficking",
    "level": null,
    "platform": "Funraise",
    "status": "open",
@@ -1237,6 +1296,7 @@
    "min": 5000,
    "minNote": "Application checkbox: \"If your application is accepted do you commit to meeting the per-runner $5,000 fundraising minimum?\" No fundraising deadline published.",
    "minSource": "https://restorenyc.org/get-involved/nyc-marathon/",
+   "minQuote": null,
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -1272,12 +1332,15 @@
     "pub": false,
     "text": "Not published.",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published.",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://restorenyc.org/get-involved/nyc-marathon/",
@@ -1287,20 +1350,21 @@
     "Who pays the NYRR entry fee is not stated.",
     "Application status 'open' is inferred from the live 'Request Your Marathon Application' form on the page; no explicit open/closed language.",
     "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Survivors of violence & trafficking",
-   "focus": "Survivors of sex trafficking"
+   ]
   },
   {
    "id": "chop",
    "name": "Team CHOP (Children's Hospital of Philadelphia)",
+   "cause": "Children's health",
+   "focus": "Children's Hospital of Philadelphia",
    "level": null,
-   "platform": "DonorDrive",
-   "status": "open",
+   "platform": null,
+   "status": "unknown",
    "spots": null,
    "min": 5000,
-   "minNote": "\"In exchange for a charity bib, you pledge to fundraise a minimum of $5,000 for the program of your choice at CHOP.\" No fundraising deadline published.",
+   "minNote": "No other tiers or own-bib fundraising amounts are stated on the page. Own-bib runners are only noted as being responsible for their own race registration fees.",
    "minSource": "https://www.chop.edu/giving/team-chop-tcs-nyc-marathon",
+   "minQuote": "In exchange for a charity bib, you pledge to fundraise a minimum of $5,000 for the program of your choice at CHOP.",
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -1319,12 +1383,12 @@
     "hotel_or_travel": null
    },
    "supportScore": 1,
-   "supportNotes": "The page only promises help setting up a personal fundraising page to share with friends and family. No coaching, gear, events or training support is mentioned.",
-   "supportQuote": null,
+   "supportNotes": "Page states CHOP makes it simple to set up a personal fundraising page. No mention of coaching, training plans, group runs, gear, travel, or charity village support.",
+   "supportQuote": "We make it simple to set up a personal fundraising page and share it with your friends and family.",
    "supportSource": "https://www.chop.edu/giving/team-chop-tcs-nyc-marathon",
    "shortfall": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
     "source": null,
     "method": null
@@ -1334,41 +1398,43 @@
    "freeExitQuote": null,
    "injury": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
-    "text": "Not published.",
-    "source": null
+    "text": "Not published",
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://www.chop.edu/giving/team-chop-tcs-nyc-marathon",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Registration fee quote: \"Selected bib recipients are responsible for covering their own race registration fees.\"",
-    "Application disclaimer: \"By completing this application, you are not guaranteed a charity bib entry from CHOP to the TCS NYC Marathon.\" No explicit open/closed language; 'open' inferred from the live Smartsheet application link.",
-    "Platform: Team CHOP's peer-to-peer site (team.chop.edu) links to chop.donordrive.com and the 2024 NYC Marathon event lived on DonorDrive (chop.donordrive.com eventID=777); a 2026 marathon event page was not located, so 2026 platform is inferred.",
-    "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Children's health",
-   "focus": "Children's Hospital of Philadelphia"
+    "Application/selection process is not guaranteed a bib; status of team (open/waitlist/closed) not explicitly stated on page.",
+    "No deadline for application, shortfall, injury, or deferral policy published on the fetched pages."
+   ]
   },
   {
    "id": "coc",
    "name": "Circle of Care",
+   "cause": "Children's health",
+   "focus": "Families of children with cancer and critical illness",
    "level": null,
    "platform": null,
    "status": "open",
-   "spots": "15 bibs",
+   "spots": "15",
    "min": 5000,
-   "minNote": "Selected runners \"register for the race and commit to fundraising at least $5,000 by December 1st\" (a month after race day).",
+   "minNote": "The $5,000 minimum applies to the TCS NYC Marathon charity bibs. A separate, lower minimum of $1,500 (by April 15, 2026) applies to the United Airlines NYC Half Marathon charity bibs, and additional runners with their own Half Marathon entry who fundraise at least $1,000 receive a team shirt. These other tiers are for a different race (the Half Marathon), not the Marathon.",
    "minSource": "https://thecircleofcare.org/events/nyc-marathon.html",
+   "minQuote": "Each selected Circle of Care Marathon team member will register for the race and commit to fundraising at least $5,000 by December 1st.",
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
-   "regSeparate": null,
+   "regSeparate": true,
    "deadline": "2026-12-01",
    "support": {
     "coaching": null,
@@ -1383,12 +1449,12 @@
     "hotel_or_travel": null
    },
    "supportScore": 0,
-   "supportNotes": "The marathon section lists no runner support at all; the only perk on the page (a team performance shirt) is for the NYC Half team.",
+   "supportNotes": "No specific runner support offerings (training plans, coaching, group runs, etc.) are mentioned on the fetched pages.",
    "supportQuote": null,
    "supportSource": "https://thecircleofcare.org/events/nyc-marathon.html",
    "shortfall": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
     "source": null,
     "method": null
@@ -1398,30 +1464,31 @@
    "freeExitQuote": null,
    "injury": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
-    "text": "Not published.",
-    "source": null
+    "text": "Not published",
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://thecircleofcare.org/events/nyc-marathon.html",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "\"Applications are now open and will be accepted on a rolling basis.\" Apply by emailing spencer.overbeeke@thecircleofcare.org or via a forms.office.com link (form not readable, robots.txt).",
-    "Page says runners register for the race themselves but does not say who pays the NYRR fee.",
-    "Fundraising platform not named.",
-    "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Children's health",
-   "focus": "Families of children with cancer and critical illness"
+    "All fetched URLs and page fragments (#main-content, #privacy-policy, #terms-conditions) return identical content, so no additional detail (e.g., shortfall policy, injury policy, deferral policy, fees, charge schedule) was found beyond the main event description.",
+    "Deadline 'December 1st' is stated without a year in the quote, but is assumed to refer to 2026 based on the '2026 TCS NYC Marathon' page heading and context."
+   ]
   },
   {
    "id": "ulman",
    "name": "Ulman Foundation",
+   "cause": "Cancer",
+   "focus": "Young adults affected by cancer",
    "level": null,
    "platform": "Classy",
    "status": "waitlist",
@@ -1429,6 +1496,7 @@
    "min": 7500,
    "minNote": "Two tiers: commit to $7,500+ for guaranteed team acceptance and a bib (if fundraising milestones/deadlines are met); commit to $5,000 to enter the selection pool with no guaranteed bib. NYRR registration ($295 per the stale FAQ) is extra.",
    "minSource": "https://ulmanfoundation.org/teamraces/nyc-marathon/",
+   "minQuote": null,
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -1464,37 +1532,41 @@
     "pub": false,
     "text": "Not published.",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published.",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://ulmanfoundation.org/teamraces/nyc-marathon/",
    "verified": "2026-09-14",
    "flags": [
     "\"The 2026 team is currently full, but to join the waitlist, start your application now.\"",
-    "Page FAQ is stale: it still quotes a $3,800 minimum, \"registration to New York Road Runners in early 2023 (it was an additional $300 in 2022)\", a $295 NYRR fee, and \"advance reservations on 2024 bibs\" \u2014 conflicting with the 2026 $5,000/$7,500 tiers higher on the page.",
+    "Page FAQ is stale: it still quotes a $3,800 minimum, \"registration to New York Road Runners in early 2023 (it was an additional $300 in 2022)\", a $295 NYRR fee, and \"advance reservations on 2024 bibs\" — conflicting with the 2026 $5,000/$7,500 tiers higher on the page.",
     "Registration-separate quote (stale FAQ): \"What's not included in your $3,800 fundraising minimum is a $295 registration fee with New York Road Runners, transportation or lodging...\"",
     "The Google interest form states: \"This is an interest form, not a final commitment; we'll follow up with next steps, fundraising minimums, and availability.\"",
     "Platform: 2025 marathon event runs on GoFundMe Pro (Classy) at impact.ulmanfoundation.org; a 2026 event page was not located.",
     "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Cancer",
-   "focus": "Young adults affected by cancer"
+   ]
   },
   {
    "id": "t2t",
    "name": "Tunnel to Towers Foundation",
+   "cause": "Veterans & first responders",
+   "focus": "First responders and military families",
    "level": null,
-   "platform": "Classy",
-   "status": "open",
+   "platform": null,
+   "status": "unknown",
    "spots": null,
    "min": 6000,
-   "minNote": "\"Runners who are seeking guaranteed entry are required to reach their fundraising commitment ($6000) by October 21st.\"",
+   "minNote": "Marathon page states $6000 fundraising commitment for guaranteed entry; runner separately pays NYRR entry fee. Other tiers (fundraising tiers affecting training support) mentioned but not detailed with amounts.",
    "minSource": "https://t2t.org/tcs-new-york-city-marathon/",
+   "minQuote": "Runners who are seeking guaranteed entry are required to reach their fundraising commitment ($6000) by October 21st.",
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -1502,7 +1574,7 @@
    "deadline": "2026-10-21",
    "support": {
     "coaching": true,
-    "group_runs": null,
+    "group_runs": true,
     "training_plan": true,
     "fundraising_coaching": true,
     "team_events": true,
@@ -1512,13 +1584,13 @@
     "charity_village": null,
     "hotel_or_travel": null
    },
-   "supportScore": 6,
-   "supportNotes": "A dedicated running coach (Coach Allie at MindRunner) with custom training plans, dedicated fundraising staff and a personal fundraising link, a custom T2T marathon shirt plus extra gear, two free T2T 5K NYC entries, a team shakeout run on marathon weekend and a post-race team celebration.",
-   "supportQuote": "Dedicated running coach",
+   "supportScore": 7,
+   "supportNotes": "Benefits listed: guaranteed entry, custom T2T marathon shirt, additional running gear, personal fundraising link, dedicated staff for fundraising support, dedicated running coach, custom training plans, two complimentary registrations for T2T 5K Run & Walk NYC, team shakeout run on marathon weekend, post-event team celebration.",
+   "supportQuote": "Custom T2T Marathon Shirt\nAdditional T2T running gear\nPersonal fundraising link\nDedicated staff to support fundraising\nDedicated running coach\nCustom training plans based on your goals\nTwo (2) complimentary registrations for the Tunnel to Towers 5K Run & Walk NYC\nTeam shakeout run on marathon weekend\nPost-event team celebration",
    "supportSource": "https://t2t.org/tcs-new-york-city-marathon/",
    "shortfall": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
     "source": null,
     "method": null
@@ -1528,31 +1600,31 @@
    "freeExitQuote": null,
    "injury": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
-    "text": "Not published.",
-    "source": null
+    "text": "Not published",
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://t2t.org/tcs-new-york-city-marathon/",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "Registration-separate quotes: \"Guaranteed entry to the TCS New York City Marathon (runner pays entrance fee)\" and \"You will be responsible for paying your entry fee to New York Road Runners (NYRR).\"",
-    "Application form is embedded on the page with the disclaimer \"Completing this application does not guarantee or ensure a spot on the team.\" No explicit open/closed language; 'open' inferred from the live form.",
-    "The 2026 marathon event page on GoFundMe Pro (dogood.t2t.org) renders client-side; no signup terms were readable.",
-    "nycrun.t2t.org is the T2T 5K (RunSignup), not the marathon program.",
-    "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Veterans & first responders",
-   "focus": "First responders and military families"
+    "Page does not state shortfall/charge/deferral/injury policies for the NYC Marathon program; those FAQ sections found on the site pertain to the T2T Tower Climb NYC and 5K Run & Walk NYC, not the TCS New York City Marathon, so they were not applied here.",
+    "Status (open/waitlist/closed) for 2026 marathon team not explicitly stated on the page."
+   ]
   },
   {
    "id": "concern",
    "name": "Team Concern (Concern Worldwide)",
+   "cause": "Humanitarian",
+   "focus": "Global poverty and humanitarian relief",
    "level": null,
    "platform": "Classy",
    "status": "closed",
@@ -1560,6 +1632,7 @@
    "min": 6500,
    "minNote": "$6,500 for a guaranteed-entry applicant; $3,000 if you already have your own bib. \"The fundraising deadline is Friday, November 6, 2026\" (five days after the race).",
    "minSource": "https://concernusa.org/take-action/events/2026-tcs-nyc-marathon/",
+   "minQuote": null,
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -1595,12 +1668,15 @@
     "pub": false,
     "text": "Not published.",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published.",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 1,
    "url": "https://concernusa.org/take-action/events/2026-tcs-nyc-marathon/",
@@ -1608,25 +1684,26 @@
    "flags": [
     "\"We are no longer accepting applications at this time\"; 2026 application deadline was April 9, 2026; a 2027 waitlist is offered by emailing the Development Manager.",
     "Shortfall policy comes from a March 7, 2026 Concern news article (\"How to run the 2026 NYC Marathon for charity\"), not from the program page; wording is 'may be responsible', with no charge mechanism or date.",
-    "Registration-separate quote (same article): \"In addition to the fundraising minimum, runners still pay the official registration fee\u2014as required by NYRR.\"",
+    "Registration-separate quote (same article): \"In addition to the fundraising minimum, runners still pay the official registration fee—as required by NYRR.\"",
     "The article says \"#TeamConcern has deadlines and fundraising milestones to help runners stay on track\" but the milestones are not published.",
     "Virtual coaching is \"at runners' cost\".",
     "GoFundMe Pro campaign page renders client-side; no signup terms were readable.",
     "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Humanitarian",
-   "focus": "Global poverty and humanitarian relief"
+   ]
   },
   {
    "id": "achilles",
    "name": "Achilles International",
+   "cause": "Disability & adaptive sport",
+   "focus": "Athletes with disabilities",
    "level": null,
-   "platform": "Classy",
-   "status": "waitlist",
+   "platform": null,
+   "status": "closed",
    "spots": null,
    "min": 6500,
-   "minNote": "\"All participants must fulfill the $6,500 fundraising requirement before the 2026 TCS New York City Marathon.\" No specific date published.",
+   "minNote": "Only a single fundraising minimum of $6,500 is stated; no other tiers or own-bib pricing mentioned.",
    "minSource": "https://www.achillesinternational.org/nyc-marathon-charity-slots",
+   "minQuote": "All participants must fulfill the $6,500 fundraising requirement before the 2026 TCS New York City Marathon.",
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -1635,57 +1712,56 @@
    "support": {
     "coaching": true,
     "group_runs": true,
-    "training_plan": null,
+    "training_plan": true,
     "fundraising_coaching": true,
     "team_events": true,
     "gear": true,
     "fundraising_page": true,
-    "bus_to_start": false,
-    "charity_village": false,
+    "bus_to_start": null,
+    "charity_village": null,
     "hotel_or_travel": null
    },
-   "supportScore": 6,
-   "supportNotes": "An on-staff Team Achilles coach and a virtual training app, in-person NYC group runs and happy hours, virtual fundraising/training check-ins and race-prep calls, a personal fundraising page with resources, and a team singlet. Achilles explicitly does not provide a bus to the start or a tent in the start village.",
-   "supportQuote": "Training support, including access to a virtual training app and on-staff Team Achilles coach",
+   "supportScore": 7,
+   "supportNotes": "Support includes fundraising page/resources, virtual training app, on-staff coach, NYC group runs/happy hours, virtual gatherings, and a team singlet. Gear here refers to the singlet; no mention of hotel/travel assistance or charity village/bus-to-start specific to NYC marathon page (general Marathon Tour page mentions hotel discounts and transportation but not specific to NYC charity runners).",
+   "supportQuote": "A personal fundraising page and resources to help you achieve your fundraising goal; Training support, including access to a virtual training app and on-staff Team Achilles coach; In-person opportunities in New York City, including Team Achilles group runs and happy hours; Virtual Team Achilles gatherings, including fundraising and training check-ins and race day preparation calls; Team Achilles singlet",
    "supportSource": "https://www.achillesinternational.org/nyc-marathon-charity-slots",
    "shortfall": {
     "pub": false,
-    "text": "Not published. A credit card is required to secure entry, but the page does not say what is charged if the minimum is missed.",
-    "quote": "Your credit card information is required to secure your entry.",
-    "source": "https://www.achillesinternational.org/nyc-marathon-charity-slots",
-    "method": "page"
+    "text": "Not published",
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "chargeSchedule": null,
    "freeExit": null,
    "freeExitQuote": null,
    "injury": {
     "pub": false,
-    "text": "Not published.",
+    "text": "Not published",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
-    "text": "Not published.",
-    "source": null
+    "text": "Not published",
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://www.achillesinternational.org/nyc-marathon-charity-slots",
-   "verified": "2026-09-14",
+   "verified": "2026-09-15",
    "flags": [
-    "\"Spots on Team Achilles have been filled and registration is now closed. If you are interested in joining the waiting list, please complete an application below.\"",
-    "Registration-separate quote: \"Team Achilles runners are responsible for paying the race registration fee.\"",
-    "Bus/village from the Team Achilles Charity Runner FAQ (achillesinternational.org/nycmarathon-charity): \"No, Achilles does not provide a bus to the NYC Marathon start line.\" and \"Achilles does not provide a tent in the starting village.\" NYRR buses/shelter there are for athletes with disabilities and approved guides only.",
-    "Platform inferred from the organization's giving domain (give.achillesinternational.org is Classy/GoFundMe Pro); the marathon-specific fundraising page was not located.",
-    "Runners with their own entry can fundraise with the team by emailing teamachilles@achillesinternational.org (no minimum published).",
-    "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Disability & adaptive sport",
-   "focus": "Athletes with disabilities"
+    "The nyc-marathon-charity-slots page states registration is closed for 2026 with a waitlist, while marathon-tour page lists 'Applications Open: February 2026' for New York City Marathon, which is inconsistent with the closed status shown on the charity slots page.",
+    "No fundraising deadline, fee amount, shortfall policy, injury policy, deferral policy, or charge schedule are published on the fetched pages."
+   ]
   },
   {
    "id": "lsnyc",
    "name": "Legal Services NYC",
+   "cause": "Legal aid",
+   "focus": "Free civil legal aid in NYC",
    "level": null,
    "platform": "other:Haku (NYRR fundraisers.nyrr.org)",
    "status": "unknown",
@@ -1693,6 +1769,7 @@
    "min": 10000,
    "minNote": "\"Agree to raise $10,000 for LSNYC\". NYRR entry is extra: \"all charity runners must pay their own entry fees, which are $255 for NYRR members and $315 for non-members\". No fundraising deadline published.",
    "minSource": "https://www.legalservicesnyc.org/events/2026-nyc-marathon-run-with-team-lsnyc/",
+   "minQuote": null,
    "fee": null,
    "feeLabel": null,
    "feeCreditable": null,
@@ -1728,24 +1805,25 @@
     "pub": false,
     "text": "Not published.",
     "quote": null,
-    "source": null
+    "source": null,
+    "method": null
    },
    "deferral": {
     "pub": false,
     "text": "Not published.",
-    "source": null
+    "quote": null,
+    "source": null,
+    "method": null
    },
    "termsScore": 0,
    "url": "https://www.legalservicesnyc.org/events/2026-nyc-marathon-run-with-team-lsnyc/",
    "verified": "2026-09-14",
    "flags": [
     "Highest minimum in this batch ($10,000).",
-    "Google application form says: \"The fundraising minimum is $10,000.\" and \"After you complete this form, you will be contacted by a member of our team regarding next steps if there are available slots.\" \u2014 no explicit open/closed status.",
+    "Google application form says: \"The fundraising minimum is $10,000.\" and \"After you complete this form, you will be contacted by a member of our team regarding next steps if there are available slots.\" — no explicit open/closed status.",
     "The haku.ly link on the page redirects to fundraisers.nyrr.org/teams/legal-services-nyc-5 (NYRR's Haku-powered fundraising site); that page renders client-side and no terms were readable.",
     "NYRR partner level not verifiable: nyrr.org and web.archive.org were both blocked."
-   ],
-   "cause": "Legal aid",
-   "focus": "Free civil legal aid in NYC"
+   ]
   }
  ]
 }
