@@ -1,0 +1,43 @@
+name: weekly-refresh
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      race:
+        description: race id (data/seeds/<race>.yaml)
+        default: nyc-2026
+      only:
+        description: comma-separated charity ids (optional)
+        default: ""
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions: { contents: write, pull-requests: write }
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CB_MODEL: ${{ vars.CB_MODEL || 'claude-sonnet-4-5' }}
+      RACE: ${{ github.event.inputs.race || 'nyc-2026' }}
+      ONLY: ${{ github.event.inputs.only || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - name: Crawl, extract, verify, diff
+        run: |
+          if [ -n "$ONLY" ]; then python -m pipeline.run refresh --race "$RACE" --only "$ONLY"; else python -m pipeline.run refresh --race "$RACE"; fi
+      - name: Promote candidate and rebuild site
+        run: |
+          python -m pipeline.run promote --race "$RACE"
+          python -m pipeline.run build --race "$RACE"
+          cp .cache/"$RACE"/changes.md /tmp/changes.md
+      - name: Open pull request for review
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: refresh/${{ env.RACE }}
+          title: "Weekly refresh: ${{ env.RACE }} (${{ github.run_id }})"
+          body-path: /tmp/changes.md
+          commit-message: "data: weekly refresh ${{ env.RACE }}"
+          labels: data-refresh
+          delete-branch: true

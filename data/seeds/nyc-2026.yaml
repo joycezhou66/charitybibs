@@ -1,0 +1,118 @@
+race: nyc-2026
+race_name: TCS New York City Marathon 2026
+official_list: https://www.nyrr.org/tcsnycmarathon/runners/charity-index
+official_list_note: nyrr.org blocks automated fetching. Refresh this seed list by hand once a year when the partner list is published (Jan–Feb).
+charities:
+- id: tfk
+  name: NYRR Team for Kids
+  urls:
+  - https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon
+- id: bird
+  name: NYC Bird Alliance
+  urls:
+  - https://nycbirdalliance.org/run
+- id: hope
+  name: Hope Community Inc
+  urls:
+  - https://hopeci.org/2026-tcs-new-york-city-marathon/
+- id: cri
+  name: Cancer Research Institute
+  urls:
+  - https://www.cancerresearch.org/events/2026-tcs-new-york-city-marathon
+- id: nami
+  name: NAMI-NYC
+  urls:
+  - https://naminycmetro.org/marathon/
+- id: bcrf
+  name: Breast Cancer Research Foundation
+  urls:
+  - https://www.bcrf.org/blog/bcrf-2026-tcs-nyc-marathon-application/
+- id: msahc
+  name: Mount Sinai Adolescent Health Center
+  urls:
+  - https://www.mountsinai.org/files/MSHealth/Assets/HS/Patient-Care/Service-Areas/Adolescent-Health-Center/HS-MSAHC-TCS-NYC-Marathon-Runner-Agreement.pdf
+  - https://www.mountsinai.org/locations/adolescent-health-center/events
+- id: caf
+  name: Challenged Athletes Foundation
+  urls:
+  - https://give.challengedathletes.org/nycmarathon
+- id: vfound
+  name: V Foundation for Cancer Research
+  urls:
+  - https://vfoundation.donordrive.com/pages/1035?eventID=724
+- id: bcu
+  name: Blood Cancer United (Team In Training)
+  urls:
+  - https://www.teamintraining.org/events/tcs-new-york-city-marathon
+- id: cpc
+  name: Central Park Conservancy
+  urls:
+  - https://www.centralparknyc.org/giving/marathon
+- id: sff
+  name: Sanctuary for Families
+  urls:
+  - https://sanctuaryforfamilies.org/event/tcs-nyc-marathon/
+- id: maw
+  name: Make-A-Wish Metro New York
+  urls:
+  - https://wish.org/newyork/2026-tcs-new-york-city-marathon
+- id: nbts
+  name: National Brain Tumor Society
+  urls:
+  - https://braintumor.org/events/gray-nation-endurance/tcs-nyc-marathon-charity-runner-application/
+  - https://braintumor.org/events/gray-nation-endurance/tcs-nyc-marathon-commitment-form-and-waiver/
+- id: lung
+  name: LUNGevity
+  urls:
+  - https://fundraise.lungevity.org/nycmarathon26
+  - https://fundraise.lungevity.org/pages/2056?eventID=1115
+- id: freds
+  name: Fred's Team (Memorial Sloan Kettering)
+  urls:
+  - https://www.fredsteam.org/events/tcs-new-york-city-marathon
+  - https://www.fredsteam.org/tcs-new-york-city-marathon-fundraising-agreement
+- id: bch
+  name: Boston Children's Hospital (Miles for Miracles)
+  urls:
+  - https://giving.childrenshospital.org/events/run/new-york-marathon/faqs
+- id: cp
+  name: Commonpoint
+  urls:
+  - https://www.commonpoint.org/tcs-new-york-city-marathon
+- id: usat
+  name: USA Triathlon Foundation
+  urls:
+  - https://www.usatriathlon.org/articles/press-releases/new-york-road-runners-names-usa-triathlon-foundation-as-official-charity-partner-of-the-2026-tcs-new-york-city-marathon
+- id: restore
+  name: Restore NYC
+  urls:
+  - https://restorenyc.org/get-involved/nyc-marathon/
+- id: chop
+  name: Team CHOP (Children's Hospital of Philadelphia)
+  urls:
+  - https://www.chop.edu/giving/team-chop-tcs-nyc-marathon
+- id: coc
+  name: Circle of Care
+  urls:
+  - https://thecircleofcare.org/events/nyc-marathon.html
+- id: ulman
+  name: Ulman Foundation
+  urls:
+  - https://ulmanfoundation.org/teamraces/nyc-marathon/
+- id: t2t
+  name: Tunnel to Towers Foundation
+  urls:
+  - https://t2t.org/tcs-new-york-city-marathon/
+- id: concern
+  name: Team Concern (Concern Worldwide)
+  urls:
+  - https://concernusa.org/news/how-to-run-nyc-marathon-for-charity/
+  - https://concernusa.org/take-action/events/2026-tcs-nyc-marathon/
+- id: achilles
+  name: Achilles International
+  urls:
+  - https://www.achillesinternational.org/nyc-marathon-charity-slots
+- id: lsnyc
+  name: Legal Services NYC
+  urls:
+  - https://www.legalservicesnyc.org/events/2026-nyc-marathon-run-with-team-lsnyc/

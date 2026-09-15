@@ -1,0 +1,13 @@
+[project]
+name = "charitybibs"
+version = "1.0.0"
+description = "charitybibs.com — NYC Marathon charity bib comparison, with a weekly verified refresh pipeline"
+requires-python = ">=3.11"
+dependencies = ["anthropic>=0.40", "playwright>=1.45", "pdfplumber>=0.11", "pydantic>=2.6", "pyyaml>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "reportlab>=4"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

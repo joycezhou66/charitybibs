@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>charitybibs.com</title>
+<meta name="description" content="Case study: a comparison site for NYC Marathon charity bibs, the hypothesis it killed, and the weekly verified data pipeline that keeps it honest.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--bg:#FFFFFF;--ink:#1B1F24;--muted:#5F6B7A;--rule:#D6DBE1;--soft:#EEF1F4;--ctrl:#1D4F9E;--hl:#FFF3B8;--hl-ink:#1B1F24;--good:#1E7B4A;--good-bg:#E4F3EA;--bad:#B8231F;--bad-bg:#F9E4E2;
+--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111418;--ink:#E8ECF0;--muted:#9AA5B1;--rule:#2A3139;--soft:#1B2026;--ctrl:#5B8DEF;--hl:#3A3212;--hl-ink:#F3E9B8;--good:#5DC48A;--good-bg:#15301F;--bad:#F0776F;--bad-bg:#3A1917}}
+:root[data-theme="dark"]{--bg:#111418;--ink:#E8ECF0;--muted:#9AA5B1;--rule:#2A3139;--soft:#1B2026;--ctrl:#5B8DEF;--hl:#3A3212;--hl-ink:#F3E9B8;--good:#5DC48A;--good-bg:#15301F;--bad:#F0776F;--bad-bg:#3A1917}
+*{box-sizing:border-box}html{color-scheme:light dark}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);padding-block:0 64px;padding-inline:20px}
+a{color:var(--ctrl);text-decoration:underline;text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--ctrl);outline-offset:2px}
+.wrap{max-width:760px;margin:0 auto}
+header{padding-block:22px 14px;border-bottom:2px solid var(--ink);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:baseline;font:600 13px/1 var(--mono);letter-spacing:.04em;text-transform:uppercase}
+header b{background:var(--hl);color:var(--hl-ink);padding:2px 5px;border-radius:2px;font-weight:600}
+header span{font-weight:400;letter-spacing:0;text-transform:none;color:var(--muted)}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:36px 0 10px}
+h1{font:600 clamp(28px,4.5vw,40px)/1.15 var(--serif);letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
+.dek{font:400 19px/1.5 var(--serif);color:var(--muted);margin:0 0 22px;max-width:62ch}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.btn{display:inline-block;font:500 13.5px/1 var(--sans);padding:10px 14px;border-radius:3px;border:1px solid var(--ctrl);color:var(--ctrl);text-decoration:none;background:var(--bg)}
+.btn.primary{background:var(--ctrl);color:#fff}
+.meta{font:13px var(--mono);color:var(--muted);margin:14px 0 0}
+h2{font:600 22px/1.25 var(--serif);letter-spacing:-.01em;margin:44px 0 12px;text-wrap:balance}
+h3{font:600 15px/1.3 var(--sans);margin:22px 0 6px}
+p{margin:0 0 14px;max-width:66ch}
+p.m{color:var(--muted)}
+.num{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--rule);border-radius:3px;overflow:hidden;margin:18px 0 22px}
+.num div{padding:12px 14px;border-right:1px solid var(--rule)}
+.num div:last-child{border-right:0}
+.num .n{font:600 24px/1.1 var(--mono);font-variant-numeric:tabular-nums}
+.num .l{font-size:12.5px;color:var(--muted);margin-top:4px}
+figure{margin:20px 0 26px}
+figure img{width:100%;height:auto;border:1px solid var(--rule);border-radius:3px;display:block}
+figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+blockquote{margin:16px 0;padding:10px 16px;border-left:3px solid var(--ink);font:italic 17px/1.5 var(--serif);max-width:60ch}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 20px}
+th{text-align:left;font:600 11.5px/1.2 var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--ink)}
+td{padding:8px 10px;border-top:1px solid var(--soft);vertical-align:top}
+td.k{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.kill{border:1px solid var(--rule);border-left:4px solid var(--bad);background:var(--soft);padding:12px 16px;border-radius:3px;margin:18px 0}
+.kill b{font-family:var(--mono)}
+.pivot{display:grid;grid-template-columns:1fr;gap:10px;margin:16px 0 22px}
+.pv{border:1px solid var(--rule);border-radius:3px;padding:12px 14px}
+.pv .v{font:600 12px/1 var(--mono);letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+.pv .t{font-weight:600;margin:4px 0 2px}
+.pv .r{font-size:14px;color:var(--muted)}
+.pv.live{border-color:var(--good);background:var(--good-bg)}
+.pv.live .v,.pv.live .r{color:var(--good)}
+pre{font:13px/1.5 var(--mono);background:var(--soft);border:1px solid var(--rule);border-radius:3px;padding:12px 14px;overflow-x:auto;margin:12px 0 20px}
+ul{padding-left:20px;max-width:66ch}li{margin-bottom:6px}
+footer{margin-top:52px;padding-top:14px;border-top:2px solid var(--ink);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a{color:inherit}
+@media (max-width:640px){body{padding-inline:16px}.num div{border-right:0;border-bottom:1px solid var(--rule)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div>charity<b>bibs</b>.com</div><span>Case study · Joyce Zhou · September 2026</span></header>
+
+<p class="eyebrow">Product · Data · Shipped</p>
+<h1>Which NYC Marathon charity will actually get you to the start line</h1>
+<p class="dek">A comparison site for charity bibs, the hypothesis it killed on the way, and the weekly pipeline that re-reads 27 charities' fine print so the table stays true.</p>
+<div class="links">
+  <a class="btn primary" href="https://charitybibs.com">Open the site ↗</a>
+  <a class="btn" href="https://github.com/joycezhou66/charitybibs">Code &amp; data</a>
+  <a class="btn" href="https://github.com/joycezhou66/charitybibs/blob/main/docs/PRD.md">Read the PRD</a>
+</div>
+<p class="meta">Solo · 2 days research and build · Python, Playwright, Claude API, static HTML · Data CC BY 4.0</p>
+
+<h2>The problem</h2>
+<p>In March 2026, 240,000 people applied to the New York City Marathon drawing. About 1% got in. The main remaining route is a charity bib: you promise to raise a minimum, usually $3,000–$5,000, and hand the charity a credit card. If you fall short, the balance is charged to it.</p>
+<p>There are 670 official charity partners. Each has its own page, and each page tells you one number — the minimum. What it usually doesn't tell you is the thing that determines whether you'll make it: <strong>does this charity give you a coach, a team, a fundraising lead, or just a bib and a deadline?</strong> And whether it's even still taking runners. And what happens if life gets in the way.</p>
+<p>I wanted to run for a charity and couldn't compare them. So I read all of them.</p>
+
+<h2>What I found</h2>
+<div class="num">
+  <div><div class="n">$3–10k</div><div class="l">minimum for an identical bib</div></div>
+  <div><div class="n">0–8 / 10</div><div class="l">support score across charities</div></div>
+  <div><div class="n">7 of 27</div><div class="l">still taking runners in mid-Sept</div></div>
+  <div><div class="n">12 of 27</div><div class="l">publish what happens if you fall short</div></div>
+</div>
+<p>Twenty-two of 27 minimums sit between $3,000 and $5,000. Price is not what separates them. What separates them is that Boston Children's gives you coaches, Saturday team runs, a bus to the start and a heated tent, while another charity at the same minimum gives you a fundraising page and a shirt. That difference is the difference between $4,500 being doable and being miserable — and nobody publishes it side by side.</p>
+<p>The terms are the other half. Of the programs that publish detailed terms, every one authorizes charging the runner's card for any shortfall. Fifteen of 27 publish no terms at all before you apply. The B.A.A.'s own charity application says you owe the full minimum "even if for any reason, including injury, you do not participate." That's the industry norm; almost nobody says it out loud.</p>
+
+<h2>What I built</h2>
+<figure><img src="__SHOT__" alt="charitybibs.com: a table of 27 NYC Marathon charities sorted by support, with an expanded row showing the support quote, the shortfall clause, and a cost receipt"><figcaption>Default view, sorted by support. Each row expands to the charity's own words, with a link to the page they came from.</figcaption></figure>
+<p>One page. Every charity, sorted by how much help they give you, with a status pill so you know who's still open, four dots for how much of the commitment they disclose, and the date you can still back out for free. Expand a row and you get the exact clause, quoted, linked. Nothing is estimated — "not published" is a real value on this site, and it appears a lot.</p>
+<p>The copy is written to help someone commit, not to scare them off. <em>Pick for the support. Check it's open. Read the terms. Go run New York.</em></p>
+
+<h2>The hypothesis I killed</h2>
+<p>The first version of this page was about hidden cost. The thesis: a charity bib is a financial instrument sold as philanthropy — the minimum plus race entry plus non-creditable fees plus shortfall exposure — and if you sorted by what you'd <em>actually</em> owe, the ranking would change. I wrote a kill criterion before building:</p>
+<div class="kill"><b>Pre-registered:</b> if fewer than 10% of charities change rank when sorted by total exposure instead of headline minimum, the cost thesis is dead.</div>
+<p>At n = 27: six rows moved, mostly by one place. Exposure was the headline plus a near-constant $315. The column was true and useless. The criterion fired.</p>
+<div class="pivot">
+  <div class="pv"><div class="v">v1</div><div class="t">Entry-route discovery</div><div class="r">Dropped: Marathon Ballot already lists ~190 charities across seven Majors. A narrower copy.</div></div>
+  <div class="pv"><div class="v">v2</div><div class="t">Cost transparency</div><div class="r">Killed by its own metric: 6 of 27 rows reorder. The price isn't the variable.</div></div>
+  <div class="pv live"><div class="v">v3 · live</div><div class="t">Support and access</div><div class="r">What varies is support (0–8), whether you can still get in (7 of 27), and whether the terms are published (12 of 27). The barrier was never hidden cost; it was fear of not raising the money.</div></div>
+</div>
+<p>The cost research wasn't wasted. The shortfall clauses and charge schedules became the transparency layer under the support sort, and the "four questions to ask before you sign" card comes straight from it. I also de-weighted injury after checking the base rate — in a 735-runner NYC cohort, 40% got hurt in training but 4.1% were too hurt to race. One line in the row, not a column.</p>
+
+<h2>Keeping it true</h2>
+<p>A table of terms that drifts out of date is worse than no table. So the data isn't maintained by hand. Every Monday a GitHub Action re-reads each charity's pages, extracts the same fixed fields, and then does the step that makes LLM extraction publishable:</p>
+<pre>crawl (Playwright, follows apply / FAQ / agreement / PDF)
+  → extract (Claude, forced tool call against a fixed schema)
+  → verify: every fact must carry a verbatim quote
+            found in the fetched text — or it is dropped
+  → diff against what's published
+  → open a pull request listing only what changed
+  → a human merges. Nothing else reaches the site.</pre>
+<p>The model can misread a page. It cannot pass a number through this pipeline that it didn't find on the page, because the quote it supplies is string-matched against the text we downloaded. Seventeen tests, including a real headless crawl of a fixture site with a PDF agreement.</p>
+<p>The same run caught a data error in my own first pass: the Team for Kids "$2,200" figure circulating in secondary sources is their <em>Chicago</em> program. NYC is $3,000. That's why every field links to its source.</p>
+
+<h2>Why it's not a business, and why I built it anyway</h2>
+<p>I looked. Runner referral to charities already has a published clearing price — £25 per confirmed fundraiser at TimeOutdoors, with 20-year incumbents like Realbuzz behind it. Referred runners are adversely selected: a person picking a charity to get a bib has no cause affinity, and charities report runners who raise nothing at £400 sunk per place. The programs with money are oversubscribed; the ones that can't fill 3–15 bibs can't fund software. Small charities asked for exactly this marketplace in 2011 and got ad-supported directories instead.</p>
+<p>So: no marketplace, no referral fee. A public utility with a verified dataset that costs about a dollar a week to keep honest. The value goes to runners directly — and, if charities notice their "terms disclosed" score, to the norm of publishing terms up front.</p>
+
+<h2>What I'd measure next</h2>
+<table>
+<tr><th>Metric</th><th>Target</th><th>When</th></tr>
+<tr><td>Outbound clicks to a charity page ÷ sessions</td><td class="k">≥ 8%</td><td>30 days, then March 2027 drawing week</td></tr>
+<tr><td>Sessions from search vs. from communities</td><td class="k">search &gt; 40%</td><td>March 2027 — the test of whether the domain aged</td></tr>
+<tr><td>Correction turnaround</td><td class="k">&lt; 48h</td><td>Continuous, logged</td></tr>
+<tr><td>Charities that publish terms after being listed</td><td class="k">any</td><td>2027 re-verification</td></tr>
+</table>
+<p class="m">Traffic for this is a spike, not a curve. The right time to judge it is the week the 2027 drawing results land, and the domain is being aged for exactly that.</p>
+
+<h2>Next</h2>
+<ul>
+  <li>Boston and Chicago — same schema, same pipeline, new seed lists.</li>
+  <li>A commitment timeline per charity (apply → deposit → free-exit date → deadline → charge), once enough of them publish dates to make it honest.</li>
+  <li>"Tell me when 2027 programs open."</li>
+</ul>
+
+<footer>
+  <span><a href="https://charitybibs.com">charitybibs.com</a></span>
+  <span><a href="https://github.com/joycezhou66/charitybibs">github.com/joycezhou66/charitybibs</a></span>
+  <span><a href="https://joycezhou.me">joycezhou.me</a></span>
+</footer>
+</div>
+</body>
+</html>
