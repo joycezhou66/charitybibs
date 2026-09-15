@@ -44,7 +44,7 @@
 }
 *{box-sizing:border-box}
 html{color-scheme:light dark;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 var(--text);padding-block:0 64px;padding-inline:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 var(--text);padding-block:0 72px;padding-inline:24px}
 a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
 a:hover{color:var(--print)}
 :focus-visible{outline:2px solid var(--print);outline-offset:2px}
@@ -52,52 +52,50 @@ button{font:inherit;color:inherit}
 h1,h2,h3,h4,p{margin:0}
 .wrap{max-width:1280px;margin:0 auto}
 .col{max-width:840px;margin:0 auto}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* type from the bib */
 .lab{font-family:var(--bib);font-weight:600;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);line-height:1.2}
 .bibnum{font-family:var(--bib);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.01em;line-height:.95}
-.st{font-family:var(--bib);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
-.st::before{content:"";display:inline-block;width:9px;height:9px;margin-right:7px;background:var(--closed)}
+.st{font-family:var(--bib);font-weight:700;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.st::before{content:"";display:inline-block;width:8px;height:8px;margin-right:7px;background:var(--closed)}
 .st.open::before{background:var(--open)}
 .st.waitlist::before{background:var(--wait)}
-.st.unknown::before{background:transparent;border:1.5px solid var(--closed);width:7px;height:7px}
+.st.unknown::before{background:transparent;border:1.5px solid var(--closed);width:6px;height:6px}
 .st.open{color:var(--open)}
 .st.waitlist{color:var(--wait)}
-.btn{display:inline-block;font-family:var(--bib);font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:10px 16px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;border-radius:0;line-height:1.1}
+.btn{display:inline-block;font-family:var(--bib);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;border-radius:0;line-height:1.1}
 .btn:hover{background:var(--ink);color:var(--paper)}
 .btn.print{background:var(--print);border-color:var(--print);color:var(--print-ink)}
 .btn.print:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.btn.sm{font-size:13px;padding:7px 11px}
 
 /* header, intro */
-header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;padding:18px 0 12px;border-bottom:1.5px solid var(--hair)}
+header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;padding:20px 0 14px;border-bottom:1.5px solid var(--hair)}
 .brand{font-family:var(--bib);font-weight:800;font-size:22px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none}
 .brand small{font-family:var(--bib);font-weight:600;font-size:13px;letter-spacing:.09em;color:var(--mute);margin-left:12px}
-header nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13.5px;color:var(--mute)}
-header nav a{text-decoration:none}
-.intro{padding:40px 0 28px}
-h1{font-family:var(--bib);font-weight:800;font-size:clamp(42px,7vw,76px);text-transform:uppercase;letter-spacing:.01em;line-height:.95;text-wrap:balance}
-.lede{margin:14px 0 0;font-size:17px;line-height:1.5;color:var(--ink2);max-width:60ch}
+header nav a{font-size:14px;color:var(--mute);text-decoration:none}
+header nav a:hover{color:var(--print)}
+.intro{padding:52px 0 30px}
+h1{font-family:var(--bib);font-weight:800;font-size:clamp(44px,7.5vw,84px);text-transform:uppercase;letter-spacing:.01em;line-height:.92;text-wrap:balance}
+.lede{margin:16px 0 0;font-size:18px;line-height:1.45;color:var(--ink2);max-width:46ch}
 
 /* the three questions */
 .qs{counter-reset:q}
-fieldset.qn{border:0;margin:0;padding:22px 0 26px;border-top:1.5px solid var(--hair);min-width:0}
+fieldset.qn{border:0;margin:0;padding:24px 0 28px;border-top:1.5px solid var(--hair);min-width:0}
 fieldset.qn[hidden]{display:none}
-fieldset.qn legend{float:left;width:100%;padding:0;margin:0 0 14px;display:flex;gap:14px;align-items:baseline}
+fieldset.qn legend{float:left;width:100%;padding:0;margin:0 0 16px;display:flex;gap:16px;align-items:baseline}
 fieldset.qn legend::before{counter-increment:q;content:counter(q);font-family:var(--bib);font-weight:800;font-size:34px;line-height:1;color:var(--print);min-width:26px}
 fieldset.qn legend .t{font-family:var(--bib);font-weight:700;font-size:28px;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
 fieldset.qn legend .s{display:block;font-family:var(--text);font-weight:400;font-size:14px;text-transform:none;letter-spacing:0;color:var(--mute);margin-top:4px}
 .opts{clear:both;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
-.opts.one{grid-template-columns:1fr;max-width:580px}
-.opt{position:relative;display:block;border:1.5px solid var(--rule);padding:11px 14px 11px 40px;cursor:pointer;line-height:1.35;font-size:15px}
-.opt input{position:absolute;left:14px;top:15px;margin:0;width:14px;height:14px;accent-color:var(--print)}
+.opts.one{grid-template-columns:1fr;max-width:560px}
+.opt{position:relative;display:block;border:1.5px solid var(--rule);padding:12px 14px 12px 40px;cursor:pointer;line-height:1.35;font-size:15px}
+.opt input{position:absolute;left:14px;top:16px;margin:0;width:14px;height:14px;accent-color:var(--print)}
 .opt:hover{border-color:var(--ink)}
 .opt:has(input:checked){border-color:var(--print);box-shadow:inset 0 0 0 1px var(--print)}
 .opt:has(input:focus-visible){outline:2px solid var(--print);outline-offset:2px}
 .opt .n{display:block;font-size:12.5px;color:var(--mute);margin-top:2px}
 .opt b{font-weight:600}
-fieldset.done{padding:12px 0}
+fieldset.done{padding:13px 0}
 fieldset.done legend{margin:0}
 fieldset.done .opts{display:none}
 fieldset.done legend .t{font-size:18px}
@@ -106,14 +104,14 @@ fieldset.done legend .s{display:inline;margin-left:8px;color:var(--ink)}
 .chg:hover{color:var(--print)}
 fieldset:not(.done) .chg{display:none}
 
-/* results */
-.res{border-top:3px solid var(--hair);margin-top:8px;padding-top:22px}
-.res-h{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;margin-bottom:6px}
+/* shortlist */
+.res{border-top:3px solid var(--hair);margin-top:8px;padding-top:24px}
+.res-h{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;margin-bottom:4px}
 .res-h h2{font-family:var(--bib);font-weight:800;font-size:34px;text-transform:uppercase;letter-spacing:.01em}
 .res-h .lab{margin-left:auto}
-.say{font-size:16px;color:var(--ink2);margin:0 0 18px;max-width:64ch}
+.say{font-size:16px;color:var(--ink2);margin:0 0 14px;max-width:60ch}
 .say a{color:var(--ink)}
-.pick{display:grid;grid-template-columns:132px minmax(0,1fr);gap:0 22px;padding:18px 0;border-top:1.5px solid var(--rule)}
+.pick{display:grid;grid-template-columns:132px minmax(0,1fr);gap:0 24px;padding:22px 0;border-top:1px solid var(--rule)}
 .pick:first-child{border-top:0}
 .bib{border:1.5px solid var(--hair);background:var(--paper);text-align:center;align-self:start;position:relative}
 .bib::before,.bib::after{content:"";position:absolute;top:6px;width:6px;height:6px;border-radius:50%;background:var(--paper);border:1.5px solid var(--rule)}
@@ -126,41 +124,42 @@ fieldset:not(.done) .chg{display:none}
 .pick .body{min-width:0}
 .rank{font-family:var(--bib);font-weight:600;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--print)}
 .pick h3{font-family:var(--bib);font-weight:700;font-size:26px;text-transform:uppercase;letter-spacing:.01em;line-height:1.05;margin:2px 0 2px}
-.pick .fo{color:var(--mute);font-size:14px;margin:0 0 10px}
-.why{margin:0;padding:0;list-style:none;font-size:15px;line-height:1.5}
-.why li{padding-left:18px;position:relative}
-.why li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;background:var(--print)}
-.why li.no::before{background:transparent;border:1.5px solid var(--mute);width:6px;height:6px}
+.pick .fo{color:var(--mute);font-size:14px;margin:0 0 12px}
+.why{margin:0;padding:0;list-style:none;font-size:15.5px;line-height:1.5;color:var(--ink)}
 .why li.no{color:var(--mute)}
-.acts{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
-.pick .back{grid-column:1/-1;margin-top:14px}
+.spec{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;margin-top:10px;font-size:14px;color:var(--ink2)}
+.spec b{font-family:var(--bib);font-weight:700;font-size:17px;letter-spacing:.01em}
+.acts{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.pick .back{grid-column:1/-1;margin-top:16px}
 
-/* compact rows */
+/* the list */
 .list{margin-top:8px}
-.list-h{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;padding:12px 0 6px;border-top:1.5px solid var(--hair)}
+.list-h{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;padding:14px 0 4px;border-top:1.5px solid var(--hair)}
 .list-h h2{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em}
 .list-h .lab{margin-right:auto}
-.ctl{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--mute)}
-.ctl select{font:inherit;font-size:13.5px;color:var(--ink);padding:6px 28px 6px 10px;border:1.5px solid var(--ink);background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%236E6862' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center;appearance:none;-webkit-appearance:none;border-radius:0;max-width:100%}
-.row{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:2px 16px;align-items:start;padding:12px 0;border-top:1px dotted var(--rule)}
-.row:first-of-type{border-top:0}
-.row .bibnum{font-size:24px;padding-top:2px}
-.row .bibnum small{display:block;font-family:var(--bib);font-weight:600;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);letter-spacing:.06em;margin-top:3px;line-height:1.2}
-.row .nm{font-weight:600;font-size:15px}
-.row .nm .cz{font-weight:400;color:var(--mute);font-size:13px;margin-left:8px}
-.row .rs{color:var(--ink2);font-size:13.5px;grid-column:2;line-height:1.45}
-.row .rs .fo{color:var(--mute)}
-.row .st{grid-column:3;grid-row:1;padding-top:3px}
-.row .acts{grid-column:2;margin-top:6px}
-.row .back{grid-column:1/-1;margin-top:10px}
-details.more summary{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em;cursor:pointer;padding:12px 0;border-top:1.5px solid var(--hair);list-style:none;display:flex;gap:12px;align-items:baseline}
+.ctl{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--mute)}
+.ctl select{font:inherit;font-size:13px;color:var(--ink);padding:5px 26px 5px 8px;border:1px solid var(--rule);background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%236E6862' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 8px center;appearance:none;-webkit-appearance:none;border-radius:0;max-width:100%}
+.ctl select:hover{border-color:var(--ink)}
+.row{border-top:1px solid var(--rule)}
+.row:first-child{border-top:0}
+.rowbtn{display:grid;grid-template-columns:96px minmax(0,1fr) auto 18px;gap:2px 16px;align-items:center;width:100%;text-align:left;background:none;border:0;padding:13px 0;cursor:pointer;border-radius:0}
+.rowbtn:hover .nm{color:var(--print)}
+.rowbtn .bibnum{font-size:24px}
+.rowbtn .bibnum small{display:block;font-family:var(--bib);font-weight:600;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-top:3px;line-height:1.2}
+.rowbtn .nm{font-weight:600;font-size:15px;line-height:1.3;min-width:0}
+.rowbtn .nm .fo{display:block;font-weight:400;color:var(--mute);font-size:13px;margin-top:1px}
+.rowbtn .chev{width:8px;height:8px;border-right:1.5px solid var(--mute);border-bottom:1.5px solid var(--mute);transform:rotate(45deg);justify-self:center;margin-top:-4px}
+.rowbtn[aria-expanded="true"] .chev{transform:rotate(-135deg);margin-top:4px}
+.row .back{margin:0 0 16px}
+details.more summary{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em;cursor:pointer;padding:14px 0;border-top:1.5px solid var(--hair);list-style:none;display:flex;gap:12px;align-items:baseline}
 details.more summary::-webkit-details-marker{display:none}
 details.more summary::after{content:"+";margin-left:auto;font-weight:600;color:var(--print)}
 details.more[open] summary::after{content:"–"}
 details.more summary .lab{font-size:12.5px}
+details.more .row:first-child{border-top:1px solid var(--rule)}
 .empty{border:1.5px dashed var(--rule);padding:18px;margin:8px 0 14px;font-size:15px}
 
-/* the back of the bib */
+/* the fine print */
 .back{border:1.5px solid var(--hair);background:var(--paper)}
 .back-h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;padding:10px 18px;border-bottom:1.5px dashed var(--rule)}
 .back-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
@@ -181,35 +180,33 @@ details.more summary .lab{font-size:12.5px}
 .help li::before{content:"✓";display:inline-block;width:16px;color:var(--open);font-weight:700}
 .help li.off{color:var(--mute)}
 .help li.off::before{content:"–";color:var(--mute)}
-.back-go{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:14px 18px}
+.back-go{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:14px 18px}
+.back-go .fix{font-size:12.5px;color:var(--mute)}
 .back-go .lab{margin-left:auto}
 
-/* text, footer */
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px 56px;margin-top:56px;padding-top:24px;border-top:1.5px solid var(--hair)}
-section.txt{max-width:64ch}
-section.txt h2{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 10px}
-section.txt h3{font-family:var(--bib);font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:.03em;margin:18px 0 6px}
-section.txt p{margin:0 0 12px;color:var(--ink2);font-size:14.5px}
-section.txt p b{color:var(--ink);font-weight:600}
-ol.four{padding-left:20px;margin:0 0 12px;color:var(--ink2);font-size:14.5px}
-ol.four li{margin-bottom:5px}
-footer{margin-top:48px;padding-top:14px;border-top:1.5px solid var(--hair);display:flex;flex-wrap:wrap;gap:8px 24px;font-size:12.5px;color:var(--mute)}
+/* footer */
+footer{margin-top:64px;padding-top:16px;border-top:1.5px solid var(--hair);display:flex;flex-wrap:wrap;gap:8px 24px;font-size:12.5px;color:var(--mute)}
 footer a{text-decoration:none}
+footer .sp{margin-left:auto}
 
 @media (max-width:640px){
   body{padding-inline:16px}
-  .intro{padding-top:28px}
+  .intro{padding-top:36px}
   fieldset.qn legend .t{font-size:24px}
   .pick{grid-template-columns:96px minmax(0,1fr);gap:0 14px}
   .bib .bibnum{font-size:30px}
   .bib .tear{display:none}
-  .row{grid-template-columns:76px minmax(0,1fr)}
-  .row .bibnum{font-size:21px}
-  .row .st{grid-column:2;grid-row:auto;padding-top:0}
+  .rowbtn{grid-template-columns:76px minmax(0,1fr) 18px;gap:2px 12px}
+  .rowbtn .bibnum{font-size:21px}
+  .rowbtn .bibnum{grid-column:1;grid-row:1/3}
+  .rowbtn .nm{grid-column:2;grid-row:1}
+  .rowbtn .st{grid-column:2;grid-row:2;justify-self:start;margin-top:4px}
+  .rowbtn .chev{grid-column:3;grid-row:1/3}
   .help{columns:1}
   .bk{border-right:0}
   .back-go .lab{margin-left:0;flex-basis:100%}
   .list-h .ctl{flex-basis:100%}
+  footer .sp{margin-left:0}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -218,22 +215,18 @@ footer a{text-decoration:none}
 <div class="wrap">
 <header>
   <a class="brand" href="/">Charity Bibs<small>NYC Marathon 2026</small></a>
-  <nav>
-    <a href="#how">How this works</a>
-    <a href="#about">About</a>
-    <a href="mailto:hello@charitybibs.com?subject=Correction">Report a mistake</a>
-  </nav>
+  <nav><a href="/about">How it works</a></nav>
 </header>
 
 <div class="col">
 <div class="intro">
   <h1>Which charity should I run for?</h1>
-  <p class="lede">Didn't get in through the drawing? Every official charity gives you a guaranteed spot if you raise money for them. Answer three questions and we'll show you the ones that fit, and why. Every number comes from the charity's own page.</p>
+  <p class="lede">Answer three questions. See which NYC Marathon charities fit you, and why.</p>
 </div>
 
 <form class="qs" id="form">
 <fieldset class="qn" id="q1">
-  <legend><span class="t">What do you want to run for?<span class="s">Pick a cause you'd be proud to ask friends to give to. That matters more than the price.</span></span><button type="button" class="chg" data-q="q1">Change</button></legend>
+  <legend><span class="t">What do you want to run for?<span class="s">Pick one you'd be proud to ask friends to give to.</span></span><button type="button" class="chg" data-q="q1">Change</button></legend>
   <div class="opts" id="o1"></div>
 </fieldset>
 <fieldset class="qn" id="q2" hidden>
@@ -246,9 +239,9 @@ footer a{text-decoration:none}
   </div>
 </fieldset>
 <fieldset class="qn" id="q3" hidden>
-  <legend><span class="t">How soon do you need a spot?<span class="s">Some charities are full for 2026. Some have a waitlist.</span></span><button type="button" class="chg" data-q="q3">Change</button></legend>
+  <legend><span class="t">How soon do you need a spot?<span class="s">Some are full for 2026. Some have a waitlist.</span></span><button type="button" class="chg" data-q="q3">Change</button></legend>
   <div class="opts one">
-    <label class="opt"><input type="radio" name="when" value="open"><b>Now.</b> Only show charities taking runners today.</label>
+    <label class="opt"><input type="radio" name="when" value="open"><b>Now.</b> Only charities taking runners today.</label>
     <label class="opt"><input type="radio" name="when" value="wait"><b>I can wait.</b> Include waitlists.</label>
     <label class="opt"><input type="radio" name="when" value="all"><b>Show me everyone,</b> even the ones closed for 2026.</label>
   </div>
@@ -264,7 +257,7 @@ footer a{text-decoration:none}
 <section class="list" id="list">
   <div class="list-h">
     <h2 id="lh">Every charity</h2><span class="lab" id="lcount"></span>
-    <label class="ctl" for="sort">Sort by
+    <label class="ctl" for="sort">Sort
       <select id="sort">
         <option value="support">Most help raising the money</option>
         <option value="min">Lowest amount to raise</option>
@@ -277,38 +270,12 @@ footer a{text-decoration:none}
   <div id="rows"></div>
   <details class="more" id="rest"><summary>Everyone else <span class="lab" id="restcount"></span></summary><div id="restrows"></div></details>
 </section>
-
-<div class="two">
-<section class="txt" id="how">
-  <h2>How this works</h2>
-  <p><b>A charity bib is a guaranteed spot in the race.</b> In return you promise to raise a set amount for the charity, usually $3,000 to $5,000, by a deadline. You give them a credit card when you're accepted. If you don't raise it all, they charge the rest to the card. That's normal. It's how the charity covers the spot it already paid for.</p>
-  <p><b>The charities are more different than the prices.</b> Some give you a coach, group runs, a fundraising helper, a team, a bus to the start. Some give you a bib and a deadline. That's the difference between the money being easy and being hard to raise, and it's the main thing this page shows.</p>
-  <p><b>"Fine print" counts how many of these four questions the charity answers on its own pages:</b></p>
-  <ol class="four">
-    <li>If I don't raise it all by the deadline, what happens, and when?</li>
-    <li>If I get hurt and can't run, do I still owe the money?</li>
-    <li>Can I move my spot to next year?</li>
-    <li>Until what date can I back out for free?</li>
-  </ol>
-  <p>If a charity doesn't answer one, ask before you sign up. Any charity with a real program answers these in one email. Keep the reply.</p>
-</section>
-
-<section class="txt" id="about">
-  <h2>Where the numbers come from</h2>
-  <p>Every amount, every "what they give you," and every quote was read from the charity's own web page and links back to it. If something says <b>"they don't say,"</b> it means we couldn't find it published, not that the answer is no. Ask.</p>
-  <p>The cause label is the one thing written by hand, so the list is easy to scan. Everything else is the charity's words.</p>
-  <p>The page is re-checked every week against the charities' pages. Spot a mistake? <a href="mailto:hello@charitybibs.com?subject=Correction">Tell us</a> and it's fixed within two days.</p>
-  <h3>About</h3>
-  <p>Not legal advice. Not affiliated with New York Road Runners or any charity listed. Built by <a href="https://joycezhou.me">Joyce Zhou</a>, who wanted to run for a charity and couldn't find a way to compare them. How it was built is written up <a href="https://joycezhou.me/charitybibs">here</a>.</p>
-</section>
-</div>
 </div>
 
 <footer>
-  <span>Last checked <span id="refreshed"></span></span>
-  <a href="#" id="dl">Download the data</a>
-  <a href="mailto:hello@charitybibs.com?subject=Add%20a%20charity">Add or correct a charity</a>
-  <span>Data: CC BY 4.0</span>
+  <span>Not affiliated with New York Road Runners or any charity. Not legal advice.</span>
+  <a class="sp" href="/about">How it works</a>
+  <a href="mailto:hello@charitybibs.com?subject=Correction">Report a mistake</a>
 </footer>
 </div>
 
@@ -333,12 +300,11 @@ footer a{text-decoration:none}
   const label = k => SUP.find(([kk])=>kk===k)[1];
   const list = arr => arr.length<=1 ? arr.join('') : arr.slice(0,-1).join(', ')+' and '+arr[arr.length-1];
   const low = s => s.toLowerCase();
-  const cap = s => s.charAt(0).toUpperCase()+s.slice(1);
   const due = c => c.deadline && c.deadline>='2026-01-01' ? fmt(c.deadline) : null;
   const total = c => (c.min||0) + (c.regSeparate===false?0:REG) + (c.fee&&c.feeCreditable===false?c.fee:0);
   const causes = [...new Set(all.map(c=>c.cause).filter(Boolean))].sort((a,b)=>all.filter(c=>c.cause===b).length-all.filter(c=>c.cause===a).length || a.localeCompare(b));
 
-  /* ---------- the back of the bib ---------- */
+  /* ---------- the fine print ---------- */
   const q = (title, o, extra) => '<section class="bk"><h4>'+title+'</h4>'+
     (o.pub ? '<p>'+esc(o.text)+'</p>'+(o.quote?'<blockquote>“'+esc(o.quote)+'”</blockquote>':'')+(o.source?'<a class="src" href="'+esc(o.source)+'" target="_blank" rel="noopener">Read it on their page ↗</a>':'')
            : '<p class="np">They don\'t say. Ask before you sign up.</p>')+
@@ -364,7 +330,7 @@ footer a{text-decoration:none}
       q('Can I move my spot to next year?', c.deferral, '')+
       q('Until when can I back out for free?', freeExit, '')+
       '</div>'+
-      '<div class="back-go"><a class="btn print" href="'+esc(c.url)+'" target="_blank" rel="noopener">Go to '+esc(c.name.split(' (')[0])+'\'s marathon page ↗</a><a class="btn" href="mailto:hello@charitybibs.com?subject=Correction%3A%20'+encodeURIComponent(c.name)+'">Something wrong here?</a>'+(c.level?'<span class="lab">NYRR '+esc(c.level)+' partner</span>':'')+'</div>'+
+      '<div class="back-go"><a class="btn print" href="'+esc(c.url)+'" target="_blank" rel="noopener">Go to '+esc(c.name.split(' (')[0])+'\'s marathon page ↗</a><a class="fix" href="mailto:hello@charitybibs.com?subject=Correction%3A%20'+encodeURIComponent(c.name)+'">Something wrong here?</a>'+(c.level?'<span class="lab">NYRR '+esc(c.level)+' partner</span>':'')+'</div>'+
     '</div>';
   }
 
@@ -417,35 +383,28 @@ footer a{text-decoration:none}
   });
 
   /* ---------- rendering ---------- */
-  const toggleBtn=c=>'<button type="button" class="btn sm" data-t="'+esc(c.id)+'" aria-expanded="'+open.has(c.id)+'" aria-controls="back-'+esc(c.id)+'">'+(open.has(c.id)?'Hide the fine print':'Read the fine print')+'</button>';
   const bib=c=>'<div class="bib '+c.status+'" aria-hidden="true"><div class="band">'+esc(c.cause)+'</div><div class="bibnum">'+money(c.min)+'</div><span class="lab">you raise</span><div class="tear">'+(due(c)?'due '+due(c):'no date given')+'</div></div>';
   function reasons(c){
     const w=want(),m=matches(c),r=[];
-    if(ans.cause==='*')r.push('<li>'+esc(c.cause)+': '+esc(c.focus||'')+'</li>');
     if(w.length){
-      if(m.length===w.length)r.push('<li>Gives you everything you asked for: '+esc(list(m.map(k=>low(label(k)))))+'.</li>');
-      else if(m.length)r.push('<li>Gives you '+esc(list(m.map(k=>low(label(k)))))+'.</li><li class="no">Doesn\'t say it gives you '+esc(list(w.filter(k=>!m.includes(k)).map(k=>low(label(k)))))+'.</li>');
-      else r.push('<li class="no">Doesn\'t say it gives you '+esc(list(w.map(k=>low(label(k)))))+'.</li>');
       const extra=lit(c).filter(([k])=>!w.includes(k)).map(([,l])=>low(l));
-      if(extra.length)r.push('<li>Also: '+esc(list(extra))+'.</li>');
+      if(m.length)r.push('<li>Gives you '+esc(list(m.map(k=>low(label(k)))))+(m.length===w.length?', everything you asked for':'')+'.'+(extra.length?' Also '+esc(list(extra))+'.':'')+'</li>');
+      const miss=w.filter(k=>!m.includes(k));
+      if(miss.length)r.push('<li class="no">Doesn\'t say it gives you '+esc(list(miss.map(k=>low(label(k)))))+'.'+(!m.length&&extra.length?' Does give you '+esc(list(extra))+'.':'')+'</li>');
     }else{
       const l=lit(c).map(([,v])=>low(v));
       r.push(l.length?'<li>Gives you '+esc(list(l))+'.</li>':'<li class="no">Doesn\'t describe what they give you.</li>');
     }
-    const [sw,sl]=STATUS[c.status];
-    r.push('<li'+(c.status==='open'?'':' class="no"')+'><span class="st '+c.status+'">'+sw+'</span> '+sl+(c.spots?'. '+esc(c.spots):'')+'.</li>');
-    r.push('<li>You raise '+money(c.min)+(due(c)?', due '+due(c):'')+(c.fee&&c.feeCreditable===false?', plus a '+money(c.fee)+' fee that doesn\'t count':'')+'.</li>');
     const t=termsCount(c);
-    r.push(t?'<li>Answers '+t+' of the 4 fine print questions on their page.</li>':'<li class="no">Answers none of the 4 fine print questions on their page. Ask before you sign up.</li>');
-    return '<ul class="why">'+r.join('')+'</ul>';
+    return '<ul class="why">'+r.join('')+'</ul>'+
+      '<div class="spec"><span class="st '+c.status+'">'+STATUS[c.status][0]+'</span><span><b>'+money(c.min)+'</b> to raise'+(due(c)?', due '+due(c):'')+(c.fee&&c.feeCreditable===false?', plus a '+money(c.fee)+' fee':'')+'</span><span>'+(t?t+' of 4':'None')+' of the fine print answered</span></div>';
   }
-  const pick=(c,i)=>'<article class="pick">'+bib(c)+'<div class="body"><div class="rank">Pick '+(i+1)+'</div><h3>'+esc(c.name)+'</h3><p class="fo">'+esc(c.focus||'')+'</p>'+reasons(c)+
-    '<div class="acts">'+toggleBtn(c)+'<a class="btn sm print" href="'+esc(c.url)+'" target="_blank" rel="noopener">Their page ↗</a></div></div>'+(open.has(c.id)?back(c):'')+'</article>';
-  const row=(c,showCause)=>{const l=lit(c).map(([,v])=>low(v));return '<div class="row"><div class="bibnum">'+money(c.min)+(due(c)?'<small>due '+due(c)+'</small>':'')+'</div>'+
-    '<div class="nm">'+esc(c.name)+(showCause?'<span class="cz">'+esc(c.cause)+'</span>':'')+'</div>'+
-    '<span class="st '+c.status+'">'+STATUS[c.status][0]+'</span>'+
-    '<div class="rs"><span class="fo">'+esc(c.focus||'')+'.</span> '+(l.length?'Gives you '+esc(list(l))+'.':'Doesn\'t describe what they give you.')+(c.fee&&c.feeCreditable===false?' Plus a '+money(c.fee)+' fee that doesn\'t count.':'')+' Answers '+(termsCount(c)||'none')+' of the 4 fine print questions.</div>'+
-    '<div class="acts">'+toggleBtn(c)+'<a class="btn sm" href="'+esc(c.url)+'" target="_blank" rel="noopener">Their page ↗</a></div>'+(open.has(c.id)?back(c):'')+'</div>';};
+  const pick=(c,i)=>'<article class="pick">'+bib(c)+'<div class="body"><div class="rank">Pick '+(i+1)+'</div><h3>'+esc(c.name)+'</h3><p class="fo">'+(ans.cause==='*'?esc(c.cause)+' · ':'')+esc(c.focus||'')+'</p>'+reasons(c)+
+    '<div class="acts"><button type="button" class="btn" data-t="'+esc(c.id)+'" aria-expanded="'+open.has(c.id)+'" aria-controls="back-'+esc(c.id)+'">'+(open.has(c.id)?'Hide the fine print':'Read the fine print')+'</button><a class="btn print" href="'+esc(c.url)+'" target="_blank" rel="noopener">Their page ↗</a></div></div>'+(open.has(c.id)?back(c):'')+'</article>';
+  const row=(c,showCause)=>'<div class="row"><button type="button" class="rowbtn" data-t="'+esc(c.id)+'" aria-expanded="'+open.has(c.id)+'" aria-controls="back-'+esc(c.id)+'">'+
+    '<span class="bibnum">'+money(c.min)+(due(c)?'<small>due '+due(c)+'</small>':'')+'</span>'+
+    '<span class="nm">'+esc(c.name)+'<span class="fo">'+(showCause?esc(c.cause)+' · ':'')+esc(c.focus||'')+'</span></span>'+
+    '<span class="st '+c.status+'">'+STATUS[c.status][0]+'</span><span class="chev" aria-hidden="true"></span></button>'+(open.has(c.id)?back(c):'')+'</div>';
 
   function render(){
     const sk=sortKey();
@@ -470,8 +429,8 @@ footer a{text-decoration:none}
         const wl=inCause.filter(c=>c.status==='waitlist').length;
         say='None of the '+inCause.length+(ans.cause==='*'?'':' '+esc(ans.cause))+' charities are taking runners today.'+(wl&&ans.when==='open'?' '+wl+(wl===1?' has':' have')+' a waitlist. <a href="#" id="incw">Include waitlists</a>.':' <a href="#" id="incall">Show them anyway</a>.');
       }else if(w.length){
-        say=(full?(full===1?'One charity':full+' charities')+' on your shortlist give'+(full===1?'s':'')+' you everything you asked for. ':'No charity here says it gives you everything you asked for, so these are the closest. ')+'Sorted by how much of your help they give, then whether they\'re taking runners.';
-      }else say='Sorted by whether they\'re taking runners, then by how much help they describe.';
+        say=full?(full===1?'One':full)+' of these give'+(full===1?'s':'')+' you everything you asked for.':'None of these says it gives you everything you asked for. These are the closest.';
+      }else say='The ones taking runners first, then the most help.';
       $('say').innerHTML=say;
       const inc=$('incw');if(inc)inc.addEventListener('click',e=>{e.preventDefault();$('q3').querySelector('input[value=wait]').click();});
       const inca=$('incall');if(inca)inca.addEventListener('click',e=>{e.preventDefault();$('q3').querySelector('input[value=all]').click();});
@@ -493,8 +452,6 @@ footer a{text-decoration:none}
     const nb=document.querySelector('button[data-t="'+id+'"]'); if(nb)nb.focus();
   });
   $('sort').addEventListener('change',e=>{sort=e.target.value;render();window.plausible&&plausible('Sort',{props:{by:e.target.value}});});
-  $('dl').addEventListener('click',e=>{e.preventDefault();const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'}));a.download='charitybibs-nyc-2026.json';a.click();});
-  $('refreshed').textContent=fmt(DATA.refreshed);
 
   // answers in the URL, so a shortlist can be shared
   (function(){

@@ -10,6 +10,7 @@ A static comparison site for NYC Marathon charity bib programs (27 charities, 20
 - `docs/PRD.md` — the spec, including what changed across v1→v3 and why. Accurate.
 - `CHANGELOG.md` — data corrections. Append to it whenever data changes.
 - `site/template.html` — edit this, never `site/index.html` (built).
+- `site/about.html` — the "How it works" page (what a bib is, the four questions, sources, data, contact). Plain static file, edit directly.
 - `data/races/nyc-2026.json` — the published data. `python -m pipeline.run build --race nyc-2026` regenerates the site.
 
 ## Hard rules
