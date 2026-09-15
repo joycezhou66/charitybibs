@@ -33,7 +33,7 @@ The runner-side cost is people who don't sign up because they're not sure they c
 
 ## 3. What we built
 
-A single-page comparison of every NYC charity program, built as three steps a first-time reader can follow without learning any vocabulary — a cause list down the left ("What do you want to run for?"), a three-column list (charity · you raise · what they give you, plus whether they're taking runners), and a question-led detail panel (*How much do I raise? What do they give me? Are they still taking runners? What if I don't raise it all? What if I get hurt? Can I move to next year?*). The fine print is all there; it's just where you're ready for it.
+A single page that asks the runner's question and answers it. Three questions a first-time reader can answer without learning any vocabulary — *What do you want to run for?* (a cause), *What help do you want?* (people to train with, help asking for money, both, or just the spot), *How soon do you need a spot?* (now, waitlist is fine, or show everyone) — then a ranked shortlist of the three closest fits, each with the reason it fits written from the data: what it gives you that you asked for, what it doesn't say, whether it's taking runners, the amount and due date, and how much of the fine print it answers. The rest of the field stays one click away ("Also fits", "Everyone else"), and every charity, shortlisted or not, opens the same question-led fine print (*How much do I raise? What do they give me? Are they still taking runners? What if I don't raise it all? What if I get hurt? Can I move to next year? Until when can I back out free?*). Answers are kept in the URL so a shortlist can be shared. The visual identity comes from a race bib (see `docs/design-brief.md`): paper white, ink, one print orange, condensed numerals for the amount.
 
 Fields:
 
@@ -64,7 +64,7 @@ Copy is written to help someone commit, not to warn them off: *find a cause you'
 - **R2 Status.** open / waitlist / closed / unknown, with quote; drives the pill and filter.
 - **R3 Terms.** Shortfall, charge schedule, free-exit date, injury, deferral — each with quote + source or "not published."
 - **R4 Provenance surface.** Per-field last-verified date; per-row source link; site-wide "data last refreshed"; correction path on every row; unaffiliated / not-legal-advice statement.
-- **R5 Navigation.** Cause rail (counts per cause); one sort (most help · lowest amount · still taking runners); one filter (only still taking runners). Phone: causes become a horizontal chip row, rows become cards.
+- **R5 Navigation.** Three questions (cause with counts per cause · help wanted · how soon), each answer collapsing to one line with a *Change* control; a ranked shortlist with per-charity reasons; one sort on the remaining list (most help · lowest amount · still taking runners · clearest fine print · name). Answers persist in the URL hash. Keyboard: arrow keys within a question, Tab between; an answered question folds only when focus leaves it. Phone: same single column.
 - **R6 Cost receipt** in the expanded row: minimum + NYRR entry (per NYRR's rule that runners pay registration) + fees the charity says do not count. Labeled as the maximum if you raised nothing.
 - **R7 Weekly verified refresh.** Crawl → extract → verify (quote must be found in fetched text) → diff → pull request. Human merge is the only path to publish. See the [README](../README.md).
 
@@ -115,6 +115,8 @@ So: no marketplace, no referral fee, no SaaS. The product is a public utility wi
 **v2 (Sept 13): cost transparency.** "A charity bib is a financial liability with hidden fees; show the true cost." Hypothesis: sorting by total exposure would materially reorder the field. **Pre-registered kill criterion: under 10% rank change kills the thesis.** Result at n=27: 6 of 27 rows moved, mostly by one place. Exposure was the headline minimum plus a near-constant $315. The kill criterion fired.
 
 **v3 (Sept 14): support and access.** What actually varied between charities was not the price — it was support (0–8 of 10), whether the program was still open (7 of 27), and whether the terms were published (12 of 27). And the barrier to committing was never hidden cost; it was fear of not raising the money. The page's job changed from warning to enabling. Injury policy was de-weighted after checking the base rate: in a 735-runner NYC cohort, 40% were injured in training but 4.1% were too injured to race.
+
+**v3.1 (Sept 14): from list to answer.** Same data, same three decisions, different shape. The v3 page still opened on a table of 27 rows, which put the work of ranking on the reader. After a design pass against every other marathon's charity page (all logo grids, name lists, or hero photos; `research/refs/`), the page was rebuilt to ask the three questions first and return a shortlist with reasons, keeping the full list one click below. Cost-neutral to the pipeline: the template changed, nothing in `pipeline/` or `data/` did.
 
 The cost research wasn't wasted: the shortfall clauses, charge schedules, and the "terms in the agreement after you apply" finding are the transparency layer under the support sort, and the four-questions card comes directly from it.
 

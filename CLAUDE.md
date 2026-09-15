@@ -16,7 +16,7 @@ A static comparison site for NYC Marathon charity bib programs (27 charities, 20
 
 1. **Never add Claude attribution.** No `Co-Authored-By: Claude` trailers, no "Generated with Claude Code" lines in commits, PR bodies, or files. `.claude/settings.json` disables the trailer; do not re-enable it. Commits are authored by Joyce (`joycezhou66 <jezhou@usc.edu>`) only.
 2. **Never estimate a number.** Every factual field on the site must have a verbatim quote from the charity's page that `pipeline/verify.py` can find. "Not published" is a valid value. Do not "fill in" missing terms.
-3. **Do not change the product's shape** without being asked: cause rail on the left → three-column list → question-led detail panel. The redesign history in `docs/PRD.md` §9 explains why it looks the way it does.
+3. **Do not change the product's shape** without being asked: three questions (cause → help wanted → how soon) → ranked shortlist with reasons → full list below → question-led fine print under every charity. The identity (paper, ink, one print orange, condensed numerals) is specified in `docs/design-brief.md`; the redesign history in `docs/PRD.md` §9 explains why it looks the way it does.
 4. **Do not post anywhere as anyone other than Joyce.** No fake accounts, no astroturfing. Launch posts are in `docs/growth-kit.md` if present, all written to be posted as her.
 5. **Keep it plain.** Site copy is for any age: no "shortfall", "deferral", "commitment", "disclosed". Say "if you don't raise it all", "move to next year", "they don't say".
 
