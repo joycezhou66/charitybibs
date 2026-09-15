@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charity Bibs · Concept 2 · The Guide</title>
+<link rel="stylesheet" href="bib.css">
+<style>
+.mast{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 40px;align-items:end;padding:34px 0 18px;border-bottom:3px solid var(--hair)}
+.mast h1{font-family:var(--bib);font-weight:800;font-size:clamp(56px,9vw,120px);text-transform:uppercase;letter-spacing:.01em;line-height:.85}
+.mast .right{font-size:15px;color:var(--ink2);line-height:1.45}
+.mast .right .lab{display:block;margin-bottom:8px;color:var(--print)}
+.mast .right p{margin:0}
+.mast .right b{font-family:var(--bib);font-weight:700;font-size:21px;text-transform:uppercase;letter-spacing:.02em;color:var(--ink);display:block;margin-bottom:6px;line-height:1.05}
+.stand{columns:2;column-gap:44px;column-rule:1px solid var(--rule);padding:22px 0 18px;border-bottom:1.5px solid var(--hair);font-size:15.5px;line-height:1.55;color:var(--ink2)}
+.stand p{margin:0 0 12px;break-inside:avoid}
+.stand p:first-child::first-letter{font-family:var(--bib);font-weight:800;font-size:58px;float:left;line-height:.8;margin:5px 8px 0 0;color:var(--ink)}
+.stand b{color:var(--ink);font-weight:600}
+.key{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border-bottom:1.5px solid var(--hair)}
+.key div{padding:14px 16px 14px 0;font-size:13.5px;line-height:1.45;color:var(--ink2)}
+.key div+div{padding-left:16px;border-left:1px solid var(--rule)}
+.key .lab{display:block;color:var(--ink);margin-bottom:4px}
+/* sheet */
+.sheet{display:grid;grid-template-columns:200px minmax(0,1fr);gap:0 40px;align-items:start;margin-top:8px}
+.sheet>*{min-width:0}
+.margin{position:sticky;top:12px;padding-top:18px;font-size:13.5px}
+.margin .lab{display:block;margin-bottom:8px}
+.margin ol{list-style:none;margin:0 0 18px;padding:0}
+.margin li{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px dotted var(--rule)}
+.margin li a{text-decoration:none}
+.margin li a:hover{color:var(--print)}
+.margin li .n{color:var(--mute);font-variant-numeric:tabular-nums}
+.ctl{display:block;margin:0 0 10px;color:var(--mute)}
+.ctl select{display:block;width:100%;margin-top:4px;font:inherit;font-size:13.5px;color:var(--ink);padding:6px 8px;border:1.5px solid var(--ink);background:var(--paper);border-radius:0}
+.ctl input{accent-color:var(--print);margin:0 6px 0 0}
+section.cause{padding-top:26px}
+.ch{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;border-bottom:2px solid var(--hair);padding-bottom:6px}
+.ch h2{font-family:var(--bib);font-weight:800;font-size:32px;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+.ch .lab{margin-left:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+thead th{text-align:left;font-family:var(--bib);font-weight:600;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);padding:8px 10px 6px 0;border-bottom:1px solid var(--rule);white-space:nowrap}
+tr.row{cursor:pointer;border-bottom:1px dotted var(--rule)}
+tr.row:hover td{background:var(--soft)}
+tr.row[aria-expanded="true"] td{background:var(--soft)}
+td{padding:13px 10px 13px 0;vertical-align:top}
+td.amt{width:96px;white-space:nowrap}
+td.amt .bibnum{font-size:26px;display:block}
+td.amt small{display:block;font-size:11.5px;color:var(--mute);margin-top:2px;white-space:normal;line-height:1.3}
+td.nm{width:29%}
+td.nm .n{font-weight:600;font-size:15px;line-height:1.3}
+td.nm .fo{display:block;color:var(--mute);font-size:13px;margin-top:2px}
+td.hp{color:var(--ink2);line-height:1.45}
+td.hp .none{color:var(--mute)}
+td.stc{width:132px;white-space:nowrap}
+td.stc small{display:block;color:var(--mute);font-size:12px;white-space:normal;margin-top:2px;line-height:1.3}
+td.fp{width:150px}
+td.fp .lab{color:var(--ink);font-size:13px}
+td.fp small{display:block;color:var(--mute);font-size:12px;margin-top:2px;line-height:1.35}
+td.x{width:22px;text-align:right;color:var(--print);font-family:var(--bib);font-weight:700;font-size:20px;padding-right:0}
+tr.detail td{padding:0 0 18px;background:transparent}
+tr.detail .back{border-width:1.5px;border-color:var(--hair)}
+.folio{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:10px;border-top:3px solid var(--hair);font-family:var(--bib);font-weight:600;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute)}
+.twoc{columns:2;column-gap:44px;column-rule:1px solid var(--rule);margin-top:40px;padding-top:18px;border-top:1.5px solid var(--hair);font-size:14.5px;line-height:1.5;color:var(--ink2)}
+.twoc h3{font-family:var(--bib);font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 8px;color:var(--ink)}
+.twoc p{margin:0 0 10px;break-inside:avoid}
+.twoc ol{margin:0 0 10px;padding-left:18px}
+@media (max-width:1100px){.sheet{grid-template-columns:1fr}.margin{position:static;padding-top:14px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:end}.margin ol{display:none}.margin .lab{flex-basis:100%}.ctl{margin:0}.ctl select{display:inline-block;width:auto}}
+@media (max-width:800px){
+  body{padding-inline:16px}
+  .mast{grid-template-columns:1fr}
+  .stand,.twoc{columns:1}
+  thead{display:none}
+  table,tbody{display:block}
+  tr.row{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 14px;padding:12px 0}
+  tr.row td{display:block;padding:0;width:auto}
+  tr.row td.amt{grid-row:1/4}
+  tr.row td.nm{grid-column:2}
+  tr.row td.hp{grid-column:2;font-size:13.5px;margin-top:4px}
+  tr.row td.stc,tr.row td.fp{grid-column:2;margin-top:6px}
+  tr.row td.x{display:none}
+  tr.detail{display:block}tr.detail td{display:block;padding:0 0 14px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+  <a class="brand" href="#">Charity Bibs<small>NYC Marathon 2026</small></a>
+  <nav><a href="#how">How this works</a><a href="mailto:hello@charitybibs.com?subject=Correction">Report a mistake</a></nav>
+</header>
+
+<div class="mast">
+  <h1>The charity<br>bib guide</h1>
+  <div class="right"><span class="lab">NYC Marathon 2026 · 27 programs</span><b>Every charity that will give you a spot, on one sheet.</b><p>How much you raise, what they give you back, whether they're still taking runners, and what the fine print says. Every line was read from the charity's own page and links to it. Last checked <span id="refreshed"></span>.</p></div>
+</div>
+
+<div class="stand">
+  <p><b>Didn't get in through the drawing?</b> A charity bib is a guaranteed spot in the race. In return you promise to raise a set amount for the charity, usually $3,000 to $5,000, by a deadline. You give them a credit card when you're accepted. If you don't raise it all, they charge the rest to the card. That's normal; it's how the charity covers the spot it already paid for.</p>
+  <p><b>The charities are more different than the prices.</b> Twenty-two of the twenty-seven ask for between $3,000 and $5,000. What varies is the help: some give you a coach, group runs, a fundraising helper, a team, a bus to the start. Some give you a bib and a deadline. That's the difference between the money being easy and being hard to raise.</p>
+  <p><b>So read this guide in three passes.</b> First find a cause you'd be proud to ask friends to give to. Then, within it, pick for the help. Then check they're still taking runners and read the fine print, which opens under each charity when you click it.</p>
+</div>
+
+<div class="key">
+  <div><span class="lab">You raise</span>The fundraising minimum, plus any charity fee that doesn't count toward it. NYRR's own entry fee is separate; it's in the fine print.</div>
+  <div><span class="lab">What they give you</span>Only what the charity says on its page. If it's blank, they don't describe it.</div>
+  <div><span class="lab">Taking runners?</span><span class="st open">Taking runners</span> · <span class="st waitlist">Waitlist</span> · <span class="st closed">Closed</span> · <span class="st unknown">Not sure</span></div>
+  <div><span class="lab">Fine print</span>How many of the four questions the charity answers on its own pages: if I don't raise it all, if I get hurt, can I move to next year, until when can I back out free.</div>
+</div>
+
+<div class="sheet">
+<aside class="margin" aria-label="In this guide">
+  <span class="lab">In this guide</span>
+  <ol id="toc"></ol>
+  <label class="ctl">Sort within each cause<select id="sort"><option value="support">Most help raising the money</option><option value="min">Lowest amount to raise</option><option value="open">Still taking runners</option><option value="terms">Clearest fine print</option><option value="name">Name</option></select></label>
+  <label class="ctl"><input type="checkbox" id="f-open">Only charities taking runners</label>
+</aside>
+<div id="sheet"></div>
+</div>
+
+<div class="folio"><span>Charity Bibs · The charity bib guide · NYC Marathon 2026</span><span>Not affiliated with NYRR or any charity · Not legal advice</span></div>
+
+<div class="twoc" id="how">
+  <div><h3>The four fine print questions</h3>
+  <ol><li>If I don't raise it all by the deadline, what happens, and when?</li><li>If I get hurt and can't run, do I still owe the money?</li><li>Can I move my spot to next year?</li><li>Until what date can I back out for free?</li></ol>
+  <p>If a charity doesn't answer one, ask before you sign up. Any charity with a real program answers these in one email. Keep the reply.</p></div>
+  <div><h3>Where the numbers come from</h3>
+  <p>Every amount, every "what they give you," and every quote was read from the charity's own web page and links back to it. If something says <b>"they don't say,"</b> we couldn't find it published. That's not a no. Ask.</p>
+  <p>The cause label is the one thing written by hand. Everything else is the charity's words. The sheet is re-checked every week. Spot a mistake? <a href="mailto:hello@charitybibs.com?subject=Correction">Tell us</a> and it's fixed within two days.</p>
+  <p>Built by <a href="https://joycezhou.me">Joyce Zhou</a>, who wanted to run for a charity and couldn't find a way to compare them. How it was built is written up <a href="https://joycezhou.me/charitybibs">here</a>.</p></div>
+</div>
+
+<footer class="ft">
+  <span>Last checked <span id="refreshed2"></span></span>
+  <a href="#" id="dl">Download the data</a>
+  <a href="mailto:hello@charitybibs.com?subject=Add%20a%20charity">Add or correct a charity</a>
+  <span>Data: CC BY 4.0</span>
+</footer>
+</div>
+<script src="data.js"></script>
+<script src="bib.js"></script>
+<script>
+(function(){
+  const {all,money,esc,fmt,STATUS,statusRank,termsCount,lit,list,due,back,causes}=CB;
+  const $=s=>document.getElementById(s);
+  const state={sort:'support',fOpen:false,open:new Set()};
+  const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+  $('toc').innerHTML=causes.map(cz=>'<li><a href="#c-'+slug(cz)+'">'+esc(cz)+'</a><span class="n">'+all.filter(c=>c.cause===cz).length+'</span></li>').join('');
+  const fpWords=c=>{const a=[];if(c.shortfall.pub)a.push('if you don\'t raise it all');if(c.injury.pub)a.push('if you get hurt');if(c.deferral.pub)a.push('moving to next year');if(c.freeExit)a.push('backing out free');return a.length?'Answers: '+a.join(', '):'Answers none of the four. Ask before you sign up.';};
+  function render(){
+    const key = state.sort==='min' ? (a,b)=> (a.min??1e9)-(b.min??1e9) || b.supportScore-a.supportScore
+      : state.sort==='open' ? (a,b)=> statusRank(a.status)-statusRank(b.status) || b.supportScore-a.supportScore
+      : state.sort==='terms' ? (a,b)=> termsCount(b)-termsCount(a) || b.supportScore-a.supportScore
+      : state.sort==='name' ? (a,b)=> a.name.localeCompare(b.name)
+      : (a,b)=> b.supportScore-a.supportScore || statusRank(a.status)-statusRank(b.status) || (a.min??1e9)-(b.min??1e9);
+    let html='';
+    for(const cz of causes){
+      const rows=all.filter(c=>c.cause===cz&&(!state.fOpen||c.status==='open')).sort((a,b)=>key(a,b)||a.name.localeCompare(b.name));
+      const n=all.filter(c=>c.cause===cz).length, op=all.filter(c=>c.cause===cz&&c.status==='open').length;
+      html+='<section class="cause" id="c-'+slug(cz)+'"><div class="ch"><h2>'+esc(cz)+'</h2><span class="lab">'+n+(n===1?' charity':' charities')+' · '+(op?op+' taking runners':'none taking runners today')+'</span></div>';
+      if(!rows.length){html+='<p style="color:var(--mute);font-size:14px;margin:12px 0 0">None taking runners today.</p></section>';continue;}
+      html+='<table><thead><tr><th>You raise</th><th>Charity</th><th>What they give you</th><th>Taking runners?</th><th>Fine print</th><th></th></tr></thead><tbody>';
+      for(const c of rows){
+        const o=state.open.has(c.id);const [sw,sl]=STATUS[c.status];const l=lit(c).map(([,v])=>v.toLowerCase());
+        html+='<tr class="row" data-id="'+esc(c.id)+'" tabindex="0" aria-expanded="'+o+'">'+
+          '<td class="amt"><span class="bibnum">'+money(c.min)+'</span>'+(due(c)?'<small>due '+due(c)+'</small>':'')+(c.fee&&c.feeCreditable===false?'<small>+ '+money(c.fee)+' fee that doesn\'t count</small>':'')+'</td>'+
+          '<td class="nm"><span class="n">'+esc(c.name)+'</span><span class="fo">'+esc(c.focus||'')+'</span></td>'+
+          '<td class="hp">'+(l.length?esc(list(l)).replace(/^./,x=>x.toUpperCase())+'.':'<span class="none">Not described on their page.</span>')+'</td>'+
+          '<td class="stc"><span class="st '+c.status+'">'+sw+'</span><small>'+sl+(c.spots?'. '+esc(c.spots):'')+'</small></td>'+
+          '<td class="fp"><span class="lab">'+termsCount(c)+' of 4</span><small>'+fpWords(c)+'</small></td>'+
+          '<td class="x" aria-hidden="true">'+(o?'–':'+')+'</td></tr>';
+        if(o)html+='<tr class="detail"><td colspan="6">'+back(c)+'</td></tr>';
+      }
+      html+='</tbody></table></section>';
+    }
+    $('sheet').innerHTML=html;
+  }
+  const toggle=id=>{state.open.has(id)?state.open.delete(id):state.open.add(id);render();const tr=document.querySelector('tr.row[data-id="'+id+'"]');if(tr)tr.focus();};
+  $('sheet').addEventListener('click',e=>{const tr=e.target.closest('tr.row');if(tr&&!e.target.closest('a'))toggle(tr.dataset.id);});
+  $('sheet').addEventListener('keydown',e=>{const tr=e.target.closest('tr.row');if(tr&&(e.key==='Enter'||e.key===' ')){e.preventDefault();toggle(tr.dataset.id);}});
+  $('sort').addEventListener('change',e=>{state.sort=e.target.value;render();});
+  $('f-open').addEventListener('change',e=>{state.fOpen=e.target.checked;render();});
+  $('refreshed').textContent=fmt(CB.DATA.refreshed);$('refreshed2').textContent=fmt(CB.DATA.refreshed);
+  $('dl').addEventListener('click',e=>{e.preventDefault();CB.download();});
+  render();
+})();
+</script>
+</body>
+</html>
