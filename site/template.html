@@ -4,199 +4,220 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Charity Bibs</title>
-<meta name="description" content="Every NYC Marathon charity bib program in one place. Pick a cause, see how much you'd raise and what each charity gives you, and find out who's still taking runners. Every number links to the charity's own page.">
+<meta name="description" content="Every NYC Marathon charity bib program in one place. Answer three questions and see which charities fit you: how much you'd raise, what each charity gives you, and who's still taking runners. Every number links to the charity's own page.">
 <link rel="canonical" href="https://charitybibs.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="NYC Marathon charity bibs, compared">
-<meta property="og:description" content="Pick a cause. See how much you'd raise and what each charity gives you. Find out who's still taking runners.">
+<meta property="og:title" content="Which NYC Marathon charity should I run for?">
+<meta property="og:description" content="Answer three questions. See which charities fit, how much you'd raise, what they give you, and who's still taking runners.">
 <meta property="og:url" content="https://charitybibs.com/">
 <meta property="og:image" content="https://charitybibs.com/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://charitybibs.com/og.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Ctext x='16' y='22' font-family='Helvetica,Arial,sans-serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23FFFFFF'%3ECB%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F7F4EE'/%3E%3Crect width='32' height='8' fill='%23F0501E'/%3E%3Ctext x='16' y='27' font-family='Arial Narrow,Helvetica,Arial,sans-serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23141210'%3ECB%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Archivo:wght@400;500;600;700&display=swap">
 <script defer data-domain="charitybibs.com" src="https://plausible.io/js/script.outbound-links.js"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Dataset","name":"NYC Marathon charity bib programs, 2026","description":"Fundraising minimums, runner support, application status, and commitment terms for TCS New York City Marathon official charity partners, each field sourced to the charity's own published pages.","url":"https://charitybibs.com/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"Joyce Zhou","url":"https://joycezhou.me"},"temporalCoverage":"2026","spatialCoverage":"New York City","keywords":["NYC Marathon charity bib","charity bib","run for charity NYC Marathon","fundraising minimum","guaranteed entry"]}
 </script>
 <style>
+/* Paper, ink, one print color, three status inks. See docs/design-brief.md. */
 :root{
-  --bg:#FFFFFF; --ink:#111111; --ink2:#3D3D3D; --muted:#6B6B6B; --rule:#E4E4E4; --rule2:#CFCFCF; --soft:#F6F6F6;
-  --link:#0B57D0; --sel:#111111; --sel-ink:#FFFFFF;
-  --open:#1A7F37; --wait:#B26A00; --closed:#8A8A8A; --unk:#8A8A8A;
-  --sans:"Inter",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --paper:#F7F4EE; --ink:#141210; --ink2:#3B3733; --mute:#6E6862; --rule:#D9D3C9; --soft:#EFEAE1; --hair:#141210;
+  --print:#F0501E; --print-ink:#FFFFFF;
+  --open:#1E7B3A; --wait:#B8710A; --closed:#6E6862;
+  --bib:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --text:"Archivo",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#141414; --ink:#F2F2F2; --ink2:#D0D0D0; --muted:#9C9C9C; --rule:#2A2A2A; --rule2:#3A3A3A; --soft:#1C1C1C;
-    --link:#7CACF8; --sel:#F2F2F2; --sel-ink:#141414;
-    --open:#4CC26E; --wait:#E0A33A; --closed:#8A8A8A; --unk:#8A8A8A;
+    --paper:#141210; --ink:#F3EFE7; --ink2:#D6D0C6; --mute:#9B948A; --rule:#332F2A; --soft:#1E1B18; --hair:#F3EFE7;
+    --print:#FF6A35; --print-ink:#141210;
+    --open:#4FC46F; --wait:#E5A23B; --closed:#9B948A;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#141414; --ink:#F2F2F2; --ink2:#D0D0D0; --muted:#9C9C9C; --rule:#2A2A2A; --rule2:#3A3A3A; --soft:#1C1C1C;
-  --link:#7CACF8; --sel:#F2F2F2; --sel-ink:#141414;
-  --open:#4CC26E; --wait:#E0A33A; --closed:#8A8A8A; --unk:#8A8A8A;
+  --paper:#141210; --ink:#F3EFE7; --ink2:#D6D0C6; --mute:#9B948A; --rule:#332F2A; --soft:#1E1B18; --hair:#F3EFE7;
+  --print:#FF6A35; --print-ink:#141210;
+  --open:#4FC46F; --wait:#E5A23B; --closed:#9B948A;
 }
 *{box-sizing:border-box}
-html{color-scheme:light dark;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);padding-block:0 64px;padding-inline:24px;font-feature-settings:"cv11","ss01"}
-a{color:var(--link);text-decoration:none}
-a:hover{text-decoration:underline;text-underline-offset:2px}
-:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+html{color-scheme:light dark;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 var(--text);padding-block:0 64px;padding-inline:24px}
+a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--print)}
+:focus-visible{outline:2px solid var(--print);outline-offset:2px}
 button{font:inherit;color:inherit}
+h1,h2,h3,h4,p{margin:0}
 .wrap{max-width:1280px;margin:0 auto}
-.num{font-variant-numeric:tabular-nums}
+.col{max-width:840px;margin:0 auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-/* header */
-header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between;padding-block:16px;border-bottom:1px solid var(--rule)}
-.brand{font-weight:700;font-size:17px;letter-spacing:-.01em;color:var(--ink)}
-.brand span{color:var(--muted);font-weight:400;margin-left:10px;font-size:14px}
-header nav{display:flex;gap:20px;font-size:14px;color:var(--muted)}
-header nav a{color:inherit}
+/* type from the bib */
+.lab{font-family:var(--bib);font-weight:600;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);line-height:1.2}
+.bibnum{font-family:var(--bib);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.01em;line-height:.95}
+.st{font-family:var(--bib);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.st::before{content:"";display:inline-block;width:9px;height:9px;margin-right:7px;background:var(--closed)}
+.st.open::before{background:var(--open)}
+.st.waitlist::before{background:var(--wait)}
+.st.unknown::before{background:transparent;border:1.5px solid var(--closed);width:7px;height:7px}
+.st.open{color:var(--open)}
+.st.waitlist{color:var(--wait)}
+.btn{display:inline-block;font-family:var(--bib);font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:10px 16px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;border-radius:0;line-height:1.1}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.print{background:var(--print);border-color:var(--print);color:var(--print-ink)}
+.btn.print:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.btn.sm{font-size:13px;padding:7px 11px}
 
-/* intro */
-.intro{padding:36px 0 22px;max-width:760px}
-h1{font-size:clamp(26px,3.2vw,36px);line-height:1.15;margin:0 0 10px;font-weight:700;letter-spacing:-.02em;text-wrap:balance}
-.lede{margin:0;color:var(--ink2);font-size:16.5px;line-height:1.55;max-width:64ch}
+/* header, intro */
+header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;padding:18px 0 12px;border-bottom:1.5px solid var(--hair)}
+.brand{font-family:var(--bib);font-weight:800;font-size:22px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none}
+.brand small{font-family:var(--bib);font-weight:600;font-size:13px;letter-spacing:.09em;color:var(--mute);margin-left:12px}
+header nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13.5px;color:var(--mute)}
+header nav a{text-decoration:none}
+.intro{padding:40px 0 28px}
+h1{font-family:var(--bib);font-weight:800;font-size:clamp(42px,7vw,76px);text-transform:uppercase;letter-spacing:.01em;line-height:.95;text-wrap:balance}
+.lede{margin:14px 0 0;font-size:17px;line-height:1.5;color:var(--ink2);max-width:60ch}
 
-/* layout */
-.layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:0 40px;align-items:start}
-.layout>*{min-width:0}
-nav.causes{position:sticky;top:16px}
-nav.causes h2{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;padding:8px 0}
-nav.causes button{display:flex;justify-content:space-between;align-items:baseline;gap:10px;width:100%;text-align:left;background:transparent;border:0;border-left:2px solid transparent;padding:6px 10px;cursor:pointer;font-size:14.5px;line-height:1.35;border-radius:0}
-nav.causes button:hover{background:var(--soft)}
-nav.causes button[aria-pressed="true"]{border-left-color:var(--ink);font-weight:600;background:var(--soft)}
-nav.causes button .n{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
-nav.causes .hint{margin:14px 10px 0;font-size:12.5px;color:var(--muted);line-height:1.45}
+/* the three questions */
+.qs{counter-reset:q}
+fieldset.qn{border:0;margin:0;padding:22px 0 26px;border-top:1.5px solid var(--hair);min-width:0}
+fieldset.qn[hidden]{display:none}
+fieldset.qn legend{float:left;width:100%;padding:0;margin:0 0 14px;display:flex;gap:14px;align-items:baseline}
+fieldset.qn legend::before{counter-increment:q;content:counter(q);font-family:var(--bib);font-weight:800;font-size:34px;line-height:1;color:var(--print);min-width:26px}
+fieldset.qn legend .t{font-family:var(--bib);font-weight:700;font-size:28px;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+fieldset.qn legend .s{display:block;font-family:var(--text);font-weight:400;font-size:14px;text-transform:none;letter-spacing:0;color:var(--mute);margin-top:4px}
+.opts{clear:both;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.opts.one{grid-template-columns:1fr;max-width:580px}
+.opt{position:relative;display:block;border:1.5px solid var(--rule);padding:11px 14px 11px 40px;cursor:pointer;line-height:1.35;font-size:15px}
+.opt input{position:absolute;left:14px;top:15px;margin:0;width:14px;height:14px;accent-color:var(--print)}
+.opt:hover{border-color:var(--ink)}
+.opt:has(input:checked){border-color:var(--print);box-shadow:inset 0 0 0 1px var(--print)}
+.opt:has(input:focus-visible){outline:2px solid var(--print);outline-offset:2px}
+.opt .n{display:block;font-size:12.5px;color:var(--mute);margin-top:2px}
+.opt b{font-weight:600}
+fieldset.done{padding:12px 0}
+fieldset.done legend{margin:0}
+fieldset.done .opts{display:none}
+fieldset.done legend .t{font-size:18px}
+fieldset.done legend .s{display:inline;margin-left:8px;color:var(--ink)}
+.chg{margin-left:auto;font-size:13px;color:var(--mute);background:none;border:0;text-decoration:underline;cursor:pointer;padding:0;white-space:nowrap}
+.chg:hover{color:var(--print)}
+fieldset:not(.done) .chg{display:none}
 
-/* toolbar */
-.bar{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;padding:6px 0 12px}
-.bar .h{font-weight:600;font-size:16px;margin-right:auto}
-.bar .h small{font-weight:400;color:var(--muted);font-size:13.5px;margin-left:8px}
-.ctl{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted)}
-.ctl select{font:inherit;font-size:13.5px;color:var(--ink);padding:6px 28px 6px 10px;border:1px solid var(--rule2);border-radius:6px;background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%236B6B6B' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center;appearance:none;-webkit-appearance:none;max-width:100%}
-.ctl input[type="checkbox"]{width:15px;height:15px;accent-color:var(--ink);margin:0}
+/* results */
+.res{border-top:3px solid var(--hair);margin-top:8px;padding-top:22px}
+.res-h{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;margin-bottom:6px}
+.res-h h2{font-family:var(--bib);font-weight:800;font-size:34px;text-transform:uppercase;letter-spacing:.01em}
+.res-h .lab{margin-left:auto}
+.say{font-size:16px;color:var(--ink2);margin:0 0 18px;max-width:64ch}
+.say a{color:var(--ink)}
+.pick{display:grid;grid-template-columns:132px minmax(0,1fr);gap:0 22px;padding:18px 0;border-top:1.5px solid var(--rule)}
+.pick:first-child{border-top:0}
+.bib{border:1.5px solid var(--hair);background:var(--paper);text-align:center;align-self:start;position:relative}
+.bib::before,.bib::after{content:"";position:absolute;top:6px;width:6px;height:6px;border-radius:50%;background:var(--paper);border:1.5px solid var(--rule)}
+.bib::before{left:6px}.bib::after{right:6px}
+.bib .band{background:var(--print);color:var(--print-ink);font-family:var(--bib);font-weight:700;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;padding:5px 14px;line-height:1.1;min-height:24px;display:flex;align-items:center;justify-content:center;text-wrap:balance}
+.bib.closed .band,.bib.unknown .band{background:var(--soft);color:var(--mute)}
+.bib .bibnum{font-size:40px;padding:12px 4px 6px}
+.bib .lab{display:block;padding:0 6px 8px;font-size:10.5px}
+.bib .tear{border-top:1.5px dashed var(--rule);padding:6px;font-family:var(--bib);font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.pick .body{min-width:0}
+.rank{font-family:var(--bib);font-weight:600;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--print)}
+.pick h3{font-family:var(--bib);font-weight:700;font-size:26px;text-transform:uppercase;letter-spacing:.01em;line-height:1.05;margin:2px 0 2px}
+.pick .fo{color:var(--mute);font-size:14px;margin:0 0 10px}
+.why{margin:0;padding:0;list-style:none;font-size:15px;line-height:1.5}
+.why li{padding-left:18px;position:relative}
+.why li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;background:var(--print)}
+.why li.no::before{background:transparent;border:1.5px solid var(--mute);width:6px;height:6px}
+.why li.no{color:var(--mute)}
+.acts{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.pick .back{grid-column:1/-1;margin-top:14px}
 
-/* table */
-table{border-collapse:collapse;width:100%;font-size:14px;border-top:1px solid var(--ink)}
-thead th{text-align:left;font-size:11.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:10px 12px 9px;border-bottom:1px solid var(--rule2);vertical-align:bottom;white-space:nowrap}
-thead th.r{text-align:right}
-tbody tr.row{border-bottom:1px solid var(--rule);cursor:pointer}
-tbody tr.row:hover{background:var(--soft)}
-tbody tr.row[aria-expanded="true"]{background:var(--soft);border-bottom-color:transparent}
-td{padding:14px 12px;vertical-align:top}
-td.name{width:31%}
-td.name .nm{font-weight:600;font-size:15px;line-height:1.3;color:var(--ink)}
-td.name .fo{display:block;color:var(--muted);font-size:13px;margin-top:3px;line-height:1.4}
-td.amt{text-align:right;white-space:nowrap;width:120px}
-td.amt .v{font-weight:600;font-size:16px;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
-td.amt small{display:block;font-size:12px;color:var(--muted);margin-top:3px;white-space:normal;line-height:1.35}
-td.sup{color:var(--ink2);line-height:1.5}
-td.sup .none{color:var(--muted)}
-td.terms{width:140px;white-space:nowrap}
-td.terms .v{font-variant-numeric:tabular-nums}
-td.terms small{display:block;font-size:12px;color:var(--muted);margin-top:3px;white-space:normal}
-.meter{display:inline-flex;gap:2px;vertical-align:middle;margin-right:8px}
-.meter i{display:block;width:9px;height:9px;border-radius:2px;background:var(--rule2)}
-.meter i.on{background:var(--ink)}
-td.st{width:150px;white-space:nowrap}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:1px;background:var(--unk)}
-.dot.open{background:var(--open)}
-.dot.waitlist{background:var(--wait)}
-.dot.closed{background:var(--closed)}
-.dot.unknown{background:transparent;border:1.5px solid var(--unk);width:7px;height:7px}
-td.st .w{font-weight:600}
-td.st small{display:block;font-size:12px;color:var(--muted);margin-top:3px;white-space:normal;line-height:1.35}
-td.x{width:36px;text-align:right;color:var(--muted);padding-right:8px}
-.chev{display:inline-block;width:8px;height:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .15s;margin-top:6px}
-tr[aria-expanded="true"] .chev{transform:rotate(-135deg);margin-top:10px}
-tr.empty td{padding:40px 12px;text-align:center;color:var(--muted)}
+/* compact rows */
+.list{margin-top:8px}
+.list-h{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;padding:12px 0 6px;border-top:1.5px solid var(--hair)}
+.list-h h2{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em}
+.list-h .lab{margin-right:auto}
+.ctl{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--mute)}
+.ctl select{font:inherit;font-size:13.5px;color:var(--ink);padding:6px 28px 6px 10px;border:1.5px solid var(--ink);background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%236E6862' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center;appearance:none;-webkit-appearance:none;border-radius:0;max-width:100%}
+.row{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:2px 16px;align-items:start;padding:12px 0;border-top:1px dotted var(--rule)}
+.row:first-of-type{border-top:0}
+.row .bibnum{font-size:24px;padding-top:2px}
+.row .bibnum small{display:block;font-family:var(--bib);font-weight:600;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);letter-spacing:.06em;margin-top:3px;line-height:1.2}
+.row .nm{font-weight:600;font-size:15px}
+.row .nm .cz{font-weight:400;color:var(--mute);font-size:13px;margin-left:8px}
+.row .rs{color:var(--ink2);font-size:13.5px;grid-column:2;line-height:1.45}
+.row .rs .fo{color:var(--mute)}
+.row .st{grid-column:3;grid-row:1;padding-top:3px}
+.row .acts{grid-column:2;margin-top:6px}
+.row .back{grid-column:1/-1;margin-top:10px}
+details.more summary{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em;cursor:pointer;padding:12px 0;border-top:1.5px solid var(--hair);list-style:none;display:flex;gap:12px;align-items:baseline}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::after{content:"+";margin-left:auto;font-weight:600;color:var(--print)}
+details.more[open] summary::after{content:"–"}
+details.more summary .lab{font-size:12.5px}
+.empty{border:1.5px dashed var(--rule);padding:18px;margin:8px 0 14px;font-size:15px}
 
-/* detail */
-tr.detail td{padding:0 12px 22px;background:var(--soft);border-bottom:1px solid var(--rule)}
-.panel{border-top:1px solid var(--rule2);padding-top:18px;display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:22px 40px}
-.panel h4{margin:0 0 6px;font-size:13.5px;font-weight:600}
-.panel p{margin:0;font-size:14px;line-height:1.5}
-.panel p.np{color:var(--muted)}
-.qa{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px 32px;align-content:start}
-.q blockquote{margin:8px 0 0;padding:0 0 0 12px;border-left:2px solid var(--rule2);font-size:13px;color:var(--muted);line-height:1.5}
-.q .src{font-size:12.5px;margin-top:6px}
-.q .why{font-size:13px;color:var(--muted);margin-top:6px}
-.receipt{font-size:13.5px;line-height:1.7;border:1px solid var(--rule2);background:var(--bg);border-radius:8px;padding:12px 14px;margin-top:8px}
-.receipt div{display:flex;justify-content:space-between;gap:12px}
-.receipt div span:first-child{color:var(--muted)}
-.receipt div span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
-.receipt .tot{border-top:1px solid var(--rule2);margin-top:6px;padding-top:6px;font-weight:600}
-.receipt .tot span:first-child{color:var(--ink)}
-.receipt .note{display:block;color:var(--muted);font-size:12px;line-height:1.45;margin-top:8px}
-.supl{list-style:none;margin:6px 0 0;padding:0;columns:2;column-gap:20px;font-size:13.5px}
-.supl li{break-inside:avoid;padding:2px 0;color:var(--ink2)}
-.supl li.off{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--rule2)}
-.supl li::before{content:"✓";display:inline-block;width:16px;color:var(--open);font-weight:600}
-.supl li.off::before{content:"–";color:var(--muted)}
-.go{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;border-top:1px solid var(--rule2);padding-top:16px}
-.btn{display:inline-block;font-size:14px;font-weight:600;padding:10px 16px;border-radius:6px;border:1px solid var(--rule2);color:var(--ink);text-decoration:none;background:var(--bg)}
-.btn:hover{text-decoration:none;border-color:var(--ink)}
-.btn.primary{background:var(--sel);color:var(--sel-ink);border-color:var(--sel)}
-.go .meta{font-size:12.5px;color:var(--muted);margin-left:auto}
-.go .meta a{color:inherit}
+/* the back of the bib */
+.back{border:1.5px solid var(--hair);background:var(--paper)}
+.back-h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;padding:10px 18px;border-bottom:1.5px dashed var(--rule)}
+.back-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.bk{padding:16px 18px 18px;border-right:1.5px dashed var(--rule);border-bottom:1.5px dashed var(--rule);min-width:0}
+.bk h4{font-family:var(--bib);font-weight:700;font-size:17px;letter-spacing:.02em;text-transform:uppercase;margin:0 0 8px}
+.bk p{margin:0 0 6px;font-size:14.5px;line-height:1.5;color:var(--ink2)}
+.bk p.big{font-size:15.5px;color:var(--ink)}
+.bk p.np{color:var(--mute)}
+.bk p.fine{font-size:12.5px;color:var(--mute);line-height:1.45}
+.bk blockquote{margin:8px 0;padding:0 0 0 12px;border-left:2px solid var(--print);font-size:13px;color:var(--ink2);line-height:1.5}
+.bk .src{display:inline-block;font-size:12.5px;margin-top:4px;color:var(--mute)}
+.receipt{margin:8px 0 6px;font-size:13.5px}
+.receipt div{display:flex;justify-content:space-between;gap:12px;padding:3px 0;border-bottom:1px dotted var(--rule)}
+.receipt div span:last-child{font-family:var(--bib);font-weight:700;font-size:16px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.receipt div.tot{border-bottom:0;border-top:1.5px solid var(--hair);margin-top:4px;padding-top:6px;font-weight:600}
+.help{list-style:none;margin:4px 0 0;padding:0;columns:2;column-gap:18px;font-size:13.5px}
+.help li{break-inside:avoid;padding:2px 0;color:var(--ink2)}
+.help li::before{content:"✓";display:inline-block;width:16px;color:var(--open);font-weight:700}
+.help li.off{color:var(--mute)}
+.help li.off::before{content:"–";color:var(--mute)}
+.back-go{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:14px 18px}
+.back-go .lab{margin-left:auto}
 
-/* text sections */
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px 56px;margin-top:56px;padding-top:28px;border-top:1px solid var(--rule)}
+/* text, footer */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px 56px;margin-top:56px;padding-top:24px;border-top:1.5px solid var(--hair)}
 section.txt{max-width:64ch}
-section.txt h2{font-size:17px;margin:0 0 10px;letter-spacing:-.01em}
-section.txt h3{font-size:14px;margin:18px 0 6px}
+section.txt h2{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 10px}
+section.txt h3{font-family:var(--bib);font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:.03em;margin:18px 0 6px}
 section.txt p{margin:0 0 12px;color:var(--ink2);font-size:14.5px}
 section.txt p b{color:var(--ink);font-weight:600}
-ol.qs{padding-left:20px;margin:0 0 12px;color:var(--ink2);font-size:14.5px}
-ol.qs li{margin-bottom:5px}
-footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px}
-footer a{color:inherit}
-@media (prefers-reduced-motion:reduce){.chev{transition:none}}
+ol.four{padding-left:20px;margin:0 0 12px;color:var(--ink2);font-size:14.5px}
+ol.four li{margin-bottom:5px}
+footer{margin-top:48px;padding-top:14px;border-top:1.5px solid var(--hair);display:flex;flex-wrap:wrap;gap:8px 24px;font-size:12.5px;color:var(--mute)}
+footer a{text-decoration:none}
 
-/* narrow */
-@media (max-width:900px){
+@media (max-width:640px){
   body{padding-inline:16px}
-  .intro{padding-top:24px}
-  .layout{grid-template-columns:1fr}
-  nav.causes{position:static;margin-bottom:8px}
-  nav.causes h2{padding:4px 0}
-  nav.causes .list{display:flex;gap:6px;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-  nav.causes .list::-webkit-scrollbar{display:none}
-  nav.causes button{width:auto;flex:0 0 auto;border:1px solid var(--rule2);border-radius:999px;padding:6px 12px;font-size:13.5px;background:var(--bg)}
-  nav.causes button[aria-pressed="true"]{background:var(--sel);color:var(--sel-ink);border-color:var(--sel)}
-  nav.causes button[aria-pressed="true"] .n{color:var(--sel-ink);opacity:.7}
-  nav.causes .hint{display:none}
-  table{border-top:0;display:block}
-  thead,tbody{display:block}
-  thead{display:none}
-  tr.row{display:grid;grid-template-columns:1fr auto;gap:2px 12px;border:1px solid var(--rule2);border-radius:10px;margin-bottom:10px;padding:12px 14px}
-  tr.row td{display:block;padding:0;width:auto}
-  tr.row td.name{grid-column:1;grid-row:1}
-  tr.row td.amt{grid-column:2;grid-row:1;text-align:right}
-  tr.row td.sup{grid-column:1/-1;margin-top:8px;font-size:13.5px}
-  tr.row td.terms{grid-column:1;margin-top:8px}
-  tr.row td.st{grid-column:2;margin-top:8px;text-align:right}
-  tr.row td.x{display:none}
-  tr.row td[data-l]::before{content:attr(data-l);display:block;font-size:10.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
-  tr.row td.st[data-l]::before{text-align:right}
-  tr.row[aria-expanded="true"]{border-radius:10px 10px 0 0;border-bottom:0;margin-bottom:0;background:var(--soft)}
-  tr.detail{display:block;margin:0 0 12px;border:1px solid var(--rule2);border-top:0;border-radius:0 0 10px 10px}
-  tr.detail td{display:block;padding:0 14px 16px}
-  .panel{grid-template-columns:1fr}
-  .supl{columns:1}
-  .go .meta{margin-left:0}
+  .intro{padding-top:28px}
+  fieldset.qn legend .t{font-size:24px}
+  .pick{grid-template-columns:96px minmax(0,1fr);gap:0 14px}
+  .bib .bibnum{font-size:30px}
+  .bib .tear{display:none}
+  .row{grid-template-columns:76px minmax(0,1fr)}
+  .row .bibnum{font-size:21px}
+  .row .st{grid-column:2;grid-row:auto;padding-top:0}
+  .help{columns:1}
+  .bk{border-right:0}
+  .back-go .lab{margin-left:0;flex-basis:100%}
+  .list-h .ctl{flex-basis:100%}
 }
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-  <div class="brand">Charity Bibs<span>NYC Marathon 2026</span></div>
+  <a class="brand" href="/">Charity Bibs<small>NYC Marathon 2026</small></a>
   <nav>
     <a href="#how">How this works</a>
     <a href="#about">About</a>
@@ -204,21 +225,45 @@ footer a{color:inherit}
   </nav>
 </header>
 
+<div class="col">
 <div class="intro">
-  <h1>Run the NYC Marathon for a charity</h1>
-  <p class="lede">Didn't get in through the drawing? Every official charity partner offers guaranteed spots if you raise money for them. Pick a cause, compare how much you'd raise and what each charity gives you, then click a charity to read the fine print. Every number comes from the charity's own page.</p>
+  <h1>Which charity should I run for?</h1>
+  <p class="lede">Didn't get in through the drawing? Every official charity gives you a guaranteed spot if you raise money for them. Answer three questions and we'll show you the ones that fit, and why. Every number comes from the charity's own page.</p>
 </div>
 
-<div class="layout">
-<nav class="causes" aria-label="Causes">
-  <h2>Cause</h2>
-  <div class="list" id="causes"></div>
-  <p class="hint">Pick a cause you'd be glad to ask friends to give to. That matters more than the price.</p>
-</nav>
+<form class="qs" id="form">
+<fieldset class="qn" id="q1">
+  <legend><span class="t">What do you want to run for?<span class="s">Pick a cause you'd be proud to ask friends to give to. That matters more than the price.</span></span><button type="button" class="chg" data-q="q1">Change</button></legend>
+  <div class="opts" id="o1"></div>
+</fieldset>
+<fieldset class="qn" id="q2" hidden>
+  <legend><span class="t">What help do you want?<span class="s">Prices are almost all the same. The help is not.</span></span><button type="button" class="chg" data-q="q2">Change</button></legend>
+  <div class="opts one">
+    <label class="opt"><input type="radio" name="help" value="train"><b>People to train with.</b> A coach, group runs, a training plan.</label>
+    <label class="opt"><input type="radio" name="help" value="fund"><b>Help asking for money.</b> A fundraising helper, a page, team events.</label>
+    <label class="opt"><input type="radio" name="help" value="both"><b>Both.</b> I've never done a marathon or raised money.</label>
+    <label class="opt"><input type="radio" name="help" value="none"><b>Just the spot.</b> I've got the rest.</label>
+  </div>
+</fieldset>
+<fieldset class="qn" id="q3" hidden>
+  <legend><span class="t">How soon do you need a spot?<span class="s">Some charities are full for 2026. Some have a waitlist.</span></span><button type="button" class="chg" data-q="q3">Change</button></legend>
+  <div class="opts one">
+    <label class="opt"><input type="radio" name="when" value="open"><b>Now.</b> Only show charities taking runners today.</label>
+    <label class="opt"><input type="radio" name="when" value="wait"><b>I can wait.</b> Include waitlists.</label>
+    <label class="opt"><input type="radio" name="when" value="all"><b>Show me everyone,</b> even the ones closed for 2026.</label>
+  </div>
+</fieldset>
+</form>
 
-<div>
-  <div class="bar">
-    <div class="h" id="heading">All causes <small id="count"></small></div>
+<section class="res" id="res" hidden>
+  <div class="res-h"><h2>Your shortlist</h2><span class="lab" id="rcount"></span></div>
+  <p class="say" id="say" aria-live="polite"></p>
+  <div id="picks"></div>
+</section>
+
+<section class="list" id="list">
+  <div class="list-h">
+    <h2 id="lh">Every charity</h2><span class="lab" id="lcount"></span>
     <label class="ctl" for="sort">Sort by
       <select id="sort">
         <option value="support">Most help raising the money</option>
@@ -228,32 +273,18 @@ footer a{color:inherit}
         <option value="name">Name</option>
       </select>
     </label>
-    <label class="ctl"><input type="checkbox" id="f-open"> Still taking runners only</label>
   </div>
-
-  <table id="tbl">
-  <thead>
-  <tr>
-    <th scope="col">Charity</th>
-    <th scope="col" class="r">You raise</th>
-    <th scope="col">What they give you</th>
-    <th scope="col">Fine print</th>
-    <th scope="col">Taking runners?</th>
-    <th scope="col"><span class="sr" aria-hidden="true"></span></th>
-  </tr>
-  </thead>
-  <tbody id="rows"></tbody>
-  </table>
-</div>
-</div>
+  <div id="rows"></div>
+  <details class="more" id="rest"><summary>Everyone else <span class="lab" id="restcount"></span></summary><div id="restrows"></div></details>
+</section>
 
 <div class="two">
 <section class="txt" id="how">
   <h2>How this works</h2>
   <p><b>A charity bib is a guaranteed spot in the race.</b> In return you promise to raise a set amount for the charity, usually $3,000 to $5,000, by a deadline. You give them a credit card when you're accepted. If you don't raise it all, they charge the rest to the card. That's normal. It's how the charity covers the spot it already paid for.</p>
-  <p><b>The charities are more different than the prices.</b> Some give you a coach, group runs, a fundraising helper, a team, a bus to the start. Some give you a bib and a deadline. That's the difference between the money being easy and being hard to raise, and it's the main thing this table shows.</p>
+  <p><b>The charities are more different than the prices.</b> Some give you a coach, group runs, a fundraising helper, a team, a bus to the start. Some give you a bib and a deadline. That's the difference between the money being easy and being hard to raise, and it's the main thing this page shows.</p>
   <p><b>"Fine print" counts how many of these four questions the charity answers on its own pages:</b></p>
-  <ol class="qs">
+  <ol class="four">
     <li>If I don't raise it all by the deadline, what happens, and when?</li>
     <li>If I get hurt and can't run, do I still owe the money?</li>
     <li>Can I move my spot to next year?</li>
@@ -266,16 +297,17 @@ footer a{color:inherit}
   <h2>Where the numbers come from</h2>
   <p>Every amount, every "what they give you," and every quote was read from the charity's own web page and links back to it. If something says <b>"they don't say,"</b> it means we couldn't find it published, not that the answer is no. Ask.</p>
   <p>The cause label is the one thing written by hand, so the list is easy to scan. Everything else is the charity's words.</p>
-  <p>The table is re-checked every week against the charities' pages. Spot a mistake? <a href="mailto:hello@charitybibs.com?subject=Correction">Tell us</a> and it's fixed within two days.</p>
+  <p>The page is re-checked every week against the charities' pages. Spot a mistake? <a href="mailto:hello@charitybibs.com?subject=Correction">Tell us</a> and it's fixed within two days.</p>
   <h3>About</h3>
   <p>Not legal advice. Not affiliated with New York Road Runners or any charity listed. Built by <a href="https://joycezhou.me">Joyce Zhou</a>, who wanted to run for a charity and couldn't find a way to compare them. How it was built is written up <a href="https://joycezhou.me/charitybibs">here</a>.</p>
 </section>
 </div>
+</div>
 
 <footer>
-  <span>Last checked <span id="refreshed" class="num"></span></span>
-  <span><a href="#" id="dl">Download the data</a></span>
-  <span><a href="mailto:hello@charitybibs.com?subject=Add%20a%20charity">Add or correct a charity</a></span>
+  <span>Last checked <span id="refreshed"></span></span>
+  <a href="#" id="dl">Download the data</a>
+  <a href="mailto:hello@charitybibs.com?subject=Add%20a%20charity">Add or correct a charity</a>
   <span>Data: CC BY 4.0</span>
 </footer>
 </div>
@@ -285,94 +317,196 @@ footer a{color:inherit}
 <script>
 (function(){
   const DATA = JSON.parse(document.getElementById('data').textContent);
+  const all = DATA.charities;
   const $ = s => document.getElementById(s);
-  const rowsEl = $('rows');
   const money = n => n==null ? '—' : '$' + n.toLocaleString('en-US');
   const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   const fmt = iso => { if(!iso) return null; const [y,m,d]=iso.split('-'); return MON[+m-1]+' '+(+d)+', '+y; };
-  const REG = 315; // NYRR entry, non-member; members $255 — shown in the receipt
-  const SUP = [["coaching","A coach"],["group_runs","Group runs"],["training_plan","Training plan"],["fundraising_coaching","Help fundraising"],["team_events","Team events"],["gear","Gear"],["fundraising_page","Fundraising page"],["bus_to_start","Bus to the start"],["charity_village","Tent at the start"],["hotel_or_travel","Hotel help"]];
-  const STATUS = {open:['Open','Taking applications'], waitlist:['Waitlist','Full for 2026, waitlist open'], closed:['Closed','Not taking runners for 2026'], unknown:['Not sure','They don\'t say']};
-  const state = {cause:'', sort:'support', fOpen:false, open:new Set()};
-  const all = DATA.charities;
+  const REG = 315; // NYRR entry, non-member, as cited on charity pages; members $255
+  const SUP = [["coaching","A coach"],["group_runs","Group runs"],["training_plan","A training plan"],["fundraising_coaching","Help fundraising"],["team_events","Team events"],["gear","Gear"],["fundraising_page","A fundraising page"],["bus_to_start","A bus to the start"],["charity_village","A tent at the start"],["hotel_or_travel","Hotel help"]];
+  const TRAIN = ["coaching","group_runs","training_plan"], FUND = ["fundraising_coaching","fundraising_page","team_events"];
+  const STATUS = {open:['Taking runners','Applications are open'], waitlist:['Waitlist','Full for 2026, waitlist open'], closed:['Closed','Not taking runners for 2026'], unknown:['Not sure','They don\'t say']};
+  const statusRank = s => ({open:0,waitlist:1,unknown:2,closed:3}[s] ?? 3);
+  const termsCount = c => (c.shortfall&&c.shortfall.pub?1:0)+(c.injury&&c.injury.pub?1:0)+(c.deferral&&c.deferral.pub?1:0)+(c.freeExit?1:0);
+  const lit = c => SUP.filter(([k])=>c.support[k]===true);
+  const label = k => SUP.find(([kk])=>kk===k)[1];
+  const list = arr => arr.length<=1 ? arr.join('') : arr.slice(0,-1).join(', ')+' and '+arr[arr.length-1];
+  const low = s => s.toLowerCase();
+  const cap = s => s.charAt(0).toUpperCase()+s.slice(1);
+  const due = c => c.deadline && c.deadline>='2026-01-01' ? fmt(c.deadline) : null;
+  const total = c => (c.min||0) + (c.regSeparate===false?0:REG) + (c.fee&&c.feeCreditable===false?c.fee:0);
+  const causes = [...new Set(all.map(c=>c.cause).filter(Boolean))].sort((a,b)=>all.filter(c=>c.cause===b).length-all.filter(c=>c.cause===a).length || a.localeCompare(b));
 
-  // causes rail
-  const causes=[...new Set(all.map(c=>c.cause).filter(Boolean))].sort((a,b)=>all.filter(c=>c.cause===b).length-all.filter(c=>c.cause===a).length || a.localeCompare(b));
-  const rail=$('causes');
-  const mk=(label,val,n)=>{const b=document.createElement('button');b.type='button';b.dataset.cause=val;b.innerHTML='<span>'+esc(label)+'</span><span class="n">'+n+'</span>';b.addEventListener('click',()=>{state.cause=val;render();window.plausible&&plausible('Cause',{props:{cause:val||'all'}});});return b;};
-  rail.appendChild(mk('All causes','',all.length));
-  causes.forEach(cz=>rail.appendChild(mk(cz,cz,all.filter(c=>c.cause===cz).length)));
+  /* ---------- the back of the bib ---------- */
+  const q = (title, o, extra) => '<section class="bk"><h4>'+title+'</h4>'+
+    (o.pub ? '<p>'+esc(o.text)+'</p>'+(o.quote?'<blockquote>“'+esc(o.quote)+'”</blockquote>':'')+(o.source?'<a class="src" href="'+esc(o.source)+'" target="_blank" rel="noopener">Read it on their page ↗</a>':'')
+           : '<p class="np">They don\'t say. Ask before you sign up.</p>')+
+    (extra?'<p class="fine">'+extra+'</p>':'')+'</section>';
+  function back(c){
+    const [sWord,sLine]=STATUS[c.status];
+    const reg = c.regSeparate===false ? '<div><span>NYRR race entry</span><span>covered</span></div>' : '<div><span>NYRR entry fee</span><span>+ '+money(REG)+'</span></div>';
+    const feeLabel = (c.feeLabel||'Charity fee').split(',')[0]; const feeShort = feeLabel.length>28 ? 'Charity fee' : feeLabel;
+    const fee = c.fee ? '<div><span>'+esc(feeShort)+(c.feeCreditable===false?' (doesn\'t count)':c.feeCreditable===true?' (counts toward your total)':' (they don\'t say if it counts)')+'</span><span>'+(c.feeCreditable===false?'+ '+money(c.fee):'('+money(c.fee)+')')+'</span></div>' : '';
+    const help = '<ul class="help">'+SUP.map(([k,l])=>'<li class="'+(c.support[k]===true?'':'off')+'">'+l+'</li>').join('')+'</ul>';
+    const freeExit = c.freeExit ? {pub:true, text:'You can back out for free until '+fmt(c.freeExit)+'.', quote:c.freeExitQuote, source:c.minSource||c.url} : {pub:false};
+    return '<div class="back" id="back-'+esc(c.id)+'">'+
+      '<div class="back-h"><span class="lab">The fine print · '+esc(c.name)+'</span><span class="lab">Read from their pages on '+fmt(c.verified)+'</span></div>'+
+      '<div class="back-grid">'+
+      '<section class="bk"><h4>How much do I raise?</h4><p class="big">'+money(c.min)+' for the charity'+(due(c)?', due '+due(c):'')+'.</p>'+
+        '<div class="receipt"><div><span>You raise for the charity</span><span>'+money(c.min)+'</span></div>'+reg+fee+'<div class="tot"><span>Most you could be out if you raised nothing</span><span>'+money(total(c))+'</span></div></div>'+
+        '<p class="fine">NYRR entry is $255 for NYRR members.'+(c.minNote?' '+esc(c.minNote):'')+'</p>'+
+        (c.minSource?'<a class="src" href="'+esc(c.minSource)+'" target="_blank" rel="noopener">Read it on their page ↗</a>':'')+'</section>'+
+      '<section class="bk"><h4>What do they give me?</h4>'+help+(c.supportNotes?'<p class="fine" style="margin-top:8px">'+esc(c.supportNotes)+'</p>':'')+(c.supportSource?'<a class="src" href="'+esc(c.supportSource)+'" target="_blank" rel="noopener">Read it on their page ↗</a>':'')+'</section>'+
+      '<section class="bk"><h4>Are they still taking runners?</h4><p><span class="st '+c.status+'">'+sWord+'</span></p><p>'+sLine+(c.spots?'. '+esc(c.spots):'')+'.</p>'+(due(c)?'<p class="fine">Money is due by '+due(c)+'.</p>':'')+'</section>'+
+      q('What if I don\'t raise it all?', c.shortfall, c.chargeSchedule?'When they take the money: '+esc(c.chargeSchedule):'')+
+      q('What if I get hurt and can\'t run?', c.injury, '')+
+      q('Can I move my spot to next year?', c.deferral, '')+
+      q('Until when can I back out for free?', freeExit, '')+
+      '</div>'+
+      '<div class="back-go"><a class="btn print" href="'+esc(c.url)+'" target="_blank" rel="noopener">Go to '+esc(c.name.split(' (')[0])+'\'s marathon page ↗</a><a class="btn" href="mailto:hello@charitybibs.com?subject=Correction%3A%20'+encodeURIComponent(c.name)+'">Something wrong here?</a>'+(c.level?'<span class="lab">NYRR '+esc(c.level)+' partner</span>':'')+'</div>'+
+    '</div>';
+  }
 
-  function statusRank(s){return {open:0,waitlist:1,unknown:2,closed:3}[s]??3;}
-  function termsCount(c){return (c.shortfall&&c.shortfall.pub?1:0)+(c.injury&&c.injury.pub?1:0)+(c.deferral&&c.deferral.pub?1:0)+(c.freeExit?1:0);}
-  function meter(n){let s='<span class="meter" aria-hidden="true">';for(let i=0;i<4;i++)s+='<i class="'+(i<n?'on':'')+'"></i>';return s+'</span>';}
+  /* ---------- state ---------- */
+  const ans={cause:null,help:null,when:null};
+  const open=new Set();
+  let sort='support';
+  const answered=()=>ans.cause&&ans.help&&ans.when;
+  const want=()=>ans.help==='train'?TRAIN:ans.help==='fund'?FUND:ans.help==='both'?TRAIN.concat(FUND):[];
+  const matches=c=>want().filter(k=>c.support[k]===true);
+  const okStatus=c=>ans.when==='all'||c.status==='open'||(ans.when==='wait'&&c.status==='waitlist');
+  const okCause=c=>ans.cause==='*'||c.cause===ans.cause;
+  const fitRank=(a,b)=>matches(b).length-matches(a).length||statusRank(a.status)-statusRank(b.status)||b.supportScore-a.supportScore||termsCount(b)-termsCount(a)||(a.min??1e9)-(b.min??1e9)||a.name.localeCompare(b.name);
+  const sortKey=()=> sort==='min' ? (a,b)=>(a.min??1e9)-(b.min??1e9)||b.supportScore-a.supportScore
+    : sort==='open' ? (a,b)=>statusRank(a.status)-statusRank(b.status)||b.supportScore-a.supportScore
+    : sort==='terms' ? (a,b)=>termsCount(b)-termsCount(a)||b.supportScore-a.supportScore
+    : sort==='name' ? (a,b)=>a.name.localeCompare(b.name)
+    : (a,b)=>b.supportScore-a.supportScore||statusRank(a.status)-statusRank(b.status)||(a.min??1e9)-(b.min??1e9);
+
+  /* ---------- questions ---------- */
+  const o1=$('o1');
+  const mkOpt=(val,txt,sub)=>{const l=document.createElement('label');l.className='opt';l.innerHTML='<input type="radio" name="cause" value="'+esc(val)+'"><b>'+esc(txt)+'</b><span class="n">'+sub+'</span>';return l;};
+  o1.appendChild(mkOpt('*','Anything. I just want to run.',all.length+' charities'));
+  causes.forEach(cz=>{const n=all.filter(c=>c.cause===cz);const op=n.filter(c=>c.status==='open').length;o1.appendChild(mkOpt(cz,cz,n.length+(n.length===1?' charity':' charities')+' · '+(op?op+' taking runners':'none taking runners today')));});
+  const summary={
+    q1:()=>ans.cause==='*'?'Anything':ans.cause,
+    q2:()=>({train:'People to train with',fund:'Help asking for money',both:'Both',none:'Just the spot'})[ans.help],
+    q3:()=>({open:'Now',wait:'I can wait',all:'Show me everyone'})[ans.when],
+  };
+  function setDone(id,done){const f=$(id);f.classList.toggle('done',done);f.hidden=false;const s=f.querySelector('legend .s');if(done){s.dataset.o=s.dataset.o||s.textContent;s.textContent=summary[id]();}else if(s.dataset.o){s.textContent=s.dataset.o;}}
+  const QS=['q1','q2','q3'], key={q1:'cause',q2:'help',q3:'when'};
+  function syncQuestions(){ $('q2').hidden=!ans.cause; $('q3').hidden=!ans.help; }
+  const collapse=id=>{ if(ans[key[id]]) setDone(id,true); };
+  // an answered question folds up when focus leaves it, or when a later question is answered
+  QS.forEach(id=>$(id).addEventListener('focusout',e=>{ if(!$(id).contains(e.relatedTarget)) collapse(id); }));
+  document.querySelectorAll('.chg').forEach(b=>b.addEventListener('click',()=>{
+    const id=b.dataset.q; setDone(id,false);
+    const f=$(id).querySelector('input:checked')||$(id).querySelector('input'); if(f)f.focus();
+  }));
+  $('form').addEventListener('submit',e=>e.preventDefault());
+  $('form').addEventListener('change',e=>{
+    const n=e.target.name,v=e.target.value;
+    if(n==='cause'){ans.cause=v;window.plausible&&plausible('Cause',{props:{cause:v==='*'?'all':v}});}
+    if(n==='help')ans.help=v;
+    if(n==='when')ans.when=v;
+    syncQuestions();
+    const i=QS.findIndex(id=>key[id]===n); QS.slice(0,i).forEach(collapse);
+    render();
+    if(n==='when'&&answered())$('res').scrollIntoView({block:'start'}); else if(i<2)$(QS[i+1]).scrollIntoView({block:'nearest'});
+  });
+
+  /* ---------- rendering ---------- */
+  const toggleBtn=c=>'<button type="button" class="btn sm" data-t="'+esc(c.id)+'" aria-expanded="'+open.has(c.id)+'" aria-controls="back-'+esc(c.id)+'">'+(open.has(c.id)?'Hide the fine print':'Read the fine print')+'</button>';
+  const bib=c=>'<div class="bib '+c.status+'" aria-hidden="true"><div class="band">'+esc(c.cause)+'</div><div class="bibnum">'+money(c.min)+'</div><span class="lab">you raise</span><div class="tear">'+(due(c)?'due '+due(c):'no date given')+'</div></div>';
+  function reasons(c){
+    const w=want(),m=matches(c),r=[];
+    if(ans.cause==='*')r.push('<li>'+esc(c.cause)+': '+esc(c.focus||'')+'</li>');
+    if(w.length){
+      if(m.length===w.length)r.push('<li>Gives you everything you asked for: '+esc(list(m.map(k=>low(label(k)))))+'.</li>');
+      else if(m.length)r.push('<li>Gives you '+esc(list(m.map(k=>low(label(k)))))+'.</li><li class="no">Doesn\'t say it gives you '+esc(list(w.filter(k=>!m.includes(k)).map(k=>low(label(k)))))+'.</li>');
+      else r.push('<li class="no">Doesn\'t say it gives you '+esc(list(w.map(k=>low(label(k)))))+'.</li>');
+      const extra=lit(c).filter(([k])=>!w.includes(k)).map(([,l])=>low(l));
+      if(extra.length)r.push('<li>Also: '+esc(list(extra))+'.</li>');
+    }else{
+      const l=lit(c).map(([,v])=>low(v));
+      r.push(l.length?'<li>Gives you '+esc(list(l))+'.</li>':'<li class="no">Doesn\'t describe what they give you.</li>');
+    }
+    const [sw,sl]=STATUS[c.status];
+    r.push('<li'+(c.status==='open'?'':' class="no"')+'><span class="st '+c.status+'">'+sw+'</span> '+sl+(c.spots?'. '+esc(c.spots):'')+'.</li>');
+    r.push('<li>You raise '+money(c.min)+(due(c)?', due '+due(c):'')+(c.fee&&c.feeCreditable===false?', plus a '+money(c.fee)+' fee that doesn\'t count':'')+'.</li>');
+    const t=termsCount(c);
+    r.push(t?'<li>Answers '+t+' of the 4 fine print questions on their page.</li>':'<li class="no">Answers none of the 4 fine print questions on their page. Ask before you sign up.</li>');
+    return '<ul class="why">'+r.join('')+'</ul>';
+  }
+  const pick=(c,i)=>'<article class="pick">'+bib(c)+'<div class="body"><div class="rank">Pick '+(i+1)+'</div><h3>'+esc(c.name)+'</h3><p class="fo">'+esc(c.focus||'')+'</p>'+reasons(c)+
+    '<div class="acts">'+toggleBtn(c)+'<a class="btn sm print" href="'+esc(c.url)+'" target="_blank" rel="noopener">Their page ↗</a></div></div>'+(open.has(c.id)?back(c):'')+'</article>';
+  const row=(c,showCause)=>{const l=lit(c).map(([,v])=>low(v));return '<div class="row"><div class="bibnum">'+money(c.min)+(due(c)?'<small>due '+due(c)+'</small>':'')+'</div>'+
+    '<div class="nm">'+esc(c.name)+(showCause?'<span class="cz">'+esc(c.cause)+'</span>':'')+'</div>'+
+    '<span class="st '+c.status+'">'+STATUS[c.status][0]+'</span>'+
+    '<div class="rs"><span class="fo">'+esc(c.focus||'')+'.</span> '+(l.length?'Gives you '+esc(list(l))+'.':'Doesn\'t describe what they give you.')+(c.fee&&c.feeCreditable===false?' Plus a '+money(c.fee)+' fee that doesn\'t count.':'')+' Answers '+(termsCount(c)||'none')+' of the 4 fine print questions.</div>'+
+    '<div class="acts">'+toggleBtn(c)+'<a class="btn sm" href="'+esc(c.url)+'" target="_blank" rel="noopener">Their page ↗</a></div>'+(open.has(c.id)?back(c):'')+'</div>';};
 
   function render(){
-    rail.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed', b.dataset.cause===state.cause));
-    let list = all.filter(c => (!state.cause || c.cause===state.cause) && (!state.fOpen || c.status==='open'));
-    const key = state.sort==='min' ? (a,b)=> (a.min??1e9)-(b.min??1e9) || b.supportScore-a.supportScore
-              : state.sort==='open' ? (a,b)=> statusRank(a.status)-statusRank(b.status) || b.supportScore-a.supportScore
-              : state.sort==='terms' ? (a,b)=> termsCount(b)-termsCount(a) || b.supportScore-a.supportScore
-              : state.sort==='name' ? (a,b)=> a.name.localeCompare(b.name)
-              : (a,b)=> b.supportScore-a.supportScore || statusRank(a.status)-statusRank(b.status) || (a.min??1e9)-(b.min??1e9);
-    list.sort((a,b)=>key(a,b)||a.name.localeCompare(b.name));
-    $('heading').firstChild.textContent = (state.cause||'All causes')+' ';
-    $('count').textContent = list.length+' '+(list.length===1?'charity':'charities');
-    rowsEl.innerHTML='';
-    if(!list.length){
-      const e=document.createElement('tr'); e.className='empty';
-      e.innerHTML='<td colspan="6">No charities match. <a href="#" id="clear">Show all</a></td>'; rowsEl.appendChild(e);
-      e.querySelector('#clear').addEventListener('click',ev=>{ev.preventDefault();state.cause='';state.fOpen=false;$('f-open').checked=false;render();});
-      return;
+    const sk=sortKey();
+    if(!answered()){
+      $('res').hidden=true;
+      document.querySelector('.list-h').hidden=false;
+      $('lh').textContent='Every charity';
+      const l=all.slice().sort((a,b)=>sk(a,b)||a.name.localeCompare(b.name));
+      $('lcount').textContent=l.length+' charities · '+l.filter(c=>c.status==='open').length+' taking runners';
+      $('rows').innerHTML=l.map(c=>row(c,true)).join('');
+      $('rest').hidden=true;
+    }else{
+      const inCause=all.filter(okCause);
+      const fit=inCause.filter(okStatus).sort(fitRank);
+      const top=fit.slice(0,3), also=fit.slice(3).sort((a,b)=>sk(a,b)||a.name.localeCompare(b.name));
+      const rest=all.filter(c=>!fit.includes(c)).sort((a,b)=>sk(a,b)||a.name.localeCompare(b.name));
+      $('res').hidden=false;
+      $('rcount').textContent=fit.length+' of '+inCause.length+(ans.cause==='*'?'':' '+ans.cause)+' charities fit';
+      const w=want(), full=top.filter(c=>w.length&&matches(c).length===w.length).length;
+      let say='';
+      if(!fit.length){
+        const wl=inCause.filter(c=>c.status==='waitlist').length;
+        say='None of the '+inCause.length+(ans.cause==='*'?'':' '+esc(ans.cause))+' charities are taking runners today.'+(wl&&ans.when==='open'?' '+wl+(wl===1?' has':' have')+' a waitlist. <a href="#" id="incw">Include waitlists</a>.':' <a href="#" id="incall">Show them anyway</a>.');
+      }else if(w.length){
+        say=(full?(full===1?'One charity':full+' charities')+' on your shortlist give'+(full===1?'s':'')+' you everything you asked for. ':'No charity here says it gives you everything you asked for, so these are the closest. ')+'Sorted by how much of your help they give, then whether they\'re taking runners.';
+      }else say='Sorted by whether they\'re taking runners, then by how much help they describe.';
+      $('say').innerHTML=say;
+      const inc=$('incw');if(inc)inc.addEventListener('click',e=>{e.preventDefault();$('q3').querySelector('input[value=wait]').click();});
+      const inca=$('incall');if(inca)inca.addEventListener('click',e=>{e.preventDefault();$('q3').querySelector('input[value=all]').click();});
+      $('picks').innerHTML=top.map(pick).join('');
+      $('lh').textContent='Also fits';
+      $('lcount').textContent=also.length+(also.length===1?' charity':' charities');
+      document.querySelector('.list-h').hidden=!also.length;
+      $('rows').innerHTML=also.map(c=>row(c,ans.cause==='*')).join('');
+      $('rest').hidden=!rest.length;
+      $('restcount').textContent=rest.length+(ans.when==='open'?' not taking runners today, or another cause':ans.when==='wait'?' closed, not sure, or another cause':' from other causes');
+      $('restrows').innerHTML=rest.map(c=>row(c,true)).join('');
     }
-    for (const c of list){
-      const open = state.open.has(c.id);
-      const lit = SUP.filter(([k])=>c.support[k]===true);
-      const sup = lit.length ? esc(lit.map(([,l])=>l).join(', ')) : '<span class="none">Not described on their page</span>';
-      const [sWord,sLine]=STATUS[c.status];
-      const feeNote = c.fee && c.feeCreditable===false ? '+ '+money(c.fee)+' fee that doesn\'t count' : '';
-      const tc = termsCount(c);
-      const tr=document.createElement('tr'); tr.className='row'; tr.dataset.id=c.id; tr.tabIndex=0; tr.setAttribute('aria-expanded',open);
-      tr.innerHTML=
-        '<td class="name"><div class="nm">'+esc(c.name)+'</div>'+(c.focus?'<span class="fo">'+esc(c.focus)+'</span>':'')+'</td>'+
-        '<td class="amt" data-l="You raise"><span class="v">'+money(c.min)+'</span>'+(feeNote?'<small>'+feeNote+'</small>':'')+'</td>'+
-        '<td class="sup" data-l="What they give you">'+sup+'</td>'+
-        '<td class="terms" data-l="Fine print">'+meter(tc)+'<span class="v">'+tc+' of 4</span><small>questions answered</small></td>'+
-        '<td class="st" data-l="Taking runners?"><span class="dot '+c.status+'"></span><span class="w">'+sWord+'</span><small>'+sLine+'</small></td>'+
-        '<td class="x" aria-hidden="true"><span class="chev"></span></td>';
-      rowsEl.appendChild(tr);
-      if(open){
-        const d=document.createElement('tr'); d.className='detail';
-        const ask = '<p class="np">They don\'t say. Ask before you sign up.</p>';
-        const q = (title, o, why) => '<div class="q"><h4>'+title+'</h4>'+(o.pub?'<p>'+esc(o.text)+'</p>'+(o.quote?'<blockquote>“'+esc(o.quote)+'”</blockquote>':'')+(o.source?'<p class="src"><a href="'+esc(o.source)+'" target="_blank" rel="noopener">Read it on their page ↗</a></p>':''):ask)+(why?'<p class="why">'+why+'</p>':'')+'</div>';
-        const reg = c.regSeparate===false ? '<div><span>NYRR race entry</span><span>covered</span></div>' : '<div><span>NYRR entry fee</span><span>+ '+money(REG)+'</span></div>';
-        const feeLabel = (c.feeLabel||'Charity fee').split(',')[0]; const feeShort = feeLabel.length>28 ? 'Charity fee' : feeLabel;
-        const fee = c.fee ? '<div><span>'+esc(feeShort)+(c.feeCreditable===false?' (doesn\'t count)':c.feeCreditable===true?' (counts toward your total)':' (they don\'t say if it counts)')+'</span><span>'+(c.feeCreditable===false?'+ '+money(c.fee):'('+money(c.fee)+')')+'</span></div>' : '';
-        const total = (c.min||0) + (c.regSeparate===false?0:REG) + (c.fee&&c.feeCreditable===false?c.fee:0);
-        const supList = '<ul class="supl">'+SUP.map(([k,l])=>'<li class="'+(c.support[k]===true?'':'off')+'">'+l+'</li>').join('')+'</ul>';
-        d.innerHTML='<td colspan="6"><div class="panel">'+
-          '<div><h4>How much do I raise?</h4><p>'+money(c.min)+' for the charity'+(c.deadline&&c.deadline>='2026-01-01'?', due '+fmt(c.deadline):'')+'.</p><div class="receipt"><div><span>You raise for the charity</span><span>'+money(c.min)+'</span></div>'+reg+fee+'<div class="tot"><span>Most you could be out if you raised nothing</span><span>'+money(total)+'</span></div><span class="note">NYRR entry is $255 for NYRR members.'+(c.minNote?' '+esc(c.minNote):'')+'</span></div>'+
-          '<h4 style="margin-top:18px">What do they give me?</h4>'+supList+(c.supportNotes?'<p style="margin-top:8px;font-size:13px;color:var(--muted)">'+esc(c.supportNotes)+'</p>':'')+(c.supportSource?'<p class="src" style="font-size:12.5px;margin-top:6px"><a href="'+esc(c.supportSource)+'" target="_blank" rel="noopener">Read it on their page ↗</a></p>':'')+'</div>'+
-          '<div class="qa">'+
-          '<div class="q"><h4>Are they still taking runners?</h4><p><span class="dot '+c.status+'"></span><b>'+sWord+'</b>. '+sLine+(c.spots?'. '+esc(c.spots):'')+'.</p></div>'+
-          q('What if I don\'t raise it all?', c.shortfall, c.chargeSchedule?'When they take the money: '+esc(c.chargeSchedule):'')+
-          q('What if I get hurt and can\'t run?', c.injury, c.freeExit?'You can back out free until '+fmt(c.freeExit)+'.':'')+
-          q('Can I move my spot to next year?', c.deferral, '')+
-          '</div>'+
-          '<div class="go"><a class="btn primary" href="'+esc(c.url)+'" target="_blank" rel="noopener">Go to '+esc(c.name.split(' (')[0])+'\'s marathon page ↗</a><a class="btn" href="mailto:hello@charitybibs.com?subject=Correction%3A%20'+encodeURIComponent(c.name)+'">Something wrong here?</a><span class="meta">Read from their pages on '+fmt(c.verified)+(c.level?' · NYRR '+esc(c.level)+' partner':'')+'</span></div>'+
-        '</div></td>';
-        rowsEl.appendChild(d);
-      }
-    }
+    const h=answered()?'#cause='+encodeURIComponent(ans.cause)+'&help='+ans.help+'&when='+ans.when:'';
+    if(location.hash!==h)history.replaceState(null,'',location.pathname+location.search+h);
   }
-  const toggle=id=>{state.open.has(id)?state.open.delete(id):state.open.add(id);render();};
-  rowsEl.addEventListener('click',e=>{const tr=e.target.closest('tr.row');if(tr&&!e.target.closest('a'))toggle(tr.dataset.id);});
-  rowsEl.addEventListener('keydown',e=>{const tr=e.target.closest('tr.row');if(tr&&(e.key==='Enter'||e.key===' ')){e.preventDefault();toggle(tr.dataset.id);}});
-  $('sort').addEventListener('change',e=>{state.sort=e.target.value;render();window.plausible&&plausible('Sort',{props:{by:e.target.value}});});
-  $('f-open').addEventListener('change',e=>{state.fOpen=e.target.checked;render();});
+  document.addEventListener('click',e=>{
+    const b=e.target.closest('button[data-t]');if(!b)return;
+    const id=b.dataset.t; open.has(id)?open.delete(id):open.add(id); render();
+    const nb=document.querySelector('button[data-t="'+id+'"]'); if(nb)nb.focus();
+  });
+  $('sort').addEventListener('change',e=>{sort=e.target.value;render();window.plausible&&plausible('Sort',{props:{by:e.target.value}});});
   $('dl').addEventListener('click',e=>{e.preventDefault();const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'}));a.download='charitybibs-nyc-2026.json';a.click();});
   $('refreshed').textContent=fmt(DATA.refreshed);
+
+  // answers in the URL, so a shortlist can be shared
+  (function(){
+    const p=new URLSearchParams(location.hash.slice(1));
+    const c=p.get('cause'),h=p.get('help'),w=p.get('when');
+    if(c&&(c==='*'||causes.includes(c))&&['train','fund','both','none'].includes(h)&&['open','wait','all'].includes(w)){
+      ans.cause=c;ans.help=h;ans.when=w;
+      const set=(n,v)=>{const i=document.querySelector('#form input[name="'+n+'"][value="'+CSS.escape(v)+'"]');if(i)i.checked=true;};
+      set('cause',c);set('help',h);set('when',w);
+      syncQuestions(); QS.forEach(collapse);
+    }
+  })();
   render();
 })();
 </script>
