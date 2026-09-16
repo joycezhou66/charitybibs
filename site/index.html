@@ -7,8 +7,8 @@
 <meta name="description" content="Every NYC Marathon charity bib program in one place. Answer three questions and see which charities fit you: how much you'd raise, what each charity gives you, and who's still taking runners. Every number links to the charity's own page.">
 <link rel="canonical" href="https://charitybibs.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Which NYC Marathon charity should I run for?">
-<meta property="og:description" content="Answer three questions. See which charities fit, how much you'd raise, what they give you, and who's still taking runners.">
+<meta property="og:title" content="Find a charity to run the NYC Marathon for">
+<meta property="og:description" content="Three questions narrow the 27 official NYC Marathon charities to the ones that fit you: what you'd raise, what they give you, and who's still taking runners.">
 <meta property="og:url" content="https://charitybibs.com/">
 <meta property="og:image" content="https://charitybibs.com/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -58,20 +58,19 @@ h1,h2,h3,h4,p{margin:0}
 /* header, intro */
 header{display:flex;gap:8px 24px;align-items:baseline;justify-content:space-between;padding:22px 0 16px;border-bottom:1.5px solid var(--hair)}
 .brand{font-family:var(--bib);font-weight:700;font-size:17px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
-.brand{font-family:var(--bib);font-weight:700;font-size:18px;letter-spacing:.03em;text-decoration:none}
-.brand small{font-family:var(--text);font-weight:400;font-size:12.5px;color:var(--mute);margin-left:12px;text-transform:none;letter-spacing:0}
+
+.brand small{font-family:var(--text);font-weight:400;font-size:13px;color:var(--ink2);margin-left:12px;padding-left:12px;border-left:1px solid var(--hair);text-transform:none;letter-spacing:0}
 header nav a{font-size:14px;color:var(--mute);text-decoration:none}
 header nav a:hover{color:var(--print)}
-.intro{padding:64px 0 36px}
-h1{font-family:var(--bib);font-weight:700;font-size:clamp(36px,5.5vw,60px);letter-spacing:-.02em;line-height:1.05;text-wrap:balance}
-.lede{margin:18px 0 0;font-size:18px;line-height:1.45;color:var(--ink2);max-width:40ch}
+.intro{padding:56px 0 32px}
+h1{font-family:var(--bib);font-weight:700;font-size:clamp(32px,4.2vw,46px);letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+.lede{margin:12px 0 0;font-size:16.5px;line-height:1.5;color:var(--ink2);max-width:56ch}
 
 /* the three questions */
-.qs{counter-reset:q}
 fieldset.qn{border:0;margin:0;padding:26px 0 30px;border-top:1.5px solid var(--hair);min-width:0}
 fieldset.qn[hidden]{display:none}
-fieldset.qn legend{float:left;width:100%;padding:0;margin:0 0 6px;display:flex;gap:18px;align-items:baseline}
-fieldset.qn legend::before{counter-increment:q;content:counter(q);font-family:var(--bib);font-weight:700;font-size:24px;line-height:1;color:var(--print);min-width:22px}
+fieldset.qn legend{float:left;width:100%;padding:0;margin:0 0 6px;display:flex;gap:14px;align-items:flex-start}
+fieldset.qn legend::before{content:attr(data-n);display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--print);color:var(--print);font-family:var(--text);font-weight:600;font-size:13px;line-height:1;align-self:flex-start;margin-top:1px;flex:none;font-variant-numeric:tabular-nums}
 fieldset.qn legend .t{font-family:var(--bib);font-weight:700;font-size:24px;letter-spacing:-.01em;line-height:1.15}
 fieldset.qn legend .s{display:block;font-family:var(--text);font-weight:400;font-size:15px;text-transform:none;letter-spacing:0;color:var(--mute);margin-top:6px;line-height:1.4}
 .opts{clear:both;display:grid;grid-template-columns:1fr 1fr;column-gap:40px;padding-top:12px}
@@ -86,8 +85,8 @@ fieldset.qn legend .s{display:block;font-family:var(--text);font-weight:400;font
 .opt:has(input:checked) b{color:var(--print)}
 .opt:has(input:focus-visible){outline:2px solid var(--print);outline-offset:2px}
 fieldset.done{padding:14px 0}
-fieldset.done legend{margin:0;align-items:baseline}
-fieldset.done legend::before{font-size:16px;min-width:22px}
+fieldset.done legend{margin:0;align-items:center}
+fieldset.done legend::before{width:22px;height:22px;font-size:12px;background:var(--print);color:#fff;margin-top:0}
 fieldset.done .opts{display:none}
 fieldset.done legend .t{font-size:15px}
 fieldset.done legend .s{display:inline;margin:0 0 0 10px;color:var(--ink);font-size:15.5px}
@@ -210,7 +209,7 @@ footer .sp{margin-left:auto}
   .list-h .ctl{flex-basis:100%}
   footer .sp{margin-left:0}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.opt input{transition:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.opt input{transition:none}
 </style>
 </head>
 <body>
@@ -222,17 +221,17 @@ footer .sp{margin-left:auto}
 
 <div class="col">
 <div class="intro">
-  <h1>Which charity should I run for?</h1>
-  <p class="lede">Three questions to find your charity matches.</p>
+  <h1>Find a charity to run for</h1>
+  <p class="lede">Three questions. 27 official NYC Marathon 2026 charities. Every fact from the charity's own page.</p>
 </div>
 
 <form class="qs" id="form">
 <fieldset class="qn" id="q1">
-  <legend><span class="t">What do you want to run for?<span class="s">Pick one you'd be proud to ask friends to give to.</span></span><button type="button" class="chg" data-q="q1">Change</button></legend>
+  <legend data-n="1"><span class="t">What do you want to run for?<span class="s">Pick one you'd be proud to ask friends to give to.</span></span><button type="button" class="chg" data-q="q1">Change</button></legend>
   <div class="opts" id="o1"></div>
 </fieldset>
 <fieldset class="qn" id="q2" hidden>
-  <legend><span class="t">What help do you want?<span class="s">Prices are almost all the same. The help is not.</span></span><button type="button" class="chg" data-q="q2">Change</button></legend>
+  <legend data-n="2"><span class="t">What help do you want?<span class="s">Prices are almost all the same. The help is not.</span></span><button type="button" class="chg" data-q="q2">Change</button></legend>
   <div class="opts one">
     <label class="opt"><input type="radio" name="help" value="train"><span><b>People to train with.</b> A coach, group runs, a training plan.</span></label>
     <label class="opt"><input type="radio" name="help" value="fund"><span><b>Help asking for money.</b> A fundraising helper, a page, team events.</span></label>
@@ -241,7 +240,7 @@ footer .sp{margin-left:auto}
   </div>
 </fieldset>
 <fieldset class="qn" id="q3" hidden>
-  <legend><span class="t">How soon do you need a spot?<span class="s">Some are full for 2026. Some have a waitlist.</span></span><button type="button" class="chg" data-q="q3">Change</button></legend>
+  <legend data-n="3"><span class="t">How soon do you need a spot?<span class="s">Some are full for 2026. Some have a waitlist.</span></span><button type="button" class="chg" data-q="q3">Change</button></legend>
   <div class="opts one">
     <label class="opt"><input type="radio" name="when" value="open"><span><b>Now.</b> Only charities taking runners today.</span></label>
     <label class="opt"><input type="radio" name="when" value="wait"><span><b>I can wait.</b> Include waitlists.</span></label>
