@@ -73,6 +73,7 @@ fieldset.qn[hidden]{display:none}
 fieldset.qn legend{float:left;width:100%;padding:0;margin:0 0 6px;display:flex;gap:14px;align-items:flex-start}
 fieldset.qn legend::before{content:attr(data-n);display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--print);color:var(--print);font-family:var(--text);font-weight:600;font-size:13px;line-height:1;align-self:flex-start;margin-top:1px;flex:none;font-variant-numeric:tabular-nums}
 fieldset.qn legend .t{font-family:var(--bib);font-weight:700;font-size:24px;letter-spacing:-.01em;line-height:1.15}
+fieldset.qn legend .s:empty{display:none}
 fieldset.qn legend .s{display:block;font-family:var(--text);font-weight:400;font-size:15px;text-transform:none;letter-spacing:0;color:var(--mute);margin-top:6px;line-height:1.4}
 .opts{clear:both;display:grid;grid-template-columns:1fr 1fr;column-gap:40px;padding-top:12px}
 .opts.one{grid-template-columns:1fr;max-width:520px}
@@ -223,16 +224,16 @@ footer .sp{margin-left:auto}
 <div class="col">
 <div class="intro">
   <h1>Find a charity to run for</h1>
-  <p class="lede">27 official NYC Marathon charities. Every fact from the charity's own page.</p>
+  <p class="lede">27 official NYC Marathon charities, each read from the charity's own page.</p>
 </div>
 
 <form class="qs" id="form">
 <fieldset class="qn" id="q1">
-  <legend data-n="1"><span class="t">What do you want to run for?<span class="s">Pick one you'd be proud to ask friends to give to.</span></span><button type="button" class="chg" data-q="q1">Change</button></legend>
+  <legend data-n="1"><span class="t">What do you want to run for?<span class="s"></span></span><button type="button" class="chg" data-q="q1">Change</button></legend>
   <div class="opts" id="o1"></div>
 </fieldset>
 <fieldset class="qn" id="q2" hidden>
-  <legend data-n="2"><span class="t">What help do you want?<span class="s">Prices are almost all the same. The help is not.</span></span><button type="button" class="chg" data-q="q2">Change</button></legend>
+  <legend data-n="2"><span class="t">What help do you want?<span class="s"></span></span><button type="button" class="chg" data-q="q2">Change</button></legend>
   <div class="opts one">
     <label class="opt"><input type="radio" name="help" value="train"><span><b>People to train with.</b> A coach, group runs, a training plan.</span></label>
     <label class="opt"><input type="radio" name="help" value="fund"><span><b>Help raising money.</b> A fundraising helper, a page, team events.</span></label>
@@ -241,7 +242,7 @@ footer .sp{margin-left:auto}
   </div>
 </fieldset>
 <fieldset class="qn" id="q3" hidden>
-  <legend data-n="3"><span class="t">How soon do you need a spot?<span class="s">Some are full for 2026. Some have a waitlist.</span></span><button type="button" class="chg" data-q="q3">Change</button></legend>
+  <legend data-n="3"><span class="t">How soon do you need a spot?<span class="s"></span></span><button type="button" class="chg" data-q="q3">Change</button></legend>
   <div class="opts one">
     <label class="opt"><input type="radio" name="when" value="open"><span><b>Now.</b> Only charities taking runners today.</span></label>
     <label class="opt"><input type="radio" name="when" value="wait"><span><b>I can wait.</b> Include waitlists.</span></label>
@@ -297,7 +298,7 @@ footer .sp{margin-left:auto}
   const REG = 315; // NYRR entry, non-member, as cited on charity pages; members $255
   const SUP = [["coaching","A coach"],["group_runs","Group runs"],["training_plan","A training plan"],["fundraising_coaching","Help fundraising"],["team_events","Team events"],["gear","Gear"],["fundraising_page","A fundraising page"],["bus_to_start","A bus to the start"],["charity_village","A tent at the start"],["hotel_or_travel","Hotel help"]];
   const TRAIN = ["coaching","group_runs","training_plan"], FUND = ["fundraising_coaching","fundraising_page","team_events"];
-  const STATUS = {open:['Taking runners','Applications are open'], waitlist:['Waitlist','Full for 2026, waitlist open'], closed:['Closed','Not taking runners for 2026'], unknown:['They don\'t say','Their page doesn\'t say whether they\'re taking runners']};
+  const STATUS = {open:['Taking runners','Applications are open'], waitlist:['Waitlist','Full for 2026, waitlist open'], closed:['Closed','Not taking runners for 2026'], unknown:['Not listed','Their page doesn\'t list whether they\'re taking runners']};
   const statusRank = s => ({open:0,waitlist:1,unknown:2,closed:3}[s] ?? 3);
   const termsCount = c => (c.shortfall&&c.shortfall.pub?1:0)+(c.injury&&c.injury.pub?1:0)+(c.deferral&&c.deferral.pub?1:0)+(c.freeExit?1:0);
   const lit = c => SUP.filter(([k])=>c.support[k]===true);
@@ -313,13 +314,13 @@ footer .sp{margin-left:auto}
   const src = (u,t) => u ? '<a class="src" href="'+esc(u)+'" target="_blank" rel="noopener">'+(t||'See where they say this')+'</a>' : '';
   const q = (title, o, extra) => '<section class="bk"><h5>'+title+'</h5>'+
     (o.pub ? '<p>'+esc(o.text)+'</p>'+(o.quote?'<blockquote>“'+esc(o.quote)+'”</blockquote>':'')+src(o.source)
-           : '<p class="np">They don\'t say. Ask before you sign up.</p>')+
+           : '<p class="np">Not on their page. Ask before you sign up.</p>')+
     (extra?'<p class="fine">'+extra+'</p>':'')+'</section>';
   function back(c){
     const [sWord,sLine]=STATUS[c.status];
     const reg = c.regSeparate===false ? '<div><span>NYRR race entry</span><span>covered</span></div>' : '<div><span>NYRR entry fee</span><span>+ '+money(REG)+'</span></div>';
     const feeLabel = (c.feeLabel||'Charity fee').split(',')[0]; const feeShort = feeLabel.length>28 ? 'Charity fee' : feeLabel;
-    const fee = c.fee ? '<div><span>'+esc(feeShort)+(c.feeCreditable===false?' (doesn\'t count)':c.feeCreditable===true?' (counts toward your total)':' (they don\'t say if it counts)')+'</span><span>'+(c.feeCreditable===false?'+ '+money(c.fee):'('+money(c.fee)+')')+'</span></div>' : '';
+    const fee = c.fee ? '<div><span>'+esc(feeShort)+(c.feeCreditable===false?' (doesn\'t count)':c.feeCreditable===true?' (counts toward your total)':' (not stated)')+'</span><span>'+(c.feeCreditable===false?'+ '+money(c.fee):'('+money(c.fee)+')')+'</span></div>' : '';
     const help = '<ul class="help">'+SUP.map(([k,l])=>'<li class="'+(c.support[k]===true?'':'off')+'">'+l+'</li>').join('')+'</ul>';
     const freeExit = c.freeExit ? {pub:true, text:'You can back out for free until '+fmt(c.freeExit)+'.', quote:c.freeExitQuote, source:c.minSource||c.url} : {pub:false};
     return '<div class="back" id="back-'+esc(c.id)+'">'+
