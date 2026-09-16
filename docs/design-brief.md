@@ -34,7 +34,7 @@ A runner who didn't get in through the drawing. They have found out that a chari
 
 **The reference object is the bib**, kept in the layout: one big number, a band, small print, a tear-off line. The first draft's paper cream and safety orange with a condensed face read as a poster and were replaced on September 15, 2026 with a palette and a typeface a product team would ship. The layout did not change.
 
-**Type.** One family from Google Fonts: **Instrument Sans**, 400 to 700. Headings, the amount to raise, status words and buttons are set in 700 uppercase with 0.03 to 0.05 em tracking, which keeps the race-signage feel without a condensed face. Everything read as sentences is 400 to 600 sentence case. Tabular figures wherever a number appears.
+**Type.** One family from Google Fonts: **Instrument Sans**, 400 to 700. Headings and the amount to raise are 700 with tight tracking; status words and buttons are 600. Everything is sentence case; nothing on the site is set in capitals. Body text is 400. Tabular figures wherever a number appears.
 
 **Color.** White, a cool gray scale, one navy, two status colors.
 - *Background* `#FFFFFF`, *surface* `#F8FAFC`, *ink* `#0F172A`, *secondary* `#475569`, *muted* `#64748B`, *rules* `#E2E8F0` and `#CBD5E1`.

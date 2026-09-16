@@ -43,12 +43,12 @@ h1,h2,h3,h4,p{margin:0}
 
 /* the bib face */
 .bibnum{font-family:var(--bib);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.01em;line-height:.95}
-.st{font-family:var(--bib);font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;color:var(--closed)}
+.st{font-family:var(--bib);font-weight:600;font-size:13px;letter-spacing:0;white-space:nowrap;color:var(--closed)}
 .st::before{content:"";display:inline-block;width:8px;height:8px;margin-right:7px;background:currentColor;vertical-align:0}
 .st.open{color:var(--open)}
 .st.waitlist{color:var(--wait)}
 .st.unknown::before{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
-.btn{display:inline-block;font-family:var(--bib);font-weight:700;font-size:13px;letter-spacing:.05em;text-transform:uppercase;padding:11px 16px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;border-radius:0;line-height:1.1}
+.btn{display:inline-block;font-family:var(--bib);font-weight:600;font-size:14px;letter-spacing:0;padding:10px 16px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;border-radius:0;line-height:1.1}
 .btn:hover{background:var(--ink);color:var(--paper)}
 .btn.print{background:var(--print);border-color:var(--print);color:var(--print-ink)}
 .btn.print:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
@@ -56,13 +56,13 @@ h1,h2,h3,h4,p{margin:0}
 
 /* header, intro */
 header{display:flex;gap:8px 24px;align-items:baseline;justify-content:space-between;padding:22px 0 16px;border-bottom:1.5px solid var(--hair)}
-.brand{white-space:nowrap}
-.brand{font-family:var(--bib);font-weight:700;font-size:18px;letter-spacing:.03em;text-transform:uppercase;text-decoration:none}
-.brand small{font-family:var(--text);font-weight:400;font-size:13.5px;color:var(--mute);margin-left:12px}
+.brand{white-space:nowrap;font-size:20px;letter-spacing:-.01em}
+.brand{font-family:var(--bib);font-weight:700;font-size:18px;letter-spacing:.03em;text-decoration:none}
+.brand small{font-family:var(--text);font-weight:400;font-size:12.5px;color:var(--mute);margin-left:12px}
 header nav a{font-size:14px;color:var(--mute);text-decoration:none}
 header nav a:hover{color:var(--print)}
 .intro{padding:64px 0 36px}
-h1{font-family:var(--bib);font-weight:700;font-size:clamp(34px,5.4vw,58px);text-transform:uppercase;letter-spacing:.01em;line-height:1.02;text-wrap:balance}
+h1{font-family:var(--bib);font-weight:700;font-size:clamp(36px,5.5vw,60px);letter-spacing:-.02em;line-height:1.05;text-wrap:balance}
 .lede{margin:18px 0 0;font-size:18px;line-height:1.45;color:var(--ink2);max-width:40ch}
 
 /* the three questions */
@@ -71,7 +71,7 @@ fieldset.qn{border:0;margin:0;padding:26px 0 30px;border-top:1.5px solid var(--h
 fieldset.qn[hidden]{display:none}
 fieldset.qn legend{float:left;width:100%;padding:0;margin:0 0 6px;display:flex;gap:18px;align-items:baseline}
 fieldset.qn legend::before{counter-increment:q;content:counter(q);font-family:var(--bib);font-weight:700;font-size:24px;line-height:1;color:var(--print);min-width:22px}
-fieldset.qn legend .t{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.03em;line-height:1.15}
+fieldset.qn legend .t{font-family:var(--bib);font-weight:700;font-size:24px;letter-spacing:-.01em;line-height:1.15}
 fieldset.qn legend .s{display:block;font-family:var(--text);font-weight:400;font-size:15px;text-transform:none;letter-spacing:0;color:var(--mute);margin-top:6px;line-height:1.4}
 .opts{clear:both;display:grid;grid-template-columns:1fr 1fr;column-gap:40px;padding-top:12px}
 .opts.one{grid-template-columns:1fr;max-width:520px}
@@ -86,7 +86,7 @@ fieldset.done{padding:14px 0}
 fieldset.done legend{margin:0;align-items:baseline}
 fieldset.done legend::before{font-size:16px;min-width:22px}
 fieldset.done .opts{display:none}
-fieldset.done legend .t{font-size:14.5px}
+fieldset.done legend .t{font-size:15px}
 fieldset.done legend .s{display:inline;margin:0 0 0 10px;color:var(--ink);font-size:15.5px}
 .chg{margin-left:auto;font-size:13.5px;color:var(--mute);background:none;border:0;cursor:pointer;padding:0;white-space:nowrap;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rule)}
 .chg:hover{color:var(--print);text-decoration-color:currentColor}
@@ -95,7 +95,7 @@ fieldset:not(.done) .chg{display:none}
 /* the shortlist */
 .res{border-top:3px solid var(--hair);margin-top:6px;padding-top:28px}
 .sec-h{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;margin-bottom:6px}
-.sec-h h2{font-family:var(--bib);font-weight:700;font-size:26px;text-transform:uppercase;letter-spacing:.03em;line-height:1.1}
+.sec-h h2{font-family:var(--bib);font-weight:700;font-size:28px;letter-spacing:-.02em;line-height:1.1}
 .sec-h .quiet{margin-left:auto}
 .say{font-size:16px;color:var(--ink2);margin:0 0 10px;max-width:56ch}
 .say a{color:var(--ink)}
@@ -104,13 +104,13 @@ fieldset:not(.done) .chg{display:none}
 .bib{border:1.5px solid var(--hair);background:var(--paper);text-align:center;align-self:start;position:relative}
 .bib::before,.bib::after{content:"";position:absolute;top:6px;width:6px;height:6px;border-radius:50%;background:var(--paper);border:1.5px solid var(--rule)}
 .bib::before{left:6px}.bib::after{right:6px}
-.bib .band{background:var(--print);color:var(--print-ink);font-family:var(--bib);font-weight:600;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:5px 14px;line-height:1.1;min-height:24px;display:flex;align-items:center;justify-content:center;text-wrap:balance}
+.bib .band{background:var(--print);color:var(--print-ink);font-family:var(--bib);font-weight:600;font-size:11px;letter-spacing:0;padding:5px 14px;line-height:1.1;min-height:24px;display:flex;align-items:center;justify-content:center;text-wrap:balance}
 .bib.closed .band,.bib.unknown .band{background:var(--soft);color:var(--mute)}
 .bib .bibnum{font-size:30px;padding:16px 4px 4px}
 .bib .yr{display:block;font-size:12px;color:var(--mute);padding:0 6px 10px}
 .bib .tear{border-top:1.5px dashed var(--rule);padding:6px;font-size:12px;color:var(--mute);line-height:1.3}
 .pick .body{min-width:0}
-.pick h3{font-family:var(--bib);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:.03em;line-height:1.15;margin:0 0 4px}
+.pick h3{font-family:var(--bib);font-weight:700;font-size:21px;letter-spacing:-.01em;line-height:1.15;margin:0 0 4px}
 .pick .fo{color:var(--mute);font-size:14.5px;margin:0 0 14px}
 .why{margin:0;padding:0;list-style:none;font-size:15.5px;line-height:1.5;color:var(--ink)}
 .why li+li{margin-top:2px}
@@ -123,7 +123,7 @@ fieldset:not(.done) .chg{display:none}
 /* the lists */
 .sec{margin-top:8px}
 .list-h{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;padding:16px 0 6px;border-top:1.5px solid var(--hair)}
-.list-h h2{font-family:var(--bib);font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.04em}
+.list-h h2{font-family:var(--bib);font-weight:700;font-size:19px;letter-spacing:-.01em}
 .list-h .quiet{margin-right:auto}
 .ctl{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--mute)}
 .ctl select{font:inherit;font-size:13.5px;color:var(--ink);padding:5px 26px 5px 8px;border:1px solid var(--rule);background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%237A736B' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 8px center;appearance:none;-webkit-appearance:none;border-radius:0;max-width:100%}
@@ -139,7 +139,7 @@ fieldset:not(.done) .chg{display:none}
 .rowbtn .chev{width:8px;height:8px;border-right:1.5px solid var(--mute);border-bottom:1.5px solid var(--mute);transform:rotate(45deg);justify-self:center;margin-top:-4px}
 .rowbtn[aria-expanded="true"] .chev{transform:rotate(-135deg);margin-top:4px}
 .row .back{margin:2px 0 18px}
-details.more>summary{font-family:var(--bib);font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.04em;cursor:pointer;padding:16px 0;border-top:1.5px solid var(--hair);list-style:none;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 14px;align-items:baseline}
+details.more>summary{font-family:var(--bib);font-weight:700;font-size:19px;letter-spacing:-.01em;cursor:pointer;padding:16px 0;border-top:1.5px solid var(--hair);list-style:none;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 14px;align-items:baseline}
 details.more>summary::-webkit-details-marker{display:none}
 details.more>summary::after{content:"+";grid-column:3;font-weight:500;color:var(--print);font-size:22px;line-height:1}
 details.more[open]>summary::after{content:"–"}
@@ -151,11 +151,11 @@ details.more .row:first-child{border-top:1px solid var(--rule)}
 /* the fine print */
 .back{border:1.5px solid var(--hair);background:var(--paper)}
 .back-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;padding:12px 20px;border-bottom:1px solid var(--rule)}
-.back-h h4{font-family:var(--bib);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.05em}
+.back-h h4{font-family:var(--bib);font-weight:700;font-size:16px;letter-spacing:-.01em}
 .back-grid{display:grid;grid-template-columns:1fr 1fr}
 .bk{padding:18px 20px 20px;border-bottom:1px solid var(--rule);min-width:0}
 .bk:nth-child(odd){border-right:1px solid var(--rule)}
-.bk h5{font-family:var(--bib);font-weight:700;font-size:13.5px;letter-spacing:.05em;text-transform:uppercase;margin:0 0 8px}
+.bk h5{font-family:var(--bib);font-weight:600;font-size:14.5px;letter-spacing:0;margin:0 0 8px}
 .bk p{margin:0 0 6px;font-size:14.5px;line-height:1.5;color:var(--ink2)}
 .bk p.big{font-size:15.5px;color:var(--ink)}
 .bk p.np{color:var(--mute)}
@@ -182,9 +182,9 @@ footer .sp{margin-left:auto}
 @media (max-width:680px){
   body{padding-inline:16px}
   .intro{padding:40px 0 28px}
-  fieldset.qn legend .t{font-size:19px}
+  fieldset.qn legend .t{font-size:21px}
   fieldset.qn legend{gap:12px}
-  fieldset.done legend .t{font-size:13.5px}
+  fieldset.done legend .t{font-size:14px}
   fieldset.done legend .s{font-size:14.5px}
   .acts .btn{flex:1 1 auto;text-align:center}
   details.more>summary{grid-template-columns:minmax(0,1fr) auto}
@@ -220,7 +220,7 @@ footer .sp{margin-left:auto}
 <div class="col">
 <div class="intro">
   <h1>Which charity should I run for?</h1>
-  <p class="lede">Answer three questions. See which NYC Marathon charities fit you, and why.</p>
+  <p class="lede">Three questions to find your charity matches.</p>
 </div>
 
 <form class="qs" id="form">
