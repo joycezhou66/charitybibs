@@ -26,26 +26,23 @@ A runner who didn't get in through the drawing. They have found out that a chari
 - No cards on a gray background, no dashboard framing.
 - No pill soup: no rows of colored tags standing in for sentences.
 - No stock photos, no hero photo of runners, no countdown clock.
-- No generic accent color: no product-blue, no gradient, no "brand purple."
+- No generic accent color: no product-blue, no gradient, no "brand purple." One accent, chosen for contrast, used for five things only.
 - No logo walls. A logo tells the reader nothing about the program.
 - No ratings out of ten shown as stars or bars without the words behind them.
 
 ## Typography and color direction
 
-**The reference object is the bib.** A NYC Marathon bib is warm white Tyvek, a condensed black number about a hand tall, a solid color band that tells the marshals your wave, the runner's name in small caps, tiny print at the foot, and a perforated strip you tear off for bag check. Start-line print follows the same rules: corral signs and mile markers are one condensed face, one color, high contrast, readable at a jog.
+**The reference object is the bib**, kept in the layout: one big number, a band, small print, a tear-off line. The first draft's paper cream and safety orange with a condensed face read as a poster and were replaced on September 15, 2026 with a palette and a typeface a product team would ship. The layout did not change.
 
-**Type.** Two faces, both from Google Fonts because that is what the site's CSP allows.
-- *Bib face:* **Barlow Condensed**, 600 to 800, for the amount to raise, for headings, and for uppercase labels with wide tracking. Tabular figures everywhere a number appears, so columns of dollars line up like a results sheet. The amount is set like a bib number: it is the number the runner is staring at, so give it the size it has in their head.
-- *Text face:* **Archivo** at 15 to 16 px for everything read as sentences. Neutral, slightly wide, prints well. Small print at 12 to 13 px, never lighter than the muted ink.
-- No italics for emphasis. Emphasis is weight or the print color, one or the other.
+**Type.** One family from Google Fonts: **Instrument Sans**, 400 to 700. Headings, the amount to raise, status words and buttons are set in 700 uppercase with 0.03 to 0.05 em tracking, which keeps the race-signage feel without a condensed face. Everything read as sentences is 400 to 600 sentence case. Tabular figures wherever a number appears.
 
-**Color.** Paper, ink, one print color, three status inks. Nothing else.
-- *Paper:* warm white (`#F7F4EE`), the Tyvek tone, not pure white. Dark mode inverts to the night-before-race black (`#141210`) with the same print color, like a corral sign under floodlights.
-- *Ink:* near-black (`#141210`) for everything readable; a muted ink for dates, sources and small print.
-- *Print color:* one safety orange (`#F0501E`), the color of finish-line barricade tape and the wave band on a bib. It marks exactly three things: the current selection, the thing to do next, and the band on a charity's "bib." It is never used decoratively and never for body text.
-- *Status inks*, borrowed from wave colors: green for taking runners, amber for waitlist, ink-grey for closed. Each always sits next to the word, never alone.
+**Color.** White, a cool gray scale, one navy, two status colors.
+- *Background* `#FFFFFF`, *surface* `#F8FAFC`, *ink* `#0F172A`, *secondary* `#475569`, *muted* `#64748B`, *rules* `#E2E8F0` and `#CBD5E1`.
+- *Accent* `#1E3A8A`, a deep navy: the chosen answer, the question numerals, the bib band, the primary button. Never body text, never decoration.
+- *Status:* green `#15803D` for taking runners, amber `#B45309` for waitlist, muted gray for closed or unstated. Each always sits next to the word.
+- *Dark mode:* `#0B1220` ground, `#E2E8F0` ink, accent lifted to `#6C8CFF` with dark text on it, status colors lifted to stay legible.
 
-**Details that carry the identity without decoration.** Rules are black hairlines, not grey. Section dividers can be a perforation, a dashed rule, marking where the fine print "tears off." Uppercase micro-labels ("YOU RAISE", "DUE", "TAKING RUNNERS?") are set in the bib face with 0.08 em tracking, the way a bib prints "WAVE 1 · CORRAL B." Corners are square or barely rounded. Shadows are absent; a bib is flat.
+**Details.** Rules are light gray, one to one-and-a-half pixels. Square corners. No shadows, no gradients, no icons.
 
 ## Constraints carried into every concept
 

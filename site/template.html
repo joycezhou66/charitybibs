@@ -13,10 +13,10 @@
 <meta property="og:image" content="https://charitybibs.com/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://charitybibs.com/og.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F7F4EE'/%3E%3Crect width='32' height='8' fill='%23F0501E'/%3E%3Ctext x='16' y='27' font-family='Arial Narrow,Helvetica,Arial,sans-serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23141210'%3ECB%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FFFFFF'/%3E%3Crect width='32' height='8' fill='%231E3A8A'/%3E%3Ctext x='16' y='26' font-family='Helvetica,Arial,sans-serif' font-size='15' font-weight='700' text-anchor='middle' fill='%230F172A'%3ECB%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Archivo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
 <script defer data-domain="charitybibs.com" src="https://plausible.io/js/script.outbound-links.js"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Dataset","name":"NYC Marathon charity bib programs, 2026","description":"Fundraising minimums, runner support, application status, and commitment terms for TCS New York City Marathon official charity partners, each field sourced to the charity's own published pages.","url":"https://charitybibs.com/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"Joyce Zhou","url":"https://joycezhou.me"},"temporalCoverage":"2026","spatialCoverage":"New York City","keywords":["NYC Marathon charity bib","charity bib","run for charity NYC Marathon","fundraising minimum","guaranteed entry"]}
@@ -24,23 +24,23 @@
 <style>
 /* Paper, ink, one print color, two status inks. See docs/design-brief.md. */
 :root{
-  --paper:#F7F4EE; --ink:#141210; --ink2:#4A4540; --mute:#7A736B; --rule:#DCD6CC; --soft:#EFEAE1; --hair:#141210;
-  --print:#F0501E; --print-ink:#FFFFFF;
-  --open:#1E7B3A; --wait:#B8710A; --closed:#7A736B;
-  --bib:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
-  --text:"Archivo",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --paper:#FFFFFF; --ink:#0F172A; --ink2:#475569; --mute:#64748B; --rule:#E2E8F0; --soft:#F8FAFC; --hair:#CBD5E1;
+  --print:#1E3A8A; --print-ink:#FFFFFF;
+  --open:#15803D; --wait:#B45309; --closed:#64748B;
+  --bib:"Instrument Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --text:"Instrument Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#151311; --ink:#F3EFE7; --ink2:#CFC8BD; --mute:#9A9389; --rule:#33302B; --soft:#1F1C19; --hair:#F3EFE7;
-    --print:#FF6A35; --print-ink:#151311;
-    --open:#4FC46F; --wait:#E5A23B; --closed:#9A9389;
+    --paper:#0B1220; --ink:#E2E8F0; --ink2:#AAB4C3; --mute:#7B8698; --rule:#1E293B; --soft:#111A2E; --hair:#334155;
+    --print:#6C8CFF; --print-ink:#0B1220;
+    --open:#4ADE80; --wait:#FBBF24; --closed:#7B8698;
   }
 }
 :root[data-theme="dark"]{
-  --paper:#151311; --ink:#F3EFE7; --ink2:#CFC8BD; --mute:#9A9389; --rule:#33302B; --soft:#1F1C19; --hair:#F3EFE7;
-  --print:#FF6A35; --print-ink:#151311;
-  --open:#4FC46F; --wait:#E5A23B; --closed:#9A9389;
+  --paper:#0B1220; --ink:#E2E8F0; --ink2:#AAB4C3; --mute:#7B8698; --rule:#1E293B; --soft:#111A2E; --hair:#334155;
+  --print:#6C8CFF; --print-ink:#0B1220;
+  --open:#4ADE80; --wait:#FBBF24; --closed:#7B8698;
 }
 *{box-sizing:border-box}
 html{color-scheme:light dark;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
@@ -55,12 +55,12 @@ h1,h2,h3,h4,p{margin:0}
 
 /* the bib face */
 .bibnum{font-family:var(--bib);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.01em;line-height:.95}
-.st{font-family:var(--bib);font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;color:var(--closed)}
+.st{font-family:var(--bib);font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;color:var(--closed)}
 .st::before{content:"";display:inline-block;width:8px;height:8px;margin-right:7px;background:currentColor;vertical-align:0}
 .st.open{color:var(--open)}
 .st.waitlist{color:var(--wait)}
 .st.unknown::before{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
-.btn{display:inline-block;font-family:var(--bib);font-weight:700;font-size:15px;letter-spacing:.05em;text-transform:uppercase;padding:10px 16px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;border-radius:0;line-height:1.1}
+.btn{display:inline-block;font-family:var(--bib);font-weight:700;font-size:13px;letter-spacing:.05em;text-transform:uppercase;padding:11px 16px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;border-radius:0;line-height:1.1}
 .btn:hover{background:var(--ink);color:var(--paper)}
 .btn.print{background:var(--print);border-color:var(--print);color:var(--print-ink)}
 .btn.print:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
@@ -69,12 +69,12 @@ h1,h2,h3,h4,p{margin:0}
 /* header, intro */
 header{display:flex;gap:8px 24px;align-items:baseline;justify-content:space-between;padding:22px 0 16px;border-bottom:1.5px solid var(--hair)}
 .brand{white-space:nowrap}
-.brand{font-family:var(--bib);font-weight:800;font-size:22px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none}
+.brand{font-family:var(--bib);font-weight:700;font-size:18px;letter-spacing:.03em;text-transform:uppercase;text-decoration:none}
 .brand small{font-family:var(--text);font-weight:400;font-size:13.5px;color:var(--mute);margin-left:12px}
 header nav a{font-size:14px;color:var(--mute);text-decoration:none}
 header nav a:hover{color:var(--print)}
 .intro{padding:64px 0 36px}
-h1{font-family:var(--bib);font-weight:800;font-size:clamp(46px,8vw,92px);text-transform:uppercase;letter-spacing:.005em;line-height:.9;text-wrap:balance}
+h1{font-family:var(--bib);font-weight:700;font-size:clamp(34px,5.4vw,58px);text-transform:uppercase;letter-spacing:.01em;line-height:1.02;text-wrap:balance}
 .lede{margin:18px 0 0;font-size:18px;line-height:1.45;color:var(--ink2);max-width:40ch}
 
 /* the three questions */
@@ -82,8 +82,8 @@ h1{font-family:var(--bib);font-weight:800;font-size:clamp(46px,8vw,92px);text-tr
 fieldset.qn{border:0;margin:0;padding:26px 0 30px;border-top:1.5px solid var(--hair);min-width:0}
 fieldset.qn[hidden]{display:none}
 fieldset.qn legend{float:left;width:100%;padding:0;margin:0 0 6px;display:flex;gap:18px;align-items:baseline}
-fieldset.qn legend::before{counter-increment:q;content:counter(q);font-family:var(--bib);font-weight:800;font-size:32px;line-height:1;color:var(--print);min-width:22px}
-fieldset.qn legend .t{font-family:var(--bib);font-weight:700;font-size:30px;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+fieldset.qn legend::before{counter-increment:q;content:counter(q);font-family:var(--bib);font-weight:700;font-size:24px;line-height:1;color:var(--print);min-width:22px}
+fieldset.qn legend .t{font-family:var(--bib);font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.03em;line-height:1.15}
 fieldset.qn legend .s{display:block;font-family:var(--text);font-weight:400;font-size:15px;text-transform:none;letter-spacing:0;color:var(--mute);margin-top:6px;line-height:1.4}
 .opts{clear:both;display:grid;grid-template-columns:1fr 1fr;column-gap:40px;padding-top:12px}
 .opts.one{grid-template-columns:1fr;max-width:520px}
@@ -96,9 +96,9 @@ fieldset.qn legend .s{display:block;font-family:var(--text);font-weight:400;font
 .opt:has(input:focus-visible){outline:2px solid var(--print);outline-offset:2px}
 fieldset.done{padding:14px 0}
 fieldset.done legend{margin:0;align-items:baseline}
-fieldset.done legend::before{font-size:22px;min-width:22px}
+fieldset.done legend::before{font-size:16px;min-width:22px}
 fieldset.done .opts{display:none}
-fieldset.done legend .t{font-size:19px}
+fieldset.done legend .t{font-size:14.5px}
 fieldset.done legend .s{display:inline;margin:0 0 0 10px;color:var(--ink);font-size:15.5px}
 .chg{margin-left:auto;font-size:13.5px;color:var(--mute);background:none;border:0;cursor:pointer;padding:0;white-space:nowrap;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rule)}
 .chg:hover{color:var(--print);text-decoration-color:currentColor}
@@ -107,7 +107,7 @@ fieldset:not(.done) .chg{display:none}
 /* the shortlist */
 .res{border-top:3px solid var(--hair);margin-top:6px;padding-top:28px}
 .sec-h{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;margin-bottom:6px}
-.sec-h h2{font-family:var(--bib);font-weight:800;font-size:34px;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+.sec-h h2{font-family:var(--bib);font-weight:700;font-size:26px;text-transform:uppercase;letter-spacing:.03em;line-height:1.1}
 .sec-h .quiet{margin-left:auto}
 .say{font-size:16px;color:var(--ink2);margin:0 0 10px;max-width:56ch}
 .say a{color:var(--ink)}
@@ -116,26 +116,26 @@ fieldset:not(.done) .chg{display:none}
 .bib{border:1.5px solid var(--hair);background:var(--paper);text-align:center;align-self:start;position:relative}
 .bib::before,.bib::after{content:"";position:absolute;top:6px;width:6px;height:6px;border-radius:50%;background:var(--paper);border:1.5px solid var(--rule)}
 .bib::before{left:6px}.bib::after{right:6px}
-.bib .band{background:var(--print);color:var(--print-ink);font-family:var(--bib);font-weight:700;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:5px 14px;line-height:1.1;min-height:24px;display:flex;align-items:center;justify-content:center;text-wrap:balance}
+.bib .band{background:var(--print);color:var(--print-ink);font-family:var(--bib);font-weight:600;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:5px 14px;line-height:1.1;min-height:24px;display:flex;align-items:center;justify-content:center;text-wrap:balance}
 .bib.closed .band,.bib.unknown .band{background:var(--soft);color:var(--mute)}
-.bib .bibnum{font-size:38px;padding:14px 4px 4px}
+.bib .bibnum{font-size:30px;padding:16px 4px 4px}
 .bib .yr{display:block;font-size:12px;color:var(--mute);padding:0 6px 10px}
 .bib .tear{border-top:1.5px dashed var(--rule);padding:6px;font-size:12px;color:var(--mute);line-height:1.3}
 .pick .body{min-width:0}
-.pick h3{font-family:var(--bib);font-weight:700;font-size:27px;text-transform:uppercase;letter-spacing:.01em;line-height:1;margin:0 0 4px}
+.pick h3{font-family:var(--bib);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:.03em;line-height:1.15;margin:0 0 4px}
 .pick .fo{color:var(--mute);font-size:14.5px;margin:0 0 14px}
 .why{margin:0;padding:0;list-style:none;font-size:15.5px;line-height:1.5;color:var(--ink)}
 .why li+li{margin-top:2px}
 .why li.no{color:var(--mute)}
 .spec{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:baseline;margin-top:12px;font-size:14.5px;color:var(--ink2)}
-.spec b{font-family:var(--bib);font-weight:700;font-size:18px;letter-spacing:.01em;color:var(--ink)}
+.spec b{font-family:var(--bib);font-weight:700;font-size:16px;letter-spacing:0;color:var(--ink);font-variant-numeric:tabular-nums}
 .acts{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
 .pick .back{grid-column:1/-1;margin-top:20px}
 
 /* the lists */
 .sec{margin-top:8px}
 .list-h{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;padding:16px 0 6px;border-top:1.5px solid var(--hair)}
-.list-h h2{font-family:var(--bib);font-weight:700;font-size:24px;text-transform:uppercase;letter-spacing:.01em}
+.list-h h2{font-family:var(--bib);font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.04em}
 .list-h .quiet{margin-right:auto}
 .ctl{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--mute)}
 .ctl select{font:inherit;font-size:13.5px;color:var(--ink);padding:5px 26px 5px 8px;border:1px solid var(--rule);background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%237A736B' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 8px center;appearance:none;-webkit-appearance:none;border-radius:0;max-width:100%}
@@ -144,16 +144,16 @@ fieldset:not(.done) .chg{display:none}
 .row:first-child{border-top:0}
 .rowbtn{display:grid;grid-template-columns:92px minmax(0,1fr) auto 16px;gap:0 18px;align-items:center;width:100%;text-align:left;background:none;border:0;padding:14px 0;cursor:pointer;border-radius:0}
 .rowbtn:hover .nm{color:var(--print)}
-.rowbtn .bibnum{font-size:24px}
+.rowbtn .bibnum{font-size:20px}
 .rowbtn .bibnum small{display:block;font-family:var(--text);font-weight:400;font-size:12px;color:var(--mute);margin-top:3px;line-height:1.2;letter-spacing:0}
 .rowbtn .nm{font-weight:600;font-size:15.5px;line-height:1.3;min-width:0}
 .rowbtn .nm .fo{display:block;font-weight:400;color:var(--mute);font-size:13.5px;margin-top:1px}
 .rowbtn .chev{width:8px;height:8px;border-right:1.5px solid var(--mute);border-bottom:1.5px solid var(--mute);transform:rotate(45deg);justify-self:center;margin-top:-4px}
 .rowbtn[aria-expanded="true"] .chev{transform:rotate(-135deg);margin-top:4px}
 .row .back{margin:2px 0 18px}
-details.more>summary{font-family:var(--bib);font-weight:700;font-size:24px;text-transform:uppercase;letter-spacing:.01em;cursor:pointer;padding:16px 0;border-top:1.5px solid var(--hair);list-style:none;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 14px;align-items:baseline}
+details.more>summary{font-family:var(--bib);font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.04em;cursor:pointer;padding:16px 0;border-top:1.5px solid var(--hair);list-style:none;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 14px;align-items:baseline}
 details.more>summary::-webkit-details-marker{display:none}
-details.more>summary::after{content:"+";grid-column:3;font-weight:600;color:var(--print);font-size:26px;line-height:1}
+details.more>summary::after{content:"+";grid-column:3;font-weight:500;color:var(--print);font-size:22px;line-height:1}
 details.more[open]>summary::after{content:"–"}
 details.more>summary .quiet{font-size:13.5px}
 details.more>summary:hover{color:var(--print)}
@@ -163,11 +163,11 @@ details.more .row:first-child{border-top:1px solid var(--rule)}
 /* the fine print */
 .back{border:1.5px solid var(--hair);background:var(--paper)}
 .back-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;padding:12px 20px;border-bottom:1px solid var(--rule)}
-.back-h h4{font-family:var(--bib);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:.01em}
+.back-h h4{font-family:var(--bib);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.05em}
 .back-grid{display:grid;grid-template-columns:1fr 1fr}
 .bk{padding:18px 20px 20px;border-bottom:1px solid var(--rule);min-width:0}
 .bk:nth-child(odd){border-right:1px solid var(--rule)}
-.bk h5{font-family:var(--bib);font-weight:700;font-size:17px;letter-spacing:.01em;text-transform:uppercase;margin:0 0 8px}
+.bk h5{font-family:var(--bib);font-weight:700;font-size:13.5px;letter-spacing:.05em;text-transform:uppercase;margin:0 0 8px}
 .bk p{margin:0 0 6px;font-size:14.5px;line-height:1.5;color:var(--ink2)}
 .bk p.big{font-size:15.5px;color:var(--ink)}
 .bk p.np{color:var(--mute)}
@@ -176,7 +176,7 @@ details.more .row:first-child{border-top:1px solid var(--rule)}
 .bk .src{display:inline-block;font-size:12.5px;margin-top:4px;color:var(--mute)}
 .receipt{margin:8px 0 8px;font-size:13.5px}
 .receipt div{display:flex;justify-content:space-between;gap:12px;padding:3px 0;border-bottom:1px dotted var(--rule)}
-.receipt div span:last-child{font-family:var(--bib);font-weight:700;font-size:16px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.receipt div span:last-child{font-family:var(--bib);font-weight:700;font-size:14.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .receipt div.tot{border-bottom:0;border-top:1.5px solid var(--hair);margin-top:4px;padding-top:6px;font-weight:600}
 .help{list-style:none;margin:2px 0 0;padding:0;columns:2;column-gap:18px;font-size:13.5px}
 .help li{break-inside:avoid;padding:2px 0;color:var(--ink2)}
@@ -194,9 +194,9 @@ footer .sp{margin-left:auto}
 @media (max-width:680px){
   body{padding-inline:16px}
   .intro{padding:40px 0 28px}
-  fieldset.qn legend .t{font-size:25px}
+  fieldset.qn legend .t{font-size:19px}
   fieldset.qn legend{gap:12px}
-  fieldset.done legend .t{font-size:17px}
+  fieldset.done legend .t{font-size:13.5px}
   fieldset.done legend .s{font-size:14.5px}
   .acts .btn{flex:1 1 auto;text-align:center}
   details.more>summary{grid-template-columns:minmax(0,1fr) auto}
@@ -204,11 +204,11 @@ footer .sp{margin-left:auto}
   .brand small{display:none}
   .opts{grid-template-columns:1fr}
   .pick{grid-template-columns:92px minmax(0,1fr);gap:0 16px;padding:22px 0}
-  .bib .bibnum{font-size:29px;padding-top:10px}
+  .bib .bibnum{font-size:24px;padding-top:12px}
   .bib .tear{display:none}
-  .pick h3{font-size:24px}
+  .pick h3{font-size:18px}
   .rowbtn{grid-template-columns:76px minmax(0,1fr) 16px;gap:0 12px}
-  .rowbtn .bibnum{font-size:21px;grid-column:1;grid-row:1/3}
+  .rowbtn .bibnum{font-size:18px;grid-column:1;grid-row:1/3}
   .rowbtn .nm{grid-column:2;grid-row:1}
   .rowbtn .st{grid-column:2;grid-row:2;justify-self:start;margin-top:4px}
   .rowbtn .chev{grid-column:3;grid-row:1/3}
