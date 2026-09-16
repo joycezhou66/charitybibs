@@ -22,6 +22,7 @@
 {"@context":"https://schema.org","@type":"Dataset","name":"NYC Marathon charity bib programs, 2026","description":"Fundraising minimums, runner support, application status, and commitment terms for TCS New York City Marathon official charity partners, each field sourced to the charity's own published pages.","url":"https://charitybibs.com/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Person","name":"Joyce Zhou","url":"https://joycezhou.me"},"temporalCoverage":"2026","spatialCoverage":"New York City","keywords":["NYC Marathon charity bib","charity bib","run for charity NYC Marathon","fundraising minimum","guaranteed entry"]}
 </script>
 <style>
+
 /* Paper, ink, one print color, two status inks. See docs/design-brief.md. */
 :root{
   --paper:#FFFFFF; --ink:#0F172A; --ink2:#475569; --mute:#64748B; --rule:#E2E8F0; --soft:#F8FAFC; --hair:#CBD5E1;
@@ -143,8 +144,8 @@ fieldset:not(.done) .chg{display:none}
 .row .back{margin:2px 0 18px}
 details.more>summary{font-family:var(--bib);font-weight:700;font-size:19px;letter-spacing:-.01em;cursor:pointer;padding:16px 0;border-top:1.5px solid var(--hair);list-style:none;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 14px;align-items:baseline}
 details.more>summary::-webkit-details-marker{display:none}
-details.more>summary::after{content:"+";grid-column:3;font-weight:500;color:var(--print);font-size:22px;line-height:1}
-details.more[open]>summary::after{content:"–"}
+details.more>summary::after{content:"+";grid-column:3;font-weight:400;color:var(--print);font-size:44px;line-height:.7;margin-top:2px}
+details.more[open]>summary::after{content:"\2013";font-size:44px;line-height:.7}
 details.more>summary .quiet{font-size:13.5px}
 details.more>summary:hover{color:var(--print)}
 details.more .list-h{border-top:0;padding-top:4px}
@@ -209,7 +210,7 @@ footer .sp{margin-left:auto}
   .list-h .ctl{flex-basis:100%}
   footer .sp{margin-left:0}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.opt input{transition:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.opt input{transition:none}}
 </style>
 </head>
 <body>
@@ -276,7 +277,7 @@ footer .sp{margin-left:auto}
 </div>
 
 <footer>
-  <span>Not affiliated with New York Road Runners or any charity. Not legal advice.</span>
+  <span>An independent guide. Not affiliated with New York Road Runners or any charity.</span>
   <a class="sp" href="/about">How it works</a>
   <a href="mailto:hello@charitybibs.com?subject=Correction">Report a mistake</a>
 </footer>
