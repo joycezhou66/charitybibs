@@ -223,7 +223,7 @@ footer .sp{margin-left:auto}
 <div class="col">
 <div class="intro">
   <h1>Find a charity to run for</h1>
-  <p class="lede">Three questions. 27 official NYC Marathon 2026 charities. Every fact from the charity's own page.</p>
+  <p class="lede">27 official NYC Marathon charities. Every fact from the charity's own page.</p>
 </div>
 
 <form class="qs" id="form">
@@ -235,7 +235,7 @@ footer .sp{margin-left:auto}
   <legend data-n="2"><span class="t">What help do you want?<span class="s">Prices are almost all the same. The help is not.</span></span><button type="button" class="chg" data-q="q2">Change</button></legend>
   <div class="opts one">
     <label class="opt"><input type="radio" name="help" value="train"><span><b>People to train with.</b> A coach, group runs, a training plan.</span></label>
-    <label class="opt"><input type="radio" name="help" value="fund"><span><b>Help asking for money.</b> A fundraising helper, a page, team events.</span></label>
+    <label class="opt"><input type="radio" name="help" value="fund"><span><b>Help raising money.</b> A fundraising helper, a page, team events.</span></label>
     <label class="opt"><input type="radio" name="help" value="both"><span><b>Both.</b> I've never done a marathon or raised money.</span></label>
     <label class="opt"><input type="radio" name="help" value="none"><span><b>Just the spot.</b> I've got the rest.</span></label>
   </div>
@@ -245,7 +245,7 @@ footer .sp{margin-left:auto}
   <div class="opts one">
     <label class="opt"><input type="radio" name="when" value="open"><span><b>Now.</b> Only charities taking runners today.</span></label>
     <label class="opt"><input type="radio" name="when" value="wait"><span><b>I can wait.</b> Include waitlists.</span></label>
-    <label class="opt"><input type="radio" name="when" value="all"><span><b>Show me everyone,</b> even the ones closed for 2026.</span></label>
+    <label class="opt"><input type="radio" name="when" value="all"><span><b>Show all charities,</b> including the ones closed for 2026.</span></label>
   </div>
 </fieldset>
 </form>
@@ -261,7 +261,7 @@ footer .sp{margin-left:auto}
   <div id="alsorows"></div>
 </section>
 
-<details class="more" id="rest" hidden><summary>Everyone else <span class="quiet" id="restcount"></span></summary><div class="list-h"></div><div id="restrows"></div></details>
+<details class="more" id="rest" hidden><summary>Other charities <span class="quiet" id="restcount"></span></summary><div class="list-h"></div><div id="restrows"></div></details>
 
 <details class="more" id="browse"><summary>Or browse all charities <span class="quiet" id="browsecount"></span></summary><div class="list-h"></div><div id="browserows"></div></details>
 
@@ -363,8 +363,8 @@ footer .sp{margin-left:auto}
   causes.forEach(cz=>{const n=all.filter(c=>c.cause===cz);const op=n.filter(c=>c.status==='open').length;o1.appendChild(mkOpt(cz,cz,nCh(n.length)+', '+(op?op+' taking runners':'none taking runners today')));});
   const summary={
     q1:()=>ans.cause==='*'?'Anything':ans.cause,
-    q2:()=>({train:'People to train with',fund:'Help asking for money',both:'Both',none:'Just the spot'})[ans.help],
-    q3:()=>({open:'Now',wait:'I can wait',all:'Show me everyone'})[ans.when],
+    q2:()=>({train:'People to train with',fund:'Help raising money',both:'Both',none:'Just the spot'})[ans.help],
+    q3:()=>({open:'Now',wait:'I can wait',all:'Show all charities'})[ans.when],
   };
   function setDone(id,done){const f=$(id);f.classList.toggle('done',done);f.hidden=false;const s=f.querySelector('legend .s');if(done){s.dataset.o=s.dataset.o||s.textContent;s.textContent=summary[id]();}else if(s.dataset.o){s.textContent=s.dataset.o;}}
   const QS=['q1','q2','q3'], key={q1:'cause',q2:'help',q3:'when'};
@@ -438,7 +438,7 @@ footer .sp{margin-left:auto}
         const wl=inCause.filter(c=>c.status==='waitlist').length;
         say='None of the '+inCause.length+(ans.cause==='*'?'':' '+esc(ans.cause))+' charities are taking runners today.'+(wl&&ans.when==='open'?' '+wl+(wl===1?' has':' have')+' a waitlist. <a href="#" id="incw">Include waitlists</a>.':' <a href="#" id="incall">Show them anyway</a>.');
       }else if(w.length){
-        say=full?(full===1?'One':full)+' of these give'+(full===1?'s':'')+' you everything you asked for.':'None of these says it gives you everything you asked for. These are the closest.';
+        say=full?(full===1?'One':full)+' of these list'+(full===1?'s':'')+' every kind of help you asked for.':'No charity here lists every kind of help you asked for. These list the most.';
       }else say='Taking runners first, then the most help.';
       $('say').innerHTML=say;
       const inc=$('incw');if(inc)inc.addEventListener('click',e=>{e.preventDefault();$('q3').querySelector('input[value=wait]').click();});
