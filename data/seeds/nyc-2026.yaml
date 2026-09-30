@@ -1618,14 +1618,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: b5c02dc5a10c5bcaf3d5
-- id: everylife-rare-diseases-2
-  name: Everylife Foundation for Rare Diseases
-  urls:
-  - https://everylifefoundation.org/run/
-  cause: Health & medical research
-  focus: ''
-  level: Bronze
-  nyrr_key: b5c02dc5a10c5bcaf3d5
 - id: expanded-schools
   name: ExpandED Schools
   urls:
@@ -1698,14 +1690,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 127fdf9f732e03ae073a
-- id: filling-in-blanks
-  name: Filling in the Blanks
-  urls:
-  - https://secure.qgiv.com/event/2026tcsnycmarthon/
-  cause: Community services
-  focus: ''
-  level: Bronze
-  nyrr_key: 4525b234b385eea6dfd1
 - id: first-candle
   name: First Candle, Inc.
   urls:
@@ -1730,14 +1714,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: a36cb6c8dc102e2ffbbb
-- id: first-tee-metrpolitan
-  name: First Tee-Metrpolitan New York
-  urls:
-  - https://fundraise.givesmart.com/vf/2026Marathon
-  cause: Youth & education
-  focus: ''
-  level: Bronze
-  nyrr_key: 32fae26652ff842d85fd
 - id: force-facing-our-risk-cancer
   name: 'FORCE: Facing Our Risk of Cancer Empowered'
   urls:
@@ -1978,14 +1954,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 06069a99bef32dc6aba3
-- id: good-grief
-  name: Good Grief
-  urls:
-  - https://secure.qgiv.com/event/gg2026nycmarathon/
-  cause: Community services
-  focus: ''
-  level: Bronze
-  nyrr_key: 4525b234b385eea6dfd1
 - id: good-shepherd-services
   name: Good Shepherd Services
   urls:
@@ -2130,14 +2098,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 669af6c4ea63a0784255
-- id: hazelden-betty-ford
-  name: Hazelden Betty Ford Foundation
-  urls:
-  - https://forms.gle/K45eouc5KcyM4Chu8
-  cause: Health & medical research
-  focus: ''
-  level: Bronze
-  nyrr_key: a86c3ead159417d67460
 - id: heal-planet-together
   name: Heal The Planet Together , Inc
   urls:
@@ -2186,14 +2146,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 8b15715975b46a719ed4
-- id: hereditary-neuropathy
-  name: Hereditary Neuropathy Foundation
-  urls:
-  - https://fundraise.givesmart.com/vf/CMTMarathon
-  cause: Advocacy & rights
-  focus: ''
-  level: Bronze
-  nyrr_key: 32fae26652ff842d85fd
 - id: herren-project
   name: Herren Project
   urls:
@@ -2274,14 +2226,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 9ab883a678fc05566d06
-- id: housing-works
-  name: Housing Works
-  urls:
-  - https://docs.google.com/forms/d/e/1FAIpQLSfxb8I76h1NQsTJMy65KNq-LZWOBcOUzVLNfKHt6yES4zPnwg/viewform?usp=header
-  cause: Housing & community
-  focus: ''
-  level: Bronze
-  nyrr_key: eafd089ffdc60bdea0ef
 - id: human-rights-campaign
   name: Human Rights Campaign Foundation
   urls:
@@ -2290,14 +2234,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 70205ceb1db841692074
-- id: human-rights-first
-  name: Human Rights First
-  urls:
-  - https://forms.office.com/r/Mfsp3KMMfx
-  cause: Community services
-  focus: ''
-  level: Bronze
-  nyrr_key: 475d6e073ffa4b5b4186
 - id: hunger-free-america
   name: Hunger Free America
   urls:
@@ -2450,14 +2386,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: ebbb78ba2904348e349c
-- id: jhpiego
-  name: Jhpiego
-  urls:
-  - https://docs.google.com/spreadsheets/d/1dl3ozs3ssEAko5Y820zpLeVVwFYtBtocgaxu9Lpt3mQ/edit#
-  cause: Health & medical research
-  focus: ''
-  level: Bronze
-  nyrr_key: eafd089ffdc60bdea0ef
 - id: joe-torre-safe-at-home
   name: Joe Torre Safe At Home Foundation
   urls:
@@ -2546,14 +2474,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: fc339d6d7626251d4b67
-- id: komera
-  name: Komera
-  urls:
-  - https://docs.google.com/forms/d/e/1FAIpQLSfCQgEs42Rs6XULepEGiD0iwGUU8MLSM0rb6ojrqZKrQs7Seg/viewform
-  cause: Youth & education
-  focus: ''
-  level: Bronze
-  nyrr_key: eafd089ffdc60bdea0ef
 - id: korean-community-services-kc
   name: Korean Community Services(KCS)
   urls:
@@ -2666,14 +2586,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 13e72c5671846a706d27
-- id: liveonny
-  name: LiveOnNY
-  urls:
-  - https://secure.qgiv.com/event/teamliveonnymarathon2026/
-  cause: Health & medical research
-  focus: ''
-  level: Bronze
-  nyrr_key: 4525b234b385eea6dfd1
 - id: livestrong
   name: Livestrong
   urls:
@@ -2898,14 +2810,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: a1af093aa14bbafa5a67
-- id: national-bleeding-disorders
-  name: National Bleeding Disorders Foundation
-  urls:
-  - https://secure.qgiv.com/event/teamnbdf2026/
-  cause: Advocacy & rights
-  focus: ''
-  level: Bronze
-  nyrr_key: 4525b234b385eea6dfd1
 - id: national-blood-clot-alliance
   name: National Blood Clot Alliance
   urls:
@@ -2946,14 +2850,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 2369f018270924fee31e
-- id: national-ovarian-cancer-coal
-  name: National Ovarian Cancer Coalition
-  urls:
-  - https://p2p.onecause.com/teamteal
-  cause: Cancer
-  focus: ''
-  level: Bronze
-  nyrr_key: 2edf3dfcf9602b95dd40
 - id: national-psoriasis
   name: National Psoriasis Foundation
   urls:
@@ -3250,14 +3146,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 089e057659bcea532fc0
-- id: p-s-75
-  name: P.S. 75
-  urls:
-  - https://sites.google.com/03m075.gsuite.nyc/ps75m/parent-involvement/pta?authuser=0
-  cause: Youth & education
-  focus: ''
-  level: Bronze
-  nyrr_key: dff4ed5a359467a39b7e
 - id: pact-by-ecpat-usa
   name: PACT by ECPAT USA
   urls:
@@ -3274,14 +3162,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 72c56e4c276638fd11e3
-- id: parent-project-muscular-dyst
-  name: Parent Project Muscular Dystrophy
-  urls:
-  - https://form.jotform.com/Parent_Project/rted-2026-tcs-nyc
-  cause: Advocacy & rights
-  focus: ''
-  level: Bronze
-  nyrr_key: ab65688ea4d48702fcee
 - id: parkinson-s
   name: Parkinson's Foundation
   urls:
@@ -3346,14 +3226,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 68b3b5c0aacc35ff95f8
-- id: peace-runners-773
-  name: Peace Runners 773
-  urls:
-  - https://forms.gle/zwhkrNznfQuCSTkEA
-  cause: Advocacy & rights
-  focus: ''
-  level: Bronze
-  nyrr_key: a86c3ead159417d67460
 - id: pencil
   name: PENCIL
   urls:
@@ -3530,14 +3402,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: bf19c355247e8fcd3852
-- id: qsac-quality-services-autism
-  name: QSAC, Inc (Quality Services for the Autism Community)
-  urls:
-  - https://givebutter.com/TeamQSAC2026
-  cause: Mental health
-  focus: ''
-  level: Bronze
-  nyrr_key: 5120ccd4d7f9ad58db61
 - id: qualitas-life
   name: Qualitas of Life Foundation
   urls:
@@ -3706,14 +3570,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 707b1c4d2055bbcf4741
-- id: row
-  name: Row New York
-  urls:
-  - https://docs.google.com/forms/d/e/1FAIpQLScCm881eYVwnwSgyEo8wDvd9fto-Z2bqV79hXlA3Pk1hRg4Bg/viewform?usp=header
-  cause: Sports & running
-  focus: ''
-  level: Bronze
-  nyrr_key: eafd089ffdc60bdea0ef
 - id: safe-families-children
   name: Safe Families for Children
   urls:
@@ -4010,14 +3866,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: f359a17ce22c99b1cdb0
-- id: students-run-philly-style
-  name: Students Run Philly Style
-  urls:
-  - https://runsignup.com/Race/NY/NewYork/SRPSNewYorkCityMarathon
-  cause: Youth & education
-  focus: ''
-  level: Bronze
-  nyrr_key: 84aa3ef25bf9681d669c
 - id: studio-in-a-school
   name: Studio in a School
   urls:
@@ -4074,14 +3922,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: b21cb91b051940d39824
-- id: supplies-success
-  name: Supplies For Success
-  urls:
-  - https://secure.givelively.org/donate/supplies-for-success-inc/nyc-marathon-to-benefit-supplies-for-success-2026
-  cause: Youth & education
-  focus: ''
-  level: Bronze
-  nyrr_key: 05040f82934f9925d5e0
 - id: surfrider
   name: Surfrider Foundation
   urls:
@@ -4242,14 +4082,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 17722b57bc69c0f9fd90
-- id: american-dream-school
-  name: The American Dream School
-  urls:
-  - https://secure.givelively.org/donate/american-dream-charter-school/dream-team-runners-race-to-raise-nyc-marathon-funding-2026
-  cause: Youth & education
-  focus: ''
-  level: Bronze
-  nyrr_key: 05040f82934f9925d5e0
 - id: andrew-mcdonough-b
   name: The Andrew McDonough B+ Foundation
   urls:
@@ -4370,14 +4202,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 3a7b9bd8ca7843cb4ace
-- id: center-hearing-and-communica
-  name: The Center for Hearing and Communication
-  urls:
-  - https://fundraise.givesmart.com/e/_wp3oA?vid=1oq7h2
-  cause: Health & medical research
-  focus: ''
-  level: Bronze
-  nyrr_key: 32fae26652ff842d85fd
 - id: chick-mission
   name: The Chick Mission
   urls:
@@ -4681,14 +4505,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 7eb1f65dcb63407ccf7d
-- id: retreat
-  name: The Retreat, Inc.
-  urls:
-  - https://secure.qgiv.com/event/theretreat2026tcsmarathon/
-  cause: Community services
-  focus: ''
-  level: Bronze
-  nyrr_key: 4525b234b385eea6dfd1
 - id: robert-packard-center-als-re
   name: The Robert Packard Center for ALS Research at Johns Hopkins
   urls:
@@ -4897,14 +4713,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 1e11a5f68d4ec8378e18
-- id: university-michigan-health-r
-  name: University of Michigan Health Rogel Cancer Center
-  urls:
-  - https://docs.google.com/forms/d/e/1FAIpQLSeMX9_6OaNiAERxgYFsehOawoiAhbhPDTCRXgNpDp0JDcuYfQ/viewform
-  cause: Cancer
-  focus: ''
-  level: Bronze
-  nyrr_key: eafd089ffdc60bdea0ef
 - id: university-settlement
   name: University Settlement
   urls:
@@ -4913,14 +4721,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 30c8179af9df96ec164c
-- id: unlocal
-  name: UNLOCAL INC
-  urls:
-  - https://givebutter.com/unlocalmarathon2026
-  cause: Community services
-  focus: ''
-  level: Bronze
-  nyrr_key: 5120ccd4d7f9ad58db61
 - id: urban-justice-center
   name: Urban Justice Center
   urls:
@@ -5057,14 +4857,6 @@ charities:
   focus: ''
   level: Bronze
   nyrr_key: 98253a178c2ed63ea325
-- id: women-s-prison-association
-  name: Women's Prison Association
-  urls:
-  - https://givebutter.com/2026wpamarathon
-  cause: Community services
-  focus: ''
-  level: Bronze
-  nyrr_key: 5120ccd4d7f9ad58db61
 - id: women-s-sports
   name: Women's Sports Foundation
   urls:
