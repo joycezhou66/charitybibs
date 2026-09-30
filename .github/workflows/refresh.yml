@@ -36,7 +36,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - name: Install dependencies
+        timeout-minutes: 15
+        run: pip install -r requirements.txt && python -m playwright install chromium
       - name: Restore pages and extractions from the last run (lets an interrupted run resume)
         uses: actions/cache/restore@v4
         with:
@@ -44,6 +46,7 @@ jobs:
           key: cb-cache-${{ env.RACE }}-${{ github.run_id }}
           restore-keys: cb-cache-${{ env.RACE }}-
       - name: Crawl, extract, verify, diff
+        timeout-minutes: 320
         run: |
           if [ -n "$ONLY" ]; then python -m pipeline.run refresh --race "$RACE" --only "$ONLY"; else python -m pipeline.run refresh --race "$RACE" --scope "$SCOPE"; fi
       - name: Promote candidate and rebuild site
