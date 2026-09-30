@@ -172,10 +172,15 @@ def run(race: str, race_name: str, only: set[str] | None = None, order: list[str
             continue
         f = files[cid]
         out = out_dir / f"{cid}.json"
-        if out.exists() and out.stat().st_mtime >= f.stat().st_mtime:
-            summary["skipped"].append(cid)
-            continue
         cache = json.loads(f.read_text())
+        fetched = max((p.get("fetched") or "" for p in cache.get("pages") or []), default="")
+        if out.exists():
+            try:
+                if json.loads(out.read_text()).get("_source_fetched") == fetched:
+                    summary["skipped"].append(cid)
+                    continue
+            except Exception:  # noqa: BLE001 — unreadable output → re-extract
+                pass
         if not cache["pages"]:
             print(f"  {cid:10} skipped (no pages fetched)")
             summary["skipped"].append(cid)
@@ -194,6 +199,7 @@ def run(race: str, race_name: str, only: set[str] | None = None, order: list[str
             break
         usage = raw.pop("_usage", None)
         cost = spend.add(cid, usage) if usage else 0.0
+        raw["_source_fetched"] = fetched
         out.write_text(json.dumps(raw, indent=1))
         summary["extracted"].append(cid)
         print(f"  {cid:10} extracted  ${cost:.3f}  (run total ${spend.data['total_usd']:.2f})")

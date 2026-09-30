@@ -112,10 +112,17 @@ async def crawl_charity(context, robots: Robots, charity: dict) -> dict:
     return {"id": charity["id"], "name": charity["name"], "pages": pages, "errors": errors}
 
 
-def _fetched_today(path: Path) -> bool:
+def _fresh(path: Path, max_age_days: int | None = None) -> bool:
+    """True if this charity's cached pages were fetched within CB_CACHE_MAX_AGE_DAYS (default 3),
+    so an interrupted run can resume without re-crawling; a weekly run still refetches."""
+    import os
+    days = max_age_days if max_age_days is not None else int(os.environ.get("CB_CACHE_MAX_AGE_DAYS", "3") or 3)
     try:
         d = json.loads(path.read_text())
-        return bool(d.get("pages")) and all(p.get("fetched") == date.today().isoformat() for p in d["pages"])
+        if not d.get("pages"):
+            return False
+        newest = max(date.fromisoformat(p["fetched"]) for p in d["pages"])
+        return (date.today() - newest).days < days
     except Exception:  # noqa: BLE001 — unreadable cache → refetch
         return False
 
@@ -137,8 +144,8 @@ async def crawl_race(seed_path: Path, cache_dir: Path, only: set[str] | None = N
             if only and ch["id"] not in only:
                 continue
             out = cache_dir / f"{ch['id']}.json"
-            if out.exists() and _fetched_today(out):
-                print(f"  {ch['id']:10} already fetched today, skipped")
+            if out.exists() and _fresh(out):
+                print(f"  {ch['id']:10} cached pages are recent, skipped")
                 continue
             t0 = time.time()
             result = await crawl_charity(context, robots, ch)

@@ -73,6 +73,24 @@ def test_extraction_follows_seed_order_and_skips_fresh_outputs(cache_dir):
     assert s["extracted"] == ["c", "a", "b"]
     s2 = extract_mod.run(RACE, "Test Race", order=["c", "a", "b"], client=fc, model="claude-sonnet-5")
     assert s2["extracted"] == [] and s2["skipped"] == ["c", "a", "b"] and fc.calls == 3
+    # a fresher crawl of one charity invalidates only that extraction
+    d = json.loads((cache_dir / "a.json").read_text()); d["pages"][0]["fetched"] = "2026-10-01"
+    (cache_dir / "a.json").write_text(json.dumps(d))
+    s3 = extract_mod.run(RACE, "Test Race", order=["c", "a", "b"], client=fc, model="claude-sonnet-5")
+    assert s3["extracted"] == ["a"] and fc.calls == 4
+    assert "_source_fetched" in json.loads((cache_dir / "extracted" / "a.json").read_text())
+
+
+def test_crawl_cache_freshness_window(tmp_path):
+    from datetime import date, timedelta
+    from pipeline.crawl import _fresh
+    p = tmp_path / "x.json"
+    p.write_text(json.dumps({"pages": [{"fetched": date.today().isoformat()}]}))
+    assert _fresh(p, 3)
+    p.write_text(json.dumps({"pages": [{"fetched": (date.today() - timedelta(days=5)).isoformat()}]}))
+    assert not _fresh(p, 3)
+    p.write_text(json.dumps({"pages": []}))
+    assert not _fresh(p, 3)
 
 
 def test_listed_only_row_is_valid_and_flagged():
