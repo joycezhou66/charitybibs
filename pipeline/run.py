@@ -5,6 +5,7 @@
   python -m pipeline.run verify  --race nyc-2026                      → .cache/<race>/candidate.json
   python -m pipeline.run diff    --race nyc-2026                      → .cache/<race>/changes.md
   python -m pipeline.run promote --race nyc-2026                      candidate → data/races/<race>.json
+  python -m pipeline.run prune   --race nyc-2026                      drop published rows no longer in the seed list
   python -m pipeline.run build   --race nyc-2026                      → site/index.html
   python -m pipeline.run refresh --race nyc-2026 [--scope all|core]   crawl+extract+verify+diff (what the Action runs)
   python -m pipeline.run stats   --race nyc-2026
@@ -81,9 +82,10 @@ def cmd_verify(race: str) -> Dataset:
         ch.focus = ch.focus or s.get("focus")
         ch.level = ch.level or s.get("level")
         out.append(ch)
-    # Carry forward charities that were not re-read this run, untouched.
+    # Carry forward charities that were not re-read this run, untouched, as long as they
+    # are still on the seed list; a charity removed from the seeds drops out (the diff says so).
     seen = {c.id for c in out}
-    out += [c for cid, c in existing.items() if cid not in seen]
+    out += [c for cid, c in existing.items() if cid not in seen and cid in seed_by_id]
     seen |= set(existing)
     # Seed charities never read: list them so the site is complete, marked as unread.
     fallback = sd.get("official_list", "")
@@ -142,7 +144,7 @@ def cmd_refresh(race: str, only: set[str] | None, scope: str, limit_min: float |
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["crawl", "extract", "verify", "diff", "promote", "build", "refresh", "stats"])
+    ap.add_argument("cmd", choices=["crawl", "extract", "verify", "diff", "promote", "prune", "build", "refresh", "stats"])
     ap.add_argument("--race", default="nyc-2026")
     ap.add_argument("--only", default=None, help="comma-separated charity ids")
     ap.add_argument("--scope", default="all", choices=["all", "core"], help="refresh: which charities to re-read")
@@ -158,6 +160,12 @@ def main() -> None:
         ds = cmd_verify(a.race); print(f"candidate: {len(ds.charities)} charities")
     elif a.cmd == "diff":
         print(cmd_diff(a.race))
+    elif a.cmd == "prune":
+        ds = build_mod.load(a.race)
+        keep = {s["id"] for s in seeds(a.race)["charities"]}
+        dropped = [c.id for c in ds.charities if c.id not in keep]
+        ds.charities = [c for c in ds.charities if c.id in keep]
+        build_mod.save(a.race, ds); print(f"pruned {len(dropped)} rows not in the seed list: {dropped}")
     elif a.cmd == "promote":
         cand = ROOT / ".cache" / a.race / "candidate.json"
         build_mod.save(a.race, Dataset.model_validate_json(cand.read_text())); print("promoted")

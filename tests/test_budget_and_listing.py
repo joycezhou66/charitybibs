@@ -165,3 +165,20 @@ def test_charity_crawl_hard_cap_keeps_pages_fetched_so_far(monkeypatch, tmp_path
         return None
     acc = asyncio.run(run())
     assert acc is not None and len(acc["pages"]) == 1 and acc["pages"][0]["text"] == "fast page text"
+
+
+def test_seed_builder_is_idempotent(tmp_path, monkeypatch):
+    from pipeline import seeds_from_index as sb
+    cap = [{"key": "k1", "name": "Alpha Fund", "blurb": "Alpha helps.", "tier": "BRONZE", "categories": ["Youth"],
+            "contact_html": '<span class="charity-name">Alpha Fund</span><a href="https://alpha.org/run" class="website-text">x</a>'},
+           {"key": "k2", "name": "Beta Inc", "blurb": "", "tier": "SILVER", "categories": ["Research"],
+            "contact_html": '<span class="charity-name">Beta Inc</span>'}]
+    capture = tmp_path / "charities.json"; capture.write_text(json.dumps(cap))
+    seeds = tmp_path / "seeds.yaml"
+    seeds.write_text("race: t\nrace_name: T\ncharities:\n- id: alpha\n  name: Alpha Fund (old name)\n  urls: [https://alpha.org/marathon]\n")
+    monkeypatch.setattr(sb, "CAPTURE", capture); monkeypatch.setattr(sb, "SEEDS", seeds)
+    r1 = sb.build(); r2 = sb.build(); r3 = sb.build()
+    import yaml
+    ids = [s["id"] for s in yaml.safe_load(seeds.read_text())["charities"]]
+    assert r1["new"] == 1 and r2["new"] == 0 and r3["new"] == 0
+    assert len(ids) == len(set(ids)) == 2 and ids[0] == "alpha"

@@ -36,3 +36,8 @@ def test_schema_has_quote_for_every_factual_field():
     for fact in ["minimum", "fee_amount", "deadline", "free_exit_date", "charge_schedule", "status"]:
         base = fact.replace("_amount", "").replace("_date", "")
         assert any(k.startswith(base) and k.endswith("_quote") for k in props), f"{fact} has no quote field"
+
+
+def test_prompt_pins_down_which_tier_is_the_minimum():
+    assert "LOWEST tier that includes the race entry" in SYSTEM
+    assert "team-wide goal" in SYSTEM and "different race or year" in SYSTEM

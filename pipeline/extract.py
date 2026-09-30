@@ -56,6 +56,7 @@ Rules:
 - Support fields are true only if the charity says it provides that thing; false only if it explicitly says it does not; otherwise null.
 - "shortfall" means what happens if the runner does not raise the minimum. "free_exit_date" is the last date a runner can withdraw without owing the minimum. "charge_schedule" is when money is actually taken (deposits, milestones, final charge).
 - The fundraising minimum is the entry-level minimum for a guaranteed charity bib for THIS race and year. Put other tiers and own-bib prices in minimum_note.
+- When several tiers are listed, the minimum is the LOWEST tier that includes the race entry (words like "we provide the race entry", "guaranteed entry", "charity entry"). A "fundraiser only" / "own entry" / "already have a bib" tier is never the minimum. A team-wide goal, a total the team hopes to raise, or a number for a different race or year is not the minimum: use null and explain in minimum_note.
 - If pages reference a prior year, an old deadline, or contradict each other, say so in flags.
 - Prefer the charity's marathon page, FAQ, application, and any runner agreement over press releases."""
 

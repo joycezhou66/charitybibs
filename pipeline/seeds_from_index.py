@@ -134,7 +134,9 @@ def build(dry_run: bool = False) -> dict:
     matched: dict[str, str] = {}  # seed id → nyrr key
     for s in existing:
         k = None
-        if s["id"] in MANUAL:
+        if s.get("nyrr_key") in by_key:          # already linked on a previous build: keep it
+            k = s["nyrr_key"]
+        elif s["id"] in MANUAL:
             k = next((kk for kk, n in names.items() if n.lower().startswith(MANUAL[s["id"]].lower()[:20])), None)
         if not k:
             for u in s.get("urls", []):
