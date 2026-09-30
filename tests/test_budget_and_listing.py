@@ -1,0 +1,98 @@
+"""Spend metering, graceful stop on budget or credit, and 'listed, not yet read' rows."""
+import json
+import shutil
+from pathlib import Path
+from types import SimpleNamespace
+
+import pytest
+
+from pipeline import extract as extract_mod
+from pipeline.diff import diff, render
+from pipeline.run import LISTED_ONLY, listed_only
+from pipeline.schema import Charity, Dataset, EXTRACTION_TOOL
+
+ROOT = Path(__file__).resolve().parent.parent
+RACE = "test-budget"
+
+
+class MeteredClient:
+    """Fake API: returns a valid tool call with token usage, or raises a billing error."""
+
+    def __init__(self, fail_after: int | None = None, billing_error: bool = False):
+        self.calls, self.fail_after, self.billing_error = 0, fail_after, billing_error
+        self.messages = self
+
+    def create(self, **kw):
+        self.calls += 1
+        if self.billing_error:
+            raise RuntimeError("Your credit balance is too low to access the Anthropic API.")
+        block = SimpleNamespace(type="tool_use", name=EXTRACTION_TOOL["name"],
+                                input={"status": "unknown", "minimum": None, "support": {}, "shortfall_published": False,
+                                       "injury_published": False, "deferral_published": False, "flags": []})
+        return SimpleNamespace(content=[block], usage=SimpleNamespace(input_tokens=20_000, output_tokens=1_000))
+
+
+@pytest.fixture
+def cache_dir():
+    d = ROOT / ".cache" / RACE
+    shutil.rmtree(d, ignore_errors=True)
+    d.mkdir(parents=True)
+    for cid in ("a", "b", "c"):
+        (d / f"{cid}.json").write_text(json.dumps({"id": cid, "name": cid.upper(),
+                                                   "pages": [{"url": f"https://{cid}.org", "text": "x", "fetched": "2026-09-30"}], "errors": []}))
+    yield d
+    shutil.rmtree(d, ignore_errors=True)
+
+
+def test_price_uses_model_table_and_conservative_fallback():
+    assert extract_mod.price("claude-sonnet-5", 1_000_000, 0) == 2.0
+    assert extract_mod.price("claude-opus-5", 0, 1_000_000) == 25.0
+    assert extract_mod.price("some-future-model", 1_000_000, 0) == extract_mod.FALLBACK_PRICE[0]
+
+
+def test_extraction_stops_at_budget_and_keeps_what_was_done(cache_dir):
+    # Each call costs 20k in + 1k out on sonnet-5 = $0.05. Budget $0.06 → 2 charities, then stop.
+    fc = MeteredClient()
+    s = extract_mod.run(RACE, "Test Race", order=["a", "b", "c"], client=fc, model="claude-sonnet-5", budget_usd=0.06)
+    assert s["extracted"] == ["a", "b"] and s["stopped"].startswith("budget")
+    spend = json.loads((cache_dir / "spend.json").read_text())
+    assert spend["total_usd"] == pytest.approx(0.10, abs=1e-6) and spend["stopped"].startswith("budget")
+    assert (cache_dir / "extracted" / "a.json").exists() and not (cache_dir / "extracted" / "c.json").exists()
+    assert "_usage" not in json.loads((cache_dir / "extracted" / "a.json").read_text())
+
+
+def test_out_of_credit_stops_cleanly_without_crashing(cache_dir):
+    s = extract_mod.run(RACE, "Test Race", order=["a", "b"], client=MeteredClient(billing_error=True), model="claude-sonnet-5")
+    assert s["extracted"] == [] and s["stopped"] == "API account out of credit"
+    assert not (cache_dir / "extracted" / "a.json").exists()
+
+
+def test_extraction_follows_seed_order_and_skips_fresh_outputs(cache_dir):
+    fc = MeteredClient()
+    s = extract_mod.run(RACE, "Test Race", order=["c", "a", "b"], client=fc, model="claude-sonnet-5")
+    assert s["extracted"] == ["c", "a", "b"]
+    s2 = extract_mod.run(RACE, "Test Race", order=["c", "a", "b"], client=fc, model="claude-sonnet-5")
+    assert s2["extracted"] == [] and s2["skipped"] == ["c", "a", "b"] and fc.calls == 3
+
+
+def test_listed_only_row_is_valid_and_flagged():
+    c = listed_only({"id": "z", "name": "Zeta Fund", "cause": "Cancer", "urls": ["https://zeta.org/run"]}, "2026-09-30")
+    assert c.min is None and c.status == "unknown" and c.supportScore == 0 and c.termsScore == 0
+    assert c.cause == "Cancer" and c.url == "https://zeta.org/run" and LISTED_ONLY in c.flags
+
+
+def test_diff_collapses_new_charities_and_reports_unread():
+    old = Dataset(refreshed="2026-09-14", charities=[Charity(id="a", name="A", url="https://a.org", verified="2026-09-14", min=3000)])
+    new = Dataset(refreshed="2026-09-30", charities=[
+        Charity(id="a", name="A", url="https://a.org", verified="2026-09-30", min=3500),
+        Charity(id="b", name="B", url="https://b.org", verified="2026-09-30", min=4000),
+        Charity(id="z", name="Z", url="https://z.org", verified="2026-09-30", flags=[LISTED_ONLY]),
+    ])
+    d = diff(old, new)
+    assert d["unread"] == ["z"]
+    md = render(d, "nyc-2026", spend={"total_usd": 1.2345, "charities": {"a": {}, "b": {}}, "stopped": "budget of $1.20 reached"})
+    assert "API spend this run: **$1.23** across 2 charities (budget of $1.20 reached)" in md
+    assert "**1 charities changed**, 2 added" in md
+    assert "| A | `min` | 3000 | 3500 |" in md
+    assert "<details><summary>2 charities added" in md and "- Z (not yet read)" in md and "- B\n" in md
+    assert "**1 charities are listed but not yet read.**" in md

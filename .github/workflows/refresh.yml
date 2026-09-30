@@ -10,15 +10,26 @@ on:
       only:
         description: comma-separated charity ids (optional)
         default: ""
+      scope:
+        description: all = every charity in the seed list; core = only charities already read and not closed
+        default: core
+        type: choice
+        options: [core, all]
+      budget_usd:
+        description: stop extracting once this much has been spent on the API (blank = no cap, stops when credit runs out)
+        default: ""
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     permissions: { contents: write, pull-requests: write }
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      CB_MODEL: ${{ vars.CB_MODEL || 'claude-sonnet-4-5' }}
+      CB_MODEL: ${{ vars.CB_MODEL || 'claude-sonnet-5' }}
+      CB_BUDGET_USD: ${{ github.event.inputs.budget_usd || vars.CB_BUDGET_USD || '' }}
       RACE: ${{ github.event.inputs.race || 'nyc-2026' }}
       ONLY: ${{ github.event.inputs.only || '' }}
+      SCOPE: ${{ github.event.inputs.scope || 'core' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,12 +37,19 @@ jobs:
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
       - name: Crawl, extract, verify, diff
         run: |
-          if [ -n "$ONLY" ]; then python -m pipeline.run refresh --race "$RACE" --only "$ONLY"; else python -m pipeline.run refresh --race "$RACE"; fi
+          if [ -n "$ONLY" ]; then python -m pipeline.run refresh --race "$RACE" --only "$ONLY"; else python -m pipeline.run refresh --race "$RACE" --scope "$SCOPE"; fi
       - name: Promote candidate and rebuild site
         run: |
           python -m pipeline.run promote --race "$RACE"
           python -m pipeline.run build --race "$RACE"
           cp .cache/"$RACE"/changes.md /tmp/changes.md
+      - name: Keep the spend log with the run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: spend-${{ env.RACE }}-${{ github.run_id }}
+          path: .cache/${{ env.RACE }}/spend.json
+          if-no-files-found: ignore
       - name: Open pull request for review
         uses: peter-evans/create-pull-request@v6
         with:

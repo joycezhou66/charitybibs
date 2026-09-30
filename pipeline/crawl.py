@@ -112,6 +112,14 @@ async def crawl_charity(context, robots: Robots, charity: dict) -> dict:
     return {"id": charity["id"], "name": charity["name"], "pages": pages, "errors": errors}
 
 
+def _fetched_today(path: Path) -> bool:
+    try:
+        d = json.loads(path.read_text())
+        return bool(d.get("pages")) and all(p.get("fetched") == date.today().isoformat() for p in d["pages"])
+    except Exception:  # noqa: BLE001 — unreadable cache → refetch
+        return False
+
+
 async def crawl_race(seed_path: Path, cache_dir: Path, only: set[str] | None = None) -> None:
     from playwright.async_api import async_playwright
 
@@ -127,6 +135,10 @@ async def crawl_race(seed_path: Path, cache_dir: Path, only: set[str] | None = N
         context = await browser.new_context(user_agent=UA, ignore_https_errors=os.environ.get("CB_DEV_INSECURE") == "1")
         for ch in seeds["charities"]:
             if only and ch["id"] not in only:
+                continue
+            out = cache_dir / f"{ch['id']}.json"
+            if out.exists() and _fetched_today(out):
+                print(f"  {ch['id']:10} already fetched today, skipped")
                 continue
             t0 = time.time()
             result = await crawl_charity(context, robots, ch)
