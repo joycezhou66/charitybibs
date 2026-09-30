@@ -24,6 +24,7 @@ jobs:
     timeout-minutes: 350
     permissions: { contents: write, pull-requests: write }
     env:
+      PYTHONUNBUFFERED: "1"
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       CB_MODEL: ${{ vars.CB_MODEL || 'claude-sonnet-5' }}
       CB_BUDGET_USD: ${{ github.event.inputs.budget_usd || vars.CB_BUDGET_USD || '' }}

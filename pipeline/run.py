@@ -122,7 +122,7 @@ def cmd_refresh(race: str, only: set[str] | None, scope: str, limit_min: float |
     rn = race_name(race)
     limit = limit_min if limit_min is not None else time_limit_min()
     t0 = time.monotonic()
-    print(f"refresh {race}: {len(ids)} charities, scope={scope}, chunk={CHUNK}, time limit={limit or 'none'} min")
+    print(f"refresh {race}: {len(ids)} charities, scope={scope}, chunk={CHUNK}, time limit={limit or 'none'} min", flush=True)
     done = 0
     for i in range(0, len(ids), CHUNK):
         elapsed = (time.monotonic() - t0) / 60

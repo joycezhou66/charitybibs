@@ -131,3 +131,37 @@ def test_refresh_stops_starting_chunks_after_time_limit(monkeypatch):
     run_mod.cmd_refresh("t", None, "all", limit_min=10)
     kinds = [k for k, _ in calls]
     assert kinds.count("crawl") == 2 and kinds.count("extract") == 2 and kinds[-1] == "verify"
+
+
+def test_pdf_size_guard():
+    from pipeline.crawl import pdf_text, PDF_MAX_BYTES
+    with pytest.raises(ValueError):
+        pdf_text(b"%PDF-" + b"0" * (PDF_MAX_BYTES + 1))
+
+
+def test_charity_crawl_hard_cap_keeps_pages_fetched_so_far(monkeypatch, tmp_path):
+    import asyncio
+    from pipeline import crawl as crawl_mod
+
+    async def slow_fetch(context, url):
+        if url.endswith("/fast"):
+            return "fast page text", ["https://x.org/slow"]
+        await asyncio.sleep(10)
+        return "never", []
+    monkeypatch.setattr(crawl_mod, "fetch_page", slow_fetch)
+    monkeypatch.setattr(crawl_mod, "CHARITY_TIMEOUT_S", 1)
+    monkeypatch.setattr(crawl_mod, "DELAY_S", 0)
+    monkeypatch.setattr(crawl_mod.Robots, "allowed", lambda self, url: True)
+
+    class Ctx:
+        pages = []
+
+    async def run():
+        acc = {"pages": [], "errors": []}
+        try:
+            await asyncio.wait_for(crawl_mod.crawl_charity(Ctx(), crawl_mod.Robots(), {"id": "x", "name": "X", "urls": ["https://x.org/fast"]}, acc), crawl_mod.CHARITY_TIMEOUT_S)
+        except asyncio.TimeoutError:
+            return acc
+        return None
+    acc = asyncio.run(run())
+    assert acc is not None and len(acc["pages"]) == 1 and acc["pages"][0]["text"] == "fast page text"

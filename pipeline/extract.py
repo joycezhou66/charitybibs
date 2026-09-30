@@ -202,5 +202,5 @@ def run(race: str, race_name: str, only: set[str] | None = None, order: list[str
         raw["_source_fetched"] = fetched
         out.write_text(json.dumps(raw, indent=1))
         summary["extracted"].append(cid)
-        print(f"  {cid:10} extracted  ${cost:.3f}  (run total ${spend.data['total_usd']:.2f})")
+        print(f"  {cid:10} extracted  ${cost:.3f}  (run total ${spend.data['total_usd']:.2f})", flush=True)
     return summary
