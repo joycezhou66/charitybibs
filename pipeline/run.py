@@ -19,6 +19,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import time
 from datetime import date
 from pathlib import Path
 
@@ -105,19 +107,34 @@ def cmd_diff(race: str) -> str:
     return md
 
 
-def cmd_refresh(race: str, only: set[str] | None, scope: str) -> None:
+def time_limit_min() -> float | None:
+    """CB_TIME_LIMIT_MIN: stop starting new chunks after this many minutes so the run
+    always reaches verify/diff/promote before the Action's job timeout kills it."""
+    v = os.environ.get("CB_TIME_LIMIT_MIN", "").strip()
+    return float(v) if v else None
+
+
+def cmd_refresh(race: str, only: set[str] | None, scope: str, limit_min: float | None = None) -> None:
     ids = [s["id"] for s in seeds(race)["charities"]]
     allowed = only if only is not None else scope_ids(race, scope)
     if allowed is not None:
         ids = [i for i in ids if i in allowed]
     rn = race_name(race)
-    print(f"refresh {race}: {len(ids)} charities, scope={scope}, chunk={CHUNK}")
+    limit = limit_min if limit_min is not None else time_limit_min()
+    t0 = time.monotonic()
+    print(f"refresh {race}: {len(ids)} charities, scope={scope}, chunk={CHUNK}, time limit={limit or 'none'} min")
+    done = 0
     for i in range(0, len(ids), CHUNK):
+        elapsed = (time.monotonic() - t0) / 60
+        if limit is not None and elapsed >= limit:
+            print(f"time limit of {limit:.0f} min reached after {done} charities; the rest stay listed as not yet read")
+            break
         chunk = ids[i:i + CHUNK]
         crawl_mod.run(race, set(chunk))
         summary = extract_mod.run(race, rn, set(chunk), order=chunk)
+        done += len(summary["extracted"]) + len(summary["skipped"])
         if summary["stopped"]:
-            print(f"stopped after {i + len(summary['extracted'])} charities: {summary['stopped']}")
+            print(f"stopped after {done} charities: {summary['stopped']}")
             break
     cmd_verify(race)
     print(cmd_diff(race))

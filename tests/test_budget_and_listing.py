@@ -98,3 +98,18 @@ def test_diff_collapses_new_charities_and_reports_unread():
     assert "| A | `min` | 3000 | 3500 |" in md
     assert "<details><summary>2 charities added" in md and "- Z (not yet read)" in md and "- B\n" in md
     assert "**1 charities are listed but not yet read.**" in md
+
+
+def test_refresh_stops_starting_chunks_after_time_limit(monkeypatch):
+    from pipeline import run as run_mod
+    calls = []
+    monkeypatch.setattr(run_mod.crawl_mod, "run", lambda race, only: calls.append(("crawl", sorted(only))))
+    monkeypatch.setattr(run_mod.extract_mod, "run", lambda race, rn, only, order=None: (calls.append(("extract", sorted(only))) or {"extracted": list(only), "skipped": [], "stopped": None}))
+    monkeypatch.setattr(run_mod, "seeds", lambda race: {"race_name": "T", "charities": [{"id": f"c{i}", "name": f"C{i}", "urls": []} for i in range(25)]})
+    monkeypatch.setattr(run_mod, "cmd_verify", lambda race: calls.append(("verify", [])))
+    monkeypatch.setattr(run_mod, "cmd_diff", lambda race: "diff")
+    clock = iter([0.0, 0.0, 0.0, 1000.0, 1000.0])  # first chunk starts at 0s, second at 0s, third sees 1000s elapsed
+    monkeypatch.setattr(run_mod.time, "monotonic", lambda: next(clock, 1000.0))
+    run_mod.cmd_refresh("t", None, "all", limit_min=10)
+    kinds = [k for k, _ in calls]
+    assert kinds.count("crawl") == 2 and kinds.count("extract") == 2 and kinds[-1] == "verify"

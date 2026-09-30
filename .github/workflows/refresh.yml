@@ -27,6 +27,7 @@ jobs:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       CB_MODEL: ${{ vars.CB_MODEL || 'claude-sonnet-5' }}
       CB_BUDGET_USD: ${{ github.event.inputs.budget_usd || vars.CB_BUDGET_USD || '' }}
+      CB_TIME_LIMIT_MIN: ${{ vars.CB_TIME_LIMIT_MIN || '300' }}
       RACE: ${{ github.event.inputs.race || 'nyc-2026' }}
       ONLY: ${{ github.event.inputs.only || '' }}
       SCOPE: ${{ github.event.inputs.scope || 'core' }}
