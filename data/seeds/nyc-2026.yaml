@@ -1,118 +1,5411 @@
 race: nyc-2026
 race_name: TCS New York City Marathon 2026
-official_list: https://www.nyrr.org/tcsnycmarathon/runners/charity-index
-official_list_note: nyrr.org blocks automated fetching. Refresh this seed list by hand once a year when the partner list is published (Jan–Feb).
+official_list: https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/charity_partners
+official_list_note: Built by pipeline/seeds_from_index.py from research/nyrr-index/charities.json (NYRR's charity partner list on Haku). Existing entries are kept by hand; new ones get cause/focus from NYRR's category and blurb and can be corrected here.
 charities:
 - id: tfk
   name: NYRR Team for Kids
   urls:
   - https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon
+  level: Bronze
+  nyrr_key: 6d51bf3ea10311fdfcda
 - id: bird
   name: NYC Bird Alliance
   urls:
   - https://nycbirdalliance.org/run
+  level: Bronze
+  nyrr_key: 0cb158eb9fccdbbad3ff
 - id: hope
   name: Hope Community Inc
   urls:
   - https://hopeci.org/2026-tcs-new-york-city-marathon/
+  level: Bronze
+  nyrr_key: 606ae9c0cfbb5784de3c
 - id: cri
   name: Cancer Research Institute
   urls:
   - https://www.cancerresearch.org/events/2026-tcs-new-york-city-marathon
+  level: Bronze
+  nyrr_key: 9b6c2d6c11853a2a7184
 - id: nami
   name: NAMI-NYC
   urls:
   - https://naminycmetro.org/marathon/
+  level: Bronze
+  nyrr_key: e55415e7cb749e1011b9
 - id: bcrf
   name: Breast Cancer Research Foundation
   urls:
   - https://www.bcrf.org/blog/bcrf-2026-tcs-nyc-marathon-application/
+  level: Bronze
+  nyrr_key: a6ded312e012115f79a0
 - id: msahc
   name: Mount Sinai Adolescent Health Center
   urls:
   - https://www.mountsinai.org/files/MSHealth/Assets/HS/Patient-Care/Service-Areas/Adolescent-Health-Center/HS-MSAHC-TCS-NYC-Marathon-Runner-Agreement.pdf
   - https://www.mountsinai.org/locations/adolescent-health-center/events
+  level: Bronze
+  nyrr_key: bdd6cbc41725ab8441bd
 - id: caf
   name: Challenged Athletes Foundation
   urls:
   - https://give.challengedathletes.org/nycmarathon
+  level: Bronze
+  nyrr_key: 870d29deffdb52c27690
 - id: vfound
   name: V Foundation for Cancer Research
   urls:
   - https://vfoundation.donordrive.com/pages/1035?eventID=724
+  level: Bronze
+  nyrr_key: 87e0ae6b86a4b184bc1d
 - id: bcu
   name: Blood Cancer United (Team In Training)
   urls:
   - https://www.teamintraining.org/events/tcs-new-york-city-marathon
+  level: Bronze
+  nyrr_key: 7e788d30b9c5e50a2648
 - id: cpc
   name: Central Park Conservancy
   urls:
   - https://www.centralparknyc.org/giving/marathon
+  level: Bronze
+  nyrr_key: 742e6d2c13a8d5caabb9
 - id: sff
   name: Sanctuary for Families
   urls:
   - https://sanctuaryforfamilies.org/event/tcs-nyc-marathon/
+  level: Bronze
+  nyrr_key: 1f96381c62bbeff1fa36
 - id: maw
   name: Make-A-Wish Metro New York
   urls:
   - https://wish.org/newyork/2026-tcs-new-york-city-marathon
+  level: Bronze
+  nyrr_key: 90130887b47652f4e277
 - id: nbts
   name: National Brain Tumor Society
   urls:
   - https://braintumor.org/events/gray-nation-endurance/tcs-nyc-marathon-charity-runner-application/
   - https://braintumor.org/events/gray-nation-endurance/tcs-nyc-marathon-commitment-form-and-waiver/
+  level: Bronze
+  nyrr_key: f5b81c80271c90a64c79
 - id: lung
   name: LUNGevity
   urls:
   - https://fundraise.lungevity.org/nycmarathon26
   - https://fundraise.lungevity.org/pages/2056?eventID=1115
+  level: Bronze
+  nyrr_key: ccfe1d1cfb53da713d84
 - id: freds
   name: Fred's Team (Memorial Sloan Kettering)
   urls:
   - https://www.fredsteam.org/events/tcs-new-york-city-marathon
   - https://www.fredsteam.org/tcs-new-york-city-marathon-fundraising-agreement
+  level: Gold
+  nyrr_key: 441091546e4e3b803c02
 - id: bch
   name: Boston Children's Hospital (Miles for Miracles)
   urls:
   - https://giving.childrenshospital.org/events/run/new-york-marathon/faqs
+  level: Silver
+  nyrr_key: a5aca876602f13b2a26e
 - id: cp
   name: Commonpoint
   urls:
   - https://www.commonpoint.org/tcs-new-york-city-marathon
+  level: Bronze
+  nyrr_key: f50ded900c2d66def4dc
 - id: usat
   name: USA Triathlon Foundation
   urls:
   - https://www.usatriathlon.org/articles/press-releases/new-york-road-runners-names-usa-triathlon-foundation-as-official-charity-partner-of-the-2026-tcs-new-york-city-marathon
+  level: Bronze
+  nyrr_key: 72794bf130879606f460
 - id: restore
   name: Restore NYC
   urls:
   - https://restorenyc.org/get-involved/nyc-marathon/
+  level: Bronze
+  nyrr_key: 0bfbd1393acaec14e642
 - id: chop
   name: Team CHOP (Children's Hospital of Philadelphia)
   urls:
   - https://www.chop.edu/giving/team-chop-tcs-nyc-marathon
+  level: Bronze
+  nyrr_key: 53c15085bdb609f17d5d
 - id: coc
   name: Circle of Care
   urls:
   - https://thecircleofcare.org/events/nyc-marathon.html
+  level: Bronze
+  nyrr_key: f19d36c04b7e1340cb11
 - id: ulman
   name: Ulman Foundation
   urls:
   - https://ulmanfoundation.org/teamraces/nyc-marathon/
+  level: Silver
+  nyrr_key: ce15d9becf40159748c4
 - id: t2t
   name: Tunnel to Towers Foundation
   urls:
   - https://t2t.org/tcs-new-york-city-marathon/
+  level: Bronze
+  nyrr_key: 13c8da0fa955486781ee
 - id: concern
   name: Team Concern (Concern Worldwide)
   urls:
   - https://concernusa.org/news/how-to-run-nyc-marathon-for-charity/
   - https://concernusa.org/take-action/events/2026-tcs-nyc-marathon/
+  level: Bronze
+  nyrr_key: e0b5e653bdbe4920efff
 - id: achilles
   name: Achilles International
   urls:
   - https://www.achillesinternational.org/nyc-marathon-charity-slots
+  level: Bronze
+  nyrr_key: 61d8b45e7cbd51cd830f
 - id: lsnyc
   name: Legal Services NYC
   urls:
   - https://www.legalservicesnyc.org/events/2026-nyc-marathon-run-with-team-lsnyc/
+  level: Bronze
+  nyrr_key: 4f7995dc8fcf8e5e5c62
+- id: allied-services-integrated-h
+  name: Allied Services Integrated Health System
+  urls:
+  - https://www.allied-services.org/team-allied/
+  cause: Children's health
+  focus: Allied Services Integrated Health System is a nonprofit healthcare and human services provider serving Northeastern and Central Pennsylva…
+  level: Silver
+  nyrr_key: 671e7fabb6ff00332980
+- id: als-united-greater
+  name: ALS United Greater New York
+  urls:
+  - https://als-ny.org/calendar/team-als/
+  cause: Health & medical research
+  focus: ALS United Greater New York builds hope and enhances the quality of life while supporting aggressive research to find new treatments and…
+  level: Silver
+  nyrr_key: b4e491d5db92d12c3b30
+- id: autism-speaks
+  name: Autism Speaks
+  urls:
+  - https://join.autismspeaks.org/event/2026-tcs-new-york-city-marathon/e765463
+  cause: Mental health
+  focus: Autism Speaks TeamUp brings together athletes who are passionate about turning their miles into meaningful impact.
+  level: Silver
+  nyrr_key: a31587da65590cb5c2ad
+- id: breakthrough-t1d-formerly-jd
+  name: Breakthrough T1D, formerly JDRF
+  urls:
+  - https://www2.breakthrought1d.org/site/SPageServer?pagename=run_application
+  cause: Health & medical research
+  focus: Breakthrough T1D Run (formerly JDRF) provides entry into some of the country's most exciting challenge events.
+  level: Silver
+  nyrr_key: 6c21cee5ce93f27cf16a
+- id: christopher-and-dana-reeve
+  name: Christopher & Dana Reeve Foundation
+  urls:
+  - https://www.christopherreeve.org/events/team-reeve-nyc/
+  cause: Disability & adaptive sport
+  focus: The Christopher & Dana Reeve Foundation is dedicated to curing spinal cord injury by advancing innovative research and improving the qual…
+  level: Silver
+  nyrr_key: 8d035ddf82e240ae289d
+- id: parks
+  name: City Parks Foundation
+  urls:
+  - https://cityparksfoundation.org/tcs-marathon/
+  cause: Environment & parks
+  focus: At City Parks Foundation, we are dedicated to invigorating and transforming parks into dynamic, vibrant centers of urban life through spo…
+  level: Silver
+  nyrr_key: 5a3ec9e46a9b8a549783
+- id: cystic-fibrosis
+  name: Cystic Fibrosis Foundation
+  urls:
+  - https://fundraise.cff.org/nycmarathon26
+  cause: Health & medical research
+  focus: The mission of the Cystic Fibrosis Foundation is to cure cystic fibrosis and to provide all people with CF the opportunity to lead long,…
+  level: Silver
+  nyrr_key: 681934e03c7e749283ae
+- id: multiple-myeloma-research
+  name: Multiple Myeloma Research Foundation
+  urls:
+  - https://endurance.themmrf.org/nycmarathon2026
+  cause: Cancer
+  focus: The MMRF is the largest non-profit in the world solely focused on accelerating a cure for each and every multiple myeloma patient.
+  level: Silver
+  nyrr_key: 945d373296263e6ead23
+- id: organization-autism-research
+  name: Organization for Autism Research
+  urls:
+  - https://support.researchautism.org/2026NYC
+  cause: Mental health
+  focus: The Organization for Autism Research is dedicated to improving the lives of everyone impacted by autism by funding applied research that…
+  level: Silver
+  nyrr_key: efe91290e122f3059ac3
+- id: release-recovery
+  name: Release Recovery Foundation
+  urls:
+  - https://www.releaserecoveryfoundation.org/
+  cause: Mental health
+  focus: ''
+  level: Silver
+  nyrr_key: 4135f5d8a11574f949d3
+- id: robin-hood
+  name: Robin Hood
+  urls:
+  - https://robinhood.org/race-for-robin-hood/
+  cause: Community services
+  focus: Robin Hood is NYC’s largest local poverty-fighting philanthropy, and since 1988, we have invested nearly $3 billion to elevate and fuel N…
+  level: Silver
+  nyrr_key: e9652ae2ab758e2e53da
+- id: ronald-mcdonald-house
+  name: Ronald McDonald House New York
+  urls:
+  - https://www.rmh-newyork.org/blogs/events/marathon
+  cause: Cancer
+  focus: Ronald McDonald House New York provides families of children with cancer and other serious illnesses with a strong, caring and seamless c…
+  level: Silver
+  nyrr_key: ca05c0ecd939f1417e96
+- id: st-jude-children-s-research-
+  name: St. Jude Children's Research Hospital
+  urls:
+  - http://fundraising.stjude.org/site/TR?fr_id=164151&amp;pg=entry
+  cause: Health & medical research
+  focus: For ALSAC/St.
+  level: Silver
+  nyrr_key: f13d85cd37e29885854e
+- id: hole-in-wall-gang-camp
+  name: The Hole in the Wall Gang Camp
+  urls:
+  - https://give.holeinthewallgang.org/event/2026-tcs-new-york-city-marathon/e770584
+  cause: Youth & education
+  focus: Founded in 1988 by Paul Newman, The Hole in the Wall Gang Camp provides “a different kind of healing" to thousands of children with serio…
+  level: Silver
+  nyrr_key: e16e4e28a5cee3b16bdf
+- id: 26-2
+  name: 26.2 Foundation
+  urls:
+  - https://www.26-2.org/new-york-city-marathon
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 39a60cc80519524705d0
+- id: 261-fearless
+  name: 261 Fearless Inc
+  urls:
+  - https://www.261fearless.org/marathon/new-york/261-fearless-nyc-marathon-2026/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 066c82fbdc9688265e17
+- id: a-better-childhood
+  name: A Better Childhood
+  urls:
+  - https://www.abetterchildhood.org/teamabc
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: ddaaad2f62dbdaf019e8
+- id: a-fair-shake-youth
+  name: A Fair Shake for Youth
+  urls:
+  - https://www.afairshakeforyouth.org/2026tcsnycmarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: c162c5e0c158022cfd6d
+- id: a-building-strength
+  name: A Foundation Building Strength
+  urls:
+  - https://buildingstrength.org/events/tcs-new-york-city-marathon-application-deadline/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: a09092fc69f7efbfa9c3
+- id: action-healthy-kids
+  name: Action for Healthy Kids
+  urls:
+  - https://www.actionforhealthykids.org/event/2026-tcs-new-york-city-marathon-registration-opens-early-2026/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 5a4fb2accccade87a187
+- id: active-plus
+  name: Active Plus Inc.
+  urls:
+  - http://www.activeplus-nyc.org/nyrr
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: a4bc58890092ad8ae79c
+- id: adapt-community-network
+  name: ADAPT Community Network
+  urls:
+  - https://adaptcommunitynetwork.org/join-us/events/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: ee429f2cfb19b4c5685d
+- id: adaptive-sports
+  name: Adaptive Sports Foundation
+  urls:
+  - https://fundraise.givesmart.com/vf/ASFNYC26
+  cause: Disability & adaptive sport
+  focus: ''
+  level: Bronze
+  nyrr_key: 32fae26652ff842d85fd
+- id: aftd
+  name: AFTD
+  urls:
+  - https://www.theaftd.org/get-involved/host-an-event/race-season/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 75c5a07ee791bcf1b9c4
+- id: aim-youth-mental-health
+  name: AIM Youth Mental Health
+  urls:
+  - http://AIMymh.org/marathons
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: 25ef2e55f3746480ee62
+- id: airnyc
+  name: AIRnyc
+  urls:
+  - https://www.air-nyc.org/airnyc-ny-marathon-2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 6b8e59b8e8942e7b11ee
+- id: aisling-irish-community-and-
+  name: Aisling Irish Community & Cultural Center
+  urls:
+  - https://aislingcenter.org/tcs-nyc-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 8f62fd57f41a6a3bd339
+- id: aktiv-against-cancer-ny
+  name: Aktiv Against Cancer Inc. (NY)
+  urls:
+  - https://www.aktivagainstcancer.us/nyc
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 7ef49f649f0ae96500eb
+- id: alex-s-lemonade-stand
+  name: Alex's Lemonade Stand Foundation
+  urls:
+  - https://www.alexslemonade.org/team-lemon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: c3bf7bcecc931f41252d
+- id: ali-forney-center
+  name: Ali Forney Center
+  urls:
+  - https://www.aliforneycenter.org/nycmarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: e84d2e7ea5f6b81a6e7f
+- id: allyson-whitney
+  name: ALLYSON WHITNEY FOUNDATION
+  urls:
+  - https://allysonwhitney.org/events/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 42ffc1015243f2068ada
+- id: alpfa
+  name: ALPFA
+  urls:
+  - https://alpfa.org/new-york-professional-chapter-community-affairs
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 753525dcd7d7d34e4391
+- id: als-one
+  name: ALS ONE
+  urls:
+  - http://alsnetwork.org/nycmarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 8ce75dad22508918ee91
+- id: als-ride-life
+  name: ALS Ride For Life
+  urls:
+  - https://alsrideforlife.org/2026-new-york-city-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: a7044181b42596378a8a
+- id: als-therapy-development-inst
+  name: ALS Therapy Development Institute
+  urls:
+  - https://www.als.net/marathons/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: b72f14492d9a2550569d
+- id: alzheimer-s-association
+  name: Alzheimer's Association
+  urls:
+  - https://events.alz.org/event/view/nyc-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: aebb5282ac906d23e592
+- id: alzheimer-s-drug-discovery
+  name: Alzheimer's Drug Discovery Foundation
+  urls:
+  - https://www.alzdiscovery.org/events/event/2026-tcs-new-york-city-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: d7b6f662f552ca3a791b
+- id: alzheimer-s-america
+  name: Alzheimer's Foundation of America
+  urls:
+  - https://givebutter.com/AFAxNYCMarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 5120ccd4d7f9ad58db61
+- id: amazin-mets
+  name: Amazin' Mets Foundation, Inc.
+  urls:
+  - https://amazinmetsfoundation.org/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: fefe3488b9203a8416d5
+- id: american-association-cancer-
+  name: American Association for Cancer Research (AACR)
+  urls:
+  - https://www.aacr.org/get-involved/other-ways-to-join/runners-for-research/2026-tcs-new-york-city-marathon/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 584ef80d6c665f6c75c6
+- id: american-brain-tumor-associa
+  name: American Brain Tumor Association
+  urls:
+  - https://give.abta.org/event/2026-team-abta-tcs-nyc-marathon/e765066
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: de0064c3dbad88df3749
+- id: american-cancer-society
+  name: American Cancer Society
+  urls:
+  - http://www.acsdetermination.org/nycmarathon
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: e99a6200c8940b65ae8b
+- id: american-committee-shaare-ze
+  name: American Committee for Shaare Zedek Medical Center
+  urls:
+  - http://www.acsz.org/teamshaarezedek
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 2795bdc46f1425e069f7
+- id: american-suicide-prevention-
+  name: American Foundation for Suicide Prevention - NYC Chapter
+  urls:
+  - https://afsp.org/nyc
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: ee2511b2285c02c04075
+- id: american-friends-alyn-hospit
+  name: American Friends of ALYN Hospital
+  urls:
+  - https://www.alynus.org/run-with-afah
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 842cd359fa129f45f72f
+- id: american-heart-association
+  name: American Heart Association
+  urls:
+  - https://www2.heart.org/site/TR?fr_id=13309&amp;pg=entry
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 9eccece68142595c2592
+- id: american-liver
+  name: American Liver Foundation
+  urls:
+  - https://liverlifechallenge.org/tcsnycmarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 381abc3af90f0536d9ce
+- id: american-lung-association
+  name: American Lung Association
+  urls:
+  - https://www.lung.org/ny/tcs-ny-marathon-interest-form
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 77415e7f40687808411b
+- id: american-neuromuscular
+  name: American Neuromuscular Foundation
+  urls:
+  - https://www.neuromuscularfoundation.org/nyc
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: dd7bc96e16534c8f7c1d
+- id: amigos-de-las-americas
+  name: Amigos de las Americas
+  urls:
+  - https://amigosinternational.org/support-amigos/#tcs-new-york-city-marathon-2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 50dbc1fa191ce87de1f7
+- id: amref-health-africa
+  name: Amref Health Africa
+  urls:
+  - https://amrefusa.org/events/tcs-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: a2fed96ed830aa57d323
+- id: answer-call
+  name: Answer the Call
+  urls:
+  - https://www.answerthecall.org/get-involved/jointeamatc/marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: d5aa68812d386f76ba34
+- id: apex-youth
+  name: Apex for Youth
+  urls:
+  - https://donate.apexforyouth.org/campaign/2026-tcs-new-york-city-marathon/c772413
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 43d4552a11c487c9c6c8
+- id: arbor-rising
+  name: Arbor Rising
+  urls:
+  - https://www.arborrising.org/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 956d2583c19562cc3586
+- id: army-ranger-lead-way
+  name: Army Ranger Lead The Way Fund
+  urls:
+  - https://www.leadthewayfund.org/race-with-us/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 81f78947df307fbef99e
+- id: art-start
+  name: Art Start
+  urls:
+  - https://www.art-start.org/news/2026-tcs-new-york-city-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 620c007970c74f9b6954
+- id: arthritis
+  name: Arthritis Foundation
+  urls:
+  - https://events.arthritis.org/tcsnycmarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 8ccabdc74c63690120bd
+- id: asphalt-green
+  name: Asphalt Green
+  urls:
+  - https://www.asphaltgreen.org/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: ae8b7c7701d57871db2d
+- id: association-autism-and-neuro
+  name: Association for Autism and Neurodiversity (AANE)
+  urls:
+  - https://aane.org/support-us/fundraise-for-aane/run-the-tcs-nyc-marathon/
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: 249b82cb5d559dabd741
+- id: association-to-benefit-child
+  name: Association to Benefit Children
+  urls:
+  - https://www.a-b-c.org/marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 159c170aea6fbc063a37
+- id: atalanta
+  name: Atalanta NYC
+  urls:
+  - https://www.atalantanyc.org/charitybibs
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: f2ea6e984de37f3d9b87
+- id: atlanta-track-club
+  name: Atlanta Track Club Foundation
+  urls:
+  - https://www.atlantatrackclub.org/nyc-marathon-kilometer-kids-charity-team
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 21d79376d1c5ea7bd380
+- id: augie-s-quest-to-cure-als
+  name: Augie's Quest to Cure ALS
+  urls:
+  - https://give.augiesquest.org/2026NYCMarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 7c757f5930b4ac750619
+- id: autistic-self-advocacy-netwo
+  name: Autistic Self Advocacy Network
+  urls:
+  - https://autisticadvocacy.org/nycmarathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: de6be84ffe4e9d68f5b2
+- id: axis-project
+  name: Axis Project Inc
+  urls:
+  - https://axisproject.org/action/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 0424ae08117c314ec17e
+- id: b-cured
+  name: B*CURED
+  urls:
+  - https://bcured.org/events/2026-tcs-nyc-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 916e8b8244ec6df4f1f6
+- id: back-on-my-feet
+  name: Back On My Feet
+  urls:
+  - http://backonmyfeet.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 3d898ccb7c57df2389de
+- id: backpacks-life
+  name: Backpacks For Life
+  urls:
+  - http://www.backpacksforlife.org/marathon
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 4f2b19da32a309a8c0ec
+- id: badass-animal-rescue
+  name: Badass Animal Rescue
+  urls:
+  - https://badassanimalrescue.com/tcsnycmarathon-teambadass
+  cause: Animals
+  focus: ''
+  level: Bronze
+  nyrr_key: 931f15c33c2857fa58d7
+- id: bard-prison-initiative
+  name: Bard Prison Initiative
+  urls:
+  - https://bpi.bard.edu/running-with-bpi-2026/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b1dfc7bb3dbd9d14ff16
+- id: bartholomew-j-lawson-childre
+  name: Bartholomew J. Lawson Foundation for Children
+  urls:
+  - https://www.reachwithin.org/marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 4a771c773540c8e0146f
+- id: baruch-college
+  name: Baruch College Fund
+  urls:
+  - https://bcf.alumni.baruch.cuny.edu/givingopps/tcsmarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 6a4cbc1a8c1e2e670888
+- id: beginning-with-children
+  name: Beginning with Children
+  urls:
+  - https://beginningwithchildren.org/how-to-get-involved/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 006d9e2b90bc7213fed5
+- id: best-buddies-international
+  name: Best Buddies International
+  urls:
+  - https://www.teambestbuddies.org/nycmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: b88e4438d4fdc1eff1c2
+- id: beyond-type-1
+  name: Beyond Type 1
+  urls:
+  - https://beyondtype1.org/marathon-team/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 0b366013f10f6352c770
+- id: big-brothers-big-sisters
+  name: Big Brothers Big Sisters of New York City
+  urls:
+  - https://www.bigsnyc.org/bbbsnycevents
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3b54bc20a028b6bcd02c
+- id: billion-oyster-project
+  name: Billion Oyster Project
+  urls:
+  - https://www.billionoysterproject.org/nyc-marathon
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 36378575b833eb74d102
+- id: biobus
+  name: BioBus
+  urls:
+  - http://www.biobus.org/marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: ad8adb8a53a3d5d9e2ce
+- id: black-girls-run
+  name: Black Girls RUN! Foundation
+  urls:
+  - https://blackgirlsrun.com/bgr-foundation/marathon-charity-teams/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 30cdc701b69a9b659aa3
+- id: blue-star-families-ny-tri-st
+  name: Blue Star Families NY Tri-State Chapter
+  urls:
+  - https://connect.bluestarfam.org/campaign/blue-star-families-tcs-new-york-city-marathon-2026/c763441
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: c3618011e9c44e628af2
+- id: bone-health-and-osteoporosis
+  name: Bone Health & Osteoporosis Foundation
+  urls:
+  - https://secure.bonehealthandosteoporosis.org/site/TR?fr_id=1091&amp;pg=entry
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 34e9377739f7c3d76395
+- id: book-fairies-ny
+  name: Book Fairies Inc. (NY)
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLSemugfA5HDKUdTr1maTuV7h1Bd-KbQl4uFLOuEoekJ7ofanRA/viewform?usp=header
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: eafd089ffdc60bdea0ef
+- id: boomer-esiason
+  name: Boomer Esiason Foundation
+  urls:
+  - https://www.esiason.org/team-boomer/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: cab846b0b008d180191c
+- id: bottomless-closet
+  name: Bottomless Closet
+  urls:
+  - https://bottomlesscloset.org/marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 13968ccd3aa7b1aefdf9
+- id: bowery-residents-committee
+  name: Bowery Residents' Committee, Inc.
+  urls:
+  - https://www.brc.org/champions
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 08694b367dd69a465b92
+- id: brain-aneurysm
+  name: Brain Aneurysm Foundation
+  urls:
+  - https://www.bafound.org/take-action-2/fundraise-participate/events/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 31871682306a0755b30d
+- id: brain-cancer-research-stache
+  name: 'Brain Cancer Research: StacheStrong'
+  urls:
+  - https://stachestrong.org/event/nycmarathon/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 0712f0c665052e6be0df
+- id: brain-injury-association-sta
+  name: Brain Injury Association of New York State
+  urls:
+  - https://bianys.org/2026marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: ac3fc80102dab5765650
+- id: brain-injury-recovery
+  name: Brain Injury Recovery Foundation
+  urls:
+  - https://braininjuryrecoveryfoundation.org/events/run/
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: 0a46287b90cfe25046c2
+- id: brain-tumor
+  name: Brain Tumor Foundation
+  urls:
+  - https://braintumorfoundation.org/nycmarathon/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 67bc652925e87afade0b
+- id: bras-girls
+  name: Bras for Girls
+  urls:
+  - https://www.brasforgirls.org/pages/nyc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 578760331377c4cb97c0
+- id: brave-like-gabe
+  name: Brave Like Gabe
+  urls:
+  - https://www.bravelikegabe.org/get-involved
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 9ecb40e1cff515a43667
+- id: breaking-ground
+  name: Breaking Ground
+  urls:
+  - https://www.breakingground.org/news-events/event/2026-tcs-new-york-city-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 8c854a78f193ab90c633
+- id: breakthrough
+  name: Breakthrough New York
+  urls:
+  - https://btny.org/events/run-with-btny-for-the-2026-nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 256c87a410a7f89bdf95
+- id: broadway-cares-equity-fights
+  name: Broadway Cares/Equity Fights AIDS
+  urls:
+  - https://broadwaycares.org/marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 3792e78d31e2c5919b29
+- id: broadway-community
+  name: Broadway Community
+  urls:
+  - https://www.broadwaycommunity.org/tcs-nyc-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 81c03c94d445d7c9b5aa
+- id: brockton-hospital
+  name: Brockton Hospital Inc.
+  urls:
+  - http://www.mysignaturecare.org/nyc
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 4c0ca444735d5657640f
+- id: bronx-lacrosse
+  name: Bronx Lacrosse
+  urls:
+  - https://bronxlacrosse.org/nycmarathon
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 69611928a59966b5ff56
+- id: bronxworks
+  name: BronxWorks
+  urls:
+  - https://bronxworks.org/marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 50786e5043b7c5962fde
+- id: brooklyn-book-bodega
+  name: Brooklyn Book Bodega
+  urls:
+  - https://www.brooklynbookbodega.org/inpersonevents
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 6716799dd337436b9287
+- id: camp-korey
+  name: Camp Korey
+  urls:
+  - https://www.campkorey.org/event/tcs-new-york-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 2e345607a58afeec845d
+- id: camp-no-limits
+  name: Camp No Limits
+  urls:
+  - https://www.nolimitsfoundation.org/nycmarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: fea7252dd567295bf3af
+- id: camp-shriver
+  name: Camp Shriver
+  urls:
+  - https://www.umb.edu/csde/camp-shriver-community/tcs-new-york-city-marathon-team/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: e4af5f4dcecc506b2f3c
+- id: cancer-support-community
+  name: Cancer Support Community
+  urls:
+  - https://app.betterunite.com/cancersupportcommunity-2026cscunitednycmarathon
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 0a366b2dd44f7da7c908
+- id: cancer-support-community-gre
+  name: Cancer Support Community Greater NY & CT
+  urls:
+  - https://cancersupportcommunitynyct.org/run-with-team-gilda/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: a2f73e68f9935b40c6c0
+- id: cancercare
+  name: CancerCare
+  urls:
+  - https://www.cancercare.org/ny-marathon-2026
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 6e7df94ff7ef29339af9
+- id: caringkind-heart-alzheimer-s
+  name: CaringKind, The Heart of Alzheimer's Caregiving
+  urls:
+  - https://caringkindnyc.org/athletes/nycmarathon-apply/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 3559ce8fcf2116c493a6
+- id: carol-m-baldwin-breast-cance
+  name: Carol M. Baldwin Breast Cancer Research Fund
+  urls:
+  - https://findacure.org/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: ccf2cf427bbb6cf3efac
+- id: catholic-charities
+  name: Catholic Charities of New York
+  urls:
+  - https://catholiccharitiesny.org/tcs-nyc-marathon-team/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: de05275395af476a8fb4
+- id: celiac-disease
+  name: Celiac Disease Foundation
+  urls:
+  - https://celiac.org/newyorkmarathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 3f3c282b99c102927506
+- id: cerebral-palsy-alliance-rese
+  name: Cerebral Palsy Alliance Research Foundation
+  urls:
+  - https://give.cparf.org/event/nyc-marathon-2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 99b24ce757eb1b1eef30
+- id: charity-water
+  name: 'charity: water'
+  urls:
+  - http://charitywater.org/marathons
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: ec0d53857fd91792d3c1
+- id: chelsea-piers
+  name: Chelsea Piers Foundation
+  urls:
+  - http://chelseapiersfoundation.org/race
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: f246f5ae7e233046e3e8
+- id: chicago-area-runners-associa
+  name: Chicago Area Runners Association
+  urls:
+  - https://www.cararuns.org/teamcara
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 235882e77e3ed81d0c12
+- id: chicago-diabetes-project
+  name: Chicago Diabetes Project
+  urls:
+  - https://www.cellmatesontherun.org/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 13559fff56182fc7f0c0
+- id: chicago-run
+  name: Chicago Run
+  urls:
+  - https://www.chicagorun.org/teamchicagorun
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: f0a568ad9666e3ff35dd
+- id: child-rescue-coalition
+  name: Child Rescue Coalition
+  urls:
+  - https://childrescuecoalition.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4a83b1772cdf87f27bde
+- id: children-in-conflict
+  name: Children in Conflict
+  urls:
+  - https://secure.everyaction.com/wxu_3aHFlU6AOObmuBfzwA2
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 48ed374119c76ffdeb99
+- id: children-peru
+  name: Children of Peru Foundation
+  urls:
+  - https://childrenofperu.org/nyc-marathon-2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 09a9c802af60899bf82a
+- id: children-s-aid
+  name: Children's Aid
+  urls:
+  - https://www.childrensaidnyc.org/nycmarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 507b309a8fd8e49c25ac
+- id: children-s-brain-tumor
+  name: Children's Brain Tumor Foundation
+  urls:
+  - https://cbtf.org/endurance/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 952cf8a360516aa0c1a1
+- id: children-s-hospital-at-monte
+  name: Children's Hospital at Montefiore Einstein
+  urls:
+  - https://montefioreeinstein.org/patient-care/giving/champions-for-cham-2026
+  cause: Children's health
+  focus: ''
+  level: Bronze
+  nyrr_key: b4ed06dce30409239659
+- id: children-s-scholarship
+  name: Children's Scholarship Fund
+  urls:
+  - https://scholarshipfund.org/team-csf/team-csf-events/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 7164cebc816870664c89
+- id: children-s-specialized-hospi
+  name: Children's Specialized Hospital Foundation
+  urls:
+  - https://foundation.childrens-specialized.org/event/2026-tcs-new-york-city-marathon/e783830
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 0b566ccc89752f1a8bb9
+- id: children-s-tumor
+  name: Children's Tumor Foundation
+  urls:
+  - https://forms.gle/99bqJqDscpZim94K8
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: a86c3ead159417d67460
+- id: chinese-free-masons-athletic
+  name: Chinese Free Masons Athletic Club
+  urls:
+  - https://www.liondance211.org/nycmarathon
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: 251a17fb9b0cca1446e1
+- id: cholangiocarcinoma
+  name: Cholangiocarcinoma Foundation
+  urls:
+  - https://give.cholangiocarcinoma.org/campaign/team-ccf-2026-tcs-new-york-city-marathon/c763194
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: b9b4f8391c0c318a25f5
+- id: choroideremia-research
+  name: Choroideremia Research Foundation Inc
+  urls:
+  - https://secure.qgiv.com/event/2026tcsnycmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4525b234b385eea6dfd1
+- id: chris-klug
+  name: Chris Klug Foundation
+  urls:
+  - https://www.chrisklugfoundation.org/nyc-marathon
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 655dbeeb71b32e0b0578
+- id: chris-long
+  name: Chris Long Foundation
+  urls:
+  - https://waterboys.org/get-involved?post_types=fundraiser
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 224a974f31250ca22fde
+- id: harvest
+  name: City Harvest
+  urls:
+  - https://www.cityharvest.org/event/team-city-harvest-2026/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: ed73e61e5ff5bf36ec60
+- id: citymeals-on-wheels
+  name: Citymeals on Wheels
+  urls:
+  - https://www.citymeals.org/team-citymeals
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 2f8a91d1f86ab974fe8e
+- id: cmak-sandy-hook-memorial
+  name: CMAK Sandy Hook Memorial Foundation
+  urls:
+  - https://cmakfoundation.org/cmak-at-tcs-nyc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3ec6e98970894c22affb
+- id: colorectal-cancer-alliance
+  name: Colorectal Cancer Alliance
+  urls:
+  - https://impact.ccalliance.org/campaign/2026-new-york-city-marathon/c733655
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 5481343e950290c7df5f
+- id: community-help-in-park-slope
+  name: Community Help in Park Slope
+  urls:
+  - https://give.chipsonline.org/campaign/2026-nyc-marathon/c763642
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: e9c565d1e65ba9577078
+- id: community-hope
+  name: Community Hope, Inc
+  urls:
+  - https://www.communityhope-nj.org/events/new-york-city-marathon/
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 3aa56864bc786c39afc1
+- id: community-roots-charter-scho
+  name: Community Roots Charter School
+  urls:
+  - https://communityroots.org/donate/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 9c9467a663ba425e8ee5
+- id: concert-artists-guild
+  name: Concert Artists Guild
+  urls:
+  - https://www.concertartists.org/tcs-marathon
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: cb2cb6921ca7df7dc7aa
+- id: coop-careers
+  name: COOP Careers, Inc.
+  urls:
+  - https://coopcareers.org/nyc-marathon-2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: f9edbf76068689a8ced2
+- id: covenant-house
+  name: Covenant House
+  urls:
+  - https://www.covenanthousediy.org/nycmarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 68bf74e7d3312f1e7fc7
+- id: crime-victims-treatment-cent
+  name: Crime Victims Treatment Center, Inc.
+  urls:
+  - https://www.cvtcnyc.org/tcs-new-york-city-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 1ce0ff5d653fffac91d4
+- id: crohn-s-and-colitis
+  name: Crohn's & Colitis Foundation
+  urls:
+  - https://teamchallenge.crohnscolitisfoundation.org/nycmarathon2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 2539a72429298129480b
+- id: culture-one
+  name: Culture for One
+  urls:
+  - https://www.cultureforone.org/nyc-marathon
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: f45c5caced5e9acf7f1d
+- id: cure-cmd
+  name: Cure CMD
+  urls:
+  - http://curecmd.org/nyc-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: e59710922b554ad48a7c
+- id: cure-epilepsy
+  name: CURE Epilepsy
+  urls:
+  - https://www.cureepilepsy.org/event/tcs-new-york-city-marathon-2026/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: c5923aef90a6ec0383ef
+- id: cure-sma
+  name: Cure SMA
+  urls:
+  - https://endurance-curesma.donordrive.com/newyorkcitymarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 09d8e50cac6ad0cb5cdf
+- id: curepsp
+  name: CurePSP
+  urls:
+  - https://www.psp.org/team-curepsp
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 80d3de12efeb79cff26d
+- id: curesearch-children-s-cancer
+  name: CureSearch for Children's Cancer
+  urls:
+  - https://give.curesearch.org/event/2026-team-steve-nyc-marathon/e768518
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: a8fc6e1b70f51ed1d24f
+- id: dana-farber-cancer-institute
+  name: Dana-Farber Cancer Institute
+  urls:
+  - https://danafarber.jimmyfund.org/site/SPageServer/?pagename=rundf_wmm_cancer
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 758ad2f3ac599ed8adea
+- id: daniel-s-music
+  name: Daniel's Music Foundation
+  urls:
+  - https://www.danielsmusic.org/blog/nycmarathon2026
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: cd19102ccfc9a4224a5d
+- id: dare2tri
+  name: Dare2Tri
+  urls:
+  - https://dare2tri.org/events/new-york-city-marathon/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 09769aaaba509acb988f
+- id: dave-mcgillivray-finish-stro
+  name: Dave McGillivray Finish Strong Foundation
+  urls:
+  - https://www.davemcgillivrayfoundation.org/get-involved
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: fcaa4c3f58fbf44086a0
+- id: debra-america
+  name: debra of America
+  urls:
+  - https://debra.salsalabs.org/2026nycmarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 318f3c78e8b9cda7abd6
+- id: degregorio-family
+  name: DeGregorio Family Foundation
+  urls:
+  - https://degregorio.org/run-with-us/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: cf9f37692bbfa7a0c711
+- id: democracy-works
+  name: Democracy Works
+  urls:
+  - https://www.democracy.works/nycmarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: d5d86b4c29d04928463c
+- id: destination-imagination
+  name: Destination Imagination of New York, Inc.
+  urls:
+  - https://www.nydi.org/2026-tcs-new-york-city-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 83c63f59f21ab4f0fc51
+- id: detectogether
+  name: DetecTogether
+  urls:
+  - https://www.detectogether.org/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 6c0a09614f05ec652178
+- id: dkms
+  name: DKMS
+  urls:
+  - https://www.dkms.org/get-involved/programs/team-dkms
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 90131d30b8e1e9aa01e6
+- id: dmf-youth
+  name: DMF Youth
+  urls:
+  - https://dmfyouth.org/2026-nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: ec79b0734844c36924b5
+- id: donate-life-state
+  name: Donate Life New York State
+  urls:
+  - https://p2p.onecause.com/2026nycmarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 2edf3dfcf9602b95dd40
+- id: double-h-ranch
+  name: Double H Ranch
+  urls:
+  - https://www.doublehranch.org/fundraise-for-camp/nycmarathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 8984ed9c1d70782a979d
+- id: doug-flutie-jr
+  name: Doug Flutie Jr. Foundation
+  urls:
+  - https://flutiefoundation.org/whats-happening/events/tcs-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: afcbdb4788425fd0756a
+- id: drama-club
+  name: Drama Club, Inc.
+  urls:
+  - https://www.dramaclub.org/events
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b133c3aa5b0da6b153ab
+- id: dravet-syndrome
+  name: Dravet Syndrome Foundation
+  urls:
+  - https://dravetfoundation.org/tcs-new-york-city-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 405da2f50737e6867dcb
+- id: dress-success-worldwide
+  name: Dress for Success Worldwide
+  urls:
+  - https://dressforsuccess.org/get-involved/events/join-team-success/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 320799412fd10e1da5e7
+- id: drive-change
+  name: Drive Change
+  urls:
+  - https://drivechangenyc.org/nyc-marthon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3fc3b352816ef1d72672
+- id: dunkin-joy-in-childhood
+  name: Dunkin' Joy in Childhood Foundation
+  urls:
+  - https://my.onecause.com/event/organizations/sf-001C000001kfOatIAE/events/vevt:3fa03e87-7e9a-4645-a554-5f26896bceb3/preview/home/story
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b51011bc5d5d5c9912fc
+- id: dup15q-alliance
+  name: Dup15q Alliance
+  urls:
+  - https://charity.pledgeit.org/dup15q-nyc-marathon
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 8958b8bccb1516971be3
+- id: east-harlem-tutorial-program
+  name: East Harlem Tutorial Program
+  urls:
+  - https://www.ehtp.org/ehtpruns-nyc2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 434bf96c6d512c9c64a7
+- id: east-side-house-settlement
+  name: East Side House Settlement
+  urls:
+  - https://www.eastsidehouse.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b2d52640da4773413615
+- id: eb-research-partnership
+  name: EB Research Partnership
+  urls:
+  - https://give.ebresearch.org/event/nyc-full-marathon-2026/e771228
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 2b3ffc259a635b87d586
+- id: edible-schoolyard
+  name: Edible Schoolyard NYC
+  urls:
+  - https://www.edibleschoolyardnyc.org/donate/run-for-esynyc/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: d1889216424e938d921d
+- id: educational-alliance
+  name: Educational Alliance, Inc.
+  urls:
+  - https://edalliance.org/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: d0bbefba1bae1325008b
+- id: ej-autism
+  name: EJ Autism Foundation
+  urls:
+  - http://www.ejautismfoundation.org
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: 70d73d590d8508f00f45
+- id: elixir
+  name: Elixir Fund
+  urls:
+  - https://www.elixirfund.org/news/tcs-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 9da92cec4d0753b524fe
+- id: eluna
+  name: Eluna
+  urls:
+  - https://elunanetwork.org/events/2026-tcs-new-york-city-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3c48a18db19bf2d7f6aa
+- id: empower
+  name: Empower
+  urls:
+  - https://weareempower.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: e26ec6260f4486d9f1cd
+- id: endure-to-cure-pediatric-can
+  name: Endure to Cure Pediatric Cancer Foundation
+  urls:
+  - https://enduretocure.org/events/new-york-city-marathon
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 5424709c93d16ce11955
+- id: epilepsy-metropolitan
+  name: Epilepsy Foundation of Metropolitan New York
+  urls:
+  - http://www.efmny.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e63bec283765c6532259
+- id: every-mother-counts
+  name: Every Mother Counts
+  urls:
+  - https://everymothercounts.org/run-with-team-emc/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: d83c66b2042ae9d28566
+- id: everylife-rare-diseases
+  name: EveryLife Foundation for Rare Diseases
+  urls:
+  - https://everylifefoundation.org/run/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: b5c02dc5a10c5bcaf3d5
+- id: everylife-rare-diseases-2
+  name: Everylife Foundation for Rare Diseases
+  urls:
+  - https://everylifefoundation.org/run/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: b5c02dc5a10c5bcaf3d5
+- id: expanded-schools
+  name: ExpandED Schools
+  urls:
+  - https://www.expandedschools.org/support-our-work/nyrr-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 2acc8c786182b8f540c8
+- id: expect-miracles
+  name: Expect Miracles Foundation
+  urls:
+  - https://expectmiraclesfoundation.org/apply-for-a-marathon-bib/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 362178db098cf786be3b
+- id: experience-camps
+  name: Experience Camps
+  urls:
+  - https://experiencecamps.org/events
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3bfbc96af57444760812
+- id: extreme-kids-and-crew
+  name: Extreme Kids & Crew
+  urls:
+  - https://www.extremekidsandcrew.org/2026-ekc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 28493ec0869959cfbd20
+- id: faces-at-nyu-langone-health
+  name: FACES at NYU Langone Health
+  urls:
+  - https://forms.office.com/r/4yE5iwquC2
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 475d6e073ffa4b5b4186
+- id: familial-dysautonomia
+  name: Familial Dysautonomia Foundation, Inc.
+  urls:
+  - https://familialdysautonomia.org/2026fdmarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: ce943fed6ea596889681
+- id: family-and-children-s-associ
+  name: Family & Children's Association
+  urls:
+  - https://www.fcali.org/get-involved/marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 79f5e24bf4ea3396e3c6
+- id: family-reach
+  name: Family Reach
+  urls:
+  - https://familyreach.org/reachathlete/
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: f4cbe8be7334cbfdd7f1
+- id: federation-italian-american-
+  name: Federation of Italian American Organization of Brooklyn
+  urls:
+  - https://fiaobrooklyn.org/campaign/tcs-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 127fdf9f732e03ae073a
+- id: filling-in-blanks
+  name: Filling in the Blanks
+  urls:
+  - https://secure.qgiv.com/event/2026tcsnycmarthon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4525b234b385eea6dfd1
+- id: first-candle
+  name: First Candle, Inc.
+  urls:
+  - https://firstcandle.org/2026-tcs-nyc-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: a4996f07515dcd016298
+- id: first-descents
+  name: First Descents
+  urls:
+  - https://firstdescents.org/out-living-it-project/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: e2b7f43c5405e2b8b5f8
+- id: first-generation-investors
+  name: First Generation Investors
+  urls:
+  - https://www.firstgenerationinvestors.com/nyc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: a36cb6c8dc102e2ffbbb
+- id: first-tee-metrpolitan
+  name: First Tee-Metrpolitan New York
+  urls:
+  - https://fundraise.givesmart.com/vf/2026Marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 32fae26652ff842d85fd
+- id: force-facing-our-risk-cancer
+  name: 'FORCE: Facing Our Risk of Cancer Empowered'
+  urls:
+  - https://go.facingourrisk.org/2026TCSNYCMarathon
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 1cb970be83f489452a34
+- id: forestdale
+  name: Forestdale, Inc.
+  urls:
+  - https://www.forestdaleinc.org/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 1d03d56d1ccb27a495d2
+- id: angelman-syndrome-therapeuti
+  name: Foundation for Angelman Syndrome Therapeutics
+  urls:
+  - https://give.cureangelman.org/KickASNYC2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 87f97d31bda7fe17347f
+- id: prader-willi-research
+  name: Foundation for Prader-Willi Research
+  urls:
+  - https://www.fpwr.org/teamfpwr
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 58623d32d8e82b26ea13
+- id: sarcoidosis-research
+  name: Foundation for Sarcoidosis Research
+  urls:
+  - https://www.stopsarcoidosis.org/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: c58e61be8878c25faf55
+- id: fountain-house
+  name: Fountain House
+  urls:
+  - https://fountainhouse.org/get-involved/events
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 2cb7cc90ddecb7c55fb9
+- id: free-arts
+  name: Free Arts NYC
+  urls:
+  - https://freeartsnyc.org/marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 63bdc05344bb24a5c193
+- id: free-to-run
+  name: Free to Run
+  urls:
+  - http://newyork.freetorun.org
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 82f0bc2faa93e3550790
+- id: freshkills-park-alliance
+  name: Freshkills Park Alliance
+  urls:
+  - https://freshkillspark.org/calendar
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 28d503f3a78f67d8907d
+- id: friedreich-s-ataxia-research
+  name: Friedreich's Ataxia Research Alliance
+  urls:
+  - https://give.curefa.org/nyc
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: cd9576e8c413de95c101
+- id: friends-pool
+  name: Friends of + POOL
+  urls:
+  - https://pluspool.com/events/details/2026-tcs-nyc-marathon/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 20ada03a04dc1fb35f2d
+- id: friends-firefighters
+  name: Friends of Firefighters, Inc.
+  urls:
+  - http://www.friendsoffirefighters.org/2026marathonsignup
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 8828e0ae528b12686519
+- id: friends-children
+  name: Friends of the Children - New York
+  urls:
+  - https://friendsnewyork.org/get-involved/events/2026-nyc-marathon-2
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: c617485dab746add8ec6
+- id: friendship-circle-internatio
+  name: Friendship Circle International
+  urls:
+  - https://www.teamfriendship.org/nyc26
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 7dbd3d3da95e42e20f2a
+- id: friendship-circle-brooklyn
+  name: Friendship Circle of Brooklyn
+  urls:
+  - http://fcrunsnyc.com
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e6c5fbd7029756a322ac
+- id: futures-and-options
+  name: Futures and Options
+  urls:
+  - https://futuresandoptionsnycmarathon2026.funraise.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: a92794a211caf74c255c
+- id: futures-ignite
+  name: Futures Ignite
+  urls:
+  - https://www.futuresignite.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 5b4db1ecee0600f69c55
+- id: girl-rising
+  name: Girl Rising
+  urls:
+  - https://www.girlrising.org/nycmarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: d358eb0c7b4d68877cb3
+- id: girl-scouts-greater
+  name: Girl Scouts of Greater New York
+  urls:
+  - https://www.girlscoutsnyc.org/en/support-us/fundraising-events/tcs-new-york-city-marathon.html
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 91a8a92985db6b0b1223
+- id: girls
+  name: Girls Inc. of New York City
+  urls:
+  - https://www.girlsincnyc.org/events/marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 7cba5cf9bc5e84861d10
+- id: girls-on-run-greater-boston
+  name: Girls on the Run Greater Boston
+  urls:
+  - https://www.girlsontherunboston.org/solemates
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 7a3839f6da242624ddfd
+- id: girls-on-run-hudson-valley
+  name: Girls on the Run Hudson Valley
+  urls:
+  - https://www.girlsontherunhv.org/nyc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b3350b92218d2a05a6c4
+- id: girls-on-run
+  name: Girls on the Run NYC
+  urls:
+  - https://www.gotrnyc.org/nyc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 4cb5c7f789c8320f440f
+- id: girls-who-invest
+  name: Girls Who Invest
+  urls:
+  - https://www.girlswhoinvest.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 2e1e945bcae1f3f08f55
+- id: gladney-center-adoption
+  name: Gladney Center for Adoption
+  urls:
+  - https://iamgladney.org/nycmarathon26
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: bae02ff290526ca1c5eb
+- id: glen-doherty-memorial
+  name: Glen Doherty Memorial Foundation
+  urls:
+  - https://www.glendohertyfoundation.org/about-us
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 5d077242e0029733feeb
+- id: gmhc
+  name: GMHC
+  urls:
+  - https://gmhc.org/nycmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: c6fb8e57fe739f3c8dc8
+- id: go2-lung-cancer
+  name: GO2 for Lung Cancer
+  urls:
+  - https://events.go2.org/2026nycmarathon
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: b20b64da886af956f377
+- id: goal-usa
+  name: GOAL USA
+  urls:
+  - https://www.goalus.org/stories/2026-tcs-new-york-city-marathon/
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: f87d0430cd2911aa25aa
+- id: god-s-love-we-deliver
+  name: God's Love We Deliver
+  urls:
+  - http://glwd.org/marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 06069a99bef32dc6aba3
+- id: good-grief
+  name: Good Grief
+  urls:
+  - https://secure.qgiv.com/event/gg2026nycmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4525b234b385eea6dfd1
+- id: good-shepherd-services
+  name: Good Shepherd Services
+  urls:
+  - https://give.goodshepherds.org/campaign/2026-tcs-new-york-city-marathon/c778973
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 04641b52ba1ebc2a57e0
+- id: good-sports
+  name: Good Sports
+  urls:
+  - https://www.goodsports.org/2026nyc/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 55e0e45fc6f0698b6be6
+- id: gotham-food-pantry
+  name: Gotham Food Pantry
+  urls:
+  - https://gothamfoodpantry.org/gotham-x-2026-nyc-marathon/
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: ea1e4bbba03f7ccacff4
+- id: governors-island
+  name: Governors Island Foundation
+  urls:
+  - https://www.govisland.com/support/tcs-nyc-marathon-2026
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 2918bc6c0e275d9e1f3a
+- id: grassroot-soccer
+  name: Grassroot Soccer
+  urls:
+  - https://grassrootsoccer.org/run-with-grassroot-soccer/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 4b9f9aa31513dcd7f5a0
+- id: grassroots-grocery
+  name: Grassroots Grocery
+  urls:
+  - https://www.grassrootsgrocery.org/outrunhunger-2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 2c27ef0e7ccad367c5b3
+- id: great-lakes-adaptive-sports-
+  name: Great Lakes Adaptive Sports Association (GLASA)
+  urls:
+  - http://GLASA.org/marathon
+  cause: Disability & adaptive sport
+  focus: ''
+  level: Bronze
+  nyrr_key: f829c6dcd6b329635cee
+- id: green-beret
+  name: Green Beret Foundation
+  urls:
+  - https://greenberetfoundation.org/event/2026-tcs-new-york-city-marathon/
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 46b8a27dbabdef8e69de
+- id: green-force
+  name: Green City Force
+  urls:
+  - https://greencityforce.org/2026/02/25/go-the-distance-with-gcf-for-the-2026-tcs-new-york-city-marathon/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 948541d3d15e3f3862c4
+- id: grow-healthy-kids
+  name: GROW Healthy Kids
+  urls:
+  - https://www.growhealthykids.org/teamgrow/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 6ec23332109f6dbccb59
+- id: gweneviere-mann
+  name: Gweneviere Mann Foundation
+  urls:
+  - http://gwenmann.org
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 6096a6b2a6bb68418217
+- id: hannah-storm
+  name: Hannah Storm Foundation
+  urls:
+  - https://www.givengain.com/campaign/2026-new-york-city-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 50fa1cebcf2030015403
+- id: happiness-is-camping
+  name: Happiness Is Camping
+  urls:
+  - https://www.happinessiscamping.org/event/2026-tcs-nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 99be8072e5d897855726
+- id: harboring-hearts
+  name: Harboring Hearts
+  urls:
+  - https://www.harboringhearts.org/harboringheartsevents
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: a4b1fde53dda68a97318
+- id: harlem-junior-tennis-and-edu
+  name: Harlem Junior Tennis and Education Program
+  urls:
+  - http://hjtep.org/nycmarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 427aab36a8975ab3baee
+- id: harlem-lacrosse
+  name: Harlem Lacrosse
+  urls:
+  - https://harlemlacrosse.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 214ff634f65012340491
+- id: harlem-united-community-aids
+  name: Harlem United Community AIDS Center, Inc.
+  urls:
+  - https://www.harlemunited.org/ways-to-give/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: c712efa35af93ec8b272
+- id: haymakers-hope
+  name: Haymakers for Hope
+  urls:
+  - https://haymakersforhope.org/events?date=&amp;type=running
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 669af6c4ea63a0784255
+- id: hazelden-betty-ford
+  name: Hazelden Betty Ford Foundation
+  urls:
+  - https://forms.gle/K45eouc5KcyM4Chu8
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: a86c3ead159417d67460
+- id: heal-planet-together
+  name: Heal The Planet Together , Inc
+  urls:
+  - https://healtheplanet.com/nymarathon
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 97615842aa7109de0736
+- id: heartshare
+  name: Heartshare
+  urls:
+  - https://www.heartshare.org/events/2026-tcs-new-york-city-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 1e0e2e91bcd5b97728e2
+- id: helpusadopt-org
+  name: Helpusadopt.org
+  urls:
+  - https://www.helpusadopt.org/tcs-new-york-city-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 35723b9909bfd90ecb3d
+- id: henry-street-settlement
+  name: Henry Street Settlement
+  urls:
+  - https://www.henrystreet.org/tcs-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e9a9ab9f14575749065f
+- id: hepatitis-b
+  name: Hepatitis B Foundation
+  urls:
+  - https://www.hepb.org/news-and-events/new-page-2/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 655e03a08df51b83e082
+- id: her-village
+  name: Her Village Inc.
+  urls:
+  - http://www.wearehervillage.org/run
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 8b15715975b46a719ed4
+- id: hereditary-neuropathy
+  name: Hereditary Neuropathy Foundation
+  urls:
+  - https://fundraise.givesmart.com/vf/CMTMarathon
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 32fae26652ff842d85fd
+- id: herren-project
+  name: Herren Project
+  urls:
+  - https://herrenproject.org/wavemakers/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 8cb4df600409f8fa2ea3
+- id: hetrick-martin-institute
+  name: Hetrick-Martin Institute
+  urls:
+  - https://hmi.org/get-involved/hmi-running-team/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: dad75b81d130ddbd5b0f
+- id: high-watch-recovery-center
+  name: High Watch Recovery Center
+  urls:
+  - http://www.highwatchrecovery.org
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: f99e44bba4ca038705d8
+- id: hilarity-charity-hfc
+  name: Hilarity for Charity (HFC)
+  urls:
+  - https://www.donatehfc.com/event/run-hfc-nyc-marathon-2026/e772154
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 9ad8d877696259a12207
+- id: hit-books
+  name: Hit the Books
+  urls:
+  - http://www.hitthebooksnyc.org/donate
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 3f0cb4cdef05bd305f79
+- id: homes-our-troops
+  name: Homes For Our Troops
+  urls:
+  - https://www.hfotusa.org/get-involved/support_our_mission/teamhfot/
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 518045c616e1b2ed5915
+- id: hope-2
+  name: Hope For New York
+  urls:
+  - http://hfny.org/teamhfny
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 34e8d9905c57715f3f79
+- id: hope-warriors
+  name: Hope For The Warriors
+  urls:
+  - https://2026tcsnycmarathonteamhope.funraise.org/
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 5121fb392262f4982989
+- id: hope-story
+  name: Hope Story
+  urls:
+  - https://hopestory.org/2026-tcs-new-york-city-marathon-team-hope-story/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 1b343a5d6cab09bb5762
+- id: hospital-special-surgery
+  name: Hospital for Special Surgery
+  urls:
+  - https://give.hss.edu/site/SPageNavigator/development_events_landing_page.html
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 9ab883a678fc05566d06
+- id: housing-works
+  name: Housing Works
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLSfxb8I76h1NQsTJMy65KNq-LZWOBcOUzVLNfKHt6yES4zPnwg/viewform?usp=header
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: eafd089ffdc60bdea0ef
+- id: human-rights-campaign
+  name: Human Rights Campaign Foundation
+  urls:
+  - https://www.hrc.org/get-involved/memberships/support-athletes-for-equality
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 70205ceb1db841692074
+- id: human-rights-first
+  name: Human Rights First
+  urls:
+  - https://forms.office.com/r/Mfsp3KMMfx
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 475d6e073ffa4b5b4186
+- id: hunger-free-america
+  name: Hunger Free America
+  urls:
+  - https://hungerfreeamerica.org/en-us/new-york-city-marathon
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: 190250761bd17d10ef23
+- id: huntington-s-disease-society
+  name: Huntington's Disease Society of America
+  urls:
+  - https://hdsa.org/get-involved/nyc-marathon-team/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: d24bed5bfb64b11af299
+- id: i-am-als
+  name: I AM ALS
+  urls:
+  - https://iamals.donordrive.com/nyc-marathon-2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 028ebbb9054ecdd423c3
+- id: imagine-a-center-coping-with
+  name: Imagine, A Center for Coping with Loss
+  urls:
+  - https://imaginenj.org/marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 1b4f230e4a04519fbf9e
+- id: imentor
+  name: iMentor
+  urls:
+  - https://give.imentor.org/campaign/2026-imentor-nyrr-tcs-nyc-marathon/c766328
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 872bb1520eeb7070b68a
+- id: imerman-angels
+  name: Imerman Angels
+  urls:
+  - https://imermanangels.donordrive.com/2026NYCMarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 7893d4223c338db5ae18
+- id: immigrant-defense-project
+  name: Immigrant Defense Project
+  urls:
+  - https://www.immigrantdefenseproject.org/idp-is-an-official-charity-partner-of-the-2026-tcs-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 355a71a0cffbb6b12134
+- id: impact-melanoma
+  name: IMPACT Melanoma
+  urls:
+  - https://impactmelanoma.org/event/new-york-marathon/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 4391265c39ba2c4f1697
+- id: impact-network-together-with
+  name: Impact Network Together with PEAS
+  urls:
+  - https://www.impactnetwork.org/race-for-impact
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 96c40f1b3fabada0e336
+- id: innocence-project
+  name: Innocence Project
+  urls:
+  - https://innocenceproject.org/news/2026-new-york-city-marathon-team/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: f7cfe69f5b5b18044a95
+- id: intandem-cycling
+  name: InTandem Cycling
+  urls:
+  - https://www.intandembike.org/tcsnycmarathon
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: d3f2d8cd9091d6210fce
+- id: international-justice-missio
+  name: International Justice Mission
+  urls:
+  - http://www.ijm.org/runNYC
+  cause: Legal aid
+  focus: ''
+  level: Bronze
+  nyrr_key: 5bfaf75f19f7055e0829
+- id: international-rescue-committ
+  name: International Rescue Committee
+  urls:
+  - http://rescue.org
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: ea8acb48c075406b28ed
+- id: ironmatt
+  name: Ironmatt
+  urls:
+  - https://ironmatt.org/tcs-new-york-city-marathon-generic/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 651621721cd35604c241
+- id: islanders-children-s
+  name: Islanders Children's Foundation
+  urls:
+  - http://www.newyorkislanders.com/marathon
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: fd03c42e5178d2b0ae45
+- id: israel-cancer-research-icrf
+  name: Israel Cancer Research Fund (ICRF)
+  urls:
+  - https://www.icrfonline.org/events/run-the-2026-tcs-new-york-city-marathon-with-team-icrf/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 7f49cc877012a4d09dc9
+- id: italian-american-sport
+  name: Italian American Sport Foundation
+  urls:
+  - http://www.iasport.org
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 8c6e51a6930d6d1a4cb9
+- id: jack-h-marston-ii-melanoma
+  name: Jack H. Marston II Melanoma Fund
+  urls:
+  - https://jacksfund.org/events/jacks-marathon-team/tcs-new-york-city-marathon/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: dde0c6cec4ec6d099b10
+- id: james-beard
+  name: James Beard Foundation
+  urls:
+  - https://jamesbeard.org/
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: ebbb78ba2904348e349c
+- id: jhpiego
+  name: Jhpiego
+  urls:
+  - https://docs.google.com/spreadsheets/d/1dl3ozs3ssEAko5Y820zpLeVVwFYtBtocgaxu9Lpt3mQ/edit#
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: eafd089ffdc60bdea0ef
+- id: joe-torre-safe-at-home
+  name: Joe Torre Safe At Home Foundation
+  urls:
+  - https://joetorre.org/events/nycmarathon2026/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 20068cdab91e6052b046
+- id: joyful-heart
+  name: Joyful Heart Foundation
+  urls:
+  - https://www.joyfulheartfoundation.org/get-involved/ways-to-give/marathon-giving/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 990572a0ef4775674a50
+- id: junior-achievement
+  name: Junior Achievement
+  urls:
+  - https://newyork.ja.org/events/index
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 320f4a10c847cf4d9cea
+- id: just-capital
+  name: JUST Capital
+  urls:
+  - http://justcapital.com
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: ae54eb1e88b18f5f8261
+- id: kaufman-music-center
+  name: Kaufman Music Center
+  urls:
+  - https://give.kaufmanmusiccenter.org/26TCSNYCMarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 5825dfed3f3b7b5d076a
+- id: keen
+  name: KEEN New York
+  urls:
+  - https://www.keennewyork.org/new-york-city-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 99ce68cc97166665af6d
+- id: keep-a-child-alive
+  name: Keep a Child Alive
+  urls:
+  - https://www.keepachildalive.org/about-team-kca-2/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 9a7d1f997d06814992dd
+- id: keren-or
+  name: Keren Or, Inc.
+  urls:
+  - https://www.keren-or.org/nycmarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 16f550894a4c41745a04
+- id: kesem
+  name: Kesem
+  urls:
+  - https://kesem.tfaforms.net/f/NYC2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b192f6756e1d8031363f
+- id: kidney-donor-athletes
+  name: Kidney Donor Athletes
+  urls:
+  - https://kidneydonorathlete.org/events/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 611af9e2df048912b82f
+- id: kips-bay-boys-and-girls-club
+  name: Kips Bay Boys and Girls Club, Inc.
+  urls:
+  - https://www.kipsbay.org/2026tcsnewyorkcitymarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: fc339d6d7626251d4b67
+- id: komera
+  name: Komera
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLSfCQgEs42Rs6XULepEGiD0iwGUU8MLSM0rb6ojrqZKrQs7Seg/viewform
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: eafd089ffdc60bdea0ef
+- id: korean-community-services-kc
+  name: Korean Community Services(KCS)
+  urls:
+  - https://www.kcsny.org/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 761f79d4e4e402c48d2b
+- id: korey-stringer-institute
+  name: Korey Stringer Institute
+  urls:
+  - https://koreystringer.institute.uconn.edu/2024/12/17/guarantee-entry-to-the-2025-bmw-nyc-marathon-by-joining-the-ksi-team-2/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 40f4f6dc81c66a2fb8cd
+- id: kulturecity
+  name: KultureCity
+  urls:
+  - https://www.kulturecity.org/kulturecityfit/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e55d9dc13fde554ace66
+- id: laureus-usa
+  name: Laureus USA
+  urls:
+  - https://laureususa.com/news/laureus-usa-returns-as-charitable-partner-at-the-2026-tcs-new-york-city-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 4ab60f82adc612d773b3
+- id: learning-ally
+  name: Learning Ally
+  urls:
+  - https://learningally.org/NYCMarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: dc56057cd1eccda8ba87
+- id: lee-pesky-learning-center
+  name: Lee Pesky Learning Center
+  urls:
+  - https://www.lplearningcenter.org/give/running-for-learning/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 50c41b26415c0da9bd50
+- id: let-me-run
+  name: Let Me Run
+  urls:
+  - https://register.hakuapp.com/?event=5f3174a151ad4ec555ce&amp;option=815d4523d45ce9c504d9
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: eb6a042aedeadfa76d95
+- id: let-s-win-pancreatic-cancer
+  name: Let's Win Pancreatic Cancer
+  urls:
+  - https://letswinpc.org/fundraisers/2026-tcs-new-york-city-marathon/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 8cbad6b4f27dc0287a7a
+- id: liberation-programs
+  name: Liberation Programs
+  urls:
+  - https://liberationprograms.org/marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 4d65f1e6a5ff2c81cd5e
+- id: life-in-motion-international
+  name: Life in Motion International
+  urls:
+  - https://www.lifeinmotion-charity.org/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 9952d415b3147f972f3f
+- id: life-science-cares
+  name: Life Science Cares New York
+  urls:
+  - https://lifesciencecares.org/new-york/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: e4ab29f2c9493f9777f9
+- id: lifeforce-in-later-years
+  name: Lifeforce in Later Years
+  urls:
+  - https://lilyny.org/2026-tcs-nyc-marathon-runner-application/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 48049d0e7bc3f4267632
+- id: literacy-in-community-linc
+  name: Literacy in Community (LINC)
+  urls:
+  - https://lincnyc.org/marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: aad8d5e852ea8394da16
+- id: literacy-partners
+  name: Literacy Partners
+  urls:
+  - https://literacypartners.org/run/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 13e72c5671846a706d27
+- id: liveonny
+  name: LiveOnNY
+  urls:
+  - https://secure.qgiv.com/event/teamliveonnymarathon2026/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 4525b234b385eea6dfd1
+- id: livestrong
+  name: Livestrong
+  urls:
+  - https://impact.livestrong.org/event/nyc26
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 64296244ebcd22415bd5
+- id: living-water-international
+  name: Living Water International
+  urls:
+  - https://water.cc/nyc-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 714ac88c8c29c1149024
+- id: lsa-family-health-service
+  name: LSA Family Health Service
+  urls:
+  - https://littlesistersfamily.org/2026-tsc-nyc-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: b94d990221549f8aa95c
+- id: lung-cancer-research
+  name: Lung Cancer Research Foundation
+  urls:
+  - https://form.jotform.com/253155583438160
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: ab65688ea4d48702fcee
+- id: lupus-america
+  name: Lupus Foundation of America
+  urls:
+  - https://www.lupus.org/tcs-new-york-city-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: f6799e11b023450e4b7c
+- id: lupus-research-alliance
+  name: Lupus Research Alliance
+  urls:
+  - https://www.lupusresearch.org/run-2026-tcs-new-york-city-marathon-for-lupus-research/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 15d3214df8dce822354f
+- id: lustgarten-pancreatic-cancer
+  name: Lustgarten Foundation for Pancreatic Cancer Research
+  urls:
+  - https://hope.lustgarten.org/event/nycmarathon
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: ecd1430d52b1e3432fa2
+- id: lymphoma-research
+  name: Lymphoma Research Foundation
+  urls:
+  - https://giving.lymphoma.org/event/2026-tcs-nyc-marathon/e765872
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: ce5acbd5f39f84684174
+- id: madison-square-boys-and-girl
+  name: Madison Square Boys & Girls Club Foundation
+  urls:
+  - https://www.madisonsquarefoundation.org/donate/marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 48f61d273f02d40ab6c8
+- id: madison-square-park-conserva
+  name: Madison Square Park Conservancy
+  urls:
+  - https://madisonsquarepark.org/support/marathon/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: ddc32210cb4775c83889
+- id: magic-bus-usa
+  name: Magic Bus USA
+  urls:
+  - https://www.magicbususa.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: fbf060b1f0075e52a568
+- id: make-road
+  name: Make the Road New York
+  urls:
+  - https://maketheroadny.org/tcsnycmarathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: aa9a11ead006b8e7099c
+- id: marathon-kids
+  name: Marathon Kids
+  urls:
+  - https://marathonkids.org/team-mk-nyc/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 4e3db7a2a2667addfcc1
+- id: march-our-lives
+  name: March For Our Lives
+  urls:
+  - https://marchforourlives.org/2026-nyc-marathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: dce7931afc68eaca0c5e
+- id: march-dimes
+  name: March of Dimes
+  urls:
+  - https://www.marchofdimes.org/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: cc49be648474d8551d5b
+- id: meb
+  name: MEB Foundation
+  urls:
+  - https://charityteamsruns.wufoo.com/forms/2026-team-meb-tcs-nyc-marathona/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 24ee4df1d5caa28100e3
+- id: melanoma-education
+  name: Melanoma Education Foundation
+  urls:
+  - https://skincheck.org/nyc-marathon-fundraiser/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 6065441ad6f8a987db45
+- id: mercy-home-boys-and-girls
+  name: Mercy Home for Boys & Girls
+  urls:
+  - https://organizations.heroesendurance.org/sites/organization_sites/ee966b935a10810d512a/pages/tcs_new_york_marathon_page
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: ac18930929f970679ccb
+- id: michael-s-cause
+  name: Michael's Cause Inc.
+  urls:
+  - https://michaelscause.org/upcoming-events/2026-nyc-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 7c777cc5ce77ee79ca82
+- id: minding-your-mind
+  name: Minding Your Mind
+  urls:
+  - https://mindingyourmind.org/tcs-nyc-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 13311ec131b37970d368
+- id: mothers-milk-bank-northeast
+  name: Mothers’ Milk Bank Northeast
+  urls:
+  - https://milkbankne.org/2026/02/apply-now-run-the-new-york-city-marathon-with-us/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: d0724731961233ba476f
+- id: move-hunger
+  name: Move For Hunger
+  urls:
+  - https://moveforhunger.org/race-calendar/new-york-city-marathon
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: 9c36e1901804f0fc17e2
+- id: movember
+  name: Movember
+  urls:
+  - https://us.movember.com/support-us/challenges/new-york-city-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: fdfce53cd0acd653ba16
+- id: muddy-paws-rescue
+  name: Muddy Paws Rescue
+  urls:
+  - https://www.muddypawsrescue.org/team-muddy-paws
+  cause: Animals
+  focus: ''
+  level: Bronze
+  nyrr_key: cddaa08039fa1c0187d9
+- id: muscular-dystrophy-associati
+  name: Muscular Dystrophy Association
+  urls:
+  - https://mda.donordrive.com/NYC26
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: db51b581a7b382f7b83d
+- id: museum
+  name: Museum of the City of New York
+  urls:
+  - https://www.mcny.org/join-and-support
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: d2e60757ed240a0a0afe
+- id: myocarditis
+  name: Myocarditis Foundation
+  urls:
+  - https://myocarditisfoundation.org/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 908281e34d3eeadb4419
+- id: narcolepsy-network
+  name: Narcolepsy Network, Inc
+  urls:
+  - https://narcolepsynetwork.org/run-for-teamnarcolepsy/nyc-marathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: a1af093aa14bbafa5a67
+- id: national-bleeding-disorders
+  name: National Bleeding Disorders Foundation
+  urls:
+  - https://secure.qgiv.com/event/teamnbdf2026/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 4525b234b385eea6dfd1
+- id: national-blood-clot-alliance
+  name: National Blood Clot Alliance
+  urls:
+  - https://www.stoptheclot.org/events/2026-tcs-new-york-city-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 2ea8746db49fdd329097
+- id: national-dance-institute
+  name: National Dance Institute
+  urls:
+  - https://www.nationaldance.org/en/ndis-team-jacques-2026-nyc-marathon
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: e04de297e0f2c1b9de68
+- id: national-down-syndrome-socie
+  name: National Down Syndrome Society
+  urls:
+  - https://ndss.org/new-york-city-marathon
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 6da5a495ec37042446a0
+- id: national-kidney
+  name: National Kidney Foundation
+  urls:
+  - https://teamkidney.rallybound.org/2026-tcs-new-york-city-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: a1eead68867f037c1cea
+- id: national-ms-society
+  name: National MS Society
+  urls:
+  - https://events.nationalmssociety.org/2774
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 2369f018270924fee31e
+- id: national-ovarian-cancer-coal
+  name: National Ovarian Cancer Coalition
+  urls:
+  - https://p2p.onecause.com/teamteal
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 2edf3dfcf9602b95dd40
+- id: national-psoriasis
+  name: National Psoriasis Foundation
+  urls:
+  - https://www.psoriasis.org/marathons/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: d89d3a379225580be130
+- id: native-strength-revolution
+  name: Native Strength Revolution
+  urls:
+  - https://nativestrengthrevolution.org/run-the-nyc-marathon
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: fbbdf94b19e94a373400
+- id: navy-seal
+  name: Navy SEAL Foundation
+  urls:
+  - http://www.navysealfoundation.org
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: e26300cf630132fdf2c1
+- id: nest-m
+  name: NEST+m
+  urls:
+  - https://www.nestmk12.net/apps/pages/pta_home
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b45d6c713b0b817cb5ca
+- id: network-teaching-entrepreneu
+  name: Network for Teaching Entrepreneurship (NFTE)
+  urls:
+  - http://nfte.com/2026nycmarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3769472418a228a01b4a
+- id: new-42
+  name: New 42
+  urls:
+  - https://www.new42.org/donate/#NYRR-Marathon
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: d7cb66e089e437d7e90d
+- id: new-destiny-housing-corporat
+  name: New Destiny Housing Corporation
+  urls:
+  - https://newdestinyhousing.org/marathon/
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: e68b02299778c4a62112
+- id: new-ground
+  name: New Ground Inc.
+  urls:
+  - https://newground.org/events/2026-tcs-nyc-marathon/
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 7f3e12b2b7a6eef6788d
+- id: new-immigrant-community-empo
+  name: New Immigrant Community Empowerment (NICE)
+  urls:
+  - https://www.nynice.org/nyc-marathon-2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 676f498209a099811c7b
+- id: new-life-cdc
+  name: New Life CDC
+  urls:
+  - https://campaigns.donately.com/t001/cmp-p2p?account_subdomain=newlifecdc&amp;campaign_id=cmp_da9fecf24e58
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 8c47f9884f4582c64a45
+- id: new-neighbors-partnership
+  name: New Neighbors Partnership
+  urls:
+  - https://www.newneighborspartnership.org/nycmarathon2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4213de599c16405965df
+- id: new-settlement
+  name: New Settlement
+  urls:
+  - https://give.newsettlement.org/campaign/2026-tcs-new-york-city-marathon/c775861
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 693e136f0f106e0e4019
+- id: common-pantry
+  name: New York Common Pantry
+  urls:
+  - https://nycommonpantry.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 96c7dcfc476c93451928
+- id: genealogical-and-biographica
+  name: New York Genealogical and Biographical Society
+  urls:
+  - https://www.newyorkfamilyhistory.org/team-nygb-2026-tcs-new-york-city-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 9785b585cac47741799d
+- id: league-conservation-voters-e
+  name: New York League of Conservation Voters Education Fund (NYLCVEF)
+  urls:
+  - https://nylcvef.org/events/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 45ccdd6b08c2ab4b7787
+- id: legal-assistance-group
+  name: New York Legal Assistance Group
+  urls:
+  - https://nylag.org/teamnylag/2026-tcs-new-york-city-marathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 5182b83245bb901754ec
+- id: philharmonic
+  name: New York Philharmonic
+  urls:
+  - http://nyphil.org/nycmarathon
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: 8a40fd49765889599cf2
+- id: scores
+  name: New York SCORES
+  urls:
+  - https://newyorkscores.org/marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 7ab94476619f63171234
+- id: newyork-presbyterian
+  name: NewYork-Presbyterian
+  urls:
+  - https://cloud.support.nyp.org/2026_marathon_application
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 207b4daeab1f5c9b3e39
+- id: next-autism
+  name: NEXT for AUTISM
+  urls:
+  - http://nextforautism.org/marathon
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: 9617ddf25373025bd44f
+- id: next-step
+  name: Next Step
+  urls:
+  - https://www.nextstepnet.org/event/run-the-2026-new-york-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: aadce18512f9e37fef05
+- id: nightingale-runs-pine-ridge
+  name: Nightingale Runs for Pine Ridge
+  urls:
+  - https://sites.google.com/nightingale.org/teamnightingale/home
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: dff4ed5a359467a39b7e
+- id: nmdp
+  name: NMDP Foundation
+  urls:
+  - https://giving.nmdp.org/event/2026-tcs-new-york-city-marathon/e770768?c_src=tcs_nyc_marathon_site&amp;c_src2=endurance_26&amp;utm_source=nyc_rfc&amp;utm_medium=re
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 7e8345c77f7543a69892
+- id: no-limits-cafe
+  name: No Limits Cafe
+  urls:
+  - http://Www.nolimitscafe.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4e4523098f8a6536291d
+- id: no-one-left-behind
+  name: No One Left Behind
+  urls:
+  - https://www.nooneleft.org/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: cfb3c313e1fda4e63241
+- id: nord-running-rare
+  name: NORD Running for Rare
+  urls:
+  - https://runningforrare.org/events/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: afb2f8b0af7e78fe64c1
+- id: north-shore-animal-league-am
+  name: North Shore Animal League America
+  urls:
+  - https://www.animalleague.org/tcs-nyc-marathon-application-2026/
+  cause: Animals
+  focus: ''
+  level: Bronze
+  nyrr_key: ab7faec29efa16f162bd
+- id: northwell
+  name: Northwell
+  urls:
+  - https://give.northwell.edu/events/tcs-new-york-city-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 45c45ffe0df0a6319a21
+- id: nustian
+  name: NUSTIAN
+  urls:
+  - https://nustianusa.org/2026-tcs-new-york-city-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: c441e3d14fb0fa81a708
+- id: nyaka
+  name: Nyaka
+  urls:
+  - https://nyakaglobal.org/nycmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 7f000b074c67ff62d925
+- id: health-hospitals
+  name: NYC Health + Hospitals
+  urls:
+  - https://www.nychealthandhospitals.org/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: d0e2d6066d7300a5e001
+- id: outward-bound-schools
+  name: NYC Outward Bound Schools
+  urls:
+  - https://www.nycoutwardbound.org/get-involved/events/2026-tcs-new-york-city-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 093f6c2d907904198bbf
+- id: oasis-orphans
+  name: Oasis For Orphans
+  urls:
+  - https://give.o4o.org/campaign/team-oasis-at-the-2026-tcs-new-york-city-marathon/c762987
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 972c2e70516e02652f7a
+- id: odyssey-house
+  name: Odyssey House
+  urls:
+  - https://odysseyhousenyc.org/make-every-mile-matter-with-the-odyssey-house-marathon-team/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 9438bea324c5ba270845
+- id: home-family-and-future
+  name: Of Home, Family and Future, Inc.
+  urls:
+  - https://ofhome.org/tcs-new-york-city-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 823d21c6e66e1f1584bd
+- id: one-love
+  name: One Love Foundation
+  urls:
+  - https://www.joinonelove.org/events/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3fecb414f37e34ea4578
+- id: opportunity-international
+  name: Opportunity International
+  urls:
+  - http://www.opportunity.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 089e057659bcea532fc0
+- id: p-s-75
+  name: P.S. 75
+  urls:
+  - https://sites.google.com/03m075.gsuite.nyc/ps75m/parent-involvement/pta?authuser=0
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: dff4ed5a359467a39b7e
+- id: pact-by-ecpat-usa
+  name: PACT by ECPAT USA
+  urls:
+  - https://www.wearepact.org/nyc-marathon-2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 6f8c4486a7b09329a075
+- id: pancreatic-cancer-action-net
+  name: Pancreatic Cancer Action Network
+  urls:
+  - https://pancan.tfaforms.net/53
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 72c56e4c276638fd11e3
+- id: parent-project-muscular-dyst
+  name: Parent Project Muscular Dystrophy
+  urls:
+  - https://form.jotform.com/Parent_Project/rted-2026-tcs-nyc
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: ab65688ea4d48702fcee
+- id: parkinson-s
+  name: Parkinson's Foundation
+  urls:
+  - https://www.parkinson.org/events/2026/champions-tcs-nyc
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 80b76879aea18735bc46
+- id: part-solution-pots
+  name: Part of the Solution (POTS)
+  urls:
+  - https://potsbronx.org/english/get-involved/our-events/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: c06e977b3e03f66b14e5
+- id: partnership-to-end-addiction
+  name: Partnership To End Addiction
+  urls:
+  - https://drugfree.org/article/endurance/
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: 94f86e967f53ab1f9f40
+- id: partnership-with-children
+  name: Partnership With Children
+  urls:
+  - https://partnershipwithchildren.org/all-events/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 21d323fa0670c5f2af05
+- id: party-with-purpose
+  name: Party With Purpose
+  urls:
+  - https://www.partywithpurpose.org/events
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 762cd5d17f57a989e9ac
+- id: pat-tillman
+  name: Pat Tillman Foundation
+  urls:
+  - https://pattillmanfoundation.org/teamtillman/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e385179cbc645e6e6b40
+- id: paws-ny
+  name: PAWS NY
+  urls:
+  - https://pawsny.org/2026-tcs-nyc-marathon/
+  cause: Animals
+  focus: ''
+  level: Bronze
+  nyrr_key: 3fa4d7b6aa49c3df14b4
+- id: pawsitive-heroes
+  name: Pawsitive for Heroes
+  urls:
+  - http://www.wnyheroes.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 68b3b5c0aacc35ff95f8
+- id: peace-runners-773
+  name: Peace Runners 773
+  urls:
+  - https://forms.gle/zwhkrNznfQuCSTkEA
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: a86c3ead159417d67460
+- id: pencil
+  name: PENCIL
+  urls:
+  - https://pencil.org/blog/run-the-2026-tcs-new-york-city-marathon-withHi%20Sh-pencil/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 34908196f69812f9eb0d
+- id: pencils-promise
+  name: Pencils of Promise
+  urls:
+  - https://pencilsofpromise.org/marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: a1cd349fff721e38d253
+- id: petey-greene-program
+  name: Petey Greene Program
+  urls:
+  - https://give.peteygreene.org/campaign/team-pgp-or-2026-nyrr-marathon/c773891
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 57bf36700441ddb32f87
+- id: pga-america-reach
+  name: PGA of America REACH Foundation
+  urls:
+  - https://www.pgareach.org/events/running-for-reach
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: dbb6a172c2773fb545ee
+- id: pitcch-in
+  name: PitCCh In Foundation
+  urls:
+  - https://www.pitcch.org/upcoming-events
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: c3d2a9f35ef7d0143ce1
+- id: planned-parenthood-greater
+  name: Planned Parenthood of Greater New York
+  urls:
+  - https://www.weareplannedparenthood.org/a/ppgny-nyc-marathon-2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 1a60ed368f7f4559127e
+- id: playwrights-horizons
+  name: Playwrights Horizons
+  urls:
+  - https://www.playwrightshorizons.org/support-us/runforplaywrights
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: a3995e10be04ba7609c8
+- id: point-pride
+  name: Point of Pride
+  urls:
+  - https://www.pointofpride.org/marathons/nyc
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: ba9b9101c0b2ed5d52ae
+- id: positive-directions
+  name: Positive Directions
+  urls:
+  - https://www.positivedirections.org/nycmarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 424e930c8ff2503e2524
+- id: powerplay
+  name: PowerPlay NYC, Inc.
+  urls:
+  - https://www.pinwheel.us/donate/Run-for-PowerPlay
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3caed4c5bebe62c7221f
+- id: prep-prep
+  name: Prep for Prep
+  urls:
+  - https://www.prepforprep.org/support/team-prep-for-prep
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: f5b54e31f7712f6014e8
+- id: project-als
+  name: Project ALS
+  urls:
+  - https://projectals.org/2026projectalsmarathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 7f3efba6427f32dceb7f
+- id: project-purple
+  name: Project Purple
+  urls:
+  - https://www.projectpurple.org/events/tcs-nyc-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 85c7e076d0138a957002
+- id: project-renewal
+  name: Project Renewal, Inc.
+  urls:
+  - https://www.projectrenewal.org/get-involved/events/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 7933d42eaeb3398d2112
+- id: project-sunshine
+  name: Project Sunshine
+  urls:
+  - https://projectsunshine.org/2026-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 389ce6fe8ee50eb467b1
+- id: propionic-acidemia
+  name: Propionic Acidemia Foundation
+  urls:
+  - https://pafoundation.com/2026-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 63d2073efbef2a03b3e2
+- id: prostate-cancer
+  name: Prostate Cancer Foundation
+  urls:
+  - https://www.pcf.org/take-action/#upcoming-events
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 4c3870a2434a97ab43e7
+- id: protect-our-winters
+  name: Protect Our Winters
+  urls:
+  - https://protectourwinters.org/nyc-marathon-fundraiser/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 88a7a131e1c58562851d
+- id: providence-house
+  name: Providence House
+  urls:
+  - https://www.providencehouse.org/nycmarathon26
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 65b8d2e1bccf7781d50d
+- id: ps-347-parent-teacher-associ
+  name: PS 347 Parent Teacher Association
+  urls:
+  - https://ps347.org/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 146e0f1478b088f23234
+- id: publicolor
+  name: Publicolor
+  urls:
+  - https://www.publicolor.org/2026-tcs-newyorkcity-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 729d89f0a35aa5d12e43
+- id: purple-health
+  name: PurpLE Health Foundation
+  urls:
+  - https://purplehealthfoundation.org/nyc-marathon.html
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: bf19c355247e8fcd3852
+- id: qsac-quality-services-autism
+  name: QSAC, Inc (Quality Services for the Autism Community)
+  urls:
+  - https://givebutter.com/TeamQSAC2026
+  cause: Mental health
+  focus: ''
+  level: Bronze
+  nyrr_key: 5120ccd4d7f9ad58db61
+- id: qualitas-life
+  name: Qualitas of Life Foundation
+  urls:
+  - https://www.qualitasoflife.org/run-for-qualitas
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3f2638bca0692ccdf64b
+- id: queens-center-progress
+  name: Queens Center For Progress
+  urls:
+  - http://www.tinyurl.com/26QCPNYCMarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: fda10146f85d1240160e
+- id: rallycap-sports
+  name: RallyCap Sports
+  urls:
+  - https://rallycapsports.org/joinourteam/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 242cb72c68b0b9ea148c
+- id: reach-world
+  name: Reach the World
+  urls:
+  - https://about.reachtheworld.org/race/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 83ef7db4baeef9b8eaf2
+- id: read-ahead
+  name: Read Ahead
+  urls:
+  - https://readahead.org/get-involved/marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 13b3d3dea6ca44381db4
+- id: red-door-community
+  name: Red Door Community
+  urls:
+  - https://reddoorcommunity.org/red-door-runners/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 8c0cd78a958afd752911
+- id: reisenbach-philanthropies
+  name: Reisenbach Philanthropies
+  urls:
+  - https://www.reisenbachphilanthropies.org/2026-tcs-new-york-city-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 8d561a0d816282519bbf
+- id: resolution-project
+  name: Resolution Project
+  urls:
+  - https://resolutionproject.org/run-with-us/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 4b8f48eac6504e9fb787
+- id: resolve-national-infertility
+  name: 'RESOLVE: The National Infertility and Family Building Association'
+  urls:
+  - https://resolve.org/events/new-york-city-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 697cbdee03df377e3b64
+- id: rethink-food
+  name: Rethink Food
+  urls:
+  - https://www.rethinkfood.org/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 0743be7380df4748d08d
+- id: reti-center
+  name: RETI Center
+  urls:
+  - https://www.reticenter.org/marathon
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: eb628483b21f7f98c060
+- id: right-to-play-usa
+  name: Right To Play USA
+  urls:
+  - https://my.righttoplayusa.org/campaign/2026-tcs-new-york-city-marathon-x-right-to-play-usa/c776139
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: f4a839c6841db924ad2c
+- id: riley-s-way
+  name: Riley's Way Foundation
+  urls:
+  - https://www.rileysway.org/runwithrileysway/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: a80b2fe3f69b67d76c13
+- id: rise-against-hunger
+  name: Rise Against Hunger
+  urls:
+  - https://act.riseagainsthunger.org/event/nyc-marathon-2026/e769146
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: 62a841408891f5bb1572
+- id: riverside-park-conservancy
+  name: Riverside Park Conservancy
+  urls:
+  - https://riversideparknyc.org/running-side-by-riverside/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: ce99e87f2adfad7984d1
+- id: roads-to-success
+  name: Roads to Success
+  urls:
+  - https://www.roadstosuccess.org/events/2026-tcs-new-york-city-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 5dedb6d9aea5d5771fb3
+- id: robert-and-ethel-kennedy-hum
+  name: Robert and Ethel Kennedy Human Rights Center
+  urls:
+  - https://rfkhumanrights.org/about-us/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 6100d4bf62743957613a
+- id: rocc
+  name: ROCC NYC
+  urls:
+  - http://roccnyc.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: ced46ca32e622a8d726f
+- id: rod-dixon-s-kidsmarathon
+  name: Rod Dixon's KiDSMARATHON Foundation
+  urls:
+  - https://www.kidsmarathonfoundation.org/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: b35456426c2b8547e052
+- id: ronald-mcdonald-house-long-i
+  name: Ronald McDonald House Long Island
+  urls:
+  - https://www.rmhcnym.org/attend-an-rmhcnym-event/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 048b2696d4566208488c
+- id: room-to-grow
+  name: Room to Grow
+  urls:
+  - https://www.roomtogrow.org/news-resources/tcs-new-york-city-marathon-2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 707b1c4d2055bbcf4741
+- id: row
+  name: Row New York
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLScCm881eYVwnwSgyEo8wDvd9fto-Z2bqV79hXlA3Pk1hRg4Bg/viewform?usp=header
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: eafd089ffdc60bdea0ef
+- id: safe-families-children
+  name: Safe Families for Children
+  urls:
+  - https://newyorkcity.safe-families.org/our-partners/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: fd0e5611a8810a05f585
+- id: safe-horizon
+  name: Safe Horizon
+  urls:
+  - https://www.safehorizon.org/events/tcs-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 8b81254865d9935fd806
+- id: samaritans-2
+  name: Samaritans, Inc.
+  urls:
+  - https://samaritanshope.org/events/tcs-new-york-marathon-team/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 7f2892d72b40528c9a07
+- id: sandy-hook-promise
+  name: Sandy Hook Promise
+  urls:
+  - https://www.sandyhookpromise.org/get-involved/team-promise-fundraising/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: be7a0e7c1e91ccd5bd57
+- id: save-a-child-s-heart
+  name: Save a Child's Heart
+  urls:
+  - https://saveachildsheart.org/events/new-york-marathon-2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 69a9128445d668f18755
+- id: save-children-federation
+  name: Save the Children Federation, Inc.
+  urls:
+  - https://support.savethechildren.org/site/TR?fr_id=1651&amp;pg=entry
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 5bed7d8e8a65cf061ad5
+- id: saving-mothers
+  name: Saving Mothers
+  urls:
+  - https://savingmothers.org/nyc-marathon-saving-mothers/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: eae7b7c805bf4876f3d7
+- id: schwarzman-animal-medical-ce
+  name: Schwarzman Animal Medical Center
+  urls:
+  - https://www.amcny.org/meet-amc/events/#event=
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 0a2341483c6eba973029
+- id: scope-summer-camp-opportunit
+  name: SCOPE (Summer Camp Opportunities Promote Education)
+  urls:
+  - https://scopeusa.org/nycmarathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: d7388ea0e085ac20f0f3
+- id: self-help-africa
+  name: Self Help Africa
+  urls:
+  - https://selfhelpafrica.org/us/2026-tcs-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e7716c6594beefad4a21
+- id: semper-fi-and-america-s
+  name: Semper Fi & America's Fund
+  urls:
+  - https://runsignup.com/Race/NY/NewYork/TCSNewYorkCityMarathonSemperFiAmericasFundTeam2023?rsus=500-400-51972d7b-965a-44a3-93fd-cee6dc7dd871
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 84aa3ef25bf9681d669c
+- id: sesame-workshop
+  name: Sesame Workshop
+  urls:
+  - https://sesameworkshop.org/support-us/events/running-with-team-sesame/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 7292e8e9045ef4e95e04
+- id: shalva
+  name: Shalva
+  urls:
+  - https://www.shalva.org/join-shalva-challenges/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 3a8f5fd44ddd9ff11399
+- id: share-our-strength
+  name: Share Our Strength
+  urls:
+  - https://fundraise.nokidhungry.org/campaign/run-for-no-kid-hungry/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: dad77e6c9add37152ddb
+- id: sharsheret
+  name: Sharsheret
+  urls:
+  - https://sharsheret.org/event/2026-tcs-new-york-city-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 884139ac336eb66e3119
+- id: shatterproof
+  name: Shatterproof
+  urls:
+  - https://endurance.shatterproof.org/events/780
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: d11e7805efbd033b4e67
+- id: shoe4africa
+  name: SHOE4AFRICA
+  urls:
+  - https://shoe4africa.org/run-with-us/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 94f84e89ec7bd0c2039e
+- id: silver-shield
+  name: Silver Shield Foundation Inc.
+  urls:
+  - https://www.silvershieldfoundation.org/copy-of-nyc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 51edbebd195ae2c6e9fe
+- id: sips-and-kicks
+  name: Sips & Kicks Foundation
+  urls:
+  - https://www.sipsandkicks.org/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 134c436114e2416d27f0
+- id: skyhope
+  name: SkyHope
+  urls:
+  - https://skyhope.org/pals-skyhope-marathon-events/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 784e1bf5ccb2fe663300
+- id: smile-train
+  name: Smile Train
+  urls:
+  - https://www.smiletrain.org/events/2026-tcs-new-york-city-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 637658ff7a1d8278a942
+- id: smile-a-mile
+  name: Smile-A-Mile
+  urls:
+  - https://www.smileamile.com/fundraising-events/#marathon-teams
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 88302c3d02429fcde43c
+- id: soccer-without-borders
+  name: Soccer Without Borders
+  urls:
+  - https://www.soccerwithoutborders.org/nyc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 898c7095089366b62afa
+- id: social-promise
+  name: Social Promise
+  urls:
+  - http://www.socialpromise.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 2c0327f8692dba75e9ef
+- id: south-bronx-united
+  name: South Bronx United
+  urls:
+  - https://southbronxunited.org/marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: ae900ad05fb5761c5720
+- id: special-olympics-massachuset
+  name: Special Olympics Massachusetts
+  urls:
+  - https://specialolympicsma.org/events/annual-events/xtra-mile-2/new-york-city-marathon-application
+  cause: Disability & adaptive sport
+  focus: ''
+  level: Bronze
+  nyrr_key: 8bcddafdfec5e7905532
+- id: special-olympics
+  name: Special Olympics New York
+  urls:
+  - https://www.specialolympics-ny.org/contact-us-2/
+  cause: Disability & adaptive sport
+  focus: ''
+  level: Bronze
+  nyrr_key: 69b47c1bd7267307cc95
+- id: squash-and-education-allianc
+  name: Squash and Education Alliance
+  urls:
+  - https://squashandeducation.org/tcsnycmarathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 9f5d8786a94fc50e5792
+- id: start-small-think-big
+  name: Start Small Think Big
+  urls:
+  - https://www.startsmallthinkbig.org/nyc-marathon-2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e96ca0b9af2fcd835663
+- id: steve-s-camp-at-horizon-farm
+  name: Steve's Camp at Horizon Farms
+  urls:
+  - https://www.stevescamp.org/events/nyc-marathon-2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 68e3eb10a617a5bdfd5f
+- id: still-i-run
+  name: Still I Run
+  urls:
+  - https://www.stillirun.org/team/events/tcs-new-york-city-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 9db3e26e1ef91651ed42
+- id: stonewall-community
+  name: Stonewall Community Foundation
+  urls:
+  - https://www.stonewallfoundation.org/marathon26
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: b60edd900ff5720bd1e4
+- id: street-child
+  name: Street Child
+  urls:
+  - https://streetchildusa.org/runningandchallenges/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: e2647a9f07291a302f67
+- id: street-lab
+  name: Street Lab
+  urls:
+  - https://www.streetlab.org/marathon/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: d828699682b180afd0b6
+- id: streetsquash
+  name: StreetSquash
+  urls:
+  - https://donate.streetsquash.org/event/2026-nyc-marathon/e770776
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 2b75c0752ab29ef23e11
+- id: stride-stride
+  name: Stride for Stride
+  urls:
+  - https://www.strideforstride.com/tcs-nyc-marathon
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 151c7324b979e986dea6
+- id: strong-girls-united-sg-unite
+  name: Strong Girls United (SG United)
+  urls:
+  - https://www.sgunitedfoundation.org/marathons
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: f359a17ce22c99b1cdb0
+- id: students-run-philly-style
+  name: Students Run Philly Style
+  urls:
+  - https://runsignup.com/Race/NY/NewYork/SRPSNewYorkCityMarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 84aa3ef25bf9681d669c
+- id: studio-in-a-school
+  name: Studio in a School
+  urls:
+  - https://studioinaschool.org/join-studio-for-the-2026-tcs-new-york-city-marathon/
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: b5003133f2421f5ee036
+- id: success-academy
+  name: Success Academy
+  urls:
+  - https://www.successacademies.org/sa-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 021d67f081e117253bd0
+- id: suitup
+  name: SuitUp
+  urls:
+  - http://VolunteerSuitup.org
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 879843f260d42da19fe8
+- id: summer-search
+  name: Summer Search
+  urls:
+  - https://summersearch.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b5ecd94a85b3f436a0e8
+- id: summit-health-cares
+  name: Summit Health Cares
+  urls:
+  - https://www.sh-cares.org/get-involved/team-summit-health-cares/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 6f0cac0d676c6c45648d
+- id: sun-river-health
+  name: Sun River Health
+  urls:
+  - https://secure.givelively.org/donate/sun-river-health/2026-tcs-new-york-city-marathon
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 05040f82934f9925d5e0
+- id: sunrise-association
+  name: Sunrise Association
+  urls:
+  - https://www.sunriseassociation.org/team-sunrise/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: b21cb91b051940d39824
+- id: supplies-success
+  name: Supplies For Success
+  urls:
+  - https://secure.givelively.org/donate/supplies-for-success-inc/nyc-marathon-to-benefit-supplies-for-success-2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 05040f82934f9925d5e0
+- id: surfrider
+  name: Surfrider Foundation
+  urls:
+  - https://www.surfrider.org/2026tcsnewyorkcitymarathon
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 57d87890935846a0be59
+- id: susan-g-komen-breast-cancer
+  name: Susan G Komen Breast Cancer Foundation
+  urls:
+  - http://www.info-komen.org/site/Survey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&amp;SURVEY_ID=30044
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 40d6259d94c99452dc77
+- id: t-j-martell
+  name: T.J. Martell Foundation
+  urls:
+  - https://tjmartell.org/musics-team-for-a-cure
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: b6fa596734d656b952d7
+- id: tackle-kids-cancer
+  name: Tackle Kids Cancer
+  urls:
+  - https://www.tacklekidscancer.org/get-involved/runfortkc/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 0b014feb065615cbcc6f
+- id: tacombi
+  name: Tacombi Foundation
+  urls:
+  - https://donorbox.org/2026-tcs-new-york-city-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 8e2fc689edd921b517ad
+- id: target-als
+  name: Target ALS
+  urls:
+  - https://targetals.org/new-york-city-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: ccd329a273ec613bf1d4
+- id: teach-america
+  name: Teach For America
+  urls:
+  - https://www.teachforamerica.org/nyc-marathon-team
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 40497c347421dd7be3aa
+- id: teaching-matters
+  name: Teaching Matters
+  urls:
+  - https://teachingmatters.org/event/2026-nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 74016878cc0647895b45
+- id: continuum
+  name: Team Continuum
+  urls:
+  - https://www.teamcontinuum.net/event/2026-tcs-new-york-city-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 653666f70839bf4bf144
+- id: hoyt
+  name: Team Hoyt
+  urls:
+  - https://teamhoyt.com/nyc-marathon-2026/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 00424f2bc19c6c1f0743
+- id: ibdkids
+  name: Team IBDkids
+  urls:
+  - https://giving.mountsinai.org/goto/TeamIBDKids2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: fb70f69c88d8c88aed33
+- id: impact
+  name: Team IMPACT
+  urls:
+  - https://www.teamimpact.org/get-involved/the-goteam/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 14838d51b733087771fd
+- id: paws-chicago
+  name: TEAM PAWS Chicago
+  urls:
+  - https://donate.pawschicago.org/event/team-paws-chicago-tcs-new-york-city-marathon-2026/e716404
+  cause: Animals
+  focus: ''
+  level: Bronze
+  nyrr_key: ff29256fccaca67d7588
+- id: red-white-and-blue
+  name: Team Red White and Blue INC
+  urls:
+  - https://donate.teamrwb.org/event/2026-soaring-eagles-tcs-nyc-marathon/e765553
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 004a138e75ce0b4cbb9f
+- id: to-end-aids-t2
+  name: TEAM TO END AIDS (T2)
+  urls:
+  - http://www.t2ea.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 2ddf627dc57ad27141df
+- id: tedy-s
+  name: Tedy’s Team
+  urls:
+  - https://tedysteam.org/event/tcs-new-york-city-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: e186b3ce4a41ca8c1655
+- id: tell-every-amazing-lady
+  name: Tell Every Amazing Lady®
+  urls:
+  - https://events.telleveryamazinglady.org/marathons/full-marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: fa1fe8ae6939ddfd3ce8
+- id: thanc
+  name: THANC Foundation
+  urls:
+  - https://thancfoundation.org/run-the-2026-nyc-marathon-with-thanc/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: b4c92c782cf5f97f6ccf
+- id: 92nd-street-y
+  name: The 92nd Street Y
+  urls:
+  - https://www.92ny.org/support-92ny/m/2026-tcs-new-york-city-marathon
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: b4b4143d775c5941f3b7
+- id: alliance-against-sexual-viol
+  name: The Alliance Against Sexual Violence
+  urls:
+  - https://svfreenyc.org/nyc-marathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 17722b57bc69c0f9fd90
+- id: american-dream-school
+  name: The American Dream School
+  urls:
+  - https://secure.givelively.org/donate/american-dream-charter-school/dream-team-runners-race-to-raise-nyc-marathon-funding-2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 05040f82934f9925d5e0
+- id: andrew-mcdonough-b
+  name: The Andrew McDonough B+ Foundation
+  urls:
+  - https://donate.bepositive.org/event/2026-tcs-nyc-marathon/e761019
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: ba2eb75456a0111b5270
+- id: armory
+  name: The Armory Foundation
+  urls:
+  - https://www.armory.nyc/nycm
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 8b4daef88db78514e389
+- id: arthur-project
+  name: The Arthur Project
+  urls:
+  - https://thearthurproject.org/event-calendar/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: d45fde3534e52250aa56
+- id: ascap
+  name: The ASCAP Foundation
+  urls:
+  - https://give.ascapfoundation.org/campaign/2026-team-ascap-foundation/c772720
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: 68063d7afc8a4d2224a5
+- id: assist
+  name: The Assist
+  urls:
+  - https://theathletesurvivorsassist.org/get-involved/events/2026-tcs-new-york-city-marathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 179078d42c45795ac444
+- id: battery-conservancy
+  name: The Battery Conservancy
+  urls:
+  - https://www.thebattery.org/donate/teambattery/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: f5a85a364e82840b6423
+- id: bell-center-early-interventi
+  name: The Bell Center for Early Intervention Programs
+  urls:
+  - https://thebellcenter.org/events/tcs-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4b3490d16554942ddce7
+- id: blue-card
+  name: The Blue Card
+  urls:
+  - https://bluecardfund.org/become-involved/team-blue-card/
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: 3e9fb4e192de7f057323
+- id: bowery-mission
+  name: The Bowery Mission
+  urls:
+  - https://www.bowery.org/get-involved/raise-funds/run-tcs-new-york-city-marathon-bowery-mission/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 054c6cd9cb208bfeeb67
+- id: brave-house
+  name: The Brave House
+  urls:
+  - https://www.thebravehouse.com/run-with-us.html
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e60c5f8dd424e44d9805
+- id: bridge
+  name: The Bridge Inc.
+  urls:
+  - https://www.thebridgeny.org/tcs-nyc-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 82ed4f6eb64f1cee29f0
+- id: bronx-is-blooming
+  name: The Bronx is Blooming
+  urls:
+  - https://www.bronxisblooming.org/marathon
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 6c7a56ac5971ebf171a9
+- id: brooklyn-charter-school
+  name: The Brooklyn Charter School
+  urls:
+  - https://brooklyncharter.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 4fbfc2103daf03ff1a85
+- id: brooklyn-kindergarten-societ
+  name: The Brooklyn Kindergarten Society
+  urls:
+  - https://bksny.org/ways-to-help/marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 66f7b6d844272b01a2fe
+- id: brotherhood-sister-sol
+  name: The Brotherhood Sister Sol
+  urls:
+  - https://brotherhood-sistersol.org/events/tcs-nyc-marathon-2026/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 3a7b9bd8ca7843cb4ace
+- id: center-hearing-and-communica
+  name: The Center for Hearing and Communication
+  urls:
+  - https://fundraise.givesmart.com/e/_wp3oA?vid=1oq7h2
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 32fae26652ff842d85fd
+- id: chick-mission
+  name: The Chick Mission
+  urls:
+  - https://www.thechickmission.org/nycmarathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: e7af71a8a0000d173677
+- id: children-s-brain-tumor-proje
+  name: The Children's Brain Tumor Project Foundation
+  urls:
+  - https://cbtpfoundation.org/2026-tcs-nyc-marathon/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 63fee5954ca4311ca994
+- id: children-s-heart
+  name: The Children's Heart Foundation
+  urls:
+  - https://www.childrensheartfoundation.org/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: dfdbcb1465b138570ea1
+- id: daniella-moffson
+  name: The Daniella Moffson Foundation
+  urls:
+  - http://www.daniellamoffsonfoundation.com/marathons.html
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 92d74d42baf92c0d9646
+- id: door-a-center-alternatives
+  name: The Door - A Center of Alternatives
+  urls:
+  - https://www.door.org/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 9efb158911aee023e193
+- id: end
+  name: The END Fund
+  urls:
+  - https://endfund.org/marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: aa3d53e8a6dc79d549a4
+- id: endometriosis-america
+  name: The Endometriosis Foundation of America
+  urls:
+  - https://www.endofound.org/tcs-nyc-marathon-2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 185a9a18ac85b9eddf6f
+- id: floating-hospital
+  name: The Floating Hospital
+  urls:
+  - https://www.thefloatinghospital.org/marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 065557d34cc7c6aaa36e
+- id: fortune-society
+  name: The Fortune Society
+  urls:
+  - https://www.classy.org/campaign/2026-tcs-nyc-marathon/c683269?preview=true
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 341fab8d65089bf61eff
+- id: tomorrow
+  name: The Foundation For Tomorrow
+  urls:
+  - http://www.thefoundationfortomorrow.org/teamtfft
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: f2a4fd38ff4ee80c0458
+- id: frederick-douglass-project-j
+  name: The Frederick Douglass Project for Justice
+  urls:
+  - https://www.douglassproject.org/run-the-nyc-marathon
+  cause: Legal aid
+  focus: ''
+  level: Bronze
+  nyrr_key: 4826c6d3c8d5e401ad28
+- id: fresh-air
+  name: The Fresh Air Fund
+  urls:
+  - https://freshair.org/event/2026-nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: bad97675e78bcad97ea2
+- id: friends-charter-high-school-
+  name: The Friends of the Charter High School for Law and Social Justice
+  urls: []
+  cause: Legal aid
+  focus: ''
+  level: Bronze
+  nyrr_key: 849a729ffe875d908985
+- id: public-health
+  name: The Fund for Public Health NYC
+  urls:
+  - https://fphnyc.org/get-involved/marathon2026/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 79084ab09bd62aaf470d
+- id: garden-dreams
+  name: The Garden of Dreams Foundation
+  urls:
+  - https://www.gardenofdreamsfoundation.org/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 94cc6d645b5ac56bbabd
+- id: get-in-touch
+  name: The Get In Touch Foundation
+  urls:
+  - https://getintouchfoundation.org/how-to-help/ways-to-fundraise/#tcs-nyc-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 2ad545911e67f79632f7
+- id: go-project
+  name: The GO Project
+  urls:
+  - https://goprojectnyc.org/event/tcs-nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 08d7365602824f4092a0
+- id: grace
+  name: The GRACE Foundation of New York
+  urls:
+  - http://www.graceofny.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 7a38e1c2709dd78a55df
+- id: home-little-wanderers
+  name: The Home for Little Wanderers
+  urls:
+  - https://www.thehome.org/events/run-for-the-home-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 42a69dd6f9102be972a3
+- id: hope-program
+  name: The HOPE Program
+  urls:
+  - https://www.thehopeprogram.org/events/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4be7178fb81f1efd4105
+- id: iris
+  name: The Iris Fund
+  urls:
+  - https://www.theirisfund.org/get-involved
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 3373fe39f59284161c03
+- id: jck
+  name: The JCK Foundation
+  urls:
+  - https://www.jckfoundation.org/nyc-marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 9f589d75982e2d620370
+- id: john-ritter-aortic-health
+  name: The John Ritter Foundation for Aortic Health
+  urls:
+  - https://johnritterfoundation.org/team-ritter/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 9cf44ff1f5994809516b
+- id: kelsey
+  name: The Kelsey
+  urls:
+  - https://thekelsey.org/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 048146ddb0353a872a29
+- id: king-s-trust-usa
+  name: The King's Trust USA
+  urls:
+  - https://kingstrust.us/50-for-50-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: a52517e53e5913afaab4
+- id: mark-schonwetter-holocaust-e
+  name: The Mark Schonwetter Holocaust Education Foundation
+  urls:
+  - https://mshefoundation.org/tcs-nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b77a30b3ceb5d0c9e0fa
+- id: mary-ruchalski
+  name: The Mary Ruchalski Foundation
+  urls:
+  - https://themaryruchalskifoundation.org/nyrr-charity-partner
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 1245ab56b18b4f0ef52f
+- id: michael-j-fox-parkinson-s-re
+  name: The Michael J. Fox Foundation for Parkinson's Research
+  urls:
+  - https://michaeljfox.org/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: d1464508c74fc6fd6027
+- id: national-pancreas
+  name: The National Pancreas Foundation
+  urls:
+  - https://pancreasfoundation.org/run-towards-the-cure/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: a5bfb56212df608fffd4
+- id: center-children
+  name: The New York Center for Children
+  urls:
+  - https://newyorkcenterforchildren.org/2026-tcs-nyc-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e320fa043aa0c7c82f0a
+- id: junior-league
+  name: The New York Junior League
+  urls:
+  - https://www.nyjl.org/events/teamnyjl/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e0f27df0d1dd7b01287c
+- id: public-library
+  name: The New York Public Library
+  urls:
+  - https://donate.nypl.org/event/2026-tcs-new-york-city-marathon/e776260
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 15c64a84fe644622fd80
+- id: lgbt-community-center
+  name: The NYC LGBT Community Center
+  urls:
+  - https://support.gaycenter.org/2026NYCMarathon
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: aecaf085c2d46ddb8d8d
+- id: peregrine
+  name: The Peregrine Fund
+  urls:
+  - https://peregrinefund.org/support-our-tcs-new-york-city-marathon-team
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: fa97f8832f179cea27dd
+- id: phoenix
+  name: The Phoenix
+  urls:
+  - http://www.thephoenix.org
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 1a9d7416fc4e504eb4bb
+- id: pink-agenda
+  name: The Pink Agenda
+  urls:
+  - https://www.thepinkagenda.org/get-involved/join-team-tpa/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: c0eff66c37fe33322b3e
+- id: polg
+  name: The POLG Foundation
+  urls:
+  - https://polgfoundation.org/get-involved/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 5d19cce17856b3cfef21
+- id: public-theater
+  name: The Public Theater
+  urls:
+  - https://publictheater.org/join-support/more-ways-to-give/run-team-public-tcs-new-york-city-marathon-2026/
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: 7eb1f65dcb63407ccf7d
+- id: retreat
+  name: The Retreat, Inc.
+  urls:
+  - https://secure.qgiv.com/event/theretreat2026tcsmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 4525b234b385eea6dfd1
+- id: robert-packard-center-als-re
+  name: The Robert Packard Center for ALS Research at Johns Hopkins
+  urls:
+  - https://packardcenter.org/nyc_marathon/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 73e4f3239465cd1a576a
+- id: salvation-army
+  name: The Salvation Army
+  urls:
+  - https://give.salvationarmy.org/campaign/greater-new-york-nyc-marathon-fundraising-pages-2026/c773033
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 558f5b29829376c55682
+- id: samaritans
+  name: The Samaritans of New York
+  urls:
+  - https://samaritansnyc.org/run/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e4559e2547efd78e7253
+- id: sports-museum
+  name: The Sports Museum
+  urls:
+  - https://www.sportsmuseum.org/events/nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 13ed69add7a2ec1f6f0b
+- id: sudc
+  name: The SUDC Foundation
+  urls:
+  - https://sudc.org/new-york-city-marathon-nov-1-2026/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 0efbc28e0ab513bafbf7
+- id: sylvia-center
+  name: The Sylvia Center
+  urls:
+  - https://www.sylviacenter.org/join-our-new-york-marathon-team/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 2b1da72db5221cdc2f0a
+- id: theaterworksusa
+  name: TheaterWorksUSA
+  urls:
+  - https://twusa.org/marathon-2026/
+  cause: Arts & culture
+  focus: ''
+  level: Bronze
+  nyrr_key: 844a47265039ea8d4af4
+- id: theodore-corbitt-institute-r
+  name: Theodore Corbitt Institute for Running History Research
+  urls:
+  - https://tedcorbitt.com/foundations-four-components-mission-statement/
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 744dc1413e83567eefce
+- id: therapists-beyond-borders
+  name: Therapists Beyond Borders
+  urls:
+  - https://www.therapistsbeyondborders.org/event/tcs-nyc-marathon-2026
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 4f66a1b904e2e0f939e3
+- id: think-pink-rocks-breast-canc
+  name: Think Pink® Rocks Breast Cancer Charity
+  urls:
+  - https://thinkpinkrocks.org/2026-nyc-marathon/
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 1549ed0d528db0602848
+- id: tina-s-wish
+  name: Tina's Wish
+  urls:
+  - https://tinaswish.org/tcs26/
+  cause: Children's health
+  focus: ''
+  level: Bronze
+  nyrr_key: e0ffc34c019abb275d97
+- id: to-write-love-on-her-arms
+  name: To Write Love on Her Arms
+  urls:
+  - https://towriteloveonherarmstwloha.formstack.com/forms/twloha_x_2026_tcs_new_york_city_copy
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: dfaa3212358488261bdc
+- id: tom-coughlin-jay-foundaiton
+  name: Tom Coughlin Jay Fund Foundaiton
+  urls:
+  - https://tcjayfund.org/run/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: ccf8337e0fa80046d4d9
+- id: tourette-association-america
+  name: Tourette Association of America
+  urls:
+  - https://www.givegab.com/campaigns/2026-team-tourette-new-york-city-marathon
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 77b46098b4e2c08eedf9
+- id: trackgirlz
+  name: TrackGirlz
+  urls:
+  - https://trackgirlz.org/nyc-marathon/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: eac0dd363edba792129d
+- id: tragedy-assistance-program-s
+  name: Tragedy Assistance Program for Survivors
+  urls:
+  - http://www.taps.org
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 7d55bcc41ba6fdc9075a
+- id: transportation-alternatives
+  name: Transportation Alternatives
+  urls:
+  - https://transalt.org/events
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 14cc2ac4f7377a1596ea
+- id: trinity-place-shelter
+  name: Trinity Place Shelter
+  urls:
+  - https://trinityplaceshelter.org/ways-to-help/
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: 061baca18953098a37e1
+- id: tsc-alliance
+  name: TSC Alliance
+  urls:
+  - https://www.tscalliance.org/get-involved/run-with-team-tsc/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: e6803e28117fafe8ceda
+- id: tuesday-s-promise
+  name: Tuesday's Promise
+  urls:
+  - https://www.tuesdayschildren.org/endurance
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 6bb58aad23f511b256ac
+- id: turn-2
+  name: Turn 2 Foundation, Inc.
+  urls:
+  - https://www.mlb.com/turn-2-foundation/events
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: c131c88d722df0cc634b
+- id: ubuntu-pathways
+  name: Ubuntu Pathways, Inc.
+  urls:
+  - https://give.ubuntupathways.org/2026NYCMarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: ae1074014072e4c4e2a4
+- id: undue-medical-debt
+  name: Undue Medical Debt
+  urls:
+  - https://unduemedicaldebt.org/marathon/?bbeml=tp-aRP8xAfNP06tqs5NTBSetg.jZzLwpD1MFEabfbrCzvLNQg.rlnDi4eupi0WxDzqX2OKeyw.lFmPw7dvjvkew3_1XMPrwWw
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 9df47fe1dfa487a96773
+- id: united-hatzalah
+  name: United Hatzalah
+  urls:
+  - https://israelrescue.org/tcsnycmarathon2026info/
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: 7f950095411280b174da
+- id: united-service-organizations
+  name: United Service Organizations
+  urls:
+  - https://newyork.uso.org/support/new-york-city-marathon-2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 0374115a6ff7d61464a1
+- id: united-way-long-island
+  name: United Way of Long Island
+  urls:
+  - https://www.unitedwayli.org/teammissionunited
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 1e11a5f68d4ec8378e18
+- id: university-michigan-health-r
+  name: University of Michigan Health Rogel Cancer Center
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLSeMX9_6OaNiAERxgYFsehOawoiAhbhPDTCRXgNpDp0JDcuYfQ/viewform
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: eafd089ffdc60bdea0ef
+- id: university-settlement
+  name: University Settlement
+  urls:
+  - https://www.universitysettlement.org/join-us/marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 30c8179af9df96ec164c
+- id: unlocal
+  name: UNLOCAL INC
+  urls:
+  - https://givebutter.com/unlocalmarathon2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 5120ccd4d7f9ad58db61
+- id: urban-justice-center
+  name: Urban Justice Center
+  urls:
+  - https://www.urbanjustice.org/teamujc2026/
+  cause: Legal aid
+  focus: ''
+  level: Bronze
+  nyrr_key: aaf9371b48661becf986
+- id: usa-unhcr
+  name: USA for UNHCR
+  urls:
+  - https://www.unrefugees.org/how-to-help/join-team-step-with-refugees/team-step-with-refugees/
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: 0f510b385a002f394243
+- id: van-andel-institute
+  name: Van Andel Institute
+  urls:
+  - https://www.vai.org/support/ways-to-engage/van-andel-institute-marathon-team/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: ec154510afa70dfd7d03
+- id: van-cortlandt-park-alliance
+  name: Van Cortlandt Park Alliance
+  urls:
+  - https://vancortlandt.org/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 5a31fee776612b941ef4
+- id: vanessa-t-marcotte
+  name: Vanessa T. Marcotte Foundation
+  urls:
+  - https://vtmf.org/events/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: e80fbcd959c58c462145
+- id: variety-children-s-charity-i
+  name: Variety - the Children's Charity International
+  urls:
+  - https://variety.org/variety-marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 8c3d8cdeb2d3b178a80a
+- id: variety-boys-and-girls-club-
+  name: Variety Boys and Girls Club of Queens
+  urls:
+  - http://bgcqueens.org
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: a6bdbfa6d1c7146ffa82
+- id: volo-kids
+  name: Volo Kids Foundation
+  urls:
+  - https://volokids.org/team-volo-kids/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 043e7879dd1f8beda0a1
+- id: volunteers-legal-service
+  name: Volunteers of Legal Service
+  urls:
+  - https://volsprobono.org/vols-x-2026-tcs-new-york-city-marathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 1d280cde1381e8992e1d
+- id: washington-square-park-conse
+  name: Washington Square Park Conservancy
+  urls:
+  - https://washingtonsqpark.org/news/2026/03/04/26-marathon-announcement/
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: c300558ed6d6be564750
+- id: water-people
+  name: Water For People
+  urls:
+  - https://www.njawwa.org/page/WFPMarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: d4e9d780167956dec08b
+- id: wellness-in-schools
+  name: Wellness in the Schools
+  urls:
+  - https://www.wellnessintheschools.org/calendar/category/show-on-events-page/list/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: f47f6c077f1f30698caa
+- id: west-side-campaign-against-h
+  name: West Side Campaign Against Hunger (WSCAH)
+  urls:
+  - https://www.wscah.org/get-involved/marathon
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: 10155842a1ad86b31534
+- id: wheeling-forward
+  name: Wheeling Forward
+  urls:
+  - https://wheelingforward.org/event/the-2026-new-york-city-marathon/
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 4fcba8c2ed7078edad59
+- id: who-we-play
+  name: Who We Play For
+  urls:
+  - https://www.whoweplayfor.org/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 576e4f9d2ae90561388b
+- id: whyhunger
+  name: WhyHunger
+  urls:
+  - https://whyhunger.org/marathon/
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: 1cdca5be9f24302d27ff
+- id: wild-tomorrow
+  name: Wild Tomorrow
+  urls:
+  - https://wildtomorrow.org/newyorkcitymarathon2026
+  cause: Animals
+  focus: ''
+  level: Bronze
+  nyrr_key: 98253a178c2ed63ea325
+- id: women-s-prison-association
+  name: Women's Prison Association
+  urls:
+  - https://givebutter.com/2026wpamarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 5120ccd4d7f9ad58db61
+- id: women-s-sports
+  name: Women's Sports Foundation
+  urls:
+  - https://womenssportsfoundation.salsalabs.org/2026tcsnycmarathonapp/index.html
+  cause: Sports & running
+  focus: ''
+  level: Bronze
+  nyrr_key: 551588613bded5da76a8
+- id: world-animal-protection
+  name: World Animal Protection
+  urls:
+  - https://www.worldanimalprotection.us/ways-to-give/run-with-us/
+  cause: Animals
+  focus: ''
+  level: Bronze
+  nyrr_key: d03665f3c56211ca717f
+- id: world-central-kitchen
+  name: World Central Kitchen
+  urls:
+  - https://wck.org/run-for-wck/
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: 618d83cfc62daeaec7b5
+- id: world-vision-usa
+  name: World Vision USA
+  urls:
+  - https://www.teamworldvision.org
+  cause: Humanitarian
+  focus: ''
+  level: Bronze
+  nyrr_key: 062f642176e1eaa1a7af
+- id: world-wildlife
+  name: World Wildlife Fund
+  urls:
+  - https://fundraise.worldwildlife.org/nycmarathon2026
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 2692dac2add6652f14b3
+- id: yamba-malawi
+  name: Yamba Malawi
+  urls:
+  - https://www.yambamalawi.org/races
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: f717d299302f921f6b9f
+- id: year-up-united
+  name: Year Up United
+  urls:
+  - https://www.yearup.org/nycmarathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 58aca4a5122d9baa1926
+- id: ymca-greater
+  name: YMCA of Greater New York
+  urls:
+  - https://ymcanyc.org/give/endurance-events/marathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 36b65ba7aea892057de1
+- id: ymca-greenwich
+  name: YMCA of Greenwich
+  urls:
+  - https://greenwichymca.org/give/Marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 7ece522589b86766a8fd
+- id: ymca-metuchen-edison-woodbri
+  name: YMCA of Metuchen, Edison, Woodbridge and South Amboy
+  urls:
+  - http://www.ymcaofmewsa.org/nycmarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 3a511cbd96dcce204c16
+- id: you-gotta-believe
+  name: You Gotta Believe
+  urls:
+  - https://www.yougottabelieve.org/events/run-with-team-ygb/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 6dacae690cf61c385d40
+- id: young-people-s-chorus
+  name: Young People's Chorus of New York City
+  urls:
+  - https://ypc.org/nyc-marathon26/
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 7498ab1af0eeabe8b895
+- id: young-survival-coalition
+  name: Young Survival Coalition
+  urls:
+  - https://youngsurvival.org/tcs-new-york-city-marathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 51a3a4b31b8e9be24ea5
+- id: youth-represent-a-youth-just
+  name: Youth Represent - A Youth Justice Organization
+  urls:
+  - https://youthrepresent.org/general-marathon-interest-form-2026
+  cause: Legal aid
+  focus: ''
+  level: Bronze
+  nyrr_key: e7972a226a159f2c2de9
+- id: zambezi-elephant
+  name: Zambezi Elephant Fund
+  urls:
+  - https://www.zambezielephantfund.org/new-events
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: 8110bb0a42332f806ff2
+- id: zara-s-center
+  name: Zara's Center
+  urls:
+  - https://www.zarascenter.org/run-for-zaras
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: d174d97bcaa2e9f5d40b
+- id: zero-prostate-cancer
+  name: ZERO Prostate Cancer
+  urls:
+  - https://support.zerocancer.org/site/TR?fr_id=3690&amp;pg=entry
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: e2129cf67d9e4d53d5fd
+- id: adaptive-sports-2
+  name: Adaptive Sports Foundation
+  urls:
+  - https://fundraise.givesmart.com/vf/ASFNYC26
+  cause: Disability & adaptive sport
+  focus: ''
+  level: Bronze
+  nyrr_key: 22de08638fe9459b3257
+- id: alzheimer-s-america-2
+  name: Alzheimer's Foundation of America
+  urls:
+  - https://givebutter.com/AFAxNYCMarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: eb05d6cbf7275627dac2
+- id: book-fairies-ny-2
+  name: Book Fairies Inc. (NY)
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLSemugfA5HDKUdTr1maTuV7h1Bd-KbQl4uFLOuEoekJ7ofanRA/viewform?usp=header
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 545e2824e61d76027350
+- id: children-s-tumor-2
+  name: Children's Tumor Foundation
+  urls:
+  - https://forms.gle/99bqJqDscpZim94K8
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 79f83a6b706038ed63c9
+- id: choroideremia-research-2
+  name: Choroideremia Research Foundation Inc
+  urls:
+  - https://secure.qgiv.com/event/2026tcsnycmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 21ea0319a72c5a52d706
+- id: donate-life-state-2
+  name: Donate Life New York State
+  urls:
+  - https://p2p.onecause.com/2026nycmarathon
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: bd529764b68976f14b55
+- id: everylife-rare-diseases-3
+  name: Everylife Foundation for Rare Diseases
+  urls:
+  - https://everylifefoundation.org/run/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 6dfb40cea033ea43d793
+- id: faces-at-nyu-langone-health-2
+  name: FACES at NYU Langone Health
+  urls:
+  - https://forms.office.com/r/4yE5iwquC2
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 0bb8422fb300c916cdaa
+- id: filling-in-blanks-2
+  name: Filling in the Blanks
+  urls:
+  - https://secure.qgiv.com/event/2026tcsnycmarthon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 04257a282376816000e7
+- id: first-tee-metrpolitan-2
+  name: First Tee-Metrpolitan New York
+  urls:
+  - https://fundraise.givesmart.com/vf/2026Marathon
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 4c4cdfd1adb1b69de7a8
+- id: good-grief-2
+  name: Good Grief
+  urls:
+  - https://secure.qgiv.com/event/gg2026nycmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: c13bda3c76f8d3e4ba3b
+- id: hazelden-betty-ford-2
+  name: Hazelden Betty Ford Foundation
+  urls:
+  - https://forms.gle/K45eouc5KcyM4Chu8
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: cd90e60c377c35869b5e
+- id: hereditary-neuropathy-2
+  name: Hereditary Neuropathy Foundation
+  urls:
+  - https://fundraise.givesmart.com/vf/CMTMarathon
+  cause: Advocacy & rights
+  focus: ''
+  level: Bronze
+  nyrr_key: eb5d6a5edfbf9142c513
+- id: housing-works-2
+  name: Housing Works
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLSfxb8I76h1NQsTJMy65KNq-LZWOBcOUzVLNfKHt6yES4zPnwg/viewform?usp=header
+  cause: Housing & community
+  focus: ''
+  level: Bronze
+  nyrr_key: ae2ba38915c62f7be923
+- id: jhpiego-2
+  name: Jhpiego
+  urls:
+  - https://docs.google.com/spreadsheets/d/1dl3ozs3ssEAko5Y820zpLeVVwFYtBtocgaxu9Lpt3mQ/edit#
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: c321200be3ffbf2328b3
+- id: komera-2
+  name: Komera
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLSfCQgEs42Rs6XULepEGiD0iwGUU8MLSM0rb6ojrqZKrQs7Seg/viewform
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 9fc4f3e254e0eb4e7683
+- id: liveonny-2
+  name: LiveOnNY
+  urls:
+  - https://secure.qgiv.com/event/teamliveonnymarathon2026/
+  cause: Health & medical research
+  focus: ''
+  level: Bronze
+  nyrr_key: 3e1e7c1134b347005614
+- id: lung-cancer-research-2
+  name: Lung Cancer Research Foundation
+  urls:
+  - https://form.jotform.com/253155583438160
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: cfb52d8d3c59ee72cc7a
+- id: nightingale-runs-pine-ridge-2
+  name: Nightingale Runs for Pine Ridge
+  urls:
+  - https://sites.google.com/nightingale.org/teamnightingale/home
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: b35fce0e2f3fff0a5d22
+- id: semper-fi-and-america-s-2
+  name: Semper Fi & America's Fund
+  urls:
+  - https://runsignup.com/Race/NY/NewYork/TCSNewYorkCityMarathonSemperFiAmericasFundTeam2023?rsus=500-400-51972d7b-965a-44a3-93fd-cee6dc7dd871
+  cause: Veterans & first responders
+  focus: ''
+  level: Bronze
+  nyrr_key: 39f8ee4f6a2996d55b39
+- id: sun-river-health-2
+  name: Sun River Health
+  urls:
+  - https://secure.givelively.org/donate/sun-river-health/2026-tcs-new-york-city-marathon
+  cause: Environment & parks
+  focus: ''
+  level: Bronze
+  nyrr_key: 2c99af0939c1da2d4f84
+- id: american-dream-school-2
+  name: The American Dream School
+  urls:
+  - https://secure.givelively.org/donate/american-dream-charter-school/dream-team-runners-race-to-raise-nyc-marathon-funding-2026
+  cause: Youth & education
+  focus: ''
+  level: Bronze
+  nyrr_key: 82d0a9732274e8c49a9c
+- id: retreat-2
+  name: The Retreat, Inc.
+  urls:
+  - https://secure.qgiv.com/event/theretreat2026tcsmarathon/
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: e565c7f24bad53385bf8
+- id: university-michigan-health-r-2
+  name: University of Michigan Health Rogel Cancer Center
+  urls:
+  - https://docs.google.com/forms/d/e/1FAIpQLSeMX9_6OaNiAERxgYFsehOawoiAhbhPDTCRXgNpDp0JDcuYfQ/viewform
+  cause: Cancer
+  focus: ''
+  level: Bronze
+  nyrr_key: 1b2667d1f0a9a62bf7d3
+- id: unlocal-2
+  name: UNLOCAL INC
+  urls:
+  - https://givebutter.com/unlocalmarathon2026
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 682bbe1521f3dac12cc6
+- id: women-s-prison-association-2
+  name: Women's Prison Association
+  urls:
+  - https://givebutter.com/2026wpamarathon
+  cause: Community services
+  focus: ''
+  level: Bronze
+  nyrr_key: 2a804412e08ee6f44c53

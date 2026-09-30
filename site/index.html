@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://charitybibs.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Find a charity to run the NYC Marathon for">
-<meta property="og:description" content="Three questions narrow the 27 official NYC Marathon charities to the ones that fit you: what you'd raise, what they give you, and who's still taking runners.">
+<meta property="og:description" content="Three questions narrow the official NYC Marathon charities to the ones that fit you: what you'd raise, what they give you, and who's still taking runners.">
 <meta property="og:url" content="https://charitybibs.com/">
 <meta property="og:image" content="https://charitybibs.com/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -222,7 +222,7 @@ footer .sp{margin-left:auto}
 <div class="col">
 <div class="intro">
   <h1>Find a charity to run for</h1>
-  <p class="lede">All 27 official NYC Marathon charities</p>
+  <p class="lede" id="lede">All the official NYC Marathon charities</p>
 </div>
 
 <form class="qs" id="form">
@@ -314,7 +314,9 @@ footer .sp{margin-left:auto}
     (o.pub ? '<p>'+esc(o.text)+'</p>'+(o.quote?'<blockquote>“'+esc(o.quote)+'”</blockquote>':'')+src(o.source)
            : '<p class="np">Not on their page. Ask before you sign up.</p>')+
     (extra?'<p class="fine">'+extra+'</p>':'')+'</section>';
+  const backUnread=c=>'<div class="back" id="back-'+esc(c.id)+'"><p class="no">We haven\'t read this charity\'s pages yet, so there are no amounts or fine print to show. It is on NYRR\'s official 2026 list'+(c.level?' as a '+esc(c.level)+' partner':'')+'.</p><p><a class="btn print" href="'+esc(c.url)+'" target="_blank" rel="noopener">Their page ↗</a></p></div>';
   function back(c){
+    if(unread(c)) return backUnread(c);
     const [sWord,sLine]=STATUS[c.status];
     const reg = c.regSeparate===false ? '<div><span>NYRR race entry</span><span>covered</span></div>' : '<div><span>NYRR entry fee</span><span>+ '+money(REG)+'</span></div>';
     const feeLabel = (c.feeLabel||'Charity fee').split(',')[0]; const feeShort = feeLabel.length>28 ? 'Charity fee' : feeLabel;
@@ -395,8 +397,13 @@ footer .sp{margin-left:auto}
 
   /* ---------- rendering ---------- */
   const bib=c=>'<div class="bib '+c.status+'" aria-hidden="true"><div class="band">'+esc(c.cause)+'</div><div class="bibnum">'+money(c.min)+'</div><span class="yr">to raise</span><div class="tear">'+(due(c)?'due '+due(c):'no due date listed')+'</div></div>';
+  const unread=c=>(c.flags||[]).some(f=>String(f).startsWith('listed only'));
   function reasons(c){
     const w=want(),m=matches(c),r=[];
+    if(unread(c)){
+      return '<ul class="why"><li class="no">We haven\'t read this charity\'s pages yet. It is on NYRR\'s official list; the link below goes to the charity\'s own page.</li></ul>'+
+        '<div class="spec"><span class="st unknown">Not read yet</span><span>Amount to raise not read yet</span></div>';
+    }
     if(w.length){
       const extra=lit(c).filter(([k])=>!w.includes(k)).map(([,l])=>low(l));
       const miss=w.filter(k=>!m.includes(k));
@@ -415,9 +422,10 @@ footer .sp{margin-left:auto}
   const row=c=>'<div class="row"><button type="button" class="rowbtn" data-t="'+esc(c.id)+'" aria-expanded="'+open.has(c.id)+'" aria-controls="back-'+esc(c.id)+'">'+
     '<span class="bibnum">'+money(c.min)+(due(c)?'<small>due '+due(c)+'</small>':'')+'</span>'+
     '<span class="nm">'+esc(c.name)+'<span class="fo">'+esc(c.focus||'')+'</span></span>'+
-    '<span class="st '+c.status+'">'+STATUS[c.status][0]+'</span><span class="chev" aria-hidden="true"></span></button>'+(open.has(c.id)?back(c):'')+'</div>';
+    '<span class="st '+c.status+'">'+(unread(c)?'Not read yet':STATUS[c.status][0])+'</span><span class="chev" aria-hidden="true"></span></button>'+(open.has(c.id)?back(c):'')+'</div>';
   const nOpen=arr=>arr.filter(c=>c.status==='open').length;
 
+  (function(){const l=document.getElementById('lede');if(l)l.textContent='All '+DATA.charities.length+' official NYC Marathon charities';})();
   function render(){
     const sortctl=$('sortctl');
     if(!answered()){

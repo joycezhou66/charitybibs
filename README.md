@@ -37,7 +37,8 @@ Why the verify step exists: an LLM reading 27 pages will occasionally misread on
 ```bash
 pip install -r requirements.txt && python -m playwright install chromium
 export ANTHROPIC_API_KEY=...            # only needed for `extract` / `refresh`
-export CB_MODEL=claude-sonnet-4-5       # or newer
+export CB_MODEL=claude-sonnet-5         # or claude-opus-5 (2.5x the price per charity)
+export CB_BUDGET_USD=25                 # optional: stop extracting at this spend; without it, stops when credit runs out
 
 python -m pipeline.run crawl   --race nyc-2026 --only bird,nami   # fetch pages → .cache/
 python -m pipeline.run extract --race nyc-2026 --only bird,nami   # model → structured JSON
@@ -49,17 +50,19 @@ python -m pipeline.run stats   --race nyc-2026
 pytest -q                                                          # 17 tests, incl. a real headless crawl of a fixture site
 ```
 
-`refresh` runs crawl → extract → verify → diff in one go; that is what the Action calls.
+`refresh` runs crawl → extract → verify → diff in one go; that is what the Action calls. It works in chunks of ten charities, crawling and extracting each chunk before moving on, and stops as soon as the spend meter hits `CB_BUDGET_USD` or the API reports the account is out of credit. Everything read up to that point is kept. `--scope core` (the weekly default) re-reads only charities that have been read before and are not closed; `--scope all` reads the whole seed list.
+
+Charities in the seed list that have never been read still appear on the site as "listed, not yet read" rows (name, cause, link, no amounts), so the list is complete even before the crawl has caught up. Spend per charity is written to `.cache/<race>/spend.json` and attached to the Action run as an artifact.
 
 ## Deploy the site
 
 `site/` is static. Cloudflare Pages, output directory `site`, no build command. `site/_headers` sets CSP and the usual security headers. Add the domain, forward `hello@charitybibs.com` via Cloudflare Email Routing, add the site to Plausible (tag already in the template), submit `sitemap.xml` in Search Console.
 
-Repository secrets for the Action: `ANTHROPIC_API_KEY`. Optional variable: `CB_MODEL`.
+Repository secrets for the Action: `ANTHROPIC_API_KEY`. Optional variables: `CB_MODEL`, `CB_BUDGET_USD`. The Action must be allowed to open pull requests: Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests".
 
 ## Adding a race
 
-1. `data/seeds/<race>.yaml` — `race`, `race_name`, and a `charities:` list of `{id, name, urls}` from the race's official partner page.
+1. `data/seeds/<race>.yaml` — `race`, `race_name`, and a `charities:` list of `{id, name, urls, cause?, focus?}` from the race's official partner page. For NYC, `research/fetch_nyrr_index.py` captures NYRR's index from a laptop (it blocks cloud hosts) and the capture is turned into seeds.
 2. `data/races/<race>.json` — start with `{"refreshed": "...", "charities": []}`.
 3. Run `refresh`, review the PR, merge, `build`.
 

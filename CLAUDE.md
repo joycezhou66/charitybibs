@@ -25,7 +25,7 @@ A static comparison site for NYC Marathon charity bib programs (27 charities, 20
 
 - Site built and verified: 17 tests pass, renders at 390 / 1100 / 1280 / 1440 with no horizontal overflow.
 - **The live crawler has never run.** The build environment blocked the charity domains. The first real run is `python -m pipeline.run refresh --race nyc-2026` with `ANTHROPIC_API_KEY` set, or the GitHub Action. Expect some fields to be flagged `unverified` on the first run; that is the pipeline working. Review `.cache/nyc-2026/changes.md` before promoting.
-- `CB_MODEL` defaults to `claude-sonnet-4-5`; bump to whatever is current.
+- `CB_MODEL` defaults to `claude-sonnet-5`. `CB_BUDGET_USD` caps API spend per run; without it the run stops cleanly when the account is out of credit. `refresh --scope core|all` picks which charities to re-read; the weekly schedule uses `core`.
 - Data caveats still open (see `site/README.md` if present, else README "Before launch"): NYRR entry fees ($255/$315) are cited from charity pages, not nyrr.org; Northwell, Michael J. Fox, HSS, Catholic Charities NY, Team Reeve have no readable minimum yet; Ulman's page is stale; BCH's FAQ still shows a 2025 deadline.
 
 ## Deploy checklist (what Claude Code can do vs. what Joyce must do)

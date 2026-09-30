@@ -1,0 +1,555 @@
+https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/beneficiaries_search?pagination_key=ab9931320dc310377a0a85537908b736
+
+
+
+
+
+
+            <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Gold</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Gold level charities, including NYRR’s featured charity, Team for Kids, provide guaranteed entry plus VIP perks on marathon day.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=441091546e4e3b803c02">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="62df7efd095ab86b395727f1a933a0b2ec7e65a7" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/62df7efd095ab86b395727f1a933a0b2ec7e65a7.png?1772462102" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Fred&#x27;s Team - Memorial Sl...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Fred&#x27;s Team is the official running program of Memorial Sloan Kettering Cancer Center (MSK). Our participants receive guaranteed entry into the 2026 TCS New York City Marathon and exclusive team benefits. Named after New York City Marathon co-founder and MSK patient Fred Lebow, Fred’s Team gives runners the chance to add meaning to their miles by raising money for any area of cancer research at MSK. 100% of every dollar raised goes directly into MSK labs.">
+            Fred&#x27;s Team is the official running program of Memorial Sloan Kettering Cancer Center (MSK). Our participants receive guaranteed entry into the 2026 TCS New York City Marathon and exclusive team benefits. Named after New York City Marathon co-founder and MSK patient Fred Lebow, Fred’s Team gives runners the chance to add meaning to their miles by raising money for any area of cancer research at MSK. 100% of every dollar raised goes directly into MSK labs.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Silver</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Silver Level charity partners offer entry to the TCS New York City Marathon plus a chance to access charity buses and tents on race day.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ca05c0ecd939f1417e96">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="5fdc503f6ca1da58477808cbdc70346d5991fd10" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/5fdc503f6ca1da58477808cbdc70346d5991fd10.png?1771441857" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Ronald McDonald House New...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Ronald McDonald House New York provides families of children with cancer and other serious illnesses with a strong, caring and seamless circle of support. During some of the darkest days for each of our families, we’re devoted to easing the burden. With the use of our modern facilities, varied services, including housing and customized programming, we address family&#x27;s underlying social factors of health so they can focus on what matters most:their child&#x27;s health.">
+            Ronald McDonald House New York provides families of children with cancer and other serious illnesses with a strong, caring and seamless circle of support. During some of the darkest days for each of our families, we’re devoted to easing the burden. With the use of our modern facilities, varied services, including housing and customized programming, we address family&#x27;s underlying social factors of health so they can focus on what matters most:their child&#x27;s health.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ce15d9becf40159748c4">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="732ff0eb201431d54228831660caed13399b2dc6" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/732ff0eb201431d54228831660caed13399b2dc6.png?1771269302" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Ulman Foundation</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="We change lives by creating a community of support for young adults, and their loved ones, impacted by cancer. By choosing to run the Berlin Marathon with the Ulman Foundation, you are helping create a world where no young adult faces cancer alone.">
+            We change lives by creating a community of support for young adults, and their loved ones, impacted by cancer. By choosing to run the Berlin Marathon with the Ulman Foundation, you are helping create a world where no young adult faces cancer alone.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=6c21cee5ce93f27cf16a">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="4fcff9403c5c7db300799578a086d95c075fd2a6" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/4fcff9403c5c7db300799578a086d95c075fd2a6.png?1771945909" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Breakthrough T1D, formerl...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Breakthrough T1D Run (formerly JDRF) provides entry into some of the country&#x27;s most exciting challenge events. Join a team that&#x27;s united in the common purpose of creating a world without type 1 diabetes.">
+            Breakthrough T1D Run (formerly JDRF) provides entry into some of the country&#x27;s most exciting challenge events. Join a team that&#x27;s united in the common purpose of creating a world without type 1 diabetes.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=f13d85cd37e29885854e">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="136b68e2984d0dc639115b65e070cc5b4ec7d069" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/136b68e2984d0dc639115b65e070cc5b4ec7d069.jpg?1771337262" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">St. Jude Children&#x27;s Resea...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="For ALSAC/St. Jude we can use Finding Cures. Saving Children.">
+            For ALSAC/St. Jude we can use Finding Cures. Saving Children.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=8d035ddf82e240ae289d">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="39f16d4bb38ac25b48643ea602020cbeb38ae997" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/39f16d4bb38ac25b48643ea602020cbeb38ae997.png?1770823064" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Christopher &amp; Dana Reeve ...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="The Christopher &amp; Dana Reeve Foundation is dedicated to curing spinal cord injury by advancing innovative research and improving the quality of life for individuals and families impacted by paralysis. The Reeve Foundation provides one on one support and resources for individuals and their caregivers experiencing all mobility impairments including ALS, cerebral palsy, MS, spina bifida, spinal cord injury, stroke, transverse myelitis, and so much more completely for free.">
+            The Christopher &amp; Dana Reeve Foundation is dedicated to curing spinal cord injury by advancing innovative research and improving the quality of life for individuals and families impacted by paralysis. The Reeve Foundation provides one on one support and resources for individuals and their caregivers experiencing all mobility impairments including ALS, cerebral palsy, MS, spina bifida, spinal cord injury, stroke, transverse myelitis, and so much more completely for free.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=e16e4e28a5cee3b16bdf">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="73b6a78a6c51624540c8cc631e620591c479062e" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/73b6a78a6c51624540c8cc631e620591c479062e.png?1771429301" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">The Hole in the Wall Gang...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Founded in 1988 by Paul Newman, The Hole in the Wall Gang Camp provides “a different kind of healing&quot; to thousands of children with serious illnesses and their family members annually completely free of charge. For many of these children and families, Hole in the Wall provides multiple Camp experiences throughout the year at the facility in Ashford, Conn., in dozens of hospitals and clinics, directly in camper homes and communities, and through other outreach activities across the Northeast and Mid-Atlantic.">
+            Founded in 1988 by Paul Newman, The Hole in the Wall Gang Camp provides “a different kind of healing&quot; to thousands of children with serious illnesses and their family members annually completely free of charge. For many of these children and families, Hole in the Wall provides multiple Camp experiences throughout the year at the facility in Ashford, Conn., in dozens of hospitals and clinics, directly in camper homes and communities, and through other outreach activities across the Northeast and Mid-Atlantic.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=5a3ec9e46a9b8a549783">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="97ff8b74f246c9a6c64b846d013049b1af836c08" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/97ff8b74f246c9a6c64b846d013049b1af836c08.png?1772223400" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">City Parks Foundation</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="At City Parks Foundation, we are dedicated to invigorating and transforming parks into dynamic, vibrant centers of urban life through sports, arts, community engagement and capacity building, and environmental education programs for all New Yorkers. Our programs -- located in 320 parks, recreation centers and public schools across New York City -- reach nearly 300,000 people and organizations each year. Our ethos is simple: thriving parks mean thriving communities">
+            At City Parks Foundation, we are dedicated to invigorating and transforming parks into dynamic, vibrant centers of urban life through sports, arts, community engagement and capacity building, and environmental education programs for all New Yorkers. Our programs -- located in 320 parks, recreation centers and public schools across New York City -- reach nearly 300,000 people and organizations each year. Our ethos is simple: thriving parks mean thriving communities
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=681934e03c7e749283ae">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="62aac197726f67dcb10da614662dc1079a0764ba" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/62aac197726f67dcb10da614662dc1079a0764ba.png?1770751442" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Cystic Fibrosis Foundation</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="The mission of the Cystic Fibrosis Foundation is to cure cystic fibrosis and to provide all people with CF the opportunity to lead long, fulfilling lives by funding research and drug development, partnering with the CF community, and advancing high-quality, specialized care.
+ ">
+            The mission of the Cystic Fibrosis Foundation is to cure cystic fibrosis and to provide all people with CF the opportunity to lead long, fulfilling lives by funding research and drug development, partnering with the CF community, and advancing high-quality, specialized care.
+ 
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=671e7fabb6ff00332980">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="14db9219b937bb49ef561b7f2fdf3c68651214c2" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/14db9219b937bb49ef561b7f2fdf3c68651214c2.png?1769541436" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Allied Services Integrate...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Allied Services Integrated Health System is a nonprofit healthcare and human services provider serving Northeastern and Central Pennsylvania. We deliver a full continuum of compassionate care - from award-winning inpatient and outpatient physical rehabilitation to skilled nursing, home health, hospice and palliative care, personal care, pediatric services, and community-based supports. Our mission is to help individuals with disabilities, chronic illness, injury, and everyday challenges live with greater independence, dignity, and quality of life.">
+            Allied Services Integrated Health System is a nonprofit healthcare and human services provider serving Northeastern and Central Pennsylvania. We deliver a full continuum of compassionate care - from award-winning inpatient and outpatient physical rehabilitation to skilled nursing, home health, hospice and palliative care, personal care, pediatric services, and community-based supports. Our mission is to help individuals with disabilities, chronic illness, injury, and everyday challenges live with greater independence, dignity, and quality of life.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=efe91290e122f3059ac3">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="C83e979ba45266686a2a3fd59a157a3f026b92b6" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/c83e979ba45266686a2a3fd59a157a3f026b92b6.png?1770906819" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Organization for Autism R...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="The Organization for Autism Research is dedicated to improving the lives of everyone impacted by autism by funding applied research that produces meaningful and practical results.">
+            The Organization for Autism Research is dedicated to improving the lives of everyone impacted by autism by funding applied research that produces meaningful and practical results.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=b4e491d5db92d12c3b30">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="43d6ffcc034266971885e41fa8cf17bb4395f491" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/43d6ffcc034266971885e41fa8cf17bb4395f491.png?1770757696" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">ALS United Greater New York</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="ALS United Greater New York builds hope and enhances the quality of life while supporting aggressive research to find new treatments and a cure by providing assistance for people with ALS through a robust care services program, coordinating multidisciplinary care through certified clinical care centers, leading the way in global research, and fostering government partnerships.">
+            ALS United Greater New York builds hope and enhances the quality of life while supporting aggressive research to find new treatments and a cure by providing assistance for people with ALS through a robust care services program, coordinating multidisciplinary care through certified clinical care centers, leading the way in global research, and fostering government partnerships.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=4135f5d8a11574f949d3">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="08691477b0646a0215c013430b9f4673f20dec0b" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/08691477b0646a0215c013430b9f4673f20dec0b.jpg?1772232527" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Release Recovery Foundation</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=945d373296263e6ead23">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="7bf6067339fcd80822fef2cee369bb54e0fb7b89" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/7bf6067339fcd80822fef2cee369bb54e0fb7b89.png?1770847157" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Multiple Myeloma Research...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="The MMRF is the largest non-profit in the world solely focused on accelerating a cure for each and every multiple myeloma patient. We drive the development and delivery of next-generation therapies, leverage data to identify optimal and more personalized treatment approaches and empower myeloma patients and the broader community with information and resources to extend their lives. Central to our mission is our commitment to advancing health equity so that all myeloma patients can benefit from the scientific and clinical advances we pursue. Since our inception, the MMRF has committed over $600 million for research, opened nearly 100 clinical trials, and helped bring 15+ FDA-approved therapies to market, which have tripled the life expectancy of myeloma patients.
+">
+            The MMRF is the largest non-profit in the world solely focused on accelerating a cure for each and every multiple myeloma patient. We drive the development and delivery of next-generation therapies, leverage data to identify optimal and more personalized treatment approaches and empower myeloma patients and the broader community with information and resources to extend their lives. Central to our mission is our commitment to advancing health equity so that all myeloma patients can benefit from the scientific and clinical advances we pursue. Since our inception, the MMRF has committed over $600 million for research, opened nearly 100 clinical trials, and helped bring 15+ FDA-approved therapies to market, which have tripled the life expectancy of myeloma patients.
+
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=a5aca876602f13b2a26e">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="6b8915289712a2d02922f2c1bf1c751543fc30c9" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/6b8915289712a2d02922f2c1bf1c751543fc30c9.png?1772229564" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Boston Children&#x27;s Hospita...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Run for the powerful community that turns miles into miracles. Boston Children’s Hospital is where the world comes for answers. Ranked the #1 pediatric hospital in the world by Newsweek and among best in the nation by U.S. News and World Report, Boston Children’s treats more children with rare diseases and complex conditions than any other hospital. Also housing the world’s largest research enterprise at a pediatric institution, discoveries made at Boston Children’s translate from the laboratory bench to the patient’s bedside, where they’ve been improving the health of children and adults since 1869.  ">
+            Run for the powerful community that turns miles into miracles. Boston Children’s Hospital is where the world comes for answers. Ranked the #1 pediatric hospital in the world by Newsweek and among best in the nation by U.S. News and World Report, Boston Children’s treats more children with rare diseases and complex conditions than any other hospital. Also housing the world’s largest research enterprise at a pediatric institution, discoveries made at Boston Children’s translate from the laboratory bench to the patient’s bedside, where they’ve been improving the health of children and adults since 1869.  
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=e9652ae2ab758e2e53da">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="84e9502323af60b9c8d132607e84d4b34aaf02ed" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/84e9502323af60b9c8d132607e84d4b34aaf02ed.png?1772743149" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Robin Hood</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Robin Hood is NYC’s largest local poverty-fighting philanthropy, and since 1988, we have invested nearly $3 billion to elevate and fuel New Yorkers’ permanent escapes from poverty. Other than years when we&#x27;ve championed relief efforts, 2025 was the largest grantmaking year in our history, distributing more than $140 million to 295 community partners. We create pathways out of poverty through our strategic partnerships on child care, child poverty, jobs, living wages, and more. We are scaling impact at a population level for the 2 million New Yorkers living in poverty. At Robin Hood, we believe your starting point in life should not define where you end up. To learn more about our work and impact, follow us on X @RobinHoodNYC or go to robinhood.org">
+            Robin Hood is NYC’s largest local poverty-fighting philanthropy, and since 1988, we have invested nearly $3 billion to elevate and fuel New Yorkers’ permanent escapes from poverty. Other than years when we&#x27;ve championed relief efforts, 2025 was the largest grantmaking year in our history, distributing more than $140 million to 295 community partners. We create pathways out of poverty through our strategic partnerships on child care, child poverty, jobs, living wages, and more. We are scaling impact at a population level for the 2 million New Yorkers living in poverty. At Robin Hood, we believe your starting point in life should not define where you end up. To learn more about our work and impact, follow us on X @RobinHoodNYC or go to robinhood.org
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=a31587da65590cb5c2ad">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="5e5ac0a3c4ee9b731e4559beb560d9d9b86f06c9" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/5e5ac0a3c4ee9b731e4559beb560d9d9b86f06c9.png?1771535033" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Autism Speaks</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Autism Speaks TeamUp brings together athletes who are passionate about turning their miles into meaningful impact. Autism Speaks is dedicated to creating an inclusive world for people with autism throughout their lifespan. Your participation with Autism Speaks TeamUp empowers us to provide crucial autism research, advocacy, services, and support to help redefine what is possible for all people on the spectrum. ">
+            Autism Speaks TeamUp brings together athletes who are passionate about turning their miles into meaningful impact. Autism Speaks is dedicated to creating an inclusive world for people with autism throughout their lifespan. Your participation with Autism Speaks TeamUp empowers us to provide crucial autism research, advocacy, services, and support to help redefine what is possible for all people on the spectrum. 
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+        <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Bronze</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Bronze level charity partners offer entry to the TCS New York City Marathon to runners who support their cause.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=2edf3dfcf9602b95dd40">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="222c1f548e24ca682e8425395283bd637f30b234" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/222c1f548e24ca682e8425395283bd637f30b234.png?1770905993" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">National Ovarian Cancer C...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ac3fc80102dab5765650">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="7cce2fb95796263d0285e8831189af000d25fbad" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/7cce2fb95796263d0285e8831189af000d25fbad.png?1770823736" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Brain Injury Association ...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=4213de599c16405965df">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="935725eac0dc4228fce2750bf6aed31248646db0" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/935725eac0dc4228fce2750bf6aed31248646db0.png?1772487056" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">New Neighbors Partnership</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=7f2892d72b40528c9a07">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="3ea3b22acebaab95ec19cd8cb2ed4cbd73d6372e" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/3ea3b22acebaab95ec19cd8cb2ed4cbd73d6372e.png?1771958226" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Samaritans, Inc.</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=908281e34d3eeadb4419">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="9f4902e65a9e3a7290de217e2638838ced960144" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/9f4902e65a9e3a7290de217e2638838ced960144.png?1771884995" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Myocarditis Foundation</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=f359a17ce22c99b1cdb0">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="9763133402f6c6582c8b133ae63a301a0da04494" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/9763133402f6c6582c8b133ae63a301a0da04494.png?1769450007" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Strong Girls United (SG U...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=2a804412e08ee6f44c53">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="E60c91b12e0c1653c0a8bf56e4fef226c0740068" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/e60c91b12e0c1653c0a8bf56e4fef226c0740068.jpg?1773949994" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Women&#x27;s Prison Association</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+  <input data-current-page="1" data-group-id="055ba1eeb388369a" data-pagination-key="ab9931320dc310377a0a85537908b736" data-total-pages="28" id="pagination_data" name="pagination_data" type="hidden" />
