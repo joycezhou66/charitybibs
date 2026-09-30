@@ -23,7 +23,7 @@ from pathlib import Path
 
 from playwright.async_api import async_playwright
 
-START = "https://www.nyrr.org/tcsnycmarathon/runners/charity-index"
+START = "https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/charity_partners"
 OUT = Path(__file__).resolve().parent / "nyrr-index"
 MORE = re.compile(r"load more|show more|see more|view more|next|more charities", re.I)
 MAX_STEPS = 80

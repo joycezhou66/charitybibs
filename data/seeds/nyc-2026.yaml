@@ -1,6 +1,6 @@
 race: nyc-2026
 race_name: TCS New York City Marathon 2026
-official_list: https://www.nyrr.org/tcsnycmarathon/runners/charity-index
+official_list: https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/charity_partners
 official_list_note: nyrr.org blocks automated fetching. Refresh this seed list by hand once a year when the partner list is published (Jan–Feb).
 charities:
 - id: tfk
