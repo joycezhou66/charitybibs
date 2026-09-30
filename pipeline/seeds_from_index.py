@@ -36,7 +36,7 @@ NYRR_LIST = "https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/charity_partner
 
 KEYWORDS = [
     ("Cancer", r"\bcancer|leukemia|lymphoma|myeloma|melanoma|sarcoma|tumor|oncolog"),
-    ("Children's health", r"children'?s hospital|pediatric|paediatric|sick kids|childhood (illness|disease)|hospital for children|make-a-wish|wish"),
+    ("Children's health", r"children'?s hospital|pediatric|paediatric|sick kids|childhood (illness|disease|cancer)|hospital for children|make-a-wish|ronald mcdonald"),
     ("Mental health", r"mental (health|illness)|suicide|depression|anxiety|autism|nami\b|eating disorder|addiction|recovery"),
     ("Disability & adaptive sport", r"disabilit|adaptive|blind|wheelchair|amputee|paralys|challenged athlete|special olympics|achilles"),
     ("Veterans & first responders", r"veteran|military|first responder|firefighter|wounded|gold star|police"),
@@ -103,7 +103,10 @@ def focus_for(c: dict) -> str:
     if not b:
         return ""
     first = re.split(r"(?<=[.!?])\s", b)[0]
-    return (first[:137].rstrip() + "…") if len(first) > 140 else first
+    if len(first) <= 140:
+        return first
+    cut = first[:137]
+    return cut[:cut.rfind(" ")].rstrip(",;:") + "…"
 
 
 def slug(name: str, taken: set[str]) -> str:
