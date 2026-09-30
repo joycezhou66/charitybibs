@@ -154,10 +154,12 @@ def build(dry_run: bool = False) -> dict:
 
     taken = {s["id"] for s in existing}
     used_keys = set(matched.values())
+    seen_names = {norm(s["name"]) for s in existing}
     new = []
     for k, c in by_key.items():
-        if k in used_keys:
+        if k in used_keys or norm(names[k]) in seen_names:   # NYRR lists a few charities twice
             continue
+        seen_names.add(norm(names[k]))
         url = website(c)
         entry = {"id": slug(names[k], taken), "name": names[k], "urls": [url] if url else [],
                  "cause": cause_for(c), "focus": focus_for(c), "level": (c.get("tier") or "").title() or None,

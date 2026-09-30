@@ -169,7 +169,9 @@ def test_charity_crawl_hard_cap_keeps_pages_fetched_so_far(monkeypatch, tmp_path
 
 def test_seed_builder_is_idempotent(tmp_path, monkeypatch):
     from pipeline import seeds_from_index as sb
-    cap = [{"key": "k1", "name": "Alpha Fund", "blurb": "Alpha helps.", "tier": "BRONZE", "categories": ["Youth"],
+    cap = [{"key": "k9", "name": "Beta Inc", "blurb": "", "tier": "BRONZE", "categories": [],
+            "contact_html": '<span class="charity-name">Beta Inc</span>'},   # NYRR duplicate of k2, must not become a second row
+           {"key": "k1", "name": "Alpha Fund", "blurb": "Alpha helps.", "tier": "BRONZE", "categories": ["Youth"],
             "contact_html": '<span class="charity-name">Alpha Fund</span><a href="https://alpha.org/run" class="website-text">x</a>'},
            {"key": "k2", "name": "Beta Inc", "blurb": "", "tier": "SILVER", "categories": ["Research"],
             "contact_html": '<span class="charity-name">Beta Inc</span>'}]
