@@ -1,0 +1,155 @@
+https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/beneficiaries_search?pagination_key=0884e32c49a46b6aafa579158313eab6
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Bronze</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Bronze level charity partners offer entry to the TCS New York City Marathon to runners who support their cause.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=d03665f3c56211ca717f">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="Aed9c232f3d41d3df90330dbe47d0f98f9e03c8d" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/aed9c232f3d41d3df90330dbe47d0f98f9e03c8d.png?1771019210" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">World Animal Protection</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=cddaa08039fa1c0187d9">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="E06ccf3cf8a6adf15071fa366111fb5eb9c40811" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/e06ccf3cf8a6adf15071fa366111fb5eb9c40811.png?1770846932" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Muddy Paws Rescue</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ff29256fccaca67d7588">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="6f75eb5da787f9f01347b87fbe13245f56a97834" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/6f75eb5da787f9f01347b87fbe13245f56a97834.jpg?1770821981" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">TEAM PAWS Chicago</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=3fa4d7b6aa49c3df14b4">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="247d51580dc362c56d85b536e76324ee311eb533" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/247d51580dc362c56d85b536e76324ee311eb533.png?1770914879" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">PAWS NY</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ab7faec29efa16f162bd">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="2591a5f0bd21f2a9c1bf611265e8e328baa52f98" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/2591a5f0bd21f2a9c1bf611265e8e328baa52f98.png?1771003318" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">North Shore Animal League...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=931f15c33c2857fa58d7">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="D3e602f5d20c0ecedc22910d0b005a69487fb357" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/d3e602f5d20c0ecedc22910d0b005a69487fb357.png?1772124465" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Badass Animal Rescue</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+
+        <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Others</h1>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=98253a178c2ed63ea325">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="5baa3e4004b2836ce2d5c037445d976355c4618c" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/5baa3e4004b2836ce2d5c037445d976355c4618c.jpeg?1769448259" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Wild Tomorrow</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+  <input data-current-page="1" data-group-id="__ungrouped__" data-pagination-key="0884e32c49a46b6aafa579158313eab6" data-total-pages="1" id="pagination_data" name="pagination_data" type="hidden" />

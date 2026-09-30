@@ -1,0 +1,487 @@
+https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/beneficiaries_search?pagination_key=0884e32c49a46b6aafa579158313eab6
+
+
+
+
+
+
+
+            <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Silver</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Silver Level charity partners offer entry to the TCS New York City Marathon plus a chance to access charity buses and tents on race day.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=e9652ae2ab758e2e53da">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="84e9502323af60b9c8d132607e84d4b34aaf02ed" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/84e9502323af60b9c8d132607e84d4b34aaf02ed.png?1772743149" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Robin Hood</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Robin Hood is NYC’s largest local poverty-fighting philanthropy, and since 1988, we have invested nearly $3 billion to elevate and fuel New Yorkers’ permanent escapes from poverty. Other than years when we&#x27;ve championed relief efforts, 2025 was the largest grantmaking year in our history, distributing more than $140 million to 295 community partners. We create pathways out of poverty through our strategic partnerships on child care, child poverty, jobs, living wages, and more. We are scaling impact at a population level for the 2 million New Yorkers living in poverty. At Robin Hood, we believe your starting point in life should not define where you end up. To learn more about our work and impact, follow us on X @RobinHoodNYC or go to robinhood.org">
+            Robin Hood is NYC’s largest local poverty-fighting philanthropy, and since 1988, we have invested nearly $3 billion to elevate and fuel New Yorkers’ permanent escapes from poverty. Other than years when we&#x27;ve championed relief efforts, 2025 was the largest grantmaking year in our history, distributing more than $140 million to 295 community partners. We create pathways out of poverty through our strategic partnerships on child care, child poverty, jobs, living wages, and more. We are scaling impact at a population level for the 2 million New Yorkers living in poverty. At Robin Hood, we believe your starting point in life should not define where you end up. To learn more about our work and impact, follow us on X @RobinHoodNYC or go to robinhood.org
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ca05c0ecd939f1417e96">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="5fdc503f6ca1da58477808cbdc70346d5991fd10" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/5fdc503f6ca1da58477808cbdc70346d5991fd10.png?1771441857" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Ronald McDonald House New...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Ronald McDonald House New York provides families of children with cancer and other serious illnesses with a strong, caring and seamless circle of support. During some of the darkest days for each of our families, we’re devoted to easing the burden. With the use of our modern facilities, varied services, including housing and customized programming, we address family&#x27;s underlying social factors of health so they can focus on what matters most:their child&#x27;s health.">
+            Ronald McDonald House New York provides families of children with cancer and other serious illnesses with a strong, caring and seamless circle of support. During some of the darkest days for each of our families, we’re devoted to easing the burden. With the use of our modern facilities, varied services, including housing and customized programming, we address family&#x27;s underlying social factors of health so they can focus on what matters most:their child&#x27;s health.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Bronze</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Bronze level charity partners offer entry to the TCS New York City Marathon to runners who support their cause.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=e9a9ab9f14575749065f">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="A2ddb48cf8e18561d6d390692978877cef953202" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/a2ddb48cf8e18561d6d390692978877cef953202.png?1772056975" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Henry Street Settlement</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=320799412fd10e1da5e7">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="Cea7fe5c526b4932ad7cf583cefb5422ed8337db" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/cea7fe5c526b4932ad7cf583cefb5422ed8337db.png?1772057438" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Dress for Success Worldwide</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=475d6e073ffa4b5b4186">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="A96de11d1dcb2a63b52a20afb1fbae8fe139c8ab" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/a96de11d1dcb2a63b52a20afb1fbae8fe139c8ab.png?1771602519" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Human Rights First</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=88302c3d02429fcde43c">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="F4b0d22a3b4c39f4ed013a669ab78e9fcfa7b4c4" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/f4b0d22a3b4c39f4ed013a669ab78e9fcfa7b4c4.png?1772806229" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Smile-A-Mile</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=8c854a78f193ab90c633">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="C3de0dfdf3281fd311e93941e7b26f7c8f2a63bf" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/c3de0dfdf3281fd311e93941e7b26f7c8f2a63bf.png?1772034504" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Breaking Ground</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=6e7df94ff7ef29339af9">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="8f3fbabf6338564fa6def354ddcce40c4f1b7e3e" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/8f3fbabf6338564fa6def354ddcce40c4f1b7e3e.png?1772044610" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">CancerCare</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=a4996f07515dcd016298">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="6e20bd7dd2d8080378557d467a850e54b99c0e69" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/6e20bd7dd2d8080378557d467a850e54b99c0e69.png?1770934614" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">First Candle, Inc.</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=afcbdb4788425fd0756a">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="9b617f9cd9747c46dd53acaf3a603b393e9aa388" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/9b617f9cd9747c46dd53acaf3a603b393e9aa388.png?1770755341" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Doug Flutie Jr. Foundation</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=2f8a91d1f86ab974fe8e">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="62d9cbd9bcf0de58ad2868608e73d38e54584804" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/62d9cbd9bcf0de58ad2868608e73d38e54584804.jpg?1773953400" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Citymeals on Wheels</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=4e4523098f8a6536291d">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="4ee2bab3bcb7db88e0e7e3d775cff41837a8bebe" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/4ee2bab3bcb7db88e0e7e3d775cff41837a8bebe.png?1772055567" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">No Limits Cafe</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=2c27ef0e7ccad367c5b3">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="Dc7edad79a52d426b7fb68da5b4cb90c211270de" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/dc7edad79a52d426b7fb68da5b4cb90c211270de.png?1772650973" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Grassroots Grocery</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=8b81254865d9935fd806">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="125f1e619a91aeb7ca7a85d1e0c408b442b47923" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/125f1e619a91aeb7ca7a85d1e0c408b442b47923.png?1770757504" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Safe Horizon</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=96c7dcfc476c93451928">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="59036575b5d09b90b425761d9af5f697a477db59" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/59036575b5d09b90b425761d9af5f697a477db59.png?1776709109" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">New York Common Pantry</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=676f498209a099811c7b">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="72cdb6984be36656ae187fa58b62b05b129c5f42" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/72cdb6984be36656ae187fa58b62b05b129c5f42.png?1771876933" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">New Immigrant Community E...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=2ddf627dc57ad27141df">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="0dabe58b3e936dd24f9a212be64fca786479791c" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/0dabe58b3e936dd24f9a212be64fca786479791c.png?1771885720" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">TEAM TO END AIDS (T2)</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=b94d990221549f8aa95c">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="A636a9ed4977638fad51e3af5772801e107992ab" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/a636a9ed4977638fad51e3af5772801e107992ab.png?1771443737" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">LSA Family Health Service</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=9da92cec4d0753b524fe">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="4af6ebccfbeb4347e99bfe66187df65529bddfc6" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/4af6ebccfbeb4347e99bfe66187df65529bddfc6.png?1771018143" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Elixir Fund</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=7dbd3d3da95e42e20f2a">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="70272bde0ba79318380d7935c364c9b7c90a885c" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/70272bde0ba79318380d7935c364c9b7c90a885c.png?1770843416" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Friendship Circle Interna...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=82ed4f6eb64f1cee29f0">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="6896e408b250a44582ebe89b04c6a348b462cf50" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/6896e408b250a44582ebe89b04c6a348b462cf50.jpg?1772572240" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">The Bridge Inc.</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=061baca18953098a37e1">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="A86a0f2e0e20070bd818eb81847e3509af6a370c" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/a86a0f2e0e20070bd818eb81847e3509af6a370c.png?1771957825" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Trinity Place Shelter</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=68bf74e7d3312f1e7fc7">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="A6260316586e21319b77f411a091ee0a5e06c8c3" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/a6260316586e21319b77f411a091ee0a5e06c8c3.png?1770914994" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Covenant House</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=e96ca0b9af2fcd835663">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="733b36dd366f54a71db1b14e5c27c26f4f50a6c0" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/733b36dd366f54a71db1b14e5c27c26f4f50a6c0.png?1772116684" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Start Small Think Big</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+  <input data-current-page="1" data-group-id="055ba1eeb388369a" data-pagination-key="0884e32c49a46b6aafa579158313eab6" data-total-pages="4" id="pagination_data" name="pagination_data" type="hidden" />

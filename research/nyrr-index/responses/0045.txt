@@ -1,0 +1,521 @@
+https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/beneficiaries_search?pagination_key=0884e32c49a46b6aafa579158313eab6
+
+
+
+
+
+
+            <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Gold</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Gold level charities, including NYRR’s featured charity, Team for Kids, provide guaranteed entry plus VIP perks on marathon day.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=441091546e4e3b803c02">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="62df7efd095ab86b395727f1a933a0b2ec7e65a7" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/62df7efd095ab86b395727f1a933a0b2ec7e65a7.png?1772462102" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Fred&#x27;s Team - Memorial Sl...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Fred&#x27;s Team is the official running program of Memorial Sloan Kettering Cancer Center (MSK). Our participants receive guaranteed entry into the 2026 TCS New York City Marathon and exclusive team benefits. Named after New York City Marathon co-founder and MSK patient Fred Lebow, Fred’s Team gives runners the chance to add meaning to their miles by raising money for any area of cancer research at MSK. 100% of every dollar raised goes directly into MSK labs.">
+            Fred&#x27;s Team is the official running program of Memorial Sloan Kettering Cancer Center (MSK). Our participants receive guaranteed entry into the 2026 TCS New York City Marathon and exclusive team benefits. Named after New York City Marathon co-founder and MSK patient Fred Lebow, Fred’s Team gives runners the chance to add meaning to their miles by raising money for any area of cancer research at MSK. 100% of every dollar raised goes directly into MSK labs.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+            <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Silver</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Silver Level charity partners offer entry to the TCS New York City Marathon plus a chance to access charity buses and tents on race day.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=a5aca876602f13b2a26e">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="6b8915289712a2d02922f2c1bf1c751543fc30c9" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/6b8915289712a2d02922f2c1bf1c751543fc30c9.png?1772229564" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Boston Children&#x27;s Hospita...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Run for the powerful community that turns miles into miracles. Boston Children’s Hospital is where the world comes for answers. Ranked the #1 pediatric hospital in the world by Newsweek and among best in the nation by U.S. News and World Report, Boston Children’s treats more children with rare diseases and complex conditions than any other hospital. Also housing the world’s largest research enterprise at a pediatric institution, discoveries made at Boston Children’s translate from the laboratory bench to the patient’s bedside, where they’ve been improving the health of children and adults since 1869.  ">
+            Run for the powerful community that turns miles into miracles. Boston Children’s Hospital is where the world comes for answers. Ranked the #1 pediatric hospital in the world by Newsweek and among best in the nation by U.S. News and World Report, Boston Children’s treats more children with rare diseases and complex conditions than any other hospital. Also housing the world’s largest research enterprise at a pediatric institution, discoveries made at Boston Children’s translate from the laboratory bench to the patient’s bedside, where they’ve been improving the health of children and adults since 1869.  
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=6c21cee5ce93f27cf16a">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="4fcff9403c5c7db300799578a086d95c075fd2a6" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/4fcff9403c5c7db300799578a086d95c075fd2a6.png?1771945909" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Breakthrough T1D, formerl...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Breakthrough T1D Run (formerly JDRF) provides entry into some of the country&#x27;s most exciting challenge events. Join a team that&#x27;s united in the common purpose of creating a world without type 1 diabetes.">
+            Breakthrough T1D Run (formerly JDRF) provides entry into some of the country&#x27;s most exciting challenge events. Join a team that&#x27;s united in the common purpose of creating a world without type 1 diabetes.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=681934e03c7e749283ae">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="62aac197726f67dcb10da614662dc1079a0764ba" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/62aac197726f67dcb10da614662dc1079a0764ba.png?1770751442" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Cystic Fibrosis Foundation</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="The mission of the Cystic Fibrosis Foundation is to cure cystic fibrosis and to provide all people with CF the opportunity to lead long, fulfilling lives by funding research and drug development, partnering with the CF community, and advancing high-quality, specialized care.
+ ">
+            The mission of the Cystic Fibrosis Foundation is to cure cystic fibrosis and to provide all people with CF the opportunity to lead long, fulfilling lives by funding research and drug development, partnering with the CF community, and advancing high-quality, specialized care.
+ 
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ce15d9becf40159748c4">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="732ff0eb201431d54228831660caed13399b2dc6" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/732ff0eb201431d54228831660caed13399b2dc6.png?1771269302" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Ulman Foundation</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="We change lives by creating a community of support for young adults, and their loved ones, impacted by cancer. By choosing to run the Berlin Marathon with the Ulman Foundation, you are helping create a world where no young adult faces cancer alone.">
+            We change lives by creating a community of support for young adults, and their loved ones, impacted by cancer. By choosing to run the Berlin Marathon with the Ulman Foundation, you are helping create a world where no young adult faces cancer alone.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=671e7fabb6ff00332980">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="14db9219b937bb49ef561b7f2fdf3c68651214c2" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/14db9219b937bb49ef561b7f2fdf3c68651214c2.png?1769541436" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Allied Services Integrate...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="Allied Services Integrated Health System is a nonprofit healthcare and human services provider serving Northeastern and Central Pennsylvania. We deliver a full continuum of compassionate care - from award-winning inpatient and outpatient physical rehabilitation to skilled nursing, home health, hospice and palliative care, personal care, pediatric services, and community-based supports. Our mission is to help individuals with disabilities, chronic illness, injury, and everyday challenges live with greater independence, dignity, and quality of life.">
+            Allied Services Integrated Health System is a nonprofit healthcare and human services provider serving Northeastern and Central Pennsylvania. We deliver a full continuum of compassionate care - from award-winning inpatient and outpatient physical rehabilitation to skilled nursing, home health, hospice and palliative care, personal care, pediatric services, and community-based supports. Our mission is to help individuals with disabilities, chronic illness, injury, and everyday challenges live with greater independence, dignity, and quality of life.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=b4e491d5db92d12c3b30">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="43d6ffcc034266971885e41fa8cf17bb4395f491" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/43d6ffcc034266971885e41fa8cf17bb4395f491.png?1770757696" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">ALS United Greater New York</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="ALS United Greater New York builds hope and enhances the quality of life while supporting aggressive research to find new treatments and a cure by providing assistance for people with ALS through a robust care services program, coordinating multidisciplinary care through certified clinical care centers, leading the way in global research, and fostering government partnerships.">
+            ALS United Greater New York builds hope and enhances the quality of life while supporting aggressive research to find new treatments and a cure by providing assistance for people with ALS through a robust care services program, coordinating multidisciplinary care through certified clinical care centers, leading the way in global research, and fostering government partnerships.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=f13d85cd37e29885854e">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="136b68e2984d0dc639115b65e070cc5b4ec7d069" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/136b68e2984d0dc639115b65e070cc5b4ec7d069.jpg?1771337262" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">St. Jude Children&#x27;s Resea...</div>
+        </div>
+          <div class="blue-text u-font-light truncate-text-3-lines" data-toggle="tooltip" data-placement="bottom"
+               title="For ALSAC/St. Jude we can use Finding Cures. Saving Children.">
+            For ALSAC/St. Jude we can use Finding Cures. Saving Children.
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-xs-12 u-padding-x-0 u-padding-top-20 u-clear-both">
+      <h1 class="u-color-black-i u-margin-0">Bronze</h1>
+        <div class="u-color-black-i"><p><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 14.6667px;">Bronze level charity partners offer entry to the TCS New York City Marathon to runners who support their cause.</span></p></div>
+    <hr class="u-border-top-lighter-gray-2 u-margin-top-10 u-margin-bottom-15"/>
+  </div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=72c56e4c276638fd11e3">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="601d6113a16767e8eccde1f167e96671b5fa5c31" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/601d6113a16767e8eccde1f167e96671b5fa5c31.png?1771353589" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Pancreatic Cancer Action ...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=6065441ad6f8a987db45">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="14fb733de7b6cb92f2340ae53f1b9b6f849fc7f7" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/14fb733de7b6cb92f2340ae53f1b9b6f849fc7f7.png?1771256815" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Melanoma Education Founda...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=6096a6b2a6bb68418217">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="B5015648a87e7e31c785cfe43614da48a72c3e9f" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/b5015648a87e7e31c785cfe43614da48a72c3e9f.png?1771862198" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Gweneviere Mann Foundation</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=908281e34d3eeadb4419">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="9f4902e65a9e3a7290de217e2638838ced960144" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/9f4902e65a9e3a7290de217e2638838ced960144.png?1771884995" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Myocarditis Foundation</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=63d2073efbef2a03b3e2">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="990b5c31130049c15d5f6b6c7aa914835a3b169a" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/990b5c31130049c15d5f6b6c7aa914835a3b169a.png?1771426290" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Propionic Acidemia Founda...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=a2fed96ed830aa57d323">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="69b623c892f5a09937dd4bceb0be62ffae983bfc" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/69b623c892f5a09937dd4bceb0be62ffae983bfc.jpg?1770758811" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Amref Health Africa</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ce943fed6ea596889681">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="48d41faa40851d395bb15d5f73146d3571a8325f" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/48d41faa40851d395bb15d5f73146d3571a8325f.jpg?1771017369" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Familial Dysautonomia Fou...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=4d65f1e6a5ff2c81cd5e">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="3fe21fa3a5af637ef4bb29d8b8657406da43dd25" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/3fe21fa3a5af637ef4bb29d8b8657406da43dd25.png?1771526535" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Liberation Programs</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=6b8e59b8e8942e7b11ee">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="60b687f96deb1b17dc653ae1b39f06f85f014161" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/60b687f96deb1b17dc653ae1b39f06f85f014161.png?1771943873" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">AIRnyc</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=0b566ccc89752f1a8bb9">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="6a9d6efe9fd3a3fe41b2ea023033ed5f47ef2bc1" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/6a9d6efe9fd3a3fe41b2ea023033ed5f47ef2bc1.png?1774895311" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Children&#x27;s Specialized Ho...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=67bc652925e87afade0b">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="6eaea1410fcf46cee28ebeeb8f80faac92f79c15" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/6eaea1410fcf46cee28ebeeb8f80faac92f79c15.png?1771522381" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Brain Tumor Foundation</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=c321200be3ffbf2328b3">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="Fdfc3eddb15a7e5a39692f9657bf1653e1ddf47b" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/fdfc3eddb15a7e5a39692f9657bf1653e1ddf47b.png?1772117571" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Jhpiego</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=80d3de12efeb79cff26d">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="81a2e4750460c98fcf14555f16e8186bde77657d" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/81a2e4750460c98fcf14555f16e8186bde77657d.png?1772461844" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">CurePSP</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=653666f70839bf4bf144">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="79fe97d1e25373cc9b90115adf507c53843092f8" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/79fe97d1e25373cc9b90115adf507c53843092f8.png?1771443087" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">Team Continuum</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=2ea8746db49fdd329097">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="A5be14f2c4c782a8a4df1ab2088831a5f1cbc762" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/a5be14f2c4c782a8a4df1ab2088831a5f1cbc762.png?1772650805" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">National Blood Clot Alliance</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+       <div class="col-md-4 col-sm-6 col-xs-12 beneficiary-block">
+  <a data-toggle="modal" href="#contactModal" style="text-decoration: none" data-url="/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=ba2eb75456a0111b5270">
+    <div class="thumbnail partners-fundraisers-thumbnail charity-thumbnail" style="cursor: pointer;">
+        <div class="no-spots-text-container">
+          <span class="no-spots-text text-uppercase block text-center">Registration Closed</span>
+        </div>
+        <div class="cp-list-img">
+          <img alt="B96f1572cdb07a461acb162a509ddb5cd914ffcd" class="img-responsive center-block" src="https://s3.amazonaws.com/hakuapps/prod/b96f1572cdb07a461acb162a509ddb5cd914ffcd.png?1770822463" style="max-height: 100px; margin-top: 20px; max-width: 100%" />
+        </div>
+      <div class="caption text-center">
+        <div class="caption-no-btn">
+          <div class="blue-text cp-list-text">The Andrew McDonough B+ F...</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+  <input data-current-page="1" data-group-id="055ba1eeb388369a" data-pagination-key="0884e32c49a46b6aafa579158313eab6" data-total-pages="6" id="pagination_data" name="pagination_data" type="hidden" />

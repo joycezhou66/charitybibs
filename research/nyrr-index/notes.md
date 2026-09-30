@@ -1,0 +1,21 @@
+# NYRR charity index capture (v2)
+
+- pages reported: 28, per page: 24
+- unique charities captured: 656
+- Advocacy: 45 charities
+- Animal Rights/Welfare: 7 charities
+- Arts & Culture: 14 charities
+- Education: 75 charities
+- Emergency Relief: 10 charities
+- Environment: 20 charities
+- Healthcare/Medicine: 143 charities
+- International: 520 charities
+- Military/Veteran Services: 11 charities
+- Research: 43 charities
+- Social Service: 91 charities
+- Sports: 35 charities
+- Youth: 90 charities
+- Other: 656 charities
+- with website: 301
+- with at least one category: 656
+- tiers: {"Gold": 0, "Silver": 0, "Bronze": 0, "null": 0}

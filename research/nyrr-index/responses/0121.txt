@@ -1,0 +1,49 @@
+https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/beneficiary_contact_info?beneficiary_key=e16e4e28a5cee3b16bdf&store_last_path=false
+
+<div class="col-xs-12 clearfix text-center">
+  <div class="form-group">
+    <span class="block font-20 text-uppercase bold-text">Participate with <span class="charity-name bold-text">The Hole in the Wall Gang Camp</span></span>
+  </div>
+
+  <div class="form-group">
+      <span class="block font-16">Interested in participating with <span class="charity-name">The Hole in the Wall Gang Camp</span>? Contact the organization to get started.</span>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="row">
+
+      <div class="col-xs-12 email-contact-info">
+        <div class="panel panel-default">
+          <div class="panel-body padding-30">
+            <div class="media">
+              <div class="media-left padding-right-20">
+                <span class="circle-60 bg-theme-color glyphicons envelope color-fff no-margin line-height-60"></span>
+              </div>
+              <div class="media-body media-middle full-width">
+                <span class="block font-16 text-uppercase text-left">Email</span>
+                <a class="block email-text font-20 word-wrap-break-word text-left" href="mailto:jocelyn.williams@holeinthewallgang.org">jocelyn.williams@holeinthewallgang.org</a>
+              </div>
+            </div> <!-- media -->
+          </div> <!-- panel-body -->
+        </div> <!-- panel -->
+      </div> <!-- col-xs-12 -->
+
+      <div class="col-xs-12 website-contact-info">
+        <div class="panel panel-default">
+          <div class="panel-body padding-30">
+            <div class="media">
+              <div class="media-left padding-right-20">
+                <span class="circle-60 bg-theme-color glyphicons link color-fff no-margin line-height-60"></span>
+              </div>
+              <div class="media-body media-middle full-width">
+                <span class="block font-16 text-uppercase text-left">Learn More</span>
+                <a href="https://give.holeinthewallgang.org/event/2026-tcs-new-york-city-marathon/e770584" class="block website-text blue-text font-16 text-left word-wrap-break-word" target="_blank">https://give.holeinthewallgang.org/event/2026-tcs-new-york-city-marathon/e770584</a>
+              </div>
+            </div> <!-- media -->
+          </div> <!-- panel-body -->
+        </div> <!-- panel -->
+      </div> <!-- col-xs-12 -->
+
+  </div> <!-- row -->
+</div>
