@@ -44,11 +44,13 @@ def race_name(race: str) -> str:
     return seeds(race)["race_name"]
 
 
-def listed_only(seed: dict, today: str) -> Charity:
-    """A row for a charity we know exists (from the official list) but have not read."""
+def listed_only(seed: dict, today: str, fallback_url: str = "") -> Charity:
+    """A row for a charity we know exists (from the official list) but have not read.
+    With no website of its own, it links to the official list it came from."""
     return Charity(
         id=seed["id"], name=seed["name"], cause=seed.get("cause"), focus=seed.get("focus"),
-        url=seed["urls"][0] if seed.get("urls") else "", verified=today, flags=[LISTED_ONLY],
+        level=seed.get("level"), url=seed["urls"][0] if seed.get("urls") else fallback_url,
+        verified=today, flags=[LISTED_ONLY],
     ).compute_scores()
 
 
@@ -75,13 +77,15 @@ def cmd_verify(race: str) -> Dataset:
         s = seed_by_id.get(f.stem, {})
         ch.cause = ch.cause or s.get("cause")
         ch.focus = ch.focus or s.get("focus")
+        ch.level = ch.level or s.get("level")
         out.append(ch)
     # Carry forward charities that were not re-read this run, untouched.
     seen = {c.id for c in out}
     out += [c for cid, c in existing.items() if cid not in seen]
     seen |= set(existing)
     # Seed charities never read: list them so the site is complete, marked as unread.
-    out += [listed_only(s, today) for s in sd["charities"] if s["id"] not in seen]
+    fallback = sd.get("official_list", "")
+    out += [listed_only(s, today, fallback) for s in sd["charities"] if s["id"] not in seen]
     order = [s["id"] for s in sd["charities"]]
     out.sort(key=lambda c: order.index(c.id) if c.id in order else 999)
     ds = Dataset(refreshed=today, charities=out)

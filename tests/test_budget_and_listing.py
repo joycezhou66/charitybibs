@@ -79,6 +79,8 @@ def test_listed_only_row_is_valid_and_flagged():
     c = listed_only({"id": "z", "name": "Zeta Fund", "cause": "Cancer", "urls": ["https://zeta.org/run"]}, "2026-09-30")
     assert c.min is None and c.status == "unknown" and c.supportScore == 0 and c.termsScore == 0
     assert c.cause == "Cancer" and c.url == "https://zeta.org/run" and LISTED_ONLY in c.flags
+    d = listed_only({"id": "y", "name": "Y", "urls": [], "level": "Bronze"}, "2026-09-30", fallback_url="https://list.example/")
+    assert d.url == "https://list.example/" and d.level == "Bronze"
 
 
 def test_diff_collapses_new_charities_and_reports_unread():
