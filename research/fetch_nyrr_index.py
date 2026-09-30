@@ -1,18 +1,19 @@
-"""Capture NYRR's official charity index so the full seed list can be built from it.
+"""Capture NYRR's official charity partner list (hosted on Haku) to build the full seed list.
 
-nyrr.org blocks automated fetching from cloud hosts, so run this on a normal laptop with
-a visible browser window (it opens one; leave it alone until it finishes):
+Run on a laptop with a visible browser window (the site blocks cloud hosts):
 
     source .venv/bin/activate
     python research/fetch_nyrr_index.py
 
 Writes research/nyrr-index/:
-  page-N.html      full HTML after each expansion step (for building the parser)
-  final.png        screenshot of the fully expanded page
-  links.json       every link on the final page with its text and nearest container text
-  notes.md         page title, final URL, iframes, and any filter controls found
+  charities.json   one entry per charity: key, name, blurb, tier, status badge, logo, categories, website, contact html
+  responses/       raw HTML fragments the page fetched while paging (for debugging)
+  final.png        screenshot
+  notes.md         counts and anything that failed
 
-It does not need to understand the page. It just gets all of it onto disk.
+How the page works (from the first capture): 24 cards per page, 28 pages, loaded on scroll
+inside a fixed-height box; each card links to a contact modal that holds the website;
+the sidebar has Gold/Silver/Bronze tier headers in the list and 13 category filters.
 """
 from __future__ import annotations
 
@@ -25,89 +26,169 @@ from playwright.async_api import async_playwright
 
 START = "https://events.nyrr.org/events/9c9d0a40e9f5586e44e0/charity_partners"
 OUT = Path(__file__).resolve().parent / "nyrr-index"
-MORE = re.compile(r"load more|show more|see more|view more|next|more charities", re.I)
-MAX_STEPS = 80
+CARD = ".beneficiary-block"
+CATEGORIES = ["Advocacy", "Animal Rights/Welfare", "Arts & Culture", "Education", "Emergency Relief", "Environment",
+              "Faith Based/Religion", "Healthcare/Medicine", "International", "Military/Veteran Services", "Research",
+              "Social Service", "Sports", "Youth", "Other"]
+
+JS_SCROLLER = """() => {
+  const card = document.querySelector('%s'); if (!card) return null;
+  let el = card.parentElement;
+  while (el && el !== document.body) {
+    const s = getComputedStyle(el);
+    if ((s.overflowY === 'auto' || s.overflowY === 'scroll') && el.scrollHeight > el.clientHeight + 10) { el.setAttribute('data-cb-scroller','1'); return el.className; }
+    el = el.parentElement;
+  }
+  return null;
+}""" % CARD
+
+JS_CARDS = """() => {
+  const tierOf = (node) => {
+    let n = node;
+    while (n) {
+      let p = n.previousElementSibling;
+      while (p) { const t = (p.innerText||'').trim().split('\\n')[0].trim(); if (/^(gold|silver|bronze)$/i.test(t)) return t; p = p.previousElementSibling; }
+      n = n.parentElement;
+      if (!n || n === document.body) break;
+    }
+    return null;
+  };
+  return Array.from(document.querySelectorAll('%s')).map(b => {
+    const a = b.querySelector('a[data-url]');
+    const url = a ? a.getAttribute('data-url') : '';
+    const key = (url.match(/beneficiary_key=([a-f0-9]+)/) || [])[1] || null;
+    const name = (b.querySelector('.cp-list-text') || {}).innerText || '';
+    const tip = b.querySelector('[data-original-title]');
+    const blurb = tip ? (tip.getAttribute('data-original-title') || tip.getAttribute('title') || '') : '';
+    const badge = (b.querySelector('.no-spots-text') || {}).innerText || '';
+    const img = b.querySelector('img'); const logo = img ? img.src : '';
+    return {key, name: name.trim(), blurb: blurb.trim(), badge: badge.trim(), logo, contact_url: url, tier: tierOf(b)};
+  });
+}""" % CARD
 
 
-async def dismiss_banners(page) -> None:
-    for sel in ("button:has-text('Accept')", "button:has-text('I agree')", "button:has-text('Got it')", "button:has-text('OK')"):
-        try:
-            await page.locator(sel).first.click(timeout=800)
-            return
-        except Exception:
-            pass
+async def scroll_all(page, label: str, expected: int | None = None) -> int:
+    """Scroll the inner list box until no new cards appear. Returns the card count."""
+    cls = await page.evaluate(JS_SCROLLER)
+    stale, last = 0, -1
+    for i in range(400):
+        n = await page.evaluate(f"document.querySelectorAll('{CARD}').length")
+        if n == last:
+            stale += 1
+            if stale >= 4:
+                break
+        else:
+            stale, last = 0, n
+        if expected and n >= expected:
+            break
+        if cls is not None:
+            await page.evaluate("() => { const el = document.querySelector('[data-cb-scroller]'); el.scrollTop = el.scrollHeight; }")
+        await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        await page.wait_for_timeout(1200)
+        if i % 10 == 9:
+            print(f"    {label}: {n} cards so far (scroller: {cls!r})")
+    n = await page.evaluate(f"document.querySelectorAll('{CARD}').length")
+    print(f"  {label}: {n} cards")
+    return n
 
 
-async def expand(page, step: int) -> bool:
-    """Scroll to the bottom and click one 'load more / next' control if there is one."""
-    await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-    await page.wait_for_timeout(1500)
-    before = await page.evaluate("document.body.innerText.length")
-    buttons = page.locator("button, a[role=button], a")
-    n = await buttons.count()
-    for i in range(n):
-        b = buttons.nth(i)
-        try:
-            t = (await b.inner_text(timeout=300)).strip()
-        except Exception:
-            continue
-        if MORE.search(t) and len(t) < 40 and await b.is_visible():
-            try:
-                await b.click(timeout=2000)
-                await page.wait_for_timeout(2500)
-                after = await page.evaluate("document.body.innerText.length")
-                print(f"  step {step}: clicked '{t}' ({before} -> {after} chars)")
-                return after != before
-            except Exception:
-                continue
-    return False
+async def click_text(page, text: str) -> bool:
+    loc = page.locator(f"text={text}").first
+    try:
+        await loc.click(timeout=3000)
+        await page.wait_for_timeout(2000)
+        return True
+    except Exception:
+        return False
 
 
 async def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "responses").mkdir(exist_ok=True)
+    notes: list[str] = ["# NYRR charity index capture (v2)", ""]
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         ctx = await browser.new_context(viewport={"width": 1280, "height": 900})
         page = await ctx.new_page()
+        n_resp = 0
+
+        async def on_response(resp):
+            nonlocal n_resp
+            if "beneficiaries_search" in resp.url or "beneficiary" in resp.url:
+                try:
+                    body = await resp.text()
+                    n_resp += 1
+                    (OUT / "responses" / f"{n_resp:04d}.txt").write_text(f"{resp.url}\n\n{body}")
+                except Exception:
+                    pass
+        page.on("response", on_response)
+
         print(f"opening {START}")
         await page.goto(START, wait_until="domcontentloaded", timeout=60000)
         await page.wait_for_timeout(4000)
-        await dismiss_banners(page)
-        (OUT / "page-0.html").write_text(await page.content())
-        for step in range(1, MAX_STEPS + 1):
-            grew = await expand(page, step)
-            (OUT / f"page-{step}.html").write_text(await page.content())
-            if not grew:
-                # scroll once more in case content is lazy-loaded without a button
-                await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                await page.wait_for_timeout(2000)
-                if not await expand(page, step):
-                    break
-        h = await page.evaluate("Math.min(document.documentElement.scrollHeight, 20000)")
-        await page.set_viewport_size({"width": 1280, "height": int(h)})
+        total_pages = await page.evaluate("(document.getElementById('pagination_data')||{}).getAttribute ? document.getElementById('pagination_data').getAttribute('data-total-pages') : null")
+        per_page = await page.evaluate(f"document.querySelectorAll('{CARD}').length")
+        expected = int(total_pages) * per_page if total_pages else None
+        print(f"pages: {total_pages}, per page: {per_page}, expecting about {expected}")
+        notes.append(f"- pages reported: {total_pages}, per page: {per_page}")
+
+        # 1. all charities, all tiers
+        await scroll_all(page, "all charities", expected)
+        cards = await page.evaluate(JS_CARDS)
+        by_key = {c["key"]: c for c in cards if c["key"]}
+        print(f"  unique charities: {len(by_key)}")
+        notes.append(f"- unique charities captured: {len(by_key)}")
+        for c in by_key.values():
+            c["categories"] = []
+
+        # 2. categories: click each filter, scroll, record which keys appear, clear
+        for cat in CATEGORIES:
+            if not await click_text(page, cat):
+                print(f"  category '{cat}': not found on page, skipped")
+                continue
+            n = await scroll_all(page, f"category {cat}")
+            keys = [c["key"] for c in await page.evaluate(JS_CARDS) if c["key"]]
+            for k in keys:
+                if k in by_key:
+                    by_key[k]["categories"].append(cat)
+                else:
+                    c = next(x for x in await page.evaluate(JS_CARDS) if x["key"] == k)
+                    c["categories"] = [cat]; by_key[k] = c
+            notes.append(f"- {cat}: {len(keys)} charities")
+            # clear the filter: click it again, else use CLEAR FILTERS
+            if not await click_text(page, cat):
+                await click_text(page, "CLEAR FILTERS")
+            await page.wait_for_timeout(1500)
+
+        # 3. contact cards → website
+        print("fetching contact cards for the website links...")
+        base = "https://events.nyrr.org"
+        for i, (k, c) in enumerate(by_key.items()):
+            try:
+                r = await page.request.get(base + c["contact_url"], timeout=20000)
+                html = await r.text()
+                c["contact_html"] = html
+                links = re.findall(r'href="(https?://[^"]+)"', html)
+                ext = [u for u in links if "nyrr.org" not in u and "hakuapp" not in u and "google" not in u
+                       and not re.search(r"facebook|twitter|instagram|linkedin|youtube|tiktok", u)]
+                c["website"] = ext[0] if ext else None
+                m = re.search(r"<h\d[^>]*>([^<]{3,120})</h\d>", html)
+                c["full_name"] = re.sub(r"\s+", " ", m.group(1)).strip() if m else None
+            except Exception as e:  # noqa: BLE001
+                c["website"], c["full_name"], c["contact_html"] = None, None, f"FAILED {e}"
+            if i % 25 == 0:
+                print(f"    {i}/{len(by_key)}")
+            await page.wait_for_timeout(300)
+
+        (OUT / "charities.json").write_text(json.dumps(list(by_key.values()), indent=1))
         await page.screenshot(path=str(OUT / "final.png"))
-        links = await page.evaluate(
-            """() => Array.from(document.querySelectorAll('a[href]')).map(a => {
-                 const box = a.closest('li, article, .card, [class*=card], [class*=item], [class*=charity], div');
-                 return {href: a.href, text: (a.innerText || '').trim().slice(0, 120),
-                         context: box ? (box.innerText || '').trim().slice(0, 400) : ''};
-               })"""
-        )
-        (OUT / "links.json").write_text(json.dumps(links, indent=1))
-        controls = await page.evaluate(
-            """() => {
-              const out = [];
-              for (const s of document.querySelectorAll('select')) out.push('select: ' + [...s.options].map(o => o.textContent.trim()).filter(Boolean).slice(0, 40).join(' | '));
-              for (const i of document.querySelectorAll('input')) out.push('input[' + (i.type||'text') + ']: ' + (i.placeholder || i.name || ''));
-              for (const l of document.querySelectorAll('label')) { const t = (l.innerText||'').trim(); if (t && t.length < 60) out.push('label: ' + t); }
-              return [...new Set(out)].slice(0, 200);
-            }"""
-        )
-        iframes = await page.evaluate("Array.from(document.querySelectorAll('iframe')).map(f => f.src)")
-        notes = [f"# NYRR charity index capture", f"- Final URL: {page.url}", f"- Title: {await page.title()}",
-                 f"- Links captured: {len(links)}", f"- Iframes: {iframes}", "", "## Controls"] + [f"- {c}" for c in controls]
+        with_site = sum(1 for c in by_key.values() if c.get("website"))
+        with_cat = sum(1 for c in by_key.values() if c.get("categories"))
+        notes += [f"- with website: {with_site}", f"- with at least one category: {with_cat}",
+                  f"- tiers: {json.dumps({t: sum(1 for c in by_key.values() if c.get('tier') == t) for t in ('Gold', 'Silver', 'Bronze', None)})}"]
         (OUT / "notes.md").write_text("\n".join(notes) + "\n")
-        print(f"\nwrote {OUT} ({len(links)} links). Now: git add research/nyrr-index && git commit -m 'Capture NYRR charity index' && git push")
+        print("\n".join(notes))
+        print(f"\nwrote {OUT}/charities.json. Now: git add research/nyrr-index && git commit -m 'Capture NYRR charity index' && git push origin claude/charitybibs-deploy-uz9t8q")
         await browser.close()
 
 
