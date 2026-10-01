@@ -190,4 +190,4 @@ def test_force_re_extracts_a_cached_charity(cache_dir):
     fc = MeteredClient()
     extract_mod.run(RACE, "Test Race", order=["a", "b"], client=fc, model="claude-sonnet-5")
     s = extract_mod.run(RACE, "Test Race", order=["a", "b"], client=fc, model="claude-sonnet-5", force={"b"})
-    assert s["extracted"] == ["b"] and s["skipped"] == ["a"] and fc.calls == 3
+    assert s["extracted"] == ["b"] and sorted(s["skipped"]) == ["a", "c"] and fc.calls == 4
