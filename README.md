@@ -56,7 +56,7 @@ Charities in the seed list that have never been read still appear on the site as
 
 ## Deploy the site
 
-`site/` is static. Cloudflare Pages, output directory `site`, no build command. `site/_headers` sets CSP and the usual security headers. Add the domain, forward `hello@charitybibs.com` via Cloudflare Email Routing, add the site to Plausible (tag already in the template), submit `sitemap.xml` in Search Console.
+`site/` is static. Cloudflare Pages, output directory `site`, no build command. `.github/workflows/deploy.yml` publishes `site/` on every push to `main` that touches it (secrets `CLOUDFLARE_API_TOKEN` with Cloudflare Pages: Edit, and `CLOUDFLARE_ACCOUNT_ID`); `wrangler pages deploy site --project-name charitybibs` does the same by hand. `site/_headers` sets CSP and the usual security headers. Add the domain, forward `hello@charitybibs.com` via Cloudflare Email Routing, add the site to Plausible (tag already in the template), submit `sitemap.xml` in Search Console.
 
 Repository secrets for the Action: `ANTHROPIC_API_KEY`. Optional variables: `CB_MODEL`, `CB_BUDGET_USD`. The Action must be allowed to open pull requests: Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests".
 
