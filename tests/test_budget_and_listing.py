@@ -184,3 +184,10 @@ def test_seed_builder_is_idempotent(tmp_path, monkeypatch):
     ids = [s["id"] for s in yaml.safe_load(seeds.read_text())["charities"]]
     assert r1["new"] == 1 and r2["new"] == 0 and r3["new"] == 0
     assert len(ids) == len(set(ids)) == 2 and ids[0] == "alpha"
+
+
+def test_force_re_extracts_a_cached_charity(cache_dir):
+    fc = MeteredClient()
+    extract_mod.run(RACE, "Test Race", order=["a", "b"], client=fc, model="claude-sonnet-5")
+    s = extract_mod.run(RACE, "Test Race", order=["a", "b"], client=fc, model="claude-sonnet-5", force={"b"})
+    assert s["extracted"] == ["b"] and s["skipped"] == ["a"] and fc.calls == 3

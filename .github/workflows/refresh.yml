@@ -18,6 +18,9 @@ on:
       budget_usd:
         description: stop extracting once this much has been spent on the API (blank = no cap, stops when credit runs out)
         default: ""
+      force:
+        description: comma-separated charity ids to re-read even if their pages and extraction are cached
+        default: ""
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -32,6 +35,7 @@ jobs:
       RACE: ${{ github.event.inputs.race || 'nyc-2026' }}
       ONLY: ${{ github.event.inputs.only || '' }}
       SCOPE: ${{ github.event.inputs.scope || 'core' }}
+      CB_FORCE: ${{ github.event.inputs.force || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

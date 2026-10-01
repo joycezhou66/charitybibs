@@ -151,8 +151,14 @@ def budget_from_env() -> float | None:
     return float(v) if v else None
 
 
+def force_from_env() -> set[str]:
+    v = os.environ.get("CB_FORCE", "").strip()
+    return {x.strip() for x in v.split(",") if x.strip()} if v else set()
+
+
 def run(race: str, race_name: str, only: set[str] | None = None, order: list[str] | None = None,
-        client=None, model: str = DEFAULT_MODEL, budget_usd: float | None = None) -> dict:
+        client=None, model: str = DEFAULT_MODEL, budget_usd: float | None = None,
+        force: set[str] | None = None) -> dict:
     """Extract every crawled charity, in `order` if given, until done or the budget stops us.
 
     Returns a summary {"extracted": [...], "skipped": [...], "stopped": reason|None}.
@@ -163,6 +169,7 @@ def run(race: str, race_name: str, only: set[str] | None = None, order: list[str
     spend = Spend(cache_dir / "spend.json", budget_usd if budget_usd is not None else budget_from_env())
     files = {f.stem: f for f in cache_dir.glob("*.json") if f.stem != "spend" and f.stem != "candidate"}
     ids = [i for i in (order or []) if i in files] + sorted(i for i in files if i not in set(order or []))
+    force = force if force is not None else force_from_env()
     summary: dict = {"extracted": [], "skipped": [], "stopped": None}
     if spend.data.get("stopped"):
         summary["stopped"] = spend.data["stopped"]
@@ -175,7 +182,7 @@ def run(race: str, race_name: str, only: set[str] | None = None, order: list[str
         out = out_dir / f"{cid}.json"
         cache = json.loads(f.read_text())
         fetched = max((p.get("fetched") or "" for p in cache.get("pages") or []), default="")
-        if out.exists():
+        if out.exists() and cid not in force:
             try:
                 if json.loads(out.read_text()).get("_source_fetched") == fetched:
                     summary["skipped"].append(cid)
