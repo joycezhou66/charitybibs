@@ -73,3 +73,19 @@ def test_support_cleared_without_quote():
            "shortfall_published": False, "injury_published": False, "deferral_published": False, "flags": []}
     c = verify(raw, CACHE, existing=None, verified_on="2026-09-14")
     assert c.support.coaching is None and c.supportScore == 0
+
+
+def test_minimum_does_not_flip_tiers_while_old_figure_is_still_on_the_page():
+    from pipeline.schema import Charity
+    existing = Charity(id="v", name="V", url="https://v.org", verified="2026-09-14", min=3750)
+    cache = {"id": "v", "name": "V", "pages": [{"url": "https://v.org/run", "fetched": "2026-09-30",
+             "text": "Runner (we provide the race entry) without a hotel stay - $3,750. Fundraiser only (own entry) - $2,000."}]}
+    raw = {"status": "open", "status_quote": "we provide the race entry", "minimum": 2000,
+           "minimum_quote": "Runner (we provide the race entry) without a hotel stay - $3,750. Fundraiser only (own entry) - $2,000.",
+           "support": {}, "shortfall_published": False, "injury_published": False, "deferral_published": False, "flags": []}
+    c = verify(raw, cache, existing)
+    assert c.min == 3750 and any(f.startswith("minimum kept at 3750") for f in c.flags)
+    # a genuine change, where the old figure is gone, goes through
+    raw2 = dict(raw, minimum=4000, minimum_quote="The 2026 minimum is $4,000.")
+    cache2 = {**cache, "pages": [{**cache["pages"][0], "text": "The 2026 minimum is $4,000."}]}
+    assert verify(raw2, cache2, existing).min == 4000

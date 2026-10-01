@@ -18,24 +18,39 @@ on:
       budget_usd:
         description: stop extracting once this much has been spent on the API (blank = no cap, stops when credit runs out)
         default: ""
+      force:
+        description: comma-separated charity ids to re-read even if their pages and extraction are cached
+        default: ""
 jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     permissions: { contents: write, pull-requests: write }
     env:
+      PYTHONUNBUFFERED: "1"
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       CB_MODEL: ${{ vars.CB_MODEL || 'claude-sonnet-5' }}
       CB_BUDGET_USD: ${{ github.event.inputs.budget_usd || vars.CB_BUDGET_USD || '' }}
+      CB_TIME_LIMIT_MIN: ${{ vars.CB_TIME_LIMIT_MIN || '300' }}
       RACE: ${{ github.event.inputs.race || 'nyc-2026' }}
       ONLY: ${{ github.event.inputs.only || '' }}
       SCOPE: ${{ github.event.inputs.scope || 'core' }}
+      CB_FORCE: ${{ github.event.inputs.force || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - name: Install dependencies
+        timeout-minutes: 15
+        run: pip install -r requirements.txt && python -m playwright install chromium
+      - name: Restore pages and extractions from the last run (lets an interrupted run resume)
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/${{ env.RACE }}
+          key: cb-cache-${{ env.RACE }}-${{ github.run_id }}
+          restore-keys: cb-cache-${{ env.RACE }}-
       - name: Crawl, extract, verify, diff
+        timeout-minutes: 320
         run: |
           if [ -n "$ONLY" ]; then python -m pipeline.run refresh --race "$RACE" --only "$ONLY"; else python -m pipeline.run refresh --race "$RACE" --scope "$SCOPE"; fi
       - name: Promote candidate and rebuild site
@@ -43,6 +58,12 @@ jobs:
           python -m pipeline.run promote --race "$RACE"
           python -m pipeline.run build --race "$RACE"
           cp .cache/"$RACE"/changes.md /tmp/changes.md
+      - name: Save pages and extractions for the next run
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/${{ env.RACE }}
+          key: cb-cache-${{ env.RACE }}-${{ github.run_id }}
       - name: Keep the spend log with the run
         if: always()
         uses: actions/upload-artifact@v4

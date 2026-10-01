@@ -56,6 +56,7 @@ Rules:
 - Support fields are true only if the charity says it provides that thing; false only if it explicitly says it does not; otherwise null.
 - "shortfall" means what happens if the runner does not raise the minimum. "free_exit_date" is the last date a runner can withdraw without owing the minimum. "charge_schedule" is when money is actually taken (deposits, milestones, final charge).
 - The fundraising minimum is the entry-level minimum for a guaranteed charity bib for THIS race and year. Put other tiers and own-bib prices in minimum_note.
+- When several tiers are listed, the minimum is the LOWEST tier that includes the race entry (words like "we provide the race entry", "guaranteed entry", "charity entry"). A "fundraiser only" / "own entry" / "already have a bib" tier is never the minimum. A team-wide goal, a total the team hopes to raise, or a number for a different race or year is not the minimum: use null and explain in minimum_note.
 - If pages reference a prior year, an old deadline, or contradict each other, say so in flags.
 - Prefer the charity's marathon page, FAQ, application, and any runner agreement over press releases."""
 
@@ -150,8 +151,14 @@ def budget_from_env() -> float | None:
     return float(v) if v else None
 
 
+def force_from_env() -> set[str]:
+    v = os.environ.get("CB_FORCE", "").strip()
+    return {x.strip() for x in v.split(",") if x.strip()} if v else set()
+
+
 def run(race: str, race_name: str, only: set[str] | None = None, order: list[str] | None = None,
-        client=None, model: str = DEFAULT_MODEL, budget_usd: float | None = None) -> dict:
+        client=None, model: str = DEFAULT_MODEL, budget_usd: float | None = None,
+        force: set[str] | None = None) -> dict:
     """Extract every crawled charity, in `order` if given, until done or the budget stops us.
 
     Returns a summary {"extracted": [...], "skipped": [...], "stopped": reason|None}.
@@ -162,6 +169,7 @@ def run(race: str, race_name: str, only: set[str] | None = None, order: list[str
     spend = Spend(cache_dir / "spend.json", budget_usd if budget_usd is not None else budget_from_env())
     files = {f.stem: f for f in cache_dir.glob("*.json") if f.stem != "spend" and f.stem != "candidate"}
     ids = [i for i in (order or []) if i in files] + sorted(i for i in files if i not in set(order or []))
+    force = force if force is not None else force_from_env()
     summary: dict = {"extracted": [], "skipped": [], "stopped": None}
     if spend.data.get("stopped"):
         summary["stopped"] = spend.data["stopped"]
@@ -172,10 +180,15 @@ def run(race: str, race_name: str, only: set[str] | None = None, order: list[str
             continue
         f = files[cid]
         out = out_dir / f"{cid}.json"
-        if out.exists() and out.stat().st_mtime >= f.stat().st_mtime:
-            summary["skipped"].append(cid)
-            continue
         cache = json.loads(f.read_text())
+        fetched = max((p.get("fetched") or "" for p in cache.get("pages") or []), default="")
+        if out.exists() and cid not in force:
+            try:
+                if json.loads(out.read_text()).get("_source_fetched") == fetched:
+                    summary["skipped"].append(cid)
+                    continue
+            except Exception:  # noqa: BLE001 — unreadable output → re-extract
+                pass
         if not cache["pages"]:
             print(f"  {cid:10} skipped (no pages fetched)")
             summary["skipped"].append(cid)
@@ -194,7 +207,8 @@ def run(race: str, race_name: str, only: set[str] | None = None, order: list[str
             break
         usage = raw.pop("_usage", None)
         cost = spend.add(cid, usage) if usage else 0.0
+        raw["_source_fetched"] = fetched
         out.write_text(json.dumps(raw, indent=1))
         summary["extracted"].append(cid)
-        print(f"  {cid:10} extracted  ${cost:.3f}  (run total ${spend.data['total_usd']:.2f})")
+        print(f"  {cid:10} extracted  ${cost:.3f}  (run total ${spend.data['total_usd']:.2f})", flush=True)
     return summary

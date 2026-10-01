@@ -5,6 +5,7 @@
   python -m pipeline.run verify  --race nyc-2026                      → .cache/<race>/candidate.json
   python -m pipeline.run diff    --race nyc-2026                      → .cache/<race>/changes.md
   python -m pipeline.run promote --race nyc-2026                      candidate → data/races/<race>.json
+  python -m pipeline.run prune   --race nyc-2026                      drop published rows no longer in the seed list
   python -m pipeline.run build   --race nyc-2026                      → site/index.html
   python -m pipeline.run refresh --race nyc-2026 [--scope all|core]   crawl+extract+verify+diff (what the Action runs)
   python -m pipeline.run stats   --race nyc-2026
@@ -19,6 +20,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import time
 from datetime import date
 from pathlib import Path
 
@@ -71,6 +74,8 @@ def cmd_verify(race: str) -> Dataset:
     today = date.today().isoformat()
     out = []
     for f in sorted((cache_dir / "extracted").glob("*.json")):
+        if f.stem not in seed_by_id:          # stale cache from a charity no longer on the seed list
+            continue
         raw = json.loads(f.read_text())
         cache = json.loads((cache_dir / f"{f.stem}.json").read_text())
         ch = verify(raw, cache, existing.get(f.stem))
@@ -79,9 +84,10 @@ def cmd_verify(race: str) -> Dataset:
         ch.focus = ch.focus or s.get("focus")
         ch.level = ch.level or s.get("level")
         out.append(ch)
-    # Carry forward charities that were not re-read this run, untouched.
+    # Carry forward charities that were not re-read this run, untouched, as long as they
+    # are still on the seed list; a charity removed from the seeds drops out (the diff says so).
     seen = {c.id for c in out}
-    out += [c for cid, c in existing.items() if cid not in seen]
+    out += [c for cid, c in existing.items() if cid not in seen and cid in seed_by_id]
     seen |= set(existing)
     # Seed charities never read: list them so the site is complete, marked as unread.
     fallback = sd.get("official_list", "")
@@ -105,19 +111,34 @@ def cmd_diff(race: str) -> str:
     return md
 
 
-def cmd_refresh(race: str, only: set[str] | None, scope: str) -> None:
+def time_limit_min() -> float | None:
+    """CB_TIME_LIMIT_MIN: stop starting new chunks after this many minutes so the run
+    always reaches verify/diff/promote before the Action's job timeout kills it."""
+    v = os.environ.get("CB_TIME_LIMIT_MIN", "").strip()
+    return float(v) if v else None
+
+
+def cmd_refresh(race: str, only: set[str] | None, scope: str, limit_min: float | None = None) -> None:
     ids = [s["id"] for s in seeds(race)["charities"]]
     allowed = only if only is not None else scope_ids(race, scope)
     if allowed is not None:
         ids = [i for i in ids if i in allowed]
     rn = race_name(race)
-    print(f"refresh {race}: {len(ids)} charities, scope={scope}, chunk={CHUNK}")
+    limit = limit_min if limit_min is not None else time_limit_min()
+    t0 = time.monotonic()
+    print(f"refresh {race}: {len(ids)} charities, scope={scope}, chunk={CHUNK}, time limit={limit or 'none'} min", flush=True)
+    done = 0
     for i in range(0, len(ids), CHUNK):
+        elapsed = (time.monotonic() - t0) / 60
+        if limit is not None and elapsed >= limit:
+            print(f"time limit of {limit:.0f} min reached after {done} charities; the rest stay listed as not yet read")
+            break
         chunk = ids[i:i + CHUNK]
         crawl_mod.run(race, set(chunk))
         summary = extract_mod.run(race, rn, set(chunk), order=chunk)
+        done += len(summary["extracted"]) + len(summary["skipped"])
         if summary["stopped"]:
-            print(f"stopped after {i + len(summary['extracted'])} charities: {summary['stopped']}")
+            print(f"stopped after {done} charities: {summary['stopped']}")
             break
     cmd_verify(race)
     print(cmd_diff(race))
@@ -125,7 +146,7 @@ def cmd_refresh(race: str, only: set[str] | None, scope: str) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["crawl", "extract", "verify", "diff", "promote", "build", "refresh", "stats"])
+    ap.add_argument("cmd", choices=["crawl", "extract", "verify", "diff", "promote", "prune", "build", "refresh", "stats"])
     ap.add_argument("--race", default="nyc-2026")
     ap.add_argument("--only", default=None, help="comma-separated charity ids")
     ap.add_argument("--scope", default="all", choices=["all", "core"], help="refresh: which charities to re-read")
@@ -141,6 +162,12 @@ def main() -> None:
         ds = cmd_verify(a.race); print(f"candidate: {len(ds.charities)} charities")
     elif a.cmd == "diff":
         print(cmd_diff(a.race))
+    elif a.cmd == "prune":
+        ds = build_mod.load(a.race)
+        keep = {s["id"] for s in seeds(a.race)["charities"]}
+        dropped = [c.id for c in ds.charities if c.id not in keep]
+        ds.charities = [c for c in ds.charities if c.id in keep]
+        build_mod.save(a.race, ds); print(f"pruned {len(dropped)} rows not in the seed list: {dropped}")
     elif a.cmd == "promote":
         cand = ROOT / ".cache" / a.race / "candidate.json"
         build_mod.save(a.race, Dataset.model_validate_json(cand.read_text())); print("promoted")

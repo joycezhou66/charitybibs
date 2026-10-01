@@ -127,4 +127,20 @@ def verify(raw: dict, cache: dict, existing: Charity | None, verified_on: str | 
     if ch.min is None and existing and existing.min is not None:
         ch.min, ch.minNote, ch.minSource = existing.min, existing.minNote, existing.minSource
         ch.flags.append(f"minimum carried over from {existing.verified}; not re-verified this run")
+    # A verified minimum only changes when the old figure is gone from the page. If the new
+    # quote still contains the previous amount, the page lists several tiers and the model
+    # picked a different one; keep the number a human already reviewed and say so.
+    elif (existing and existing.min is not None and ch.min is not None and ch.min != existing.min
+          and _amount_in(existing.min, ch.minQuote)):
+        ch.flags.append(f"minimum kept at {existing.min}: the page still quotes it alongside {ch.min}; tier choice needs a human look")
+        ch.min, ch.minSource = existing.min, (existing.minSource or ch.minSource)
+        ch.minNote = ch.minNote or existing.minNote
     return ch
+
+
+def _amount_in(amount: int, quote: str | None) -> bool:
+    """True if `quote` mentions `amount` as a dollar figure (3,750 / 3750 / $3,750)."""
+    if not quote:
+        return False
+    q = normalize(quote).replace(",", "")
+    return bool(re.search(rf"(?<![\d.]){amount}(?![\d])", q))
