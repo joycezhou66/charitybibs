@@ -74,6 +74,8 @@ def cmd_verify(race: str) -> Dataset:
     today = date.today().isoformat()
     out = []
     for f in sorted((cache_dir / "extracted").glob("*.json")):
+        if f.stem not in seed_by_id:          # stale cache from a charity no longer on the seed list
+            continue
         raw = json.loads(f.read_text())
         cache = json.loads((cache_dir / f"{f.stem}.json").read_text())
         ch = verify(raw, cache, existing.get(f.stem))

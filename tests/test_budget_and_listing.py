@@ -191,3 +191,21 @@ def test_force_re_extracts_a_cached_charity(cache_dir):
     extract_mod.run(RACE, "Test Race", order=["a", "b"], client=fc, model="claude-sonnet-5")
     s = extract_mod.run(RACE, "Test Race", order=["a", "b"], client=fc, model="claude-sonnet-5", force={"b"})
     assert s["extracted"] == ["b"] and sorted(s["skipped"]) == ["a", "c"] and fc.calls == 4
+
+
+def test_verify_ignores_cached_extractions_not_on_the_seed_list(monkeypatch, tmp_path):
+    from pipeline import run as run_mod
+    from pipeline.schema import Dataset
+    race = "test-stale"
+    cache = run_mod.ROOT / ".cache" / race; (cache / "extracted").mkdir(parents=True, exist_ok=True)
+    try:
+        for cid in ("keep", "stale"):
+            (cache / f"{cid}.json").write_text(json.dumps({"id": cid, "name": cid.title(), "pages": [{"url": f"https://{cid}.org", "text": "min is $3,000", "fetched": "2026-10-01"}], "errors": []}))
+            (cache / "extracted" / f"{cid}.json").write_text(json.dumps({"status": "unknown", "minimum": 3000, "minimum_quote": "min is $3,000", "support": {}, "shortfall_published": False, "injury_published": False, "deferral_published": False, "flags": []}))
+        monkeypatch.setattr(run_mod, "seeds", lambda r: {"race_name": "T", "official_list": "https://list.example/", "charities": [{"id": "keep", "name": "Keep", "urls": ["https://keep.org"]}, {"id": "new", "name": "New", "urls": []}]})
+        monkeypatch.setattr(run_mod.build_mod, "load", lambda r: Dataset(refreshed="2026-09-30", charities=[]))
+        ds = run_mod.cmd_verify(race)
+        assert [c.id for c in ds.charities] == ["keep", "new"]
+        assert ds.charities[1].url == "https://list.example/"
+    finally:
+        shutil.rmtree(cache, ignore_errors=True)
